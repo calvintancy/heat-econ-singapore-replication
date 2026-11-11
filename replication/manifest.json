@@ -35,13 +35,13 @@
         },
         {
           "path": "README.md",
-          "sha256": "a514525b84dbc8e131ebaec6a668b501fceaf3297ade166877d760585b75e6d8",
-          "size_bytes": 27901
+          "sha256": "6bdb9971d48c4b0a65c06c41a045eeae6c05080bb3aa1c50c0c09f1d70468f95",
+          "size_bytes": 28331
         },
         {
           "path": "REPRODUCING.md",
-          "sha256": "11c635f619b425eafb25cd64ad4b13cb6d1fdad0a186242acfb618bd304d0ec9",
-          "size_bytes": 14530
+          "sha256": "b69b72df8f55284eb1be3298fb64bd3b83124d0086179d67b52122ed09ea79c0",
+          "size_bytes": 14945
         },
         {
           "path": "THIRD_PARTY_NOTICES.md",
@@ -13920,7 +13920,7 @@
         },
         {
           "path": "outputs/visitor_arrivals.html",
-          "sha256": "e739410d50800619ecd328b3c809999887483bde12975170e929634cc6bf13ad",
+          "sha256": "8929de6faa578436eeca753fb9527d63f4e68386bb4d8d901b991ca917537c67",
           "size_bytes": 14832255
         },
         {
@@ -14575,7 +14575,7 @@
         },
         {
           "path": "outputs/visitor_arrivals/crisis/verification.json",
-          "sha256": "40d1f474743168a1cde65a7f0c94696a56cac23bad78c65797bc63cb48c0fcae",
+          "sha256": "c438dc4cd39caad66f0ee5156e389cae5b72500643228d9cb837d4833adbbf9c",
           "size_bytes": 5508
         },
         {
@@ -18425,8 +18425,8 @@
         },
         {
           "path": "outputs/visitor_arrivals/report_verification.json",
-          "sha256": "ddce52ef907a5375074a7fffac555de2a2840cb69345185f06f920449c31a2d6",
-          "size_bytes": 839
+          "sha256": "e537d3ed268dbad9112a439d6f4f5c8a1f7adfe9a076e13e4dd3815fc08b9ddd",
+          "size_bytes": 522
         },
         {
           "path": "outputs/visitor_arrivals/specifications.json",
@@ -18440,7 +18440,7 @@
         },
         {
           "path": "outputs/visitor_arrivals/verification.json",
-          "sha256": "4b046b43fd5dc2f3414e076ed01a021e9b07320b083a772b7bd397300f255510",
+          "sha256": "6e3f42a89960b872d518baf499a763d2ccb843f67cce68ff46eb3805c322f291",
           "size_bytes": 5369
         },
         {
@@ -18449,9 +18449,14 @@
           "size_bytes": 448
         },
         {
+          "path": "replication/VALIDATION.md",
+          "sha256": "a24488c254dcf27df9c1275c8f86bd35c481515303fdfceae408a77c05574f5c",
+          "size_bytes": 2408
+        },
+        {
           "path": "replication/manifest.json",
-          "sha256": "940e9ed7791c83a3203100dda7ff12c397a6e18704566478b3f454b480a1f663",
-          "size_bytes": 857278
+          "sha256": "b16324cbbbb803efaba824584d7f989d499a7fbcff217d525bc9ae879d849846",
+          "size_bytes": 857942
         },
         {
           "path": "replication/renv.lock",
@@ -18472,6 +18477,16 @@
           "path": "replication/third_party/notices/manifest.json",
           "sha256": "27f4db941e5ead18ce8586d50002c228ff828a5bd7d7c24258f031b0ed9eab2b",
           "size_bytes": 935
+        },
+        {
+          "path": "replication/validation.json",
+          "sha256": "aba024632299bdc838c13bc4341fc67d62ecb6094ca09f43bebebf3f236b4232",
+          "size_bytes": 22813
+        },
+        {
+          "path": "replication/validation/full-reproduction.txt",
+          "sha256": "3513e0876c61c0461a2b2cbd95546158be02e573f1c432084a86625f354167b3",
+          "size_bytes": 124198
         },
         {
           "path": "scripts/aggregate_va.py",
@@ -18635,8 +18650,8 @@
         },
         {
           "path": "scripts/replicate.py",
-          "sha256": "d7153d71e4579d9544e01465fd22d3c2fb3ea326df390f38773d451a2ac577eb",
-          "size_bytes": 16095
+          "sha256": "191f4ccb2b1b2145e7709d85ccb900122f6da4fbe5f544b634bd0c7160476ea5",
+          "size_bytes": 16445
         },
         {
           "path": "scripts/report.py",
@@ -18815,8 +18830,8 @@
         },
         {
           "path": "scripts/verify_visitor_report.mjs",
-          "sha256": "8cfdd43a6e84514c418b286b279d4cb33c68f79f7601faae6cad471ef1459ded",
-          "size_bytes": 8483
+          "sha256": "1c11e57a467a27209ce48c0803d5df0dede3de97636aada0ff9adfdc6d75198f",
+          "size_bytes": 8466
         },
         {
           "path": "scripts/visitor_analysis.py",
@@ -18904,10 +18919,10 @@
           "size_bytes": 552400
         }
       ],
-      "n_files": 3780,
-      "sha256": "4af46ee5a33408d4487cde6e9df6fed27604dffd0bb5c87fd4d140cca518a996",
-      "size_bytes": 232286292,
-      "uncompressed_bytes": 1198429117
+      "n_files": 3783,
+      "sha256": "92a1497a07f0b33335bc208652c44645e93f4fc0013ea3db97bdf94c2812819a",
+      "size_bytes": 232307233,
+      "uncompressed_bytes": 1198580061
     },
     "inputs": {
       "filename": "replication-inputs.tar.gz",
@@ -32663,7 +32678,7 @@
         },
         {
           "path": "outputs/visitor_arrivals.html",
-          "sha256": "e739410d50800619ecd328b3c809999887483bde12975170e929634cc6bf13ad",
+          "sha256": "8929de6faa578436eeca753fb9527d63f4e68386bb4d8d901b991ca917537c67",
           "size_bytes": 14832255
         },
         {
@@ -33318,7 +33333,7 @@
         },
         {
           "path": "outputs/visitor_arrivals/crisis/verification.json",
-          "sha256": "40d1f474743168a1cde65a7f0c94696a56cac23bad78c65797bc63cb48c0fcae",
+          "sha256": "c438dc4cd39caad66f0ee5156e389cae5b72500643228d9cb837d4833adbbf9c",
           "size_bytes": 5508
         },
         {
@@ -37168,8 +37183,8 @@
         },
         {
           "path": "outputs/visitor_arrivals/report_verification.json",
-          "sha256": "ddce52ef907a5375074a7fffac555de2a2840cb69345185f06f920449c31a2d6",
-          "size_bytes": 839
+          "sha256": "e537d3ed268dbad9112a439d6f4f5c8a1f7adfe9a076e13e4dd3815fc08b9ddd",
+          "size_bytes": 522
         },
         {
           "path": "outputs/visitor_arrivals/specifications.json",
@@ -37183,14 +37198,14 @@
         },
         {
           "path": "outputs/visitor_arrivals/verification.json",
-          "sha256": "4b046b43fd5dc2f3414e076ed01a021e9b07320b083a772b7bd397300f255510",
+          "sha256": "6e3f42a89960b872d518baf499a763d2ccb843f67cce68ff46eb3805c322f291",
           "size_bytes": 5369
         }
       ],
       "n_files": 3127,
-      "sha256": "fb71f1f6bb8f5915d19bb70f38a18787958b07811622a68931a733fc889bd40d",
-      "size_bytes": 192860232,
-      "uncompressed_bytes": 1093790954
+      "sha256": "59eeee8dec0ec8d1a35cf10ffef44ee8c28c8da2efd106b42c5ed320d5732c08",
+      "size_bytes": 192860057,
+      "uncompressed_bytes": 1093790637
     }
   },
   "deterministic_metadata": {
@@ -37262,6 +37277,10 @@
       "reason": "local metadata or credentials"
     },
     {
+      "path": "replication/manifest.json",
+      "reason": "generated manifest excluded from source hashes to avoid self-reference"
+    },
+    {
       "path": "scripts/.DS_Store",
       "reason": "local metadata or credentials"
     },
@@ -37313,13 +37332,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "a514525b84dbc8e131ebaec6a668b501fceaf3297ade166877d760585b75e6d8",
-      "size_bytes": 27901
+      "sha256": "6bdb9971d48c4b0a65c06c41a045eeae6c05080bb3aa1c50c0c09f1d70468f95",
+      "size_bytes": 28331
     },
     {
       "path": "REPRODUCING.md",
-      "sha256": "11c635f619b425eafb25cd64ad4b13cb6d1fdad0a186242acfb618bd304d0ec9",
-      "size_bytes": 14530
+      "sha256": "b69b72df8f55284eb1be3298fb64bd3b83124d0086179d67b52122ed09ea79c0",
+      "size_bytes": 14945
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -37462,6 +37481,11 @@
       "size_bytes": 448
     },
     {
+      "path": "replication/VALIDATION.md",
+      "sha256": "a24488c254dcf27df9c1275c8f86bd35c481515303fdfceae408a77c05574f5c",
+      "size_bytes": 2408
+    },
+    {
       "path": "replication/renv.lock",
       "sha256": "545d1baf216d4a80fc0933116dc73a5f29b32d50bdc4cf1a3d8f0e8d331a8f1a",
       "size_bytes": 130983
@@ -37480,6 +37504,16 @@
       "path": "replication/third_party/notices/manifest.json",
       "sha256": "27f4db941e5ead18ce8586d50002c228ff828a5bd7d7c24258f031b0ed9eab2b",
       "size_bytes": 935
+    },
+    {
+      "path": "replication/validation.json",
+      "sha256": "aba024632299bdc838c13bc4341fc67d62ecb6094ca09f43bebebf3f236b4232",
+      "size_bytes": 22813
+    },
+    {
+      "path": "replication/validation/full-reproduction.txt",
+      "sha256": "3513e0876c61c0461a2b2cbd95546158be02e573f1c432084a86625f354167b3",
+      "size_bytes": 124198
     },
     {
       "path": "scripts/aggregate_va.py",
@@ -37643,8 +37677,8 @@
     },
     {
       "path": "scripts/replicate.py",
-      "sha256": "d7153d71e4579d9544e01465fd22d3c2fb3ea326df390f38773d451a2ac577eb",
-      "size_bytes": 16095
+      "sha256": "191f4ccb2b1b2145e7709d85ccb900122f6da4fbe5f544b634bd0c7160476ea5",
+      "size_bytes": 16445
     },
     {
       "path": "scripts/report.py",
@@ -37823,8 +37857,8 @@
     },
     {
       "path": "scripts/verify_visitor_report.mjs",
-      "sha256": "8cfdd43a6e84514c418b286b279d4cb33c68f79f7601faae6cad471ef1459ded",
-      "size_bytes": 8483
+      "sha256": "1c11e57a467a27209ce48c0803d5df0dede3de97636aada0ff9adfdc6d75198f",
+      "size_bytes": 8466
     },
     {
       "path": "scripts/visitor_analysis.py",
