@@ -1,0 +1,1266 @@
+Verified source hashes: 126 frozen files
+Verified inputs hashes: 526 frozen files
+{
+  "root": "/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht",
+  "scope": "all",
+  "environment": {
+    "python": "3.11.14",
+    "python_executable": "/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/.venv/bin/python3",
+    "node": "v24.18.0",
+    "uv": "uv 0.12.3 (507230998 2026-08-07 aarch64-apple-darwin)",
+    "dependencies": {
+      "lxml": {
+        "installed": "6.1.3",
+        "locked_versions": [
+          "6.1.3"
+        ]
+      },
+      "maketables": {
+        "installed": "0.2.0",
+        "locked_versions": [
+          "0.2.0"
+        ]
+      },
+      "markdown": {
+        "installed": "3.11.3",
+        "locked_versions": [
+          "3.11.3"
+        ]
+      },
+      "matplotlib": {
+        "installed": "3.11.2",
+        "locked_versions": [
+          "3.11.2"
+        ]
+      },
+      "numpy": {
+        "installed": "2.4.6",
+        "locked_versions": [
+          "2.4.6",
+          "2.5.4"
+        ]
+      },
+      "pandas": {
+        "installed": "2.3.3",
+        "locked_versions": [
+          "2.3.3"
+        ]
+      },
+      "pyfixest": {
+        "installed": "0.70.0",
+        "locked_versions": [
+          "0.70.0"
+        ]
+      },
+      "requests": {
+        "installed": "2.34.2",
+        "locked_versions": [
+          "2.34.2"
+        ]
+      },
+      "scipy": {
+        "installed": "1.17.1",
+        "locked_versions": [
+          "1.17.1",
+          "1.18.1"
+        ]
+      },
+      "statsmodels": {
+        "installed": "0.14.6",
+        "locked_versions": [
+          "0.14.6"
+        ]
+      },
+      "threadpoolctl": {
+        "installed": "3.8.0",
+        "locked_versions": [
+          "3.8.0"
+        ]
+      }
+    }
+  },
+  "helpers": {
+    "required_helpers": [
+      "data/raw/visitor_arrivals/calendar/extract_lunar_new_year.py",
+      "pyproject.toml",
+      "replication/renv.lock",
+      "scripts/restore_replication.py",
+      "scripts/run_all.py",
+      "scripts/setup_visitor_r.R",
+      "scripts/verify.py",
+      "scripts/verify_aggregate_va.py",
+      "scripts/verify_annual.py",
+      "scripts/verify_annual_report.py",
+      "scripts/verify_baseline.py",
+      "scripts/verify_cluster_contrasts.py",
+      "scripts/verify_clustered_sector_sensitivity.py",
+      "scripts/verify_collection.py",
+      "scripts/verify_covid_comparison.py",
+      "scripts/verify_covid_report.py",
+      "scripts/verify_extended_controls.py",
+      "scripts/verify_granular.py",
+      "scripts/verify_granular_interactions.py",
+      "scripts/verify_heterogeneity.py",
+      "scripts/verify_iip.py",
+      "scripts/verify_outcomes.py",
+      "scripts/verify_pyfixest_migration.py",
+      "scripts/verify_sector_cluster.py",
+      "scripts/verify_stationarity_audit.py",
+      "scripts/verify_visitor_arrivals.py",
+      "scripts/verify_visitor_crisis.py",
+      "scripts/verify_visitor_report.mjs",
+      "scripts/visitor_analysis.py",
+      "scripts/visitor_counts.py",
+      "scripts/visitor_crisis.py",
+      "scripts/visitor_gt.R",
+      "scripts/visitor_gt_data.py",
+      "scripts/visitor_inference.py",
+      "scripts/visitor_report.py",
+      "uv.lock"
+    ],
+    "python_files_parsed": 76,
+    "local_modules": [
+      "aggregate_va",
+      "aggregate_va_report",
+      "annual_analysis",
+      "annual_report",
+      "build_panel",
+      "clustered_sector_sensitivity",
+      "combined_report",
+      "covid_common",
+      "covid_comparison",
+      "covid_report",
+      "covid_sector",
+      "cumulative_inference",
+      "estimate",
+      "extended_controls",
+      "extract_lunar_new_year",
+      "fetch_data",
+      "granular_analysis",
+      "granular_interactions",
+      "granular_report",
+      "heterogeneity",
+      "heterogeneity_report",
+      "html_report",
+      "iip_analysis",
+      "iip_reconciliation",
+      "iip_report",
+      "inference_display",
+      "outcome_analysis",
+      "outcome_report",
+      "package_replication",
+      "provenance_omissions",
+      "pyfixest_backend",
+      "reconciliation_report",
+      "regression_tables",
+      "replicate",
+      "report",
+      "restore_replication",
+      "run_all",
+      "sample_context",
+      "sector_cluster",
+      "sector_readout",
+      "sector_temperature",
+      "significance",
+      "stationarity_audit",
+      "stationarity_context",
+      "stationarity_diagnostics",
+      "stationarity_report",
+      "va_reconciliation",
+      "verify",
+      "verify_aggregate_va",
+      "verify_annual",
+      "verify_annual_report",
+      "verify_baseline",
+      "verify_cluster_contrasts",
+      "verify_clustered_sector_sensitivity",
+      "verify_collection",
+      "verify_covid_comparison",
+      "verify_covid_report",
+      "verify_extended_controls",
+      "verify_granular",
+      "verify_granular_interactions",
+      "verify_heterogeneity",
+      "verify_iip",
+      "verify_outcomes",
+      "verify_pyfixest_migration",
+      "verify_sector_cluster",
+      "verify_stationarity_audit",
+      "verify_visitor_arrivals",
+      "verify_visitor_crisis",
+      "visitor_analysis",
+      "visitor_counts",
+      "visitor_crisis",
+      "visitor_fetch",
+      "visitor_gt_data",
+      "visitor_inference",
+      "visitor_report",
+      "visitor_run"
+    ],
+    "external_imports": [
+      "lxml",
+      "maketables",
+      "markdown",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "patsy",
+      "pyfixest",
+      "requests",
+      "scipy",
+      "statsmodels",
+      "threadpoolctl",
+      "urllib3"
+    ],
+    "exhaustive_verifier_count": 22
+  },
+  "manifest": "/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/replication/logs/corrected-source-manifest.json",
+  "problems": [],
+  "source_policy": "Frozen release inputs; HTTP disabled inside every analytical Python child. No refresh and no external EMA-directory fallback.",
+  "status": "passed",
+  "input_integrity": "Frozen input members verified by restore_replication.py"
+}
+Verified 56 locked local R packages; R 4.6.1 ; gt 1.4.0 ; jsonlite 2.0.0 
+Local library: /private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/outputs/visitor_arrivals/R-library 
+[1/31] python scripts/run_all.py
+broad: {'n_sectors': 11, 'n_quarters': 178, 'n_obs': 1958, 'start': '1982Q1', 'end': '2026Q2', 'missing_va_sa': 0}
+detailed: {'n_sectors': 19, 'n_quarters': 85, 'n_obs': 1615, 'start': '2005Q2', 'end': '2026Q2', 'missing_va_sa': 0}
+S1 No weather controls: temp_c=-0.2468, SE=0.5202
+S2 Rainfall control: temp_c=-1.2829, SE=1.2483
+S3 Baseline: rainfall and humidity: temp_c=-1.4279, SE=1.2536
+S4 Pre-COVID: 1982-2019: temp_c=-0.2467, SE=0.4741
+S5 Exclude 2020-2022: temp_c=-0.0773, SE=0.4387
+S6 2005Q2+ broad sectors: temp_c=-2.2344, SE=2.9112
+S7 2005Q2+ detailed sectors: temp_c=-3.6941, SE=4.2769
+S8 NSA quarterly log growth: temp_c=-1.4181, SE=1.2895
+S9 Equal-weight monthly temperature: temp_c_unweighted=-1.4327, SE=1.2590
+Wrote outputs/first_results.md and three figures
+Verified source hashes, leap-year aggregation, raw growth, panel/quarter-mean OLS and independent Bartlett HAC
+{
+  "official_quarterly_reconciliation_cells": 3778,
+  "official_quarterly_max_rounding_gap": 0.0016666666666793617,
+  "index_base": "2025=100",
+  "classification": "SSIC 2025",
+  "panels": {
+    "monthly_broad": {
+      "start": "1992-02",
+      "end": "2026-09",
+      "n_obs": 2496,
+      "n_sectors": 6,
+      "n_periods": 416
+    },
+    "monthly_detailed": {
+      "start": "1996-02",
+      "end": "2026-09",
+      "n_obs": 6624,
+      "n_sectors": 18,
+      "n_periods": 368
+    },
+    "quarterly_broad": {
+      "start": "1992Q2",
+      "end": "2026Q3",
+      "n_obs": 828,
+      "n_sectors": 6,
+      "n_periods": 138
+    },
+    "quarterly_detailed": {
+      "start": "1996Q2",
+      "end": "2026Q3",
+      "n_obs": 2196,
+      "n_sectors": 18,
+      "n_periods": 122
+    }
+  }
+}
+IIP monthly S1: beta=0.3810, SE=0.7061
+IIP monthly S2: beta=0.1778, SE=1.0669
+IIP monthly S3: beta=0.0755, SE=1.0485
+IIP monthly S4: beta=0.4762, SE=1.2748
+IIP monthly S5: beta=0.2989, SE=1.1240
+IIP monthly S6: beta=0.4014, SE=1.0858
+IIP monthly S7: beta=-0.4908, SE=0.6146
+IIP monthly S8: beta=0.0053, SE=1.1340
+IIP quarterly S1: beta=2.2419, SE=1.6492
+IIP quarterly S2: beta=1.7860, SE=1.9152
+IIP quarterly S3: beta=1.6678, SE=1.8902
+IIP quarterly S4: beta=1.6846, SE=2.2355
+IIP quarterly S5: beta=2.3584, SE=1.9656
+IIP quarterly S6: beta=2.0131, SE=1.9906
+IIP quarterly S7: beta=-0.0736, SE=1.6593
+IIP quarterly S8: beta=1.5964, SE=1.9730
+IIP quarterly S9: beta=1.7131, SE=1.9043
+Verified IIP raw growth, official quarter averages, panel/period-mean coefficients and independent calendar HAC
+{
+  "wind_halfhours": 155115,
+  "wind_unit_conversion": "knots \u00d7 1852/3600 = m/s",
+  "pm_raw_rows": 109584,
+  "pm_invalid_timestamp_rows": 1,
+  "pm_invalid_value_rows": 0,
+  "pm_exact_duplicates_removed": 0,
+  "pm_conflicting_rows_removed": 6,
+  "pm_valid_hours": 109577,
+  "timezone": "Asia/Singapore (timestamps interpreted as local SGT)",
+  "pm_hour_assignment": "timestamp minus one hour, because readings are hour-ending",
+  "primary_coverage_threshold": 0.9,
+  "sensitivity_coverage_threshold": 0.8,
+  "source_window_wind": [
+    "2016-12-08 11:00:00",
+    "2025-12-31 23:30:00"
+  ],
+  "source_window_pm_hour_start": [
+    "2014-04-01 00:00:00",
+    "2026-09-30 23:00:00"
+  ],
+  "eligible_months_90": 100,
+  "excluded_months_90": [
+    "2018-01",
+    "2018-02",
+    "2019-03",
+    "2019-07",
+    "2021-01",
+    "2021-05",
+    "2023-01",
+    "2023-04"
+  ],
+  "eligible_quarters_90": 29,
+  "excluded_quarters_90": [
+    "2018Q1",
+    "2019Q1",
+    "2019Q3",
+    "2021Q1",
+    "2021Q2",
+    "2023Q1",
+    "2023Q2"
+  ],
+  "eligible_months_80": 104,
+  "excluded_months_80": [
+    "2018-01",
+    "2018-02",
+    "2019-03",
+    "2023-01"
+  ],
+  "eligible_quarters_80": 33,
+  "excluded_quarters_80": [
+    "2018Q1",
+    "2019Q1",
+    "2023Q1"
+  ]
+}
+va C1: temp=-26.7221, SE=10.9022, periods=29
+va C2: temp=-26.6184, SE=11.0691, periods=29
+va C3: temp=-27.1792, SE=10.9479, periods=29
+va C4: temp=-27.0542, SE=11.1922, periods=29
+va C5: temp=-0.0314, SE=0.6196, periods=19
+va C6: temp=-23.2422, SE=9.3534, periods=33
+iip-monthly C1: temp=-2.1348, SE=1.7301, periods=100
+iip-monthly C2: temp=-1.9256, SE=1.7851, periods=100
+iip-monthly C3: temp=-2.1483, SE=1.7314, periods=100
+iip-monthly C4: temp=-1.9224, SE=1.7860, periods=100
+iip-monthly C5: temp=-3.0991, SE=1.9689, periods=66
+iip-monthly C6: temp=-2.0129, SE=1.7521, periods=104
+iip-quarterly C1: temp=-12.0397, SE=4.8880, periods=29
+iip-quarterly C2: temp=-15.2842, SE=5.2624, periods=29
+iip-quarterly C3: temp=-12.2534, SE=4.8626, periods=29
+iip-quarterly C4: temp=-15.4685, SE=5.2759, periods=29
+iip-quarterly C5: temp=-6.1166, SE=10.1769, periods=19
+iip-quarterly C6: temp=-16.6363, SE=5.2205, periods=33
+Verified extended controls: source hashes, identical sample columns, period-mean OLS and direct calendar Bartlett HAC
+va weather {'start': '1982Q1', 'end': '2026Q2', 'periods': 178, 'observations': 1958}
+va full {'start': '2017Q1', 'end': '2025Q4', 'periods': 29, 'observations': 319}
+iip-monthly weather {'start': '1993-01', 'end': '2026-09', 'periods': 405, 'observations': 2430}
+iip-monthly full {'start': '2017-01', 'end': '2025-12', 'periods': 100, 'observations': 600}
+iip-quarterly weather {'start': '1993Q1', 'end': '2026Q3', 'periods': 135, 'observations': 810}
+iip-quarterly full {'start': '2017Q1', 'end': '2025Q4', 'periods': 29, 'observations': 174}
+Independent outcome verification passed: 204 model/bandwidth fits; raw definitions, calendar samples, estimates and R² checked.
+Heterogeneity va/weather/H1: 1958 rows, 178 dates, 101 parameters
+Heterogeneity va/weather/H2: 1958 rows, 178 dates, 121 parameters
+Heterogeneity va/weather/H3: 1958 rows, 178 dates, 561 parameters
+Heterogeneity va/weather/R1: 1958 rows, 178 dates, 688 parameters
+Heterogeneity va/weather/H3X: 1826 rows, 166 dates, 528 parameters
+Heterogeneity va/full/H1: 319 rows, 29 dates, 67 parameters
+Heterogeneity va/full/H2: 319 rows, 29 dates, 107 parameters
+Heterogeneity va/full/H3: 319 rows, 29 dates, 187 parameters
+Heterogeneity va/full/R1: 319 rows, 29 dates, 199 parameters
+Heterogeneity va/full/H3X: 209 rows, 19 dates, 154 parameters
+Heterogeneity iip-monthly/weather/H1: 2430 rows, 405 dates, 113 parameters
+Heterogeneity iip-monthly/weather/H2: 2430 rows, 405 dates, 123 parameters
+Heterogeneity iip-monthly/weather/H3: 2430 rows, 405 dates, 288 parameters
+Heterogeneity iip-monthly/weather/R1: 2430 rows, 405 dates, 645 parameters
+Heterogeneity iip-monthly/weather/H3X: 2214 rows, 369 dates, 270 parameters
+Heterogeneity iip-monthly/full/H1: 600 rows, 100 dates, 90 parameters
+Heterogeneity iip-monthly/full/H2: 600 rows, 100 dates, 110 parameters
+Heterogeneity iip-monthly/full/H3: 600 rows, 100 dates, 150 parameters
+Heterogeneity iip-monthly/full/R1: 600 rows, 100 dates, 225 parameters
+Heterogeneity iip-monthly/full/H3X: 396 rows, 66 dates, 132 parameters
+Heterogeneity iip-quarterly/weather/H1: 810 rows, 135 dates, 65 parameters
+Heterogeneity iip-quarterly/weather/H2: 810 rows, 135 dates, 75 parameters
+Heterogeneity iip-quarterly/weather/H3: 810 rows, 135 dates, 240 parameters
+Heterogeneity iip-quarterly/weather/R1: 810 rows, 135 dates, 335 parameters
+Heterogeneity iip-quarterly/weather/H3X: 738 rows, 123 dates, 222 parameters
+Heterogeneity iip-quarterly/full/H1: 174 rows, 29 dates, 42 parameters
+Heterogeneity iip-quarterly/full/H2: 174 rows, 29 dates, 62 parameters
+Heterogeneity iip-quarterly/full/H3: 174 rows, 29 dates, 102 parameters
+Heterogeneity iip-quarterly/full/R1: 174 rows, 29 dates, 114 parameters
+Heterogeneity iip-quarterly/full/H3X: 114 rows, 19 dates, 84 parameters
+Diagnostics: 416 tests / 208 paired rows, all on contiguous histories
+      context    kind    variable                      evidence_5pct  n_series
+  iip-monthly  output y_log_level ADF does not reject / KPSS rejects         5
+  iip-monthly  output y_log_level        Both reject: mixed evidence         1
+  iip-monthly  output     y_short ADF rejects / KPSS does not reject         6
+  iip-monthly  output       y_yoy ADF rejects / KPSS does not reject         5
+  iip-monthly  output       y_yoy        Both reject: mixed evidence         1
+  iip-monthly  output   y_yoy_nsa ADF rejects / KPSS does not reject         5
+  iip-monthly  output   y_yoy_nsa        Both reject: mixed evidence         1
+  iip-monthly weather  rain_100mm ADF rejects / KPSS does not reject         1
+  iip-monthly weather      rh_pct ADF does not reject / KPSS rejects         1
+  iip-monthly weather      temp_c ADF rejects / KPSS does not reject         1
+iip-quarterly  output y_log_level ADF does not reject / KPSS rejects         5
+iip-quarterly  output y_log_level        Both reject: mixed evidence         1
+iip-quarterly  output     y_short ADF rejects / KPSS does not reject         6
+iip-quarterly  output       y_yoy ADF rejects / KPSS does not reject         5
+iip-quarterly  output       y_yoy        Both reject: mixed evidence         1
+iip-quarterly  output   y_yoy_nsa ADF rejects / KPSS does not reject         5
+iip-quarterly  output   y_yoy_nsa        Both reject: mixed evidence         1
+iip-quarterly weather  rain_100mm ADF rejects / KPSS does not reject         1
+iip-quarterly weather      rh_pct ADF does not reject / KPSS rejects         1
+iip-quarterly weather      temp_c ADF rejects / KPSS does not reject         1
+           va  output y_log_level ADF does not reject / KPSS rejects        10
+           va  output y_log_level      Neither rejects: inconclusive         1
+           va  output     y_short ADF rejects / KPSS does not reject         6
+           va  output     y_short        Both reject: mixed evidence         5
+           va  output       y_yoy ADF does not reject / KPSS rejects         1
+           va  output       y_yoy ADF rejects / KPSS does not reject         5
+           va  output       y_yoy        Both reject: mixed evidence         5
+           va  output   y_yoy_nsa ADF does not reject / KPSS rejects         1
+           va  output   y_yoy_nsa ADF rejects / KPSS does not reject         5
+           va  output   y_yoy_nsa        Both reject: mixed evidence         5
+           va weather  rain_100mm ADF rejects / KPSS does not reject         1
+           va weather      rh_pct        Both reject: mixed evidence         1
+           va weather      temp_c ADF rejects / KPSS does not reject         1
+Independent heterogeneity verification passed: 240 model/outcome/bandwidth groups, joint sector covariance, equality tests, pairwise tests and separate-series equivalence.
+Aggregate real GVA analysis complete: official series 1.4; long sample 178 quarters, full controls 29 quarters, excluding 2020–2022: 19 quarters.
+Independent aggregate GVA verification passed: 106 model/bandwidth fits, raw-source growth, exact samples, mean Y, 0.1°C scaling and manual HAC.
+VA reconciliation passed: 4,998 quarterly and 1,233 annual identities; same source vintage 11/08/2026; no rescaling.
+{
+  "clusters": 6,
+  "leaves": 18,
+  "release_weight_years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "scalar_check_max_error": 4.263256414560601e-14,
+  "total_annual_overlap_checks": [
+    {
+      "weight_set": "release_2022_12",
+      "effective_year": 2022,
+      "parent_id": "1",
+      "parent": "Total",
+      "months": 12,
+      "mean_absolute_error_index_points": 0.006254103558667623,
+      "max_absolute_error_index_points": 0.013403111484564079,
+      "min_signed_error_index_points": -0.005736545596334963,
+      "max_signed_error_index_points": 0.013403111484564079,
+      "months_outside_conservative_rounding_interval": 0,
+      "max_distance_outside_rounding_interval": 0.0,
+      "known_rebase_vintage_mismatch": false
+    },
+    {
+      "weight_set": "release_2023_01",
+      "effective_year": 2023,
+      "parent_id": "1",
+      "parent": "Total",
+      "months": 12,
+      "mean_absolute_error_index_points": 0.009121848548369135,
+      "max_absolute_error_index_points": 0.019274975510668924,
+      "min_signed_error_index_points": -0.008848431993257577,
+      "max_signed_error_index_points": 0.019274975510668924,
+      "months_outside_conservative_rounding_interval": 0,
+      "max_distance_outside_rounding_interval": 0.0,
+      "known_rebase_vintage_mismatch": false
+    },
+    {
+      "weight_set": "release_2024_01",
+      "effective_year": 2024,
+      "parent_id": "1",
+      "parent": "Total",
+      "months": 12,
+      "mean_absolute_error_index_points": 0.006464824178581334,
+      "max_absolute_error_index_points": 0.01566318571822478,
+      "min_signed_error_index_points": -0.01566318571822478,
+      "max_signed_error_index_points": 0.00162222254647304,
+      "months_outside_conservative_rounding_interval": 0,
+      "max_distance_outside_rounding_interval": 0.0,
+      "known_rebase_vintage_mismatch": false
+    },
+    {
+      "weight_set": "release_2025_01",
+      "effective_year": 2025,
+      "parent_id": "1",
+      "parent": "Total",
+      "months": 12,
+      "mean_absolute_error_index_points": 0.4298190184906545,
+      "max_absolute_error_index_points": 0.9473113089416216,
+      "min_signed_error_index_points": -0.9473113089416216,
+      "max_signed_error_index_points": 0.930837063484887,
+      "months_outside_conservative_rounding_interval": 12,
+      "max_distance_outside_rounding_interval": 0.9089418877384361,
+      "known_rebase_vintage_mismatch": true
+    },
+    {
+      "weight_set": "release_2026_09",
+      "effective_year": 2026,
+      "parent_id": "1",
+      "parent": "Total",
+      "months": 9,
+      "mean_absolute_error_index_points": 0.02133349460880791,
+      "max_absolute_error_index_points": 0.03305108947451174,
+      "min_signed_error_index_points": -0.0029467167295109675,
+      "max_signed_error_index_points": 0.03305108947451174,
+      "months_outside_conservative_rounding_interval": 0,
+      "max_distance_outside_rounding_interval": 0.0,
+      "known_rebase_vintage_mismatch": false
+    }
+  ],
+  "decision": "Use published official manufacturing total for the national weighted outcome; retain equal-sector/industry panels as separate estimands. Do not label fixed displayed weights or census VA shares an official weighted IIP reconstruction."
+}
+Granular va-detailed long: 19 sectors × 82 periods
+Granular va-detailed full: 19 sectors × 29 periods
+Granular va-detailed exclude: 19 sectors × 19 periods
+Granular va-broad-matched long: 11 sectors × 82 periods
+Granular va-broad-matched full: 11 sectors × 29 periods
+Granular va-broad-matched exclude: 11 sectors × 19 periods
+Granular iip-monthly-total long: 1 sectors × 513 periods
+Granular iip-monthly-total full: 1 sectors × 100 periods
+Granular iip-monthly-total exclude: 1 sectors × 66 periods
+Granular iip-monthly-detailed long: 18 sectors × 357 periods
+Granular iip-monthly-detailed full: 18 sectors × 100 periods
+Granular iip-monthly-detailed exclude: 18 sectors × 66 periods
+Granular iip-monthly-broad-matched long: 6 sectors × 357 periods
+Granular iip-monthly-broad-matched full: 6 sectors × 100 periods
+Granular iip-monthly-broad-matched exclude: 6 sectors × 66 periods
+Granular iip-quarterly-total long: 1 sectors × 171 periods
+Granular iip-quarterly-total full: 1 sectors × 29 periods
+Granular iip-quarterly-total exclude: 1 sectors × 19 periods
+Granular iip-quarterly-detailed long: 18 sectors × 119 periods
+Granular iip-quarterly-detailed full: 18 sectors × 29 periods
+Granular iip-quarterly-detailed exclude: 18 sectors × 19 periods
+Granular iip-quarterly-broad-matched long: 6 sectors × 119 periods
+Granular iip-quarterly-broad-matched full: 6 sectors × 29 periods
+Granular iip-quarterly-broad-matched exclude: 6 sectors × 19 periods
+Granular verification passed: 24 sample windows, 120 pooled and 825 individual fits; raw SA/NSA source and calendar HAC checks.
+Detailed FE interactions va-detailed/long: 19 sectors × 82 dates; 5 Y definitions (SA and NSA YoY retained)
+Detailed FE interactions va-detailed/full: 19 sectors × 29 dates; 5 Y definitions (SA and NSA YoY retained)
+Detailed FE interactions va-detailed/exclude: 19 sectors × 19 dates; 5 Y definitions (SA and NSA YoY retained)
+Detailed FE interactions iip-monthly-detailed/long: 18 sectors × 357 dates; 5 Y definitions (SA and NSA YoY retained)
+Detailed FE interactions iip-monthly-detailed/full: 18 sectors × 100 dates; 5 Y definitions (SA and NSA YoY retained)
+Detailed FE interactions iip-monthly-detailed/exclude: 18 sectors × 66 dates; 5 Y definitions (SA and NSA YoY retained)
+Detailed FE interactions iip-quarterly-detailed/long: 18 sectors × 119 dates; 5 Y definitions (SA and NSA YoY retained)
+Detailed FE interactions iip-quarterly-detailed/full: 18 sectors × 29 dates; 5 Y definitions (SA and NSA YoY retained)
+Detailed FE interactions iip-quarterly-detailed/exclude: 18 sectors × 19 dates; 5 Y definitions (SA and NSA YoY retained)
+Verified detailed FE interactions: 1650 sector slopes, 14310 pairwise comparisons and 90 omnibus checks.
+Verified sector CR1: 974 coefficients across 245 model fits and 36 result files
+Verified 9 sector-CR1 linear contrasts independently.
+Verified native Pyfixest migration: 177 original reference files, 307764 original-SA numerical values and 1510 current logged production fits.
+Stationarity audit computed: 2821 distinct series/windows, 7224 tests, 540 model/outcome groups.
+Verified stationarity audit: 7224 manual test calculations, 25942 exact-model variable links and 825 granular individual fits.
+Sample context: 1591 lookup rows across 41 coefficient files; no refits
+Wrote outputs/extended_controls.html
+Wrote outputs/regression_tables.html
+Wrote outputs/iip_results.html
+Wrote outputs/heat_econ_results.html (213,326 bytes, self-contained)
+Wrote outputs/outcome_comparisons.html
+Wrote outputs/sector_heterogeneity.html
+Wrote outputs/aggregate_va.html with native regression tables and mean-growth context.
+Wrote outputs/granular_va.html (10,432,403 characters)
+Wrote outputs/manufacturing_detail.html (19,604,281 characters)
+Wrote reconciliation.html
+Wrote stationarity.html (9,855,889 bytes)
+Annual aggregate_va/weather/all_eligible: 1 units × 44 years
+Annual aggregate_va/weather/exclude_2020_2022: 1 units × 41 years
+Annual aggregate_va/full/all_eligible: 1 units × 9 years
+Annual aggregate_va/full/exclude_2020_2022: 1 units × 6 years
+Annual va11/weather/all_eligible: 11 units × 44 years
+Annual va11/weather/exclude_2020_2022: 11 units × 41 years
+Annual va11/full/all_eligible: 11 units × 9 years
+Annual va11/full/exclude_2020_2022: 11 units × 6 years
+Annual va19/weather/all_eligible: 19 units × 20 years
+Annual va19/weather/exclude_2020_2022: 19 units × 17 years
+Annual va19/full/all_eligible: 19 units × 9 years
+Annual va19/full/exclude_2020_2022: 19 units × 6 years
+Annual iip_total/weather/all_eligible: 1 units × 42 years
+Annual iip_total/weather/exclude_2020_2022: 1 units × 39 years
+Annual iip_total/full/all_eligible: 1 units × 9 years
+Annual iip_total/full/exclude_2020_2022: 1 units × 6 years
+Annual iip6/weather/all_eligible: 6 units × 33 years
+Annual iip6/weather/exclude_2020_2022: 6 units × 30 years
+Annual iip6/full/all_eligible: 6 units × 9 years
+Annual iip6/full/exclude_2020_2022: 6 units × 6 years
+Annual iip18/weather/all_eligible: 18 units × 29 years
+Annual iip18/weather/exclude_2020_2022: 18 units × 26 years
+Annual iip18/full/all_eligible: 18 units × 9 years
+Annual iip18/full/exclude_2020_2022: 18 units × 6 years
+Annual analysis produced 384 native fits; 128 explicitly unavailable requests
+Annual independent verification passed: 512 requested specs, 384 native models, 128 explicitly unavailable.
+Wrote outputs/annual.html: 56 paired views; one selected native table
+Annual presentation passed: 56 paired views, 1104 native cells, 28 explicit unavailable columns
+COVID ordinary FE pairs: 20/241
+COVID ordinary FE pairs: 40/241
+COVID ordinary FE pairs: 60/241
+COVID ordinary FE pairs: 80/241
+COVID ordinary FE pairs: 100/241
+COVID ordinary FE pairs: 120/241
+COVID ordinary FE pairs: 140/241
+COVID ordinary FE pairs: 160/241
+COVID ordinary FE pairs: 180/241
+COVID ordinary FE pairs: 200/241
+COVID ordinary FE pairs: 220/241
+COVID ordinary FE pairs: 240/241
+COVID ordinary FE pairs: 241/241
+COVID ordinary FE comparison ready: 241 pairs, 5,640 estimate rows, 3,016 original-row aliases
+COVID sector va/full/H1: 29 → 19 dates; 4 Y definitions
+COVID sector va/full/H2: 29 → 19 dates; 4 Y definitions
+COVID sector va/full/H3: 29 → 19 dates; 4 Y definitions
+COVID sector va/full/R1: 29 → 19 dates; 4 Y definitions
+COVID sector va/full/separate: 29 → 19 dates; 4 Y definitions
+COVID sector va/weather/H1: 178 → 166 dates; 4 Y definitions
+COVID sector va/weather/H2: 178 → 166 dates; 4 Y definitions
+COVID sector va/weather/H3: 178 → 166 dates; 4 Y definitions
+COVID sector va/weather/R1: 178 → 166 dates; 4 Y definitions
+COVID sector va/weather/separate: 178 → 166 dates; 4 Y definitions
+COVID sector iip-monthly/full/H1: 100 → 66 dates; 4 Y definitions
+COVID sector iip-monthly/full/H2: 100 → 66 dates; 4 Y definitions
+COVID sector iip-monthly/full/H3: 100 → 66 dates; 4 Y definitions
+COVID sector iip-monthly/full/R1: 100 → 66 dates; 4 Y definitions
+COVID sector iip-monthly/full/separate: 100 → 66 dates; 4 Y definitions
+COVID sector iip-monthly/weather/H1: 405 → 369 dates; 4 Y definitions
+COVID sector iip-monthly/weather/H2: 405 → 369 dates; 4 Y definitions
+COVID sector iip-monthly/weather/H3: 405 → 369 dates; 4 Y definitions
+COVID sector iip-monthly/weather/R1: 405 → 369 dates; 4 Y definitions
+COVID sector iip-monthly/weather/separate: 405 → 369 dates; 4 Y definitions
+COVID sector iip-quarterly/full/H1: 29 → 19 dates; 4 Y definitions
+COVID sector iip-quarterly/full/H2: 29 → 19 dates; 4 Y definitions
+COVID sector iip-quarterly/full/H3: 29 → 19 dates; 4 Y definitions
+COVID sector iip-quarterly/full/R1: 29 → 19 dates; 4 Y definitions
+COVID sector iip-quarterly/full/separate: 29 → 19 dates; 4 Y definitions
+COVID sector iip-quarterly/weather/H1: 135 → 123 dates; 4 Y definitions
+COVID sector iip-quarterly/weather/H2: 135 → 123 dates; 4 Y definitions
+COVID sector iip-quarterly/weather/H3: 135 → 123 dates; 4 Y definitions
+COVID sector iip-quarterly/weather/R1: 135 → 123 dates; 4 Y definitions
+COVID sector iip-quarterly/weather/separate: 135 → 123 dates; 4 Y definitions
+COVID sector va-detailed/full/H1: 29 → 19 dates; 5 Y definitions
+COVID sector va-detailed/full/separate: 29 → 19 dates; 5 Y definitions
+COVID sector va-detailed/long/H1: 82 → 70 dates; 5 Y definitions
+COVID sector va-detailed/long/separate: 82 → 70 dates; 5 Y definitions
+COVID sector iip-monthly-detailed/full/H1: 100 → 66 dates; 5 Y definitions
+COVID sector iip-monthly-detailed/full/separate: 100 → 66 dates; 5 Y definitions
+COVID sector iip-monthly-detailed/long/H1: 357 → 321 dates; 5 Y definitions
+COVID sector iip-monthly-detailed/long/separate: 357 → 321 dates; 5 Y definitions
+COVID sector iip-quarterly-detailed/full/H1: 29 → 19 dates; 5 Y definitions
+COVID sector iip-quarterly-detailed/full/separate: 29 → 19 dates; 5 Y definitions
+COVID sector iip-quarterly-detailed/long/H1: 119 → 107 dates; 5 Y definitions
+COVID sector iip-quarterly-detailed/long/separate: 119 → 107 dates; 5 Y definitions
+COVID sector va/weather/H1: 178 → 166 dates; 1 Y definitions
+COVID sector iip-monthly/weather/H1: 416 → 380 dates; 1 Y definitions
+COVID sector iip-quarterly/weather/H1: 138 → 126 dates; 1 Y definitions
+Independent paired common-slope audit: 241 pairs and 5640 rows passed.
+Independent paired sector audit: 183 pairs, 8076 slope rows and 516 joint tests passed.
+Verified all COVID comparisons: 424 pairs, 2204 native fits, 9146 original source rows.
+Wrote paired COVID comparison: 424 native two-sample tables; 30,545,143 bytes
+Verified 424 paired native tables, 6056 estimate cells and every selector combination.
+Sector-cluster H1 sensitivity: va__full, 11 sectors × 29 periods, 5 outcomes
+Sector-cluster H1 sensitivity: va__exclude, 11 sectors × 19 periods, 5 outcomes
+Sector-cluster H1 sensitivity: va__long, 11 sectors × 178 periods, 5 outcomes
+Sector-cluster H1 sensitivity: iip-monthly__full, 6 sectors × 100 periods, 5 outcomes
+Sector-cluster H1 sensitivity: iip-monthly__exclude, 6 sectors × 66 periods, 5 outcomes
+Sector-cluster H1 sensitivity: iip-monthly__long, 6 sectors × 405 periods, 5 outcomes
+Sector-cluster H1 sensitivity: iip-quarterly__full, 6 sectors × 29 periods, 5 outcomes
+Sector-cluster H1 sensitivity: iip-quarterly__exclude, 6 sectors × 19 periods, 5 outcomes
+Sector-cluster H1 sensitivity: iip-quarterly__long, 6 sectors × 135 periods, 5 outcomes
+Sector-cluster H1 sensitivity: va-detailed__full, 19 sectors × 29 periods, 5 outcomes
+Sector-cluster H1 sensitivity: va-detailed__exclude, 19 sectors × 19 periods, 5 outcomes
+Sector-cluster H1 sensitivity: va-detailed__long, 19 sectors × 82 periods, 5 outcomes
+Sector-cluster H1 sensitivity: iip-monthly-detailed__full, 18 sectors × 100 periods, 5 outcomes
+Sector-cluster H1 sensitivity: iip-monthly-detailed__exclude, 18 sectors × 66 periods, 5 outcomes
+Sector-cluster H1 sensitivity: iip-monthly-detailed__long, 18 sectors × 357 periods, 5 outcomes
+Sector-cluster H1 sensitivity: iip-quarterly-detailed__full, 18 sectors × 29 periods, 5 outcomes
+Sector-cluster H1 sensitivity: iip-quarterly-detailed__exclude, 18 sectors × 19 periods, 5 outcomes
+Sector-cluster H1 sensitivity: iip-quarterly-detailed__long, 18 sectors × 119 periods, 5 outcomes
+Built /private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/outputs/clustered_sector_sensitivity.html
+{
+  "status": "passed",
+  "specifications": 90,
+  "native_tables": 180,
+  "native_coefficient_SE_cells_checked": 4680,
+  "sector_readout_rows": 3510,
+  "selector_runtime": {
+    "status": "passed",
+    "selector_views": 180,
+    "default": "va-detailed/full/y_short",
+    "sandbox_history_guard": true,
+    "scope": "Actual selector JavaScript in a DOM harness; not visual browser inspection"
+  },
+  "report_sha256": "084852aa4859728a2b1d4e5e82988a2e699a017e1c3ea7e4eaa78fe57d7475c8",
+  "source_backed_p_values_and_means": true
+}
+{
+  "status": "passed",
+  "specifications": 90,
+  "native_tables": 180,
+  "native_coefficient_SE_cells_checked": 4680,
+  "sector_readout_rows": 3510,
+  "selector_runtime": {
+    "status": "passed",
+    "selector_views": 180,
+    "default": "va-detailed/full/y_short",
+    "sandbox_history_guard": true,
+    "scope": "Actual selector JavaScript in a DOM harness; not visual browser inspection"
+  },
+  "report_sha256": "084852aa4859728a2b1d4e5e82988a2e699a017e1c3ea7e4eaa78fe57d7475c8",
+  "source_backed_p_values_and_means": true
+}
+Verified sector-clustered H1 sensitivity: 90 native models, 3510 slope rows, 162 original DK groups preserved.
+Wrote outputs/heat_economy.html (134,508,317 bytes; all analysis documents embedded)
+Verified single-file collection: 14 embedded analyses, 16 tabs and all 81 exact-sample mean/coefficient comparisons.
+Verified full-control PM2.5 baseline defaults, formulas and visible main FE tables.
+  Passed in 373.5s
+[2/31] python data/raw/visitor_arrivals/calendar/extract_lunar_new_year.py
+{
+  "output": "/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/data/processed/visitor_arrivals/lunar_new_year.csv",
+  "monthly_rows": 228,
+  "years": 19,
+  "dates": {
+    "2008": "2008-02-07",
+    "2009": "2009-01-26",
+    "2010": "2010-02-14",
+    "2011": "2011-02-03",
+    "2012": "2012-01-23",
+    "2013": "2013-02-10",
+    "2014": "2014-01-31",
+    "2015": "2015-02-19",
+    "2016": "2016-02-08",
+    "2017": "2017-01-28",
+    "2018": "2018-02-16",
+    "2019": "2019-02-05",
+    "2020": "2020-01-25",
+    "2021": "2021-02-12",
+    "2022": "2022-02-01",
+    "2023": "2023-01-22",
+    "2024": "2024-02-10",
+    "2025": "2025-01-29",
+    "2026": "2026-02-17"
+  }
+}
+  Passed in 0.1s
+[3/31] python scripts/visitor_analysis.py
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:253: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= self.weather.eligible_90.fillna(False) & self.weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:253: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= self.weather.eligible_90.fillna(False) & self.weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:253: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= self.weather.eligible_90.fillna(False) & self.weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:253: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= self.weather.eligible_90.fillna(False) & self.weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:253: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= self.weather.eligible_90.fillna(False) & self.weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:253: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= self.weather.eligible_90.fillna(False) & self.weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:253: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= self.weather.eligible_90.fillna(False) & self.weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:253: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= self.weather.eligible_90.fillna(False) & self.weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+Visitor analysis: 269 specifications, separate outputs at /private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/outputs/visitor_arrivals
+  Passed in 7.0s
+[4/31] python scripts/visitor_counts.py
+PPML aggregate__long_all: 225 months, 0 zeros retained
+PPML aggregate__long_pre2020: 144 months, 0 zeros retained
+PPML aggregate__full_all: 100 months, 0 zeros retained
+PPML aggregate__full_clean: 66 months, 0 zeros retained
+PPML region__long_all: 225 months, 0 zeros retained
+PPML region__long_pre2020: 144 months, 0 zeros retained
+PPML region__full_all: 100 months, 0 zeros retained
+PPML region__full_clean: 66 months, 0 zeros retained
+PPML country__long_all: 225 months, 50 zeros retained
+PPML country__long_pre2020: 144 months, 0 zeros retained
+PPML country__full_all: 100 months, 46 zeros retained
+PPML country__full_clean: 66 months, 0 zeros retained
+  Passed in 1.4s
+[5/31] python scripts/visitor_crisis.py
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/scripts/visitor_analysis.py:223: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  mask &= weather[threshold].fillna(False) & weather.year.between(2017, 2025)
+Fitted 120 crisis specifications
+  Passed in 2.6s
+[6/31] python scripts/visitor_inference.py
+Computed origin CR1 comparison for 254 models
+  Passed in 1.4s
+[7/31] python scripts/visitor_gt_data.py
+Prepared 168 native gt tables
+  Passed in 1.9s
+[8/31] Rscript scripts/visitor_gt.R /private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht
+Rendered 168 native R gt regression tables
+  Passed in 21.1s
+[9/31] python scripts/verify.py
+Verified source hashes, leap-year aggregation, raw growth, panel/quarter-mean OLS and independent Bartlett HAC
+  Passed in 0.3s
+[10/31] python scripts/verify_iip.py
+Verified IIP raw growth, official quarter averages, panel/period-mean coefficients and independent calendar HAC
+  Passed in 0.3s
+[11/31] python scripts/verify_extended_controls.py
+Verified extended controls: source hashes, identical sample columns, period-mean OLS and direct calendar Bartlett HAC
+  Passed in 0.3s
+[12/31] python scripts/verify_outcomes.py
+Independent outcome verification passed: 204 model/bandwidth fits; raw definitions, calendar samples, estimates and R² checked.
+  Passed in 3.8s
+[13/31] python scripts/verify_heterogeneity.py
+Independent heterogeneity verification passed: 240 model/outcome/bandwidth groups, joint sector covariance, equality tests, pairwise tests and separate-series equivalence.
+  Passed in 2.1s
+[14/31] python scripts/verify_aggregate_va.py
+Independent aggregate GVA verification passed: 106 model/bandwidth fits, raw-source growth, exact samples, mean Y, 0.1°C scaling and manual HAC.
+  Passed in 1.4s
+[15/31] python scripts/verify_granular.py
+Granular verification passed: 24 sample windows, 120 pooled and 825 individual fits; raw SA/NSA source and calendar HAC checks.
+  Passed in 4.6s
+[16/31] python scripts/verify_granular_interactions.py
+Verified detailed FE interactions: 1650 sector slopes, 14310 pairwise comparisons and 90 omnibus checks.
+  Passed in 2.6s
+[17/31] python scripts/verify_sector_cluster.py
+Verified sector CR1: 974 coefficients across 245 model fits and 36 result files
+  Passed in 4.2s
+[18/31] python scripts/verify_cluster_contrasts.py
+Verified 9 sector-CR1 linear contrasts independently.
+  Passed in 0.9s
+[19/31] python scripts/verify_clustered_sector_sensitivity.py
+{
+  "status": "passed",
+  "specifications": 90,
+  "native_tables": 180,
+  "native_coefficient_SE_cells_checked": 4680,
+  "sector_readout_rows": 3510,
+  "selector_runtime": {
+    "status": "passed",
+    "selector_views": 180,
+    "default": "va-detailed/full/y_short",
+    "sandbox_history_guard": true,
+    "scope": "Actual selector JavaScript in a DOM harness; not visual browser inspection"
+  },
+  "report_sha256": "084852aa4859728a2b1d4e5e82988a2e699a017e1c3ea7e4eaa78fe57d7475c8",
+  "source_backed_p_values_and_means": true
+}
+Verified sector-clustered H1 sensitivity: 90 native models, 3510 slope rows, 162 original DK groups preserved.
+  Passed in 16.1s
+[20/31] python scripts/verify_pyfixest_migration.py
+Verified native Pyfixest migration: 177 original reference files, 307764 original-SA numerical values and 1510 current logged production fits.
+  Passed in 6.5s
+[21/31] python scripts/verify_stationarity_audit.py
+Verified stationarity audit: 7224 manual test calculations, 25942 exact-model variable links and 825 granular individual fits.
+  Passed in 25.0s
+[22/31] python scripts/verify_annual.py
+Annual independent verification passed: 512 requested specs, 384 native models, 128 explicitly unavailable.
+  Passed in 12.3s
+[23/31] python scripts/verify_covid_comparison.py
+Independent paired common-slope audit: 241 pairs and 5640 rows passed.
+Independent paired sector audit: 183 pairs, 8076 slope rows and 516 joint tests passed.
+Verified all COVID comparisons: 424 pairs, 2204 native fits, 9146 original source rows.
+  Passed in 121.8s
+[24/31] python scripts/verify_annual_report.py
+Annual presentation passed: 56 paired views, 1104 native cells, 28 explicit unavailable columns
+  Passed in 0.9s
+[25/31] python scripts/verify_covid_report.py
+Verified 424 paired native tables, 6056 estimate cells and every selector combination.
+  Passed in 2.6s
+[26/31] python scripts/verify_collection.py
+Verified single-file collection: 14 embedded analyses, 16 tabs and all 81 exact-sample mean/coefficient comparisons.
+  Passed in 2.6s
+[27/31] python scripts/verify_baseline.py
+Verified full-control PM2.5 baseline defaults, formulas and visible main FE tables.
+  Passed in 1.0s
+[28/31] python scripts/verify_visitor_arrivals.py
+{
+  "status": "passed",
+  "counts": {
+    "source_months": 225,
+    "named_countries": 42,
+    "regions": 9,
+    "source_country_zero_cells": 50,
+    "ols_models": 269,
+    "exact_calendar_masks": 269,
+    "leave_one_year_out_models": 54,
+    "profile_model_bandwidths": 16,
+    "ppml_models": 12
+  },
+  "receipt": "/private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/outputs/visitor_arrivals/verification.json"
+}
+  Passed in 3.4s
+[29/31] python scripts/verify_visitor_crisis.py
+{
+  "status": "passed",
+  "counts": {
+    "crisis_OLS_models": 120,
+    "crisis_model_bandwidths": 240,
+    "core_models_preserved": 269,
+    "origin_CR1_models": 254,
+    "origin_CR1_by_source": {
+      "core": 174,
+      "crisis": 80
+    },
+    "analytical_input_hashes": 7,
+    "explicit_stacked_FE_CR1_checks": 5
+  },
+  "max_scaled_error": 1.1149196078853792e-10
+}
+  Passed in 4.6s
+[30/31] python scripts/visitor_report.py
+Wrote /private/var/folders/tx/nry4bslj4p13dt5cswbg5zmh0000gn/T/heat-econ-clean-replication-e_u30mht/outputs/visitor_arrivals.html: 14,846,135 bytes
+  Passed in 1.9s
+[31/31] node scripts/verify_visitor_report.mjs
+{
+  "status": "passed",
+  "pooled_selector_views": 32,
+  "profile_selector_views": 24,
+  "crisis_selector_views": 64,
+  "robustness_selector_views": 18,
+  "native_gt_tables": 168,
+  "embedded_pngs": 6,
+  "verified_evidence_downloads": 31,
+  "report_sha256": "6ace903d1655fcf1706344be1fa765b1c9fd2ef9d5f27a3283cfd6361e6ed1ee",
+  "scope": "Source/runtime rendering and all selector combinations in an isolated JavaScript DOM harness; no visual-browser claim. Numerical estimates verified by independent Python verifiers."
+}
+  Passed in 0.3s
+Verified inputs hashes: 526 frozen files
+Frozen reproduce passed: scope=all, verification=all, 31 subprocesses, 630.0s. No source refresh performed.

@@ -6,6 +6,8 @@ The [private GitHub release v1.0.0](https://github.com/calvintancy/heat-econ-sin
 
 For a code checkout and independently checked rebuild, follow **[REPRODUCING.md](REPRODUCING.md)**. It covers authenticated release download, locked Python/Node/R setup, quick verification and the full frozen-input reproduction command. [DATA_SOURCES.md](DATA_SOURCES.md) identifies the source vintages; [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) explains redistribution boundaries. SHA-256 inventories distinguish published snapshots from regenerated files.
 
+The [completed handoff validation](replication/VALIDATION.md) records the separate-checkout full rebuild, its environment, numerical checks and execution log.
+
 ## Analysis overview
 
 **YoY growth now has both NSA and SA versions.** The added NSA version uses official unadjusted output levels; the existing SA estimates remain separately labelled and retained on their original dates. MoM/QoQ growth continues to use SA output. The **Annual analyses** tab adds annual output growth on annual weather, with NSA primary and SA alongside, across aggregate VA, broad/detailed VA, published total IIP and manufacturing clusters/industries.

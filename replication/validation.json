@@ -1,0 +1,468 @@
+{
+  "status": "passed",
+  "recorded_utc": "2026-11-11T10:31:28.952841+00:00",
+  "tested_source_commit": "8bb9830f11aafedacf90957fa40fcce6df41d3f1",
+  "test": "All-family frozen-input reproduction in a separate Git source checkout, with a fresh Python environment and fresh project-local R library.",
+  "command": "uv run --locked python scripts/replicate.py reproduce --all --manifest replication/logs/corrected-source-manifest.json",
+  "command_exit_code": 0,
+  "subprocess_stages": 31,
+  "unique_independent_verifier_programs": 22,
+  "test_manifest_scope": "Source hashes updated after the report-ordering fix; unchanged authenticated frozen input archive. Superseded by the fully resealed release manifest.",
+  "environment": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "architecture": "arm64",
+    "python": "3.11.14",
+    "uv": "uv 0.12.3 (507230998 2026-08-07 aarch64-apple-darwin)",
+    "node": "v24.18.0",
+    "R": "Rscript (R) version 4.6.1 (2026-06-24)",
+    "pyfixest": "0.70.0"
+  },
+  "frozen_input_archive_sha256": "5d9b8a01bb2b52ce789a4acc00ea90f92a0bca658af7f9c671d6134b7aa57045",
+  "frozen_input_files_verified": 526,
+  "source_files_verified": 126,
+  "strict_postflight_integrity_output": "Verified source hashes: 126 frozen files\nVerified inputs hashes: 526 frozen files\n",
+  "tracked_source_tree_unchanged_after_run": true,
+  "http_policy": "Python HTTP requests disabled inside analytical child processes; initial software installation and asset download are separate bootstrap steps.",
+  "native_estimator_ledgers": [
+    {
+      "path": "outputs/annual/pyfixest/estimator_manifest.json",
+      "native_fits": 384,
+      "sha256": "ad4430c983c927dca49506be9e98048f432bb4dfe4fd77e1ecf93f7e204bc8db"
+    },
+    {
+      "path": "outputs/clustered_sector_sensitivity/pyfixest/estimator_manifest.json",
+      "native_fits": 90,
+      "sha256": "7cd10efdf152796fd06ab12efb4fa52d62bedad29610b12f86c5fd370fb12b6e"
+    },
+    {
+      "path": "outputs/covid_comparison/common/pyfixest/estimator_manifest.json",
+      "native_fits": 478,
+      "sha256": "9ae3e3b208811b1331daec50a5610e52f752e196364decfc5c5d06eae810e6e1"
+    },
+    {
+      "path": "outputs/covid_comparison/sector/pyfixest/estimator_manifest.json",
+      "native_fits": 1726,
+      "sha256": "71d7dcf88fcee1e8fc83cc2b1369a0bafe6503baf619146d3cf2d8d3324916e8"
+    },
+    {
+      "path": "outputs/pyfixest/estimator_manifest.json",
+      "native_fits": 1510,
+      "sha256": "4827bd81b97c35ed5a465278657e170b2d4d207dba746147c371e85053705525"
+    },
+    {
+      "path": "outputs/visitor_arrivals/crisis/pyfixest/estimator_manifest.json",
+      "native_fits": 120,
+      "sha256": "39d12119769fc52bccfc5b025b5c606975637456532da6ecdfe84a6212db93e5"
+    },
+    {
+      "path": "outputs/visitor_arrivals/pyfixest/estimator_manifest.json",
+      "native_fits": 473,
+      "sha256": "6c77e497c6063f4fcddabbc1fdd3b641a08847305eaba1efe6873a306e2af84f"
+    }
+  ],
+  "provenance_only_artifacts_omitted_unverified": [
+    {
+      "path": "data/raw/literature/djo_2012/maketable2.do",
+      "status": "omitted_unverified",
+      "classification": "provenance_only",
+      "reason": "Third-party Dell–Jones–Olken replication material used only for literature-method provenance; excluded from redistribution, not an analytical input.",
+      "recorded_bytes": 7044,
+      "recorded_sha256": "91d7e0ae4f0f0c2d0decdf52801f2fb117045911f45166d603fa8e524ab47302",
+      "current_artifact_hash_verified": false
+    },
+    {
+      "path": "data/raw/literature/djo_2012/maketable5.do",
+      "status": "omitted_unverified",
+      "classification": "provenance_only",
+      "reason": "Third-party Dell–Jones–Olken replication material used only for literature-method provenance; excluded from redistribution, not an analytical input.",
+      "recorded_bytes": 53600,
+      "recorded_sha256": "4217cebb195a95801a47bf0b9b187e8ed7f0952531e3be817ef80fb5cbaf1c36",
+      "current_artifact_hash_verified": false
+    },
+    {
+      "path": "data/raw/literature/djo_2012/replication.zip",
+      "status": "omitted_unverified",
+      "classification": "provenance_only",
+      "reason": "Third-party Dell–Jones–Olken replication material used only for literature-method provenance; excluded from redistribution, not an analytical input.",
+      "recorded_bytes": 750614,
+      "recorded_sha256": "1066ad0b36ba5ceb37f533372cf410773148dd9814f61b273372638402691548",
+      "current_artifact_hash_verified": false
+    }
+  ],
+  "rebuilt_receipt_summaries": [
+    {
+      "path": "outputs/aggregate_va/verification.json",
+      "sha256": "0d89c9b90a1c15664693493d1cfeaaca501dc5c30a0dc0d57d2972be9a989de1",
+      "summary": {
+        "official_aggregate_series": "1.4 Gross Value Added At Basic Prices",
+        "raw_source_outcome_rows_checked": 178,
+        "model_bandwidth_fits_checked": 106,
+        "maximum_absolute_coefficient_difference": 1.2084910849807784e-10,
+        "maximum_absolute_standard_error_difference": 1.5149134924286045e-07,
+        "method": "Raw official GVA calendar ratios and separate NumPy OLS/manual calendar Bartlett time-series HAC"
+      }
+    },
+    {
+      "path": "outputs/annual/presentation_verification.json",
+      "sha256": "af5a9de11ec05ab2acbc7499a9c961f8c64541877eba573f27b90e232867b800",
+      "summary": {
+        "status": "passed",
+        "scope": "Presentation/source mapping only; independent numerical annual verification is separate",
+        "paired_views_checked": 56,
+        "saved_primary_rows_checked": 1104,
+        "native_coefficient_cells_checked": 1104,
+        "explicit_unavailable_exclusion_columns": 28,
+        "pointwise_p_readouts_checked": 684,
+        "rendered_mean_cells_checked": 912,
+        "joint_test_rows_checked": 32,
+        "Holm_pairwise_rows_checked": 2364,
+        "offline_downloads_checked": 12,
+        "initial_native_tables_in_dom": 1,
+        "report_sha256": "59f605b420246a43092e2ee3da678e787e0f0688c94d919d78c0346bd8c963b7"
+      }
+    },
+    {
+      "path": "outputs/annual/verification.json",
+      "sha256": "6a6a66ae3db4ee588b7cf95e16562ddf67a4684aab86bad758e338d3737719d3",
+      "summary": {
+        "status": "passed",
+        "native_models_verified": 384,
+        "native_API_calls": 384,
+        "scope": "Independent raw annual SA/NSA calendar construction, full QR, explicit CR1/calendar covariance, total-effect contrasts, direct full-rank Wald, Holm, and auxiliary unit-root calculations; not causal/stationarity certification"
+      }
+    },
+    {
+      "path": "outputs/clustered_sector_sensitivity/report_verification.json",
+      "sha256": "a8402bfa9fedb9e45ec3453b6bc86860aaa815e3ff5984c1aae17765d8719b34",
+      "summary": {
+        "status": "passed",
+        "specifications": 90,
+        "native_tables": 180,
+        "native_coefficient_SE_cells_checked": 4680,
+        "sector_readout_rows": 3510,
+        "report_sha256": "084852aa4859728a2b1d4e5e82988a2e699a017e1c3ea7e4eaa78fe57d7475c8",
+        "source_backed_p_values_and_means": true
+      }
+    },
+    {
+      "path": "outputs/clustered_sector_sensitivity/verification.json",
+      "sha256": "754167c31f5f202092808baab9486b04f3d533a96547f7189ab866424b7a0314",
+      "summary": {
+        "status": "passed",
+        "method": "Independent full-design QR and unit/date influence score sums, CR1/DK corrections, HC0-relative degeneracy and direct full-rank Wald",
+        "native_models_verified": 90,
+        "native_api_calls": 18,
+        "zero_relative_tolerance": 1e-12,
+        "original_sources_and_receipts_unchanged": 35,
+        "scope": "Numerical/sample/provenance verification of a requested sensitivity; does not validate sector CR1 inference for a coefficient supported by one sector or establish causality/stationarity",
+        "counts": {
+          "model_outcomes": 90,
+          "sample_families": 18,
+          "slope_rows": 3510,
+          "component_rows": 3780,
+          "normalizations": 270,
+          "slope_covariance_entries": 54090,
+          "component_covariance_entries": 54090,
+          "all_coefficients": 10360,
+          "degenerate_component_or_slope_rows": 1080,
+          "joint_full_rank": 160,
+          "joint_degenerate_or_singular": 110,
+          "original_DK_groups_matched": 162,
+          "new_DK_groups_without_prior_sector_fit": 18
+        }
+      }
+    },
+    {
+      "path": "outputs/collection/baseline_verification.json",
+      "sha256": "28e7904090b7d289c616250625a41eab0f719101c48e368e95e91eb6785f4811",
+      "summary": {
+        "status": "passed",
+        "baseline_overview_rows": 27,
+        "window": "All eligible 2017–2025 dates",
+        "exclusion": "COVID exclusion and no-PM long history are robustness, not baseline"
+      }
+    },
+    {
+      "path": "outputs/collection/verification.json",
+      "sha256": "ae113f69f28d28a7ffbbb6f5b467a62513b78fe98cd7e8860afe3c6038b14fd0",
+      "summary": {
+        "overview_rows_checked": 81,
+        "html_sha256": "f7ee8626a92661f94c54e9b88e3ddf2cbb52c501e2e86d8f149f76b336196d46"
+      }
+    },
+    {
+      "path": "outputs/covid_comparison/report_verification.json",
+      "sha256": "51d2d32d5a901a9a90bd210ebb9bc21caec699ab5135c720a5ce64a74e1dfd28",
+      "summary": {
+        "status": "passed",
+        "paired_native_tables": 424,
+        "native_coefficient_cells": 6056,
+        "saved_row_values_checked": 6056,
+        "html_sha256": "ece0d3019e1a7a0a17f312a953b0d66a5d9801a417220f2be8dd96c122325c08",
+        "scope": "Native HTML structure, unrounded inference labels, all selector combinations and exact saved-data mapping; no visual-browser claim."
+      }
+    },
+    {
+      "path": "outputs/covid_comparison/verification.json",
+      "sha256": "84e0c532837b37395506b64f3aeda44954804735cc49550325af33402de608c1",
+      "summary": {
+        "status": "passed",
+        "method": "Independent full-design QR OLS, explicit sector CR1/calendar-HAC coefficient influences, direct full-rank Wald and manually sorted Holm",
+        "structured_contrasts": 21,
+        "canonical_pairs": 424,
+        "paired_estimate_rows": 13716,
+        "native_models": 2204,
+        "numeric_check_groups": 752250,
+        "numeric_values_checked": 17235968,
+        "maximum_fraction_of_tolerance": 0.19001291526328584,
+        "sample_rule": "Only observations dated 2020–2022 removed, after full-history outcomes/lags/annual differences and original eligibility were constructed",
+        "covid_yoy_base_caveat": "Retained 2023 year-on-year outcomes/annual weather changes can use 2022 as their comparison base",
+        "main_inference": "Common pooled slopes: sector CR1; sector-specific slopes and singleton series: calendar DK/HAC with h main and 2h sensitivity",
+        "significance_nulls": "Sector p tests one total linear effect; heterogeneity omnibus tests equal slopes with common temperature unrestricted; singular covariance has no p",
+        "stationarity_limit": "No new stationarity clearance: standard marginal ADF/KPSS must not silently compress excluded calendar gaps",
+        "interpretation": "Numerical/sample/source-coverage consistency only; not a causal or small-sample-inference certificate"
+      }
+    },
+    {
+      "path": "outputs/extended_controls/verification.json",
+      "sha256": "06782ae3c05332c1e377dc285dd062e6bc9acaaf77173f4ba88a88582e23ab85",
+      "summary": {
+        "source_hashes_checked": 5
+      }
+    },
+    {
+      "path": "outputs/granular/verification.json",
+      "sha256": "b24191e531928d16de404c1c82d2e0a2002aba171ac1055beb2aec730f2bba5f",
+      "summary": {
+        "status": "passed",
+        "method": "Independent raw calendar lookup, balanced date-mean QR, sector-season deviation R², zero-filled manual Bartlett HAC",
+        "exact_sample_rows_checked": 21358,
+        "pooled_outcome_fits_checked": 120,
+        "individual_outcome_fits_checked": 825,
+        "sample_windows_checked": 24,
+        "maximum_absolute_raw_definition_error": 1.794120407794253e-13,
+        "maximum_absolute_coefficient_difference": 8.530207651347155e-10,
+        "maximum_absolute_hac_se_difference": 4.218225058139069e-08,
+        "sector_CR1_SE_scope": "Pooled points, samples and descriptive fields checked here; sector CR1 covariance is checked by the separate sector-cluster verifier."
+      }
+    },
+    {
+      "path": "outputs/granular_interactions/verification.json",
+      "sha256": "4d3f0cd8aca9fb81b5161a482bdd240f67245601ad6838f1a5193dcf83f0a121",
+      "summary": {
+        "status": "passed",
+        "method": "Independent raw-formula full-design QR OLS and calendar-HAC slope influences; t(T-1); direct full-rank Wald; manually sorted Holm families",
+        "model_outcomes_checked": 45,
+        "sector_slope_rows_checked": 1650,
+        "covariance_entries_checked": 30270,
+        "pairwise_rows_checked": 14310,
+        "joint_rows_checked": 90,
+        "available_full_rank_joint_tests": 70,
+        "singular_joint_tests_correctly_unavailable": 20,
+        "scope": "Numerical and exact-sample verification; uncertainty remains conditional and common weather does not create independent sector exposures"
+      }
+    },
+    {
+      "path": "outputs/heterogeneity/diagnostics/verification.json",
+      "sha256": "21eb19fce66d73e7480b04cd5c6ce3dbd6689fd8674ef8e98a072e37a781e9be",
+      "summary": {
+        "calendar_gap_sentinel_passed": true,
+        "n_test_rows": 416,
+        "n_paired_rows": 208,
+        "all_tests_completed": true,
+        "all_test_dates_contiguous": true,
+        "full_control_subset_not_tested": true,
+        "kpss_censored_p_values": 184,
+        "kpss_automatic_bandwidths_capped": 126
+      }
+    },
+    {
+      "path": "outputs/heterogeneity/verification.json",
+      "sha256": "5ff3e85af92a93cd0f5b5740899aa2c9f5e40fcef534f1a599a8d8b1007d460b",
+      "summary": {}
+    },
+    {
+      "path": "outputs/iip/verification.json",
+      "sha256": "b214fc20bc5a0dcc08a6a91b6e15025b29d1a69102985631537c70faca64ca96",
+      "summary": {
+        "raw_growth_and_quarterly_aggregation": "passed"
+      }
+    },
+    {
+      "path": "outputs/outcomes/verification.json",
+      "sha256": "20c96e61afb8f65191c0b7c062a7cf87d98d6083a962b48fb1932f5d78d7a33d",
+      "summary": {}
+    },
+    {
+      "path": "outputs/pyfixest/migration_verification.json",
+      "sha256": "10c7d2fafb4e2cd158e0351efe7e7f4f7d5d0ac033a023ba44df6e939cdf900a",
+      "summary": {
+        "status": "passed",
+        "reference_result_files_checked": 177,
+        "numeric_field_groups_checked": 1812,
+        "numeric_values_checked": 307764,
+        "max_fraction_of_allowed_tolerance": 0.12593067128275262,
+        "sector_significance_null": "One linear restriction beta_temperature+delta_sector=0; reference delta fixed0. Relative R1 tests only delta_sector=0.",
+        "omnibus_heterogeneity_null": "All nonreference deltas=0; equal sector slopes with the common main effect unrestricted. This does not test all temperature slopes zero.",
+        "sector_effect_null_checks": 3465,
+        "omnibus_null_checks": 330,
+        "condition_number_exclusion": "Covariance condition numbers near singularity depend on floating-point SVD details; all covariance entries, restriction ranks and unavailable test statuses are still checked",
+        "interpretation": "Estimator migration validation; unchanged inferential limitations and stationarity cautions remain"
+      }
+    },
+    {
+      "path": "outputs/reconciliation/va_verification.json",
+      "sha256": "6acb28747f2cd718c4c2757e99fe08d34f3da97666f83fb513604024adcb6eed",
+      "summary": {
+        "status": "passed",
+        "independent_method": "Raw JSON re-read, Decimal loops, no DataFrame sums",
+        "quarterly_identities_checked": 4998,
+        "annual_identities_checked": 1233,
+        "nominal_share_cells_checked": 1032,
+        "nominal_contribution_cells_checked": 1000,
+        "max_quarterly_arithmetic_difference": 5.820766091346741e-11,
+        "max_annual_arithmetic_difference": 1.8626450382086546e-10,
+        "max_nominal_share_difference_pp": 7.105427357601002e-15,
+        "max_nominal_contribution_difference_pp": 4.440892098500626e-15,
+        "reference_year_series_checked": 28,
+        "reference_year_nsa_annual_real_equals_nominal_exactly": true,
+        "growth_comparison_rows_checked": 410,
+        "max_growth_comparison_difference": 6.061817714453355e-14,
+        "all_current_price_complete_identities_within_rounding": true,
+        "real_nsa_2015_and_2016_annual_within_rounding": true,
+        "no_rescaling_or_forced_reconciliation": true,
+        "original_va_source_hashes_unchanged": true
+      }
+    },
+    {
+      "path": "outputs/sample_context/verification.json",
+      "sha256": "2f03283248b1214f00a8fb6c68df27eabcf119c0e65578f27b886e3fdd9650db",
+      "summary": {
+        "n_lookup_rows": 1591,
+        "n_coefficient_files": 41,
+        "n_model_outcome_samples": 328,
+        "n_independent_raw_checks": 1951,
+        "max_abs_value_error": 1.1368683772161603e-13,
+        "max_abs_mean_error": 3.637978807091713e-12,
+        "max_abs_sd_error": 3.108624468950438e-14,
+        "mean_definition": "Signed unweighted arithmetic mean of the model's observed dependent-variable sample",
+        "sd_definition": "Descriptive sample standard deviation across observations (ddof=1), not uncertainty in the mean",
+        "covid_caution": "Endpoint-date exclusion; YoY observations dated 2023 may contain 2022 base periods",
+        "refits_performed": 0
+      }
+    },
+    {
+      "path": "outputs/sector_cluster_contrasts_verification.json",
+      "sha256": "7fe87ca20acc5804eddb39da8863ce80210a24b4d08d9453de04a51f1478ed04",
+      "summary": {
+        "status": "passed",
+        "contrasts_checked": 9,
+        "method": "Independent QR and explicit sector score sums; t(S−1) contrast tests"
+      }
+    },
+    {
+      "path": "outputs/sector_cluster_verification.json",
+      "sha256": "80ddcd9213b75db7878f693b8763797ca0624d3a7f9db5d32ad23e09c48bd01b",
+      "summary": {
+        "method": "Independent full-design QR OLS, explicit sector score sums, CR1, t(S-1)",
+        "model_fits_checked": 245,
+        "coefficient_rows_checked": 974,
+        "files_checked": 36,
+        "excluded_single_unit_or_sector_specific_files_checked": 20
+      }
+    },
+    {
+      "path": "outputs/stationarity/verification.json",
+      "sha256": "7bc06bf22ce2bbaf44e26995a92dafe347b3c5c9036249f817cfcc935a082ed9",
+      "summary": {
+        "status": "passed",
+        "interpretation": "Verified evidence and coverage, not a stationarity certificate or a causal-validity assessment",
+        "diagnostic_windows_checked": 2821,
+        "test_statistics_checked": 7224,
+        "contiguous_finite_tested_series": 1806,
+        "unavailable_gap_or_short_windows_checked": 1015,
+        "model_outcome_groups_checked": 540,
+        "model_variable_links_checked": 25942,
+        "granular_individual_sector_fits_checked": 825,
+        "detailed_sector_FE_interaction_model_outcomes_checked": 45,
+        "exact_sample_raw_values_checked": 2591898,
+        "max_exact_sample_raw_value_absolute_error": 2.2737367544323206e-13,
+        "max_seasonal_adjustment_absolute_error": 2.2737367544323206e-13,
+        "lag_selection": "ADF QR OLS with common maximum-lag AIC sample; KPSS Bartlett variance and Hobijn automatic bandwidth independently rebuilt",
+        "significance_boundary_cases_checked": 12
+      }
+    },
+    {
+      "path": "outputs/verification.json",
+      "sha256": "ddc7bb97a7c1d09357d34f924dda0a26f36f16fbe1b6b2bd54d540a351636807",
+      "summary": {
+        "raw_source_hashes_checked": 22,
+        "leap_quarter_temperature_check": "passed",
+        "raw_growth_check": "passed"
+      }
+    },
+    {
+      "path": "outputs/visitor_arrivals/crisis/verification.json",
+      "sha256": "d80b4c211a5a0bb557a380cb26b15f0a0babfd0586276b7ee8e2a03debe03c68",
+      "summary": {
+        "status": "passed",
+        "verified_utc": "2026-11-11T10:31:02.310685+00:00",
+        "implementation": "Independent raw-count outcomes, month-set interval masks, reconstructed designs, SciPy QR and explicit calendar Bartlett sums. No production visitor function imported.",
+        "core_results_sha256": "73de66569ae4d9c0a9f7542483d795d69685efea3daa50f2df5e33e98f240815",
+        "main_economic_report_is_input": false,
+        "counts": {
+          "crisis_OLS_models": 120,
+          "crisis_model_bandwidths": 240,
+          "core_models_preserved": 269,
+          "origin_CR1_models": 254,
+          "origin_CR1_by_source": {
+            "core": 174,
+            "crisis": 80
+          },
+          "analytical_input_hashes": 7,
+          "explicit_stacked_FE_CR1_checks": 5
+        }
+      }
+    },
+    {
+      "path": "outputs/visitor_arrivals/report_verification.json",
+      "sha256": "5edc6c6f6334c543cb2b3fffab8c429b31caac48c955fd4f12c16fc0e82ea122",
+      "summary": {
+        "status": "passed",
+        "pooled_selector_views": 32,
+        "profile_selector_views": 24,
+        "crisis_selector_views": 64,
+        "robustness_selector_views": 18,
+        "native_gt_tables": 168,
+        "embedded_pngs": 6,
+        "verified_evidence_downloads": 31,
+        "report_sha256": "6ace903d1655fcf1706344be1fa765b1c9fd2ef9d5f27a3283cfd6361e6ed1ee",
+        "scope": "Source/runtime rendering and all selector combinations in an isolated JavaScript DOM harness; no visual-browser claim. Numerical estimates verified by independent Python verifiers."
+      }
+    },
+    {
+      "path": "outputs/visitor_arrivals/verification.json",
+      "sha256": "cd19d012d1386dea6c1fc1638237746c5145c09d5d68a64c1fb8efa829cc56fb",
+      "summary": {
+        "status": "passed",
+        "verified_utc": "2026-11-11T10:30:57.736523+00:00",
+        "implementation": "Independent raw-source/calendar reconstruction; NumPy/SciPy QR/lstsq; direct calendar Bartlett sums; statsmodels Holm. No production visitor functions imported.",
+        "main_economic_report_unchanged": true,
+        "counts": {
+          "source_months": 225,
+          "named_countries": 42,
+          "regions": 9,
+          "source_country_zero_cells": 50,
+          "ols_models": 269,
+          "exact_calendar_masks": 269,
+          "leave_one_year_out_models": 54,
+          "profile_model_bandwidths": 16,
+          "ppml_models": 12
+        }
+      }
+    }
+  ],
+  "receipt_hash_scope": "Hashes identify regenerated test receipts, which may differ from the published frozen output snapshot because timestamps, provenance and regenerated reports can change.",
+  "reproduction_log_sha256": "3513e0876c61c0461a2b2cbd95546158be02e573f1c432084a86625f354167b3",
+  "limits": "Numerical/source/sample and DOM-runtime verification; no visual-browser claim, no causal identification certificate, and no blanket stationarity clearance."
+}
