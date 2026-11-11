@@ -4,7 +4,7 @@ This handoff has three modes: inspect the frozen HTML, verify the saved results,
 
 ## Obtain the frozen release
 
-Repository: `calvintancy/heat-econ-singapore-replication` (private). Release: `v1.0.0`. Access requires permission to that private repository; no GitHub credentials are included in the project.
+Repository: [calvintancy/heat-econ-singapore-replication](https://github.com/calvintancy/heat-econ-singapore-replication) (private). Release: [v1.0.0](https://github.com/calvintancy/heat-econ-singapore-replication/releases/tag/v1.0.0). Access requires permission to that private repository; no GitHub credentials are included in the project.
 
 The release provides:
 
@@ -64,6 +64,8 @@ uv run python scripts/replicate.py inventory
 The Python installation step can be omitted if Python 3.11 is already installed. Environment setup and the initial release download can require internet access. The analytical wrapper blocks Python HTTP requests during verification/refitting, so missing caches fail rather than silently fetching a newer statistical vintage.
 
 Node runs the browser-JavaScript verification harnesses. The visitor validator uses `import.meta.dirname`; use Node 24 as specified. It requires only Node's built-in modules, with no npm install. Inspecting the delivered HTML and verifying existing results do not require R. No database or prior electricity-project directory is required.
+
+Visitor verification refreshes the numerical audit receipts, then assembles the HTML from the saved native `gt` tables before checking its controls and embedded evidence downloads. This keeps timestamped receipts current in a moved checkout without refitting models or requiring R for verification.
 
 Full main-analysis refitting additionally requires Poppler's `pdftotext` executable for the official IIP-method/source reconciliation. For example, install `poppler` with Homebrew on macOS or `poppler-utils` with the system package manager on Debian/Ubuntu. This is a real runtime dependency even though the PDFs are cached.
 

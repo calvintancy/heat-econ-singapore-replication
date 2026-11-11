@@ -116,6 +116,6 @@ for(const match of source.matchAll(/download="([^"]+)" href="data:[^,]+;base64,(
 }
 assert(downloads>=30);
 for(const [key,html] of Object.entries(data.gt))assert(html.includes('gt_'+key)&&html.includes('class="gt_table"'));
-const receipt={status:'passed',pooled_selector_views:pooledViews,profile_selector_views:profileViews,crisis_selector_views:crisisViews,robustness_selector_views:robustnessViews,native_gt_tables:Object.keys(data.gt).length,embedded_pngs:images.length,verified_evidence_downloads:downloads,report_sha256:crypto.createHash('sha256').update(source).digest('hex'),scope:'Source/runtime rendering and all selector combinations in an isolated JavaScript DOM harness; visual Safari review recorded separately. Numerical estimates verified by independent Python verifiers.'};
+const receipt={status:'passed',pooled_selector_views:pooledViews,profile_selector_views:profileViews,crisis_selector_views:crisisViews,robustness_selector_views:robustnessViews,native_gt_tables:Object.keys(data.gt).length,embedded_pngs:images.length,verified_evidence_downloads:downloads,report_sha256:crypto.createHash('sha256').update(source).digest('hex'),scope:'Source/runtime rendering and all selector combinations in an isolated JavaScript DOM harness; no visual-browser claim. Numerical estimates verified by independent Python verifiers.'};
 fs.writeFileSync(path.join(root,'outputs/visitor_arrivals/report_verification.json'),JSON.stringify(receipt,null,2)+'\n');
 console.log(JSON.stringify(receipt,null,2));

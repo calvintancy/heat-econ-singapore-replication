@@ -2,7 +2,7 @@
 
 ## Replicate or check the results
 
-The private GitHub release `v1.0.0` contains a portable **`replication-full.zip`** with the source, frozen inputs, saved results and offline HTML reports. Extract it, then open `outputs/heat_economy.html` or `outputs/visitor_arrivals.html` to inspect the results without installing software. The requested industry-clustered interaction sensitivity is also available as `outputs/clustered_sector_sensitivity.html`.
+The [private GitHub release v1.0.0](https://github.com/calvintancy/heat-econ-singapore-replication/releases/tag/v1.0.0) contains a portable **[replication-full.zip](https://github.com/calvintancy/heat-econ-singapore-replication/releases/download/v1.0.0/replication-full.zip)** with the source, frozen inputs, saved results and offline HTML reports. Extract it, then open `outputs/heat_economy.html` or `outputs/visitor_arrivals.html` to inspect the results without installing software. The requested industry-clustered interaction sensitivity is also available as `outputs/clustered_sector_sensitivity.html`. Relative result links below work after extracting or restoring the release.
 
 For a code checkout and independently checked rebuild, follow **[REPRODUCING.md](REPRODUCING.md)**. It covers authenticated release download, locked Python/Node/R setup, quick verification and the full frozen-input reproduction command. [DATA_SOURCES.md](DATA_SOURCES.md) identifies the source vintages; [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) explains redistribution boundaries. SHA-256 inventories distinguish published snapshots from regenerated files.
 

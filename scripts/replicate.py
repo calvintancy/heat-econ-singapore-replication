@@ -93,7 +93,12 @@ def verification_plan(only: str, quick: bool) -> list[tuple[str, ...]]:
         steps.extend(QUICK_MAIN if quick else [(f"scripts/{name}",) for name in MAIN_NUMERICAL])
         steps.extend((f"scripts/{name}",) for name in MAIN_PRESENTATION)
     if visitors:
-        steps.extend(VISITOR_VERIFIERS)
+        steps.extend(VISITOR_VERIFIERS[:-1])
+        # Numerical audits refresh timestamped receipts embedded as downloads.
+        # Assemble the report only after those receipts are current, including
+        # when checking a moved frozen package. Cached gt tables need no R here.
+        steps.append(("scripts/visitor_report.py",))
+        steps.extend(VISITOR_VERIFIERS[-1:])
     return steps
 
 
@@ -109,7 +114,6 @@ def production_plan(only: str) -> list[tuple[str, ...]]:
             "scripts/visitor_gt_data.py",
         ))
         steps.append(("scripts/visitor_gt.R", str(ROOT)))
-        steps.append(("scripts/visitor_report.py",))
     return steps
 
 
@@ -173,7 +177,8 @@ def helper_inventory(only: str) -> tuple[dict, list[str]]:
     problems.extend(f"Missing imported dependency: {name}; run uv sync --locked" for name in missing)
     # Requiring explicit classification prevents a newly added verifier silently
     # falling out of the advertised exhaustive plan.
-    classified = {step[0] for step in verification_plan("all", False)}
+    classified = {step[0] for step in verification_plan("all", False)
+                  if Path(step[0]).name.startswith("verify")}
     discovered = {str(path.relative_to(ROOT)) for path in (ROOT / "scripts").glob("verify*.py")}
     discovered.update(str(path.relative_to(ROOT)) for path in (ROOT / "scripts").glob("verify*.mjs"))
     unclassified = sorted(discovered - classified)
