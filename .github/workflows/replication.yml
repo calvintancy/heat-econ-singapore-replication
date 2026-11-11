@@ -1,0 +1,94 @@
+name: Frozen replication
+
+on:
+  workflow_dispatch:
+    inputs:
+      full_reproduce:
+        description: Refit the selected analyses from frozen inputs before exhaustive verification
+        type: boolean
+        required: true
+        default: false
+      only:
+        description: Analysis scope (the complete frozen input/output package is restored)
+        type: choice
+        required: true
+        default: all
+        options:
+          - all
+          - main
+          - visitors
+
+permissions:
+  contents: read
+
+jobs:
+  replication:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    env:
+      GH_TOKEN: ${{ github.token }}
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      MPLBACKEND: Agg
+    steps:
+      - name: Check out replication source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Set up Python 3.11
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version-file: .python-version
+      - name: Set up Node.js 24
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version-file: .nvmrc
+          package-manager-cache: false
+      - name: Set up uv 0.12.3
+        uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7
+        with:
+          version: '0.12.3'
+          enable-cache: false
+      - name: Install reproduction system tools
+        if: ${{ inputs.full_reproduce }}
+        env:
+          REPLICATION_SCOPE: ${{ inputs.only }}
+        shell: bash
+        run: |
+          packages=()
+          if [[ "$REPLICATION_SCOPE" != visitors ]]; then
+            packages+=(poppler-utils)
+          fi
+          if [[ "$REPLICATION_SCOPE" != main ]]; then
+            packages+=(libcurl4-openssl-dev libssl-dev libxml2-dev libv8-dev libuv1-dev)
+          fi
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends "${packages[@]}"
+      - name: Set up R for native visitor gt tables
+        if: ${{ inputs.full_reproduce && inputs.only != 'main' }}
+        uses: r-lib/actions/setup-r@f9a764fea8d5c63df6ef9a5c7795bf7deb5d7e05 # v2
+        with:
+          r-version: '4.6.1'
+          Ncpus: '1'
+      - name: Restore verified frozen release assets
+        run: python scripts/restore_replication.py --repo "$GITHUB_REPOSITORY" --tag v1.0.0
+      - name: Install the locked Python environment
+        run: uv sync --locked --python 3.11
+      - name: Restore locked visitor R packages
+        if: ${{ inputs.full_reproduce && inputs.only != 'main' }}
+        run: Rscript --vanilla scripts/setup_visitor_r.R "$GITHUB_WORKSPACE"
+      - name: Inventory environment and packaged inputs
+        env:
+          REPLICATION_SCOPE: ${{ inputs.only }}
+        run: uv run --locked python scripts/replicate.py inventory --only "$REPLICATION_SCOPE"
+      - name: Verify packaged results and interactive reports
+        if: ${{ !inputs.full_reproduce }}
+        env:
+          REPLICATION_SCOPE: ${{ inputs.only }}
+        run: uv run --locked python scripts/replicate.py verify --quick --only "$REPLICATION_SCOPE"
+      - name: Reproduce and exhaustively verify
+        if: ${{ inputs.full_reproduce }}
+        env:
+          REPLICATION_SCOPE: ${{ inputs.only }}
+        run: uv run --locked python scripts/replicate.py reproduce --all --only "$REPLICATION_SCOPE"

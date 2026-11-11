@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.DS_Store
+/data/
+/outputs/
+/dist/
+/replication/logs/
+/.impeccable/
+/.env
+/.env.*
+*.pem
+*.key
+*.pyc
+.pytest_cache/
+.ruff_cache/

@@ -1,0 +1,18 @@
+{
+  "hko-intellectual-property-notice.html": {
+    "url": "https://www.hko.gov.hk/en/readme/readme.htm",
+    "resolved_url": "https://www.hko.gov.hk/en/readme/readme.htm",
+    "retrieved_utc": "2026-11-11T09:37:37.335348+00:00",
+    "bytes": 68465,
+    "sha256": "630e48cb5d5f911b2d6c72748a7e32aaa4c457fd50485c73fa49047736d2108d",
+    "purpose": "Official HKO upstream notice/conditions retained with the cached calendar materials; not a project-authored licence"
+  },
+  "hko-noncommercial-conditions.html": {
+    "url": "https://www.hko.gov.hk/en/appweb/applink.htm",
+    "resolved_url": "https://www.hko.gov.hk/en/appweb/applink.htm",
+    "retrieved_utc": "2026-11-11T09:37:39.829422+00:00",
+    "bytes": 11400,
+    "sha256": "2402aeaf4bd98b1fe6c4d2f1e3f42b73944d188104351f2cdbdb4ddff456b232",
+    "purpose": "Official HKO upstream notice/conditions retained with the cached calendar materials; not a project-authored licence"
+  }
+}

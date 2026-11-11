@@ -1,0 +1,29 @@
+<section id="crisis" class="tab">
+  <h2>Crisis and recovery-window exclusions</h2>
+  <p>These comparisons remove documented disruption periods and a separately labelled recovery buffer. They retain the full-history comparison and never drop a month because its observed growth or regression p-value is large. The estimand becomes the weather association in the retained months; the exclusions do not identify a causal effect or certify those months as free of shocks.</p>
+  <div class="scroll"><table><thead><tr><th>Policy</th><th>Excluded calendar windows</th><th>Reason</th></tr></thead><tbody>
+    <tr><th>No exclusion</th><td>None beyond source/quality requirements</td><td>Full admissible-history reference</td></tr>
+    <tr><th>COVID only</th><td>2020–2022</td><td>Border disruption and reopening</td></tr>
+    <tr><th>GFC + COVID</th><td>2008–2009 and 2020–2022</td><td>Add the global financial crisis</td></tr>
+    <tr><th>Crisis + recovery buffers</th><td>2008–2010 and 2020–2023</td><td>Add one recovery year after each window</td></tr>
+    <tr><th>Stable pre-COVID sensitivity</th><td>2008–2010 and all 2020 onward</td><td>Contiguous pre-COVID history after the GFC buffer</td></tr>
+  </tbody></table></div>
+  <p>For growth, the <strong>entire interval from base month through observation month</strong> must avoid the excluded windows. Under the buffered rule the first retained MoM months are February 2011 and February 2024; first retained YoY months are January 2012 and January 2025. Levels only require the observation month to avoid the windows. Growth is computed before filtering, so no change is calculated across a deleted gap.</p>
+  <p>The source begins in 2008. The Asian financial crisis and SARS therefore lie outside this panel. The GFC exclusion cannot affect the full-control models, whose dates begin in 2017; identical COVID-only and GFC+COVID columns in that window are expected. A 2023 recovery buffer does not imply that 2024 was unaffected.</p>
+  <img class="figure" src="__CRISIS_FIGURE__" alt="Aggregate monthly-growth heat coefficients under five crisis and recovery exclusion policies">
+  <p class="caption">Fixed chart: aggregate MoM log growth, calendar HAC at 12 months. Blue is the long-control history; red uses the 2017–2025 full-control window. These different sample/control windows should not be treated as a same-sample causal test.</p>
+  <p class="callout">With the wider crisis/recovery exclusion, the long aggregate MoM model retains <strong>139 months</strong> and estimates <strong>−0.078 growth log points per +0.1°C</strong> (nominal p=0.519). The short full-control model remains negative (−0.483, p=0.033; 55 months). Its pre-COVID sensitivity is near zero (−0.055, p=0.734), with only 32 months and 13 residual time degrees of freedom. The negative association is still sensitive to the window.</p>
+  <div class="controls">
+    <label>Analysis<select id="crisis-panel"><option value="aggregate">Official aggregate</option><option value="region">Region FE</option><option value="country">Country FE</option></select></label>
+    <label>Outcome<select id="crisis-outcome"><option value="mom">MoM log growth</option><option value="yoy">YoY log growth</option><option value="log_level">100 × log arrivals · descriptive</option><option value="raw">Raw arrivals · descriptive</option></select></label>
+    <label>Control window<select id="crisis-window"><option value="long_all">Long controls · rain/humidity</option><option value="full_all">Full controls · 2017–2025</option></select></label>
+    <label>Inference<select id="crisis-inference"><option value="hac12">Calendar HAC · 12 months</option><option value="hac24">Calendar HAC · 24 months</option><option value="origin">Origin-clustered CR1 · panels only</option></select></label>
+  </div>
+  <p id="crisis-note" class="callout"></p>
+  <div id="crisis-summary" class="scroll"></div>
+  <h3>Full regression gt table</h3><div id="crisis-gt" class="scroll"></div>
+  <p class="caption">All included weather coefficients, robust errors, nominal p-values, FE indicators, actual months, origin-month rows, reference degrees of freedom and outcome context. These 120 new crisis specifications are OLS; the earlier zero-retaining PPML sensitivities remain in the Robustness tab and have not been relabelled as GFC/recovery-excluded count models.</p>
+  <details><summary>Why these calendar windows?</summary>
+    <p>Singapore's recession began in 2008Q3, as described by <a href="https://www.pmo.gov.sg/newsroom/speech-mr-goh-chok-tong-senior-minister-panel-discussion--financial-crisis-2007-09/">PMO</a>. The whole 2008–2009 window is a conservative calendar choice. <a href="https://isomer-user-content.by.gov.sg/166/2b9db1b9-8cd6-4b33-9c60-419b656135de/fullreport_2q13.pdf">MTI's historical tourism table</a> records the large 2010 arrivals rebound. <a href="https://www.stb.gov.sg/about-stb/media-publications/media-centre/singapore-s-tourism-sector-posts-strong-recovery-in-2023--exceeds-forecasts-for-tourism-receipts/">STB's 2023 review</a> describes a strong recovery, with arrivals at about 71% of 2019. These motivate the separately labelled recovery years; they are not official exact crisis boundaries.</p>
+  </details>
+</section>

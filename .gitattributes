@@ -1,0 +1,2 @@
+# Preserve the exact bytes and hashes of upstream notice snapshots.
+replication/third_party/notices/*.html -text
