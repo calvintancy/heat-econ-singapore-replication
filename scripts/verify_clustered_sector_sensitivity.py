@@ -10,6 +10,7 @@ import hashlib
 import importlib.metadata
 import json
 import math
+import subprocess
 from collections import Counter
 from pathlib import Path
 
@@ -135,11 +136,12 @@ def point(row: pd.Series, beta: float, variance: float, hc0: float, degrees: int
     return degenerate
 
 
-def covariance_rank(matrix: np.ndarray, hc0: np.ndarray, bound: int) -> tuple[int, float, float]:
+def covariance_rank(matrix: np.ndarray, hc0: np.ndarray, bound: int) -> tuple[int, float, float, float]:
     singular = np.linalg.svd(matrix, compute_uv=False)
     reference = float(np.linalg.norm(hc0, ord=2))
-    threshold = max(float(singular.max())*1e-10, RELATIVE_ZERO*reference)
-    return min(int(np.sum(singular > threshold)), bound), reference, threshold
+    zero = RELATIVE_ZERO*reference
+    cutoff = max(float(singular.max())*1e-10, zero)
+    return min(int(np.sum(singular > cutoff)), bound), reference, zero, cutoff
 
 
 def original_dk_reference(context: str, window: str, outcome: str, bandwidth: int) -> tuple[pd.DataFrame, pd.DataFrame | None, str]:
@@ -247,11 +249,12 @@ def verify_clustered_sector_sensitivity() -> dict:
                 saved = select(tables["slope_covariances"], sample_id, outcome, covariance_name, bandwidth)
                 assert len(saved) == len(sectors)**2
                 close(saved.pivot(index="sector_i", columns="sector_j", values="covariance_value").loc[sectors, sectors], matrix, sample_id+"/"+outcome+": joint slope covariance")
+                close(saved.pivot(index="sector_i", columns="sector_j", values="hc0_reference_value").loc[sectors, sectors], hc0, "Full absolute-effect HC0 reference covariance")
                 counts["slope_covariance_entries"] += len(saved)
                 assert rows.inference_df.eq(degrees).all() and rows.n_clusters.eq(len(sectors) if covariance_name == "Sector cluster" else 0).all()
                 assert rows.n_obs.eq(n).all() and rows.n_sectors.eq(len(sectors)).all() and rows.n_parameters.eq(k).all() and rows.n_periods.eq(periods).all()
                 close(rows.r_squared, np.repeat(fit["r_squared"][j], len(rows)), "Reported full-model R squared")
-                close(rows.finite_sample_correction, np.repeat(len(sectors)/(len(sectors)-1)*(n-1)/(n-k), len(rows)), "Reported sector-CR1 finite correction")
+                close(rows.finite_sample_correction, np.repeat(correction, len(rows)), "Reported method-specific finite correction")
                 assert rows.shared_nuisance_limitation.eq(covariance_name == "Sector cluster").all()
                 for i, sector in enumerate(sectors):
                     row = rows.loc[sector]
@@ -278,6 +281,7 @@ def verify_clustered_sector_sensitivity() -> dict:
                 component_rows = select(tables["component_covariances"], sample_id, outcome, covariance_name, bandwidth)
                 assert len(component_rows) == len(sectors)**2
                 recorded_component = component_rows.pivot(index="term_i", columns="term_j", values="covariance_value").loc[component_names, component_names].to_numpy()
+                close(component_rows.pivot(index="term_i", columns="term_j", values="hc0_reference_value").loc[component_names, component_names], component_hc0, "Full main/deviation HC0 reference covariance")
                 if covariance_name == "Sector cluster":
                     reference_scale = np.sqrt(np.outer(np.diag(component_hc0), np.diag(component_hc0)))
                     close(recorded_component/reference_scale, component_matrix/reference_scale, "Full main/deviation CR1 covariance on HC0 scale", atol=RELATIVE_ZERO, rtol=1e-7)
@@ -285,17 +289,31 @@ def verify_clustered_sector_sensitivity() -> dict:
                     close(recorded_component, component_matrix, "Full main/deviation covariance")
                 for i, term in enumerate(component_names):
                     counts["degenerate_component_or_slope_rows"] += point(estimated.loc[term], float(component_beta[i]), float(component_matrix[i, i]), float(component_hc0[i, i]), degrees, "Native temperature component "+term)
+                    row = rows.loc[sectors[i]]
+                    close([row.var_temp_main, row.var_interaction_delta, row.cov_temp_main_delta],
+                          [component_matrix[0, 0], 0. if i == 0 else component_matrix[i, i], 0. if i == 0 else component_matrix[0, i]],
+                          "Total-effect covariance decomposition")
+                    close(row.var_temp_main+row.var_interaction_delta+2*row.cov_temp_main_delta,
+                          matrix[i, i], "Var(main+delta), including covariance cross term")
                 counts["component_rows"] += len(components);counts["normalizations"] += 1;counts["component_covariance_entries"] += len(component_rows)
                 joint = select(tables["joint_tests"], sample_id, outcome, covariance_name, bandwidth)
                 assert len(joint) == 1
                 restriction = np.eye(len(sectors))[1:]-np.eye(len(sectors))[[0]]
                 delta, v, hc = restriction@beta, restriction@matrix@restriction.T, restriction@hc0@restriction.T
                 bound = len(sectors)-1 if covariance_name == "Sector cluster" else periods-sample.season.nunique()-1
-                rank, reference, zero = covariance_rank(v, hc, bound)
+                rank, reference, zero, cutoff = covariance_rank(v, hc, bound)
                 record = joint.iloc[0]
                 assert int(record.covariance_rank) == rank and int(record.restrictions) == len(delta) and int(record.structural_rank_bound) == bound
                 close(record.reference_covariance_scale, reference, "Joint HC0 reference scale")
-                close(record.zero_covariance_threshold, zero, "Joint HC0-scaled rank threshold", atol=1e-20, rtol=1e-7)
+                close(record.zero_covariance_threshold, zero, "Joint HC0-scaled zero threshold", atol=1e-20, rtol=1e-7)
+                if covariance_name == "Driscoll-Kraay":
+                    close(record.rank_cutoff, cutoff, "Joint numerical-rank cutoff", atol=1e-20, rtol=1e-7)
+                assert record.numerator_df == len(delta) and record.denominator_df == degrees
+                degenerate = bool(np.linalg.norm(v, ord=2) <= zero)
+                assert bool(record.degenerate) == degenerate
+                expected_status = ("unavailable: numerically degenerate sector-difference covariance" if degenerate else
+                                   "unavailable: singular restriction covariance" if rank < len(delta) else "available")
+                assert record.status == expected_status
                 if covariance_name == "Sector cluster":
                     assert rank == 0, "Balanced H1 sector differences must expose sector-CR1 score collapse"
                     assert covariance_rank(matrix, hc0, len(sectors)-1)[0] <= 1
@@ -343,11 +361,20 @@ def verify_clustered_sector_sensitivity() -> dict:
     for path, digest in sources.items():
         assert sha256(ROOT / path) == digest, "Original parent sample changed during audit"
     pd.DataFrame(details).to_csv(OUT / "verification_details.csv", index=False)
-    report = {"status": "passed", "method": "Independent full-design QR and unit/date influence score sums, CR1/DK corrections, HC0-relative degeneracy and direct full-rank Wald",
+    report = {"status": "numerical checks passed; presentation pending", "method": "Independent full-design QR and unit/date influence score sums, CR1/DK corrections, HC0-relative degeneracy and direct full-rank Wald",
               "counts": counts, "native_models_verified": len(log), "native_api_calls": log.api_call_id.nunique(),
               "zero_relative_tolerance": RELATIVE_ZERO, "original_parent_sample_hashes": sources,
               "original_sources_and_receipts_unchanged": len(analysis_manifest["protected_sources_sha256"]),
               "scope": "Numerical/sample/provenance verification of a requested sensitivity; does not validate sector CR1 inference for a coefficient supported by one sector or establish causality/stationarity"}
+    target.write_text(json.dumps(report, indent=2, allow_nan=False)+"\n")
+    # This helper checks only saved HTML/CSV and the report's actual JavaScript.
+    # It does not enter any production estimation or covariance routine.
+    from clustered_sector_sensitivity import verify_report
+    try:
+        report["presentation"] = verify_report()
+    except subprocess.CalledProcessError as error:
+        raise AssertionError("Report JavaScript check failed:\n"+error.stderr) from error
+    report["status"] = "passed"
     target.write_text(json.dumps(report, indent=2, allow_nan=False)+"\n")
     print(f"Verified sector-clustered H1 sensitivity: {counts['model_outcomes']} native models, {counts['slope_rows']} slope rows, {counts['original_DK_groups_matched']} original DK groups preserved.", flush=True)
     return report

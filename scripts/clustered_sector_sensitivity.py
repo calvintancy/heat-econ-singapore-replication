@@ -209,7 +209,7 @@ def run_clustered_sector_sensitivity() -> dict:
                                 "mean_y_all": float(sample[outcome].mean()), "sd_y_all": float(sample[outcome].std()),
                                 "start": str(sample[period].min()), "end": str(sample[period].max()),
                                 "formula": outcome+" ~ temp_c * sector + shared controls + sector×season FE + year FE",
-                                "finite_sample_correction": correction, "cluster_absolute_covariance_rank": absolute_rank,
+                                "sector_cr1_finite_sample_correction": correction, "cluster_absolute_covariance_rank": absolute_rank,
                                 "cluster_absolute_reference_covariance_scale": reference_scale, **META}
                         specifications.append(spec)
                         for name, value in zip(result["nuisance_names"]+result["component_names"],
@@ -221,6 +221,7 @@ def run_clustered_sector_sensitivity() -> dict:
                                     periods-sample.season.nunique()-1) for band in [horizon, 2*horizon])]
                         for method, band, matrix, degrees, bound in bands:
                             meta = {**spec, "covariance": method, "hac_lags": band, "inference_df": degrees,
+                                    "finite_sample_correction": correction if method == "Sector cluster" else periods/(periods-1)*(n-1)/(n-k),
                                     "n_clusters": g if method == "Sector cluster" else 0,
                                     "shared_nuisance_limitation": method == "Sector cluster"}
                             joint = {**meta, **joint_test(beta, matrix, hc0, degrees, int(bound))}
@@ -393,8 +394,113 @@ draw();
     print(f"Built {REPORT}", flush=True)
 
 
+def verify_report() -> dict:
+    """Check source-backed native cells and execute all actual selector views."""
+    import math
+    import shutil
+    import subprocess
+    import tempfile
+    from lxml import html as lxml_html
+
+    document = lxml_html.fromstring(REPORT.read_text(), parser=lxml_html.HTMLParser(huge_tree=True))
+    payload = json.loads(document.get_element_by_id("cluster-data").text)
+    inventory = json.loads((OUT / "report_inventory.json").read_text())
+    assert digest(REPORT) == inventory["html_sha256"]
+    for name, expected in inventory["source_hashes"].items():
+        assert digest(OUT / name) == expected, (name, "Report source changed")
+    ids = document.xpath("//@id")
+    assert len(ids) == len(set(ids)), "Duplicate initial HTML IDs"
+    assert not document.xpath('//script[@src] | //link[@rel="stylesheet"] | //img[@src]')
+    assert len(document.xpath('//table[contains(@class,"gt_table")]')) == 1
+    assert len(payload["specs"]) == 90 and len(payload["native_tables"]) == 180
+    original = pd.read_csv(OUT / "sector_slopes.csv", dtype={"sector_id": str})
+    keys = ["sample_id", "outcome", "covariance", "hac_lags", "sector_id"]
+    indexed = original.set_index(keys)
+    assert indexed.index.is_unique and len(payload["rows"]) == len(original)
+    for row in payload["rows"]:
+        source = indexed.loc[tuple(row[key] for key in keys)]
+        for field in ["coefficient", "std_error", "p_value", "ci_lower", "ci_upper", "mean_y", "sd_y",
+                      "temp_main", "interaction_delta", "var_temp_main", "var_interaction_delta", "cov_temp_main_delta"]:
+            assert row[field] is None if pd.isna(source[field]) else math.isclose(row[field], source[field], abs_tol=1e-13, rel_tol=1e-13), (field, row)
+        assert row["p_display"] == p_format(source.p_value)
+        assert row["significance"] == significance_label(source.p_value)
+        assert row["stars"] == significance_stars(source.p_value)
+    native_cells = 0
+    for spec in payload["specs"]:
+        part = original[original.sample_id.eq(spec["sample_id"])&original.outcome.eq(spec["outcome"])]
+        horizon = 12 if spec["frequency"] == "monthly" else 4
+        for band in [horizon, 2*horizon]:
+            key = spec["sample_id"]+"|"+spec["outcome"]+"|"+str(band)
+            table = lxml_html.fromstring(payload["native_tables"][key])
+            identifiers = table.xpath(".//@id")
+            assert len(identifiers) == len(set(identifiers))
+            for references in table.xpath(".//@headers"):
+                assert set(references.split()) <= set(identifiers)
+            cells = {row[0].text_content().strip(): row for row in table.xpath(".//tr") if len(row) == 3}
+            for method, column in [("Driscoll-Kraay", 1), ("Sector cluster", 2)]:
+                selected = part[part.covariance.eq(method)&part.hac_lags.eq(band if column == 1 else 0)]
+                for row in selected.itertuples():
+                    target = cells[row.sector][column].text_content()
+                    assert f"{row.coefficient:.3f}"+significance_stars(row.p_value) in target
+                    assert f"({row.std_error:.3f})" in target
+                    native_cells += 1
+                for label, value in [("Observations", spec["n_obs"]), ("Sector units", spec["n_sectors"]),
+                    ("Weather periods", spec["n_periods"]), ("Estimated parameters", spec["n_parameters"]),
+                    ("Inference df", spec["n_periods"]-1 if column == 1 else spec["n_sectors"]-1)]:
+                    assert float(cells[label][column].text_content().replace(",", "").strip()) == value
+                for label, value in [("Mean observed Y", spec["mean_y_all"]), ("SD observed Y", spec["sd_y_all"])]:
+                    assert cells[label][column].text_content().strip() == f"{value:.3f}"
+    node = shutil.which("node")
+    assert node, "Node.js 24 is required"
+    script = document.xpath('//script[not(@type)]/text()')[-1]
+    harness = r'''
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const data=JSON.parse(fs.readFileSync(process.argv[1],'utf8')),nodes=new Map();
+function element(id){if(!nodes.has(id))nodes.set(id,{value:'',textContent:'',innerHTML:'',addEventListener(){}});return nodes.get(id);}
+element('cluster-data').textContent=JSON.stringify(data);
+const context=vm.createContext({document:{getElementById:element},console,
+history:{replaceState(){throw Error('Unsafe history call in sandbox');}},window:{parent:{}},location:{}});
+vm.runInContext(fs.readFileSync(process.argv[2],'utf8'),context);
+assert.equal(element('context').value,'va-detailed');assert.equal(element('window').value,'full');assert.equal(element('outcome').value,'y_short');
+assert(element('native').innerHTML.includes('PM2.5'));
+let views=0;
+const htmlEscape=v=>String(v).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+for(const spec of data.specs)for(const band of (spec.frequency==='monthly'?[12,24]:[4,8])){
+ element('context').value=spec.context;element('window').value=spec.window;element('outcome').value=spec.outcome;element('band').value=String(band);
+ vm.runInContext('draw()',context);
+ const key=spec.sample_id+'|'+spec.outcome+'|'+band;assert.equal(element('native').innerHTML,data.native_tables[key]);
+ assert.equal((element('slopes').innerHTML.match(/<tr>/g)||[]).length,spec.n_sectors);
+ for(const id of ['slopes','joint','components','meta','outcome-description'])assert(!/undefined|NaN|Infinity/.test(element(id).innerHTML+element(id).textContent),id);
+ const selected=data.rows.filter(r=>r.sample_id===spec.sample_id&&r.outcome===spec.outcome&&r.covariance==='Sector cluster');
+ for(const row of selected){assert(element('slopes').innerHTML.includes(htmlEscape(row.sector)));assert(element('slopes').innerHTML.includes(htmlEscape(row.p_display)));assert(element('slopes').innerHTML.includes(htmlEscape(row.significance)));}
+ assert(element('joint').innerHTML.includes('unavailable: numerically degenerate sector-difference covariance'));
+ views++;
+}
+console.log(JSON.stringify({status:'passed',selector_views:views,default:'va-detailed/full/y_short',sandbox_history_guard:true,scope:'Actual selector JavaScript in a DOM harness; not visual browser inspection'}));
+'''
+    with tempfile.TemporaryDirectory(prefix="heat-sector-cluster-report-") as folder:
+        data_file, code_file = Path(folder) / "data.json", Path(folder) / "script.js"
+        data_file.write_text(json.dumps(payload))
+        code_file.write_text(script)
+        result = subprocess.run([node, "-e", harness, str(data_file), str(code_file)], capture_output=True, text=True)
+        if result.returncode:
+            raise AssertionError("Sector-cluster report selector runtime failed:\n"+result.stderr)
+        runtime = json.loads(result.stdout)
+    receipt = {"status": "passed", "specifications": len(payload["specs"]), "native_tables": len(payload["native_tables"]),
+        "native_coefficient_SE_cells_checked": native_cells, "sector_readout_rows": len(original),
+        "selector_runtime": runtime, "report_sha256": digest(REPORT), "source_backed_p_values_and_means": True}
+    (OUT / "report_verification.json").write_text(json.dumps(receipt, indent=2)+"\n")
+    print(json.dumps(receipt, indent=2), flush=True)
+    return receipt
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--reports-only", action="store_true")
+    parser.add_argument("--verify-report", action="store_true")
     args = parser.parse_args()
-    build_report() if args.reports_only else run_clustered_sector_sensitivity()
+    if args.verify_report:
+        verify_report()
+    else:
+        build_report() if args.reports_only else run_clustered_sector_sensitivity()
+        verify_report()
