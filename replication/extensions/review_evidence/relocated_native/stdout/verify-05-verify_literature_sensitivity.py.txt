@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "<string>", line 16, in <module>
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/verify_literature_sensitivity.py", line 590, in <module>
+    if __name__=="__main__":verify_literature_sensitivity()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/verify_literature_sensitivity.py", line 580, in verify_literature_sensitivity
+    report=_verify_literature_sensitivity()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/verify_literature_sensitivity.py", line 382, in _verify_literature_sensitivity
+    protected,postprocessing=verify_lineage(manifest)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/verify_literature_sensitivity.py", line 322, in verify_lineage
+    for relative,digest in paths.items():assert independent.sha256(ROOT/relative)==digest,("Protected/source file changed",relative)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('Protected/source file changed', 'outputs/crisis_sensitivity/verification.json')

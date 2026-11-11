@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "execution_receipt_sha256": "a2700901744ec96ebb8bc382120564c5e462931da531f86ba4fa728c8b06ff69",
+  "driver_sha256": "b17f5b07c4fa2a52acaf8a5c8eebb2c5e9fadd5f0d4e35f81b6c24ffd7b7b094",
+  "environment_receipt_sha256": "4bf0f7e43a8ffd4038a56773e85ea2b7b51ee015915d934f1eb41e3078e088a7",
+  "current_native_fits": 11427,
+  "source_revision_evidence_sha256": "ffd65f514a0e67cd993c6247058bf32381357bdd6c4777b6fbea33f77369691a",
+  "scope": "Explicit guard-only source revision; affected three literature and dependent arrival producers rerun, first four unaffected passed mathematical audits reused, remaining six independent audits replayed. Shared locked environment, no final source seal or fresh-environment claim",
+  "failure_history_preserved": [
+    "run.json",
+    "resumed_run.json",
+    "numerical_run.json",
+    "derived_verification_lineage_failure.json"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "method": "Independent official-raw annual reconstruction, manual full FE/interaction design, QR OLS, explicit unit/calendar influence covariance and direct full-rank Wald",
+  "native_fits_verified": 2428,
+  "native_API_calls": 1214,
+  "counts": {
+    "numeric_values": 13718529,
+    "coefficient_covariance_entries": 5849000,
+    "estimate_rows": 79800,
+    "available_Wald_tests": 41532,
+    "Wald_test_rows": 42176,
+    "estimated_fit_groups": 1214,
+    "exact_sample_windows": 504,
+    "unavailable_design_requests": 304,
+    "unavailable_Wald_tests": 644
+  },
+  "raw_preparation": {
+    "raw_annual_levels_checked": 4088,
+    "annual_weather_years": 44,
+    "annual_control_years": 13,
+    "contexts": {
+      "aggregate_va": {
+        "periods": 44,
+        "sectors": 1
+      },
+      "va11": {
+        "periods": 44,
+        "sectors": 11
+      },
+      "va19": {
+        "periods": 20,
+        "sectors": 19
+      },
+      "iip_total": {
+        "periods": 42,
+        "sectors": 1
+      },
+      "iip6": {
+        "periods": 33,
+        "sectors": 6
+      },
+      "iip18": {
+        "periods": 29,
+        "sectors": 18
+      }
+    }
+  },
+  "maximum_scaled_errors": {
+    "Mean temperature metadata": 1.2766087057505744e-16,
+    "Temperature lower support": 0.0,
+    "Temperature upper support": 0.0,
+    "Full explicit X": 0.0,
+    "Raw-calendar Y": 0.0,
+    "Uncompressed annual calendar": 0.0,
+    "Native coefficients": 2.958517934261499e-10,
+    "Native residuals": 6.996181411977886e-11,
+    "Full-model R squared": 6.372680161348399e-14,
+    "Exact fit mean/SD": 1.9184858466074614e-16,
+    "Full coefficient covariance": 5.513342800423158e-09,
+    "Linear/lag-sum/marginal effect inference": 2.3501645772486263e-11,
+    "Reported sector mean/SD": 2.114277172649749e-16,
+    "Total-effect one-constraint t/F": 4.440892098500626e-16,
+    "Wald F/p": 3.313946809433251e-08
+  },
+  "source_and_protected_hashes": {
+    "data/processed/annual/panel_aggregate_va.csv": "a9834b0968d9430e67b61c8ce8b436e6a703e8c2f9ffe5e0915ff8964e24e21f",
+    "data/processed/annual/panel_va11.csv": "eb4f815b5f330ad298dfa67cfd84da6da07d51ae1158f9e304138d9f2a06eff4",
+    "data/processed/annual/panel_va19.csv": "206cbf6453d2b3360a889b9c9f7bdd02e081418c0eb532e5f11b9dce6cc44033",
+    "data/processed/annual/panel_iip_total.csv": "8fb91a09960c68bab269dfe9c409f8bfa9e67a16fd82ad670d96b79504fd6035",
+    "data/processed/annual/panel_iip6.csv": "9285e051236b0bbcbfbeeb0160a6524b8543d4333c1259fb516fb1585957e95d",
+    "data/processed/annual/panel_iip18.csv": "33f1923d14b0d7d19a2e59271afdd41d6b14968e6949b7812f973a7b12a789d8",
+    "data/processed/annual/annual_levels.csv": "eb68dc59d6bb697e3fd6f850fda5ba6a25c5a17b989a15afa9dd8415ea2e3927",
+    "outputs/pyfixest/fit_log.csv": "7db9cefabeea2f0a69a47ac4ca1f672e8bfab7ef07f82ec53148becf638943b8",
+    "outputs/annual/pyfixest/fit_log.csv": "ca7c9986a2066ec6f06b23449cd0f3ca3928046269bbb11e55793f2fcf12efad"
+  },
+  "old_reference_hashes_unchanged": {
+    "outputs/covid_comparison/original_inputs_reference.json": "6ef3eca005a90304ae35681b8e39aa5494abad2c39543ab8018dcfb82acc6838",
+    "outputs/pyfixest/migration_input_reference.json": "e39ec6008a2010038ee3fcb1f31c25970b2c3b4714763212121217a82cce4998",
+    "data/reference_before_nsa_inputs/manifest.json": "124903f8d1e8e80e61b0700126ded22b3797f98dfc984e6c8c1a7bcd7dd4f045"
+  },
+  "scope": "All saved annual literature sensitivity models and unavailable requests; numerical/source/calendar verification, not causal identification, stationarity, valid small-sample size or a replication of the papers' multicountry estimands."
+}

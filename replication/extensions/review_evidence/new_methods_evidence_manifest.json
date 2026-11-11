@@ -1,0 +1,25 @@
+{
+  "status": "verified_canonical_evidence_copies",
+  "files_sha256": {
+    "new_methods_adjudication.md": "9a378a431f7e2c929877bdbb0f864b8f257a2cde94a88377fae1e92fa3c73440",
+    "new_methods_replay_receipt.json": "480fcc465317594cc39c800d6adba74b88e97d4bf663e686d3b8926b9d722aec",
+    "new_methods_inference_comparison.csv": "8e7b86dfc4b5aa896f74d69297d5085376dd2883b0720181fc4761a2595c24d7",
+    "new_methods_selected_fixed_design.json": "ebfd6237130142ff0d2f6fbf2ed7eddba0a3dcc78b68710dc63ecbc9eb60a1e8",
+    "new_methods_mathematical_proof.json": "06bf7c3a5fd7617c244ed0d59fb05732b263d0294210bc0eef8c67a76a045416",
+    "new_methods_generation_calendar_differences.csv": "6ddf524c21ad7ca4a96c432fb3d7ab0a572a713bee3b338a679f38e96c381d2a",
+    "new_methods_selected_null_rejections.csv": "1c4f8a2eadc08416cd89115f7057706e9edaf3780eac66080443ff751d70ae79",
+    "fable52-new-methods-review.md": "d0d50f60d487a21e93441a281f2b76cba6af958b38fa0a4c52e1cf9eded06ac6",
+    "fable52-new-methods-receipt.json": "fe7ee83407b0624211b3fe67264686803cf966ee61ad1228a2bd7443692df55a"
+  },
+  "portable_source": {
+    "source": "scripts/selected_null_calibration.py",
+    "source_sha256": "2173bf69fc0db0cb6e9b636cef958567a1e2c2a8dc29c4433fd801c1d3d24884",
+    "command": "uv run --locked python scripts/selected_null_calibration.py",
+    "summary_sha256": "ebfd6237130142ff0d2f6fbf2ed7eddba0a3dcc78b68710dc63ecbc9eb60a1e8",
+    "rejections_sha256": "1c4f8a2eadc08416cd89115f7057706e9edaf3780eac66080443ff751d70ae79",
+    "draw_statistics_sha256": "3fde33f6116d482f1013eecc5ef5c5c70aec9ad5c1a129dee413a4c14a45b4a7",
+    "all_four_independent_reference_rejection_counts_match": true
+  },
+  "source_sandbox_preserved_files": 14479,
+  "native_fits_run": 0
+}

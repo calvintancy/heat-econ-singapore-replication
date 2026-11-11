@@ -1,0 +1,183 @@
+Annual crisis aggregate_va/all_eligible: 1 units × 44 years
+Annual crisis aggregate_va/event_dates_excluded: 1 units × 32 years
+Annual crisis aggregate_va/strict_growth_window_clean: 1 units × 27 years
+Annual crisis va11/all_eligible: 11 units × 44 years
+Annual crisis va11/event_dates_excluded: 11 units × 32 years
+Annual crisis va11/strict_growth_window_clean: 11 units × 27 years
+Annual crisis va19/all_eligible: 19 units × 20 years
+Annual crisis va19/event_dates_excluded: 19 units × 15 years
+Annual crisis va19/strict_growth_window_clean: 19 units × 13 years
+Annual crisis iip_total/all_eligible: 1 units × 42 years
+Annual crisis iip_total/event_dates_excluded: 1 units × 30 years
+Annual crisis iip_total/strict_growth_window_clean: 1 units × 25 years
+Annual crisis iip6/all_eligible: 6 units × 33 years
+Annual crisis iip6/event_dates_excluded: 6 units × 23 years
+Annual crisis iip6/strict_growth_window_clean: 6 units × 19 years
+Annual crisis iip18/all_eligible: 18 units × 29 years
+Annual crisis iip18/event_dates_excluded: 18 units × 19 years
+Annual crisis iip18/strict_growth_window_clean: 18 units × 15 years
+Annual crisis va12/all_eligible: 12 units × 44 years
+Annual crisis va12/event_dates_excluded: 12 units × 32 years
+Annual crisis va12/strict_growth_window_clean: 12 units × 27 years
+Annual crisis va20/all_eligible: 20 units × 20 years
+Annual crisis va20/event_dates_excluded: 20 units × 15 years
+Annual crisis va20/strict_growth_window_clean: 20 units × 13 years
+Annual crisis aggregate_va_matched_va20/all_eligible: 1 units × 20 years
+Annual crisis aggregate_va_matched_va20/event_dates_excluded: 1 units × 15 years
+Annual crisis aggregate_va_matched_va20/strict_growth_window_clean: 1 units × 13 years
+Annual crisis va11_matched_va19/all_eligible: 11 units × 20 years
+Annual crisis va11_matched_va19/event_dates_excluded: 11 units × 15 years
+Annual crisis va11_matched_va19/strict_growth_window_clean: 11 units × 13 years
+Annual crisis va12_matched_va20/all_eligible: 12 units × 20 years
+Annual crisis va12_matched_va20/event_dates_excluded: 12 units × 15 years
+Annual crisis va12_matched_va20/strict_growth_window_clean: 12 units × 13 years
+Annual crisis iip_total_matched_iip6/all_eligible: 1 units × 33 years
+Annual crisis iip_total_matched_iip6/event_dates_excluded: 1 units × 23 years
+Annual crisis iip_total_matched_iip6/strict_growth_window_clean: 1 units × 19 years
+Annual crisis iip_total_matched_iip18/all_eligible: 1 units × 29 years
+Annual crisis iip_total_matched_iip18/event_dates_excluded: 1 units × 19 years
+Annual crisis iip_total_matched_iip18/strict_growth_window_clean: 1 units × 15 years
+Annual crisis iip6_matched_iip18/all_eligible: 6 units × 29 years
+Annual crisis iip6_matched_iip18/event_dates_excluded: 6 units × 19 years
+Annual crisis iip6_matched_iip18/strict_growth_window_clean: 6 units × 15 years
+{
+  "status": "estimated_not_independently_verified",
+  "policy_id": "sg_broad_crisis_rebound_v1",
+  "policy_sha256": "f0ab8230980c843aace7888228a24cfca17336659b1489a953ef25f2d4ed3301",
+  "contexts": 14,
+  "native_fits": 1656,
+  "requested_models": 1656,
+  "unavailable_models": 0,
+  "source_hashes": {
+    "data/processed/annual/panel_aggregate_va.csv": "a9834b0968d9430e67b61c8ce8b436e6a703e8c2f9ffe5e0915ff8964e24e21f",
+    "data/processed/annual/panel_va11.csv": "eb4f815b5f330ad298dfa67cfd84da6da07d51ae1158f9e304138d9f2a06eff4",
+    "data/processed/annual/panel_va19.csv": "206cbf6453d2b3360a889b9c9f7bdd02e081418c0eb532e5f11b9dce6cc44033",
+    "data/processed/annual/panel_iip_total.csv": "8fb91a09960c68bab269dfe9c409f8bfa9e67a16fd82ad670d96b79504fd6035",
+    "data/processed/annual/panel_iip6.csv": "9285e051236b0bbcbfbeeb0160a6524b8543d4333c1259fb516fb1585957e95d",
+    "data/processed/annual/panel_iip18.csv": "33f1923d14b0d7d19a2e59271afdd41d6b14968e6949b7812f973a7b12a789d8",
+    "data/processed/annual/annual_levels.csv": "eb68dc59d6bb697e3fd6f850fda5ba6a25c5a17b989a15afa9dd8415ea2e3927"
+  },
+  "protected_outputs": {
+    "outputs/pyfixest/fit_log.csv": "7db9cefabeea2f0a69a47ac4ca1f672e8bfab7ef07f82ec53148becf638943b8",
+    "outputs/annual/pyfixest/fit_log.csv": "ca7c9986a2066ec6f06b23449cd0f3ca3928046269bbb11e55793f2fcf12efad"
+  },
+  "context_provenance": {
+    "aggregate_va": {
+      "source_files": [
+        "data/processed/annual/panel_aggregate_va.csv"
+      ],
+      "matched_to": null,
+      "includes_dwellings": true
+    },
+    "va11": {
+      "source_files": [
+        "data/processed/annual/panel_va11.csv"
+      ],
+      "matched_to": null,
+      "includes_dwellings": false
+    },
+    "va19": {
+      "source_files": [
+        "data/processed/annual/panel_va19.csv"
+      ],
+      "matched_to": null,
+      "includes_dwellings": false
+    },
+    "iip_total": {
+      "source_files": [
+        "data/processed/annual/panel_iip_total.csv"
+      ],
+      "matched_to": null,
+      "includes_dwellings": false
+    },
+    "iip6": {
+      "source_files": [
+        "data/processed/annual/panel_iip6.csv"
+      ],
+      "matched_to": null,
+      "includes_dwellings": false
+    },
+    "iip18": {
+      "source_files": [
+        "data/processed/annual/panel_iip18.csv"
+      ],
+      "matched_to": null,
+      "includes_dwellings": false
+    },
+    "va12": {
+      "source_files": [
+        "data/processed/annual/panel_va11.csv",
+        "data/processed/annual/annual_levels.csv"
+      ],
+      "matched_to": null,
+      "includes_dwellings": true
+    },
+    "va20": {
+      "source_files": [
+        "data/processed/annual/panel_va19.csv",
+        "data/processed/annual/annual_levels.csv"
+      ],
+      "matched_to": null,
+      "includes_dwellings": true
+    },
+    "aggregate_va_matched_va20": {
+      "source_files": [
+        "data/processed/annual/annual_levels.csv",
+        "data/processed/annual/panel_aggregate_va.csv",
+        "data/processed/annual/panel_va19.csv"
+      ],
+      "matched_to": "va20",
+      "includes_dwellings": true
+    },
+    "va11_matched_va19": {
+      "source_files": [
+        "data/processed/annual/panel_va11.csv",
+        "data/processed/annual/panel_va19.csv"
+      ],
+      "matched_to": "va19",
+      "includes_dwellings": false
+    },
+    "va12_matched_va20": {
+      "source_files": [
+        "data/processed/annual/annual_levels.csv",
+        "data/processed/annual/panel_va11.csv",
+        "data/processed/annual/panel_va19.csv"
+      ],
+      "matched_to": "va20",
+      "includes_dwellings": true
+    },
+    "iip_total_matched_iip6": {
+      "source_files": [
+        "data/processed/annual/panel_iip6.csv",
+        "data/processed/annual/panel_iip_total.csv"
+      ],
+      "matched_to": "iip6",
+      "includes_dwellings": false
+    },
+    "iip_total_matched_iip18": {
+      "source_files": [
+        "data/processed/annual/panel_iip18.csv",
+        "data/processed/annual/panel_iip_total.csv"
+      ],
+      "matched_to": "iip18",
+      "includes_dwellings": false
+    },
+    "iip6_matched_iip18": {
+      "source_files": [
+        "data/processed/annual/panel_iip18.csv",
+        "data/processed/annual/panel_iip6.csv"
+      ],
+      "matched_to": "iip18",
+      "includes_dwellings": false
+    }
+  },
+  "controls": [
+    "temp_c",
+    "rain_100mm",
+    "rh_pct"
+  ],
+  "annual_output": "VA sums four quarters; IIP averages twelve months. Growth computed before exclusions.",
+  "FE": "Sector intercepts and common linear trend; no year FE at annual national-weather frequency.",
+  "inference": "Requested sector CR1 for common pooled slopes with annual calendar DK1/DK2 retained; profiles/separate/national calendar HAC. No invented p-values for rank-deficient omnibus tests.",
+  "limits": "Calendar masks are sensitivity choices. No new stationarity or causal certificate. Complete VA12/20 includes dwellings; chain-linked levels need not add to published GVA."
+}

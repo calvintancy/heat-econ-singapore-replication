@@ -1,0 +1,31 @@
+Origin-year fit region__y_mom_nsa__long__all_eligible__H1__own_current__origin_year: N1863 T207 K283, estimated, timeDF172
+Origin-year fit region__y_mom_nsa__long__event_dates_excluded__H1__own_current__origin_year: N1485 T165 K238, estimated, timeDF135
+Origin-year fit region__y_mom_nsa__long__strict_growth_window_clean__H1__own_current__origin_year: N1269 T141 K220, estimated, timeDF113
+Origin-year fit region__y_mom_nsa__full__all_eligible__H1__own_current__origin_year: N765 T85 K195, estimated, timeDF58
+Origin-year fit region__y_mom_nsa__full__event_dates_excluded__H1__own_current__origin_year: N594 T66 K168, estimated, timeDF42
+Origin-year fit region__y_mom_nsa__full__strict_growth_window_clean__H1__own_current__origin_year: N504 T56 K159, estimated, timeDF33
+Origin-year fit region__y_yoy_nsa__long__all_eligible__H1__own_current__origin_year: N1701 T189 K274, estimated, timeDF155
+Origin-year fit region__y_yoy_nsa__long__event_dates_excluded__H1__own_current__origin_year: N1485 T165 K238, estimated, timeDF135
+Origin-year fit region__y_yoy_nsa__long__strict_growth_window_clean__H1__own_current__origin_year: N1269 T141 K220, estimated, timeDF113
+Origin-year fit region__y_yoy_nsa__full__all_eligible__H1__own_current__origin_year: N702 T78 K195, estimated, timeDF51
+Origin-year fit region__y_yoy_nsa__full__event_dates_excluded__H1__own_current__origin_year: N594 T66 K168, estimated, timeDF42
+Origin-year fit region__y_yoy_nsa__full__strict_growth_window_clean__H1__own_current__origin_year: N504 T56 K159, estimated, timeDF33
+Origin-year fit country__y_mom_nsa__long__all_eligible__H1__own_current__origin_year: N8694 T207 K1306, estimated, timeDF172
+Origin-year fit country__y_mom_nsa__long__event_dates_excluded__H1__own_current__origin_year: N6930 T165 K1096, estimated, timeDF135
+Origin-year fit country__y_mom_nsa__long__strict_growth_window_clean__H1__own_current__origin_year: N5922 T141 K1012, estimated, timeDF113
+Origin-year fit country__y_mom_nsa__full__all_eligible__H1__own_current__origin_year: N3570 T85 K888, estimated, timeDF58
+Origin-year fit country__y_mom_nsa__full__event_dates_excluded__H1__own_current__origin_year: N2772 T66 K762, estimated, timeDF42
+Origin-year fit country__y_mom_nsa__full__strict_growth_window_clean__H1__own_current__origin_year: N2352 T56 K720, estimated, timeDF33
+Origin-year fit country__y_yoy_nsa__long__all_eligible__H1__own_current__origin_year: N7938 T189 K1264, estimated, timeDF155
+Origin-year fit country__y_yoy_nsa__long__event_dates_excluded__H1__own_current__origin_year: N6930 T165 K1096, estimated, timeDF135
+Origin-year fit country__y_yoy_nsa__long__strict_growth_window_clean__H1__own_current__origin_year: N5922 T141 K1012, estimated, timeDF113
+Origin-year fit country__y_yoy_nsa__full__all_eligible__H1__own_current__origin_year: N3276 T78 K888, estimated, timeDF51
+Origin-year fit country__y_yoy_nsa__full__event_dates_excluded__H1__own_current__origin_year: N2772 T66 K762, estimated, timeDF42
+Origin-year fit country__y_yoy_nsa__full__strict_growth_window_clean__H1__own_current__origin_year: N2352 T56 K720, estimated, timeDF33
+{
+  "status": "computed_not_yet_independently_verified",
+  "requested_specs": 24,
+  "native_fits": 24,
+  "point_unavailable_requests": 0,
+  "primary_time_correction_unavailable_requests": 0
+}

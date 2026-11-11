@@ -1,0 +1,125 @@
+{
+  "status": "passed_selected_replays",
+  "source_commit": "e47edeefeb750fd8a64106658d9351783db6e7fa",
+  "saved_long_fits_reproduced": 36,
+  "maximum_absolute_saved_fit_discrepancies": {
+    "d_b": 1.0347056544901534e-11,
+    "d_dk": 9.639311571163488e-11,
+    "d_dk2": 1.1512146791403666e-10,
+    "d_dk_p": 3.314698515666237e-11,
+    "d_cr1": 5.914868594913969e-11,
+    "d_cr1_p": 2.921873853978241e-11
+  },
+  "panel_time_comparisons": 42,
+  "max_absolute_panel_mean_coefficient_difference": 1.955768880179676e-12,
+  "max_relative_uncorrected_HAC_SE_difference": 2.2893886786334858e-10,
+  "CR1_identities": 8,
+  "max_absolute_CR1_identity_error": 8.93507490218326e-13,
+  "SA_YoY_decompositions": 12,
+  "max_absolute_YoY_coefficient_identity_gap": 1.1102230246251564e-14,
+  "nominal_5percent_DK_to_time_convention_changes": 10,
+  "changed_rows": [
+    {
+      "sample": "va11 long weather",
+      "model": "G2",
+      "time_df": 127,
+      "p_project_t(T-1)": 0.0442051295917693,
+      "p_time_t(T-K)": 0.0812359541250696
+    },
+    {
+      "sample": "va11 long weather",
+      "model": "G2N",
+      "time_df": 127,
+      "p_project_t(T-1)": 0.0310334878649071,
+      "p_time_t(T-K)": 0.0616647749992148
+    },
+    {
+      "sample": "va11 long weather x2020-22",
+      "model": "G2",
+      "time_df": 118,
+      "p_project_t(T-1)": 0.0262546077159855,
+      "p_time_t(T-K)": 0.0543519064369368
+    },
+    {
+      "sample": "va11 full controls",
+      "model": "G1",
+      "time_df": 12,
+      "p_project_t(T-1)": 0.0224009105915597,
+      "p_time_t(T-K)": 0.1068055349916094
+    },
+    {
+      "sample": "va19 full controls",
+      "model": "G1",
+      "time_df": 12,
+      "p_project_t(T-1)": 0.0232268978386569,
+      "p_time_t(T-K)": 0.1120029206940061
+    },
+    {
+      "sample": "iipq6 full controls",
+      "model": "G1",
+      "time_df": 12,
+      "p_project_t(T-1)": 0.0066435336821587,
+      "p_time_t(T-K)": 0.0520018659023029
+    },
+    {
+      "sample": "iipq6 full controls x2020-22",
+      "model": "G2",
+      "time_df": 5,
+      "p_project_t(T-1)": 0.012463339293285,
+      "p_time_t(T-K)": 0.1425670979134373
+    },
+    {
+      "sample": "iipq6 full controls x2020-22",
+      "model": "G2N",
+      "time_df": 5,
+      "p_project_t(T-1)": 0.0158097682363627,
+      "p_time_t(T-K)": 0.1560343544828832
+    },
+    {
+      "sample": "iipq18 full controls x2020-22",
+      "model": "G2",
+      "time_df": 5,
+      "p_project_t(T-1)": 0.0346717784484401,
+      "p_time_t(T-K)": 0.2263547552971666
+    },
+    {
+      "sample": "iipq18 full controls x2020-22",
+      "model": "G2N",
+      "time_df": 5,
+      "p_project_t(T-1)": 0.0258608830110569,
+      "p_time_t(T-K)": 0.2025870746379829
+    }
+  ],
+  "distinct_retained_calendars_among_62_window_rule_combinations": {
+    "va_aggregate": 62,
+    "va_broad11": 62,
+    "va_broad11_matched": 7,
+    "va_detailed19": 7,
+    "iipq_total": 62,
+    "iipq_broad6": 31,
+    "iipq_broad6_matched": 31,
+    "iipq_detailed18": 31,
+    "iipm_total": 62,
+    "iipm_broad6": 31,
+    "iipm_broad6_matched": 31,
+    "iipm_detailed18": 31
+  },
+  "archived_CSVs": {
+    "time_level_vs_project_DK_CR1.csv": {
+      "sha256": "073dff9dd87d065962ddd5f0a666681b2b25f5e565ea3979748e1be2f5f5cc61",
+      "source_probe_output": "p03_time_level_equivalence.csv",
+      "identical_to_Fable_original_evidence": true
+    },
+    "CR1_dispersion_identity.csv": {
+      "sha256": "45378fccc9596374136b4df9f7d53844bc9b9a61f7477225deb80a47cbb752ad",
+      "source_probe_output": "p17_cr1_identity.csv",
+      "identical_to_Fable_original_evidence": true
+    },
+    "SA_YoY_decomposition.csv": {
+      "sha256": "4003b49a443fe10865c59e3867df4189fca4d791d538514e2e263f3111029152",
+      "source_probe_output": "p06_yoy_decomposition.csv",
+      "identical_to_Fable_original_evidence": true
+    }
+  },
+  "interpretation": "Historical snapshot algebra and finite-sample-convention sensitivity only. No unique correct HAC reference, true-null sampling-size certificate, causal identification or review of later literature branches is established."
+}

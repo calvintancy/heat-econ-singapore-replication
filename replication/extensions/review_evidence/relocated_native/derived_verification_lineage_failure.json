@@ -1,0 +1,5 @@
+{
+  "status": "confirmed_lineage_failure_after_fresh_verification",
+  "scope": "Read-only invocation of the exact full-controls verifier lineage guard after first successful numerical replays",
+  "error": "('Frozen input/source changed', 'outputs/crisis_sensitivity/verification.json')"
+}

@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "scope": "Four selected NumPy-only Fable-snapshot probes, not a new native fit or comprehensive inference validation",
+  "source_commit": "e47edeefeb750fd8a64106658d9351783db6e7fa",
+  "preserved_files": 7718,
+  "before_inventory_sha256": "e7434d36d29e9b507a94173c9c4fa3915a19fe2cba1f0d63dad2b92ecdc98be0",
+  "lane_git_status_unchanged": true,
+  "commands": [
+    {
+      "probe": "p02_validate_lib.py",
+      "arguments": [],
+      "command": [
+        "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/fable-design/.venv/bin/python",
+        "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/native_claims/fable52_adjudication/replay.py",
+        "p02_validate_lib.py"
+      ],
+      "cwd": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/fable-design",
+      "returncode": 0,
+      "seconds": 1.613,
+      "stdout": "dist/aea_audit_20261111/native_claims/fable52_adjudication/replay/p02_validate_lib.txt",
+      "stdout_sha256": "c6d4f2207305ab92a29ab75f56b31efe0cfaae3fee22f5643251a0740f5685b9"
+    },
+    {
+      "probe": "p03_time_level_equivalence.py",
+      "arguments": [],
+      "command": [
+        "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/fable-design/.venv/bin/python",
+        "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/native_claims/fable52_adjudication/replay.py",
+        "p03_time_level_equivalence.py"
+      ],
+      "cwd": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/fable-design",
+      "returncode": 0,
+      "seconds": 1.707,
+      "stdout": "dist/aea_audit_20261111/native_claims/fable52_adjudication/replay/p03_time_level_equivalence.txt",
+      "stdout_sha256": "4c738dd54165711730f6830a00380cd2b576121477afe9974f1486987c224dbe"
+    },
+    {
+      "probe": "p17_cr1_identity.py",
+      "arguments": [],
+      "command": [
+        "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/fable-design/.venv/bin/python",
+        "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/native_claims/fable52_adjudication/replay.py",
+        "p17_cr1_identity.py"
+      ],
+      "cwd": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/fable-design",
+      "returncode": 0,
+      "seconds": 1.14,
+      "stdout": "dist/aea_audit_20261111/native_claims/fable52_adjudication/replay/p17_cr1_identity.txt",
+      "stdout_sha256": "265b4fe226f1ff1ee27e46236e10c118c1812c115a35fbe0f47076194d86a5bd"
+    },
+    {
+      "probe": "p06_dynamics.py",
+      "arguments": [
+        "decomp"
+      ],
+      "command": [
+        "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/fable-design/.venv/bin/python",
+        "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/native_claims/fable52_adjudication/replay.py",
+        "p06_dynamics.py",
+        "decomp"
+      ],
+      "cwd": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/fable-design",
+      "returncode": 0,
+      "seconds": 1.662,
+      "stdout": "dist/aea_audit_20261111/native_claims/fable52_adjudication/replay/p06_dynamics.txt",
+      "stdout_sha256": "6ccaa55cd39661f95c21b0452b1b112e4f99e860b8fe4840b173680631a78e0c"
+    }
+  ],
+  "probe_source_sha256": {
+    "audit_probes/p04_crisis_windows.py": "da53c36ad079c23e977feec14ae7d8fbc8822d3f79f18cd6343bae52a80b3637",
+    "audit_probes/p07_placebo_size.py": "88ddc0dcd28e7e34648fcce101b0804a45a8878394a1334edf52df383bc26fb1",
+    "audit_probes/p06_dynamics.py": "7ed6ea64f327bcc1f7697e96ce275abc7726dd1483bd0fe13fc089406f726f99",
+    "audit_probes/p02_validate_lib.py": "c0cb43dee254077848b759ea6b884237c4c2fb8b093c24ce7705821d288117f4",
+    "audit_probes/p11_controls_selection.py": "883a3dbcf7352505e25883a3c85f148a16e72a8768cf9e411890495709460c05",
+    "audit_probes/p19_visitor_ppml_cr1.py": "e4c64339954faf014c61b5aa0825f747d01a4ae1eebde7ba5860ffd346662da2",
+    "audit_probes/p22_construction_checks.py": "d22034789b6137e81a30a3e050742eff4db48c9c72db88c1baea4bcedb875987",
+    "audit_probes/p12_annual_inventory.py": "88dc98822cb88f8bc4137491aaab5df0c37879186e3f25b052e2894acf2f41af",
+    "audit_probes/p18_window_multiverse.py": "25d219da7569fb61fd899110d46ab95348cbcb6fc856d304886ae0fe07a3e96c",
+    "audit_probes/p09_variation.py": "ec594edf9fce54f8b27195c7262e3a70ae5a32336ada9516ef5249f44ed346ed",
+    "audit_probes/p21_clustered_sensitivity.py": "b05122b76358955cc8ce63c272ee74ba4bfab165dfaf77c5370ed78e598d0816",
+    "audit_probes/p03_time_level_equivalence.py": "4b374d5a345656597295bf01b486f4fe61e6b4334a81c06d10d28eec4bf0220f",
+    "audit_probes/p20_multiplicity.py": "b4b2808033a8d71304e1f98584949f302c1934c8e11fdfde0770d0575f0e665a",
+    "audit_probes/p15_heterogeneity_saved.py": "ab16fd36b3d6390410300ccab8540e600860115ba114e81de5359d98316da757",
+    "audit_probes/p17_cr1_identity.py": "9ff4ad4ea017bb17820aeaaa45146aed0c16f1b5b2f8020188b96b94a3c90c4c",
+    "audit_probes/p01_compact_inventory.py": "6c09f2d1f1930018b16d98f34cebc008088e4a71eecb3848005425dd3fd85944",
+    "audit_probes/p16_heterogeneity_identification.py": "5ef568753bc72f0a8d3326743e99eda62354b68c0fae107e66448ac83d2f250c",
+    "audit_probes/p13_annual_windows.py": "9dc6a3ef2017ef33ece7482050ca3180006aef915d0c3d4939a12dd44ce24fa8",
+    "audit_probes/p05_influence.py": "a27045a565075babe62121e6a37909678cdf6a89eb95c06840096a2ca0a6cde3",
+    "audit_probes/peek.py": "2c59090dc852836f57c6b840e5a401c8ed64c5c133aab6f954bf3acf23696445",
+    "audit_probes/p00_inventory.py": "ea31162b5b59b72d708964e54a30f1d1ad22df083e73b1525522b17e45236c66",
+    "audit_probes/p10_aggregation.py": "32083fdfba6db1405fda37a3332d7741208f0d2f9b2c3e057a48c36f8c4c78e9",
+    "audit_probes/_env.py": "86c28374dd706922d53d7c782ef4b56d84de504399848e33363473219e76f77e",
+    "audit_probes/p14_visitor_inventory.py": "bfabe4f290e84abf0bf4c5ef70777dbc2f1faa8430a19cb3c422d9bae0aae136",
+    "audit_probes/_lib.py": "a946a0ac4cc8f2889c131c498ba1217da073b2a159e48c984714be3b6b198a38",
+    "audit_probes/p08_saved_yoy_weather.py": "60d631a24ee8a897b8d6a28571e0e37cfd924c1e12e2edb2c9a7cf158a95c85a"
+  },
+  "review_sha256": "34a4ac7b1a5828c4fc17737f2f388722708730c0ffef1e686469ae7b43c2e170"
+}

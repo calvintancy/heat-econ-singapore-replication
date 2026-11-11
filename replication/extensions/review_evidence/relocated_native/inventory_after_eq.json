@@ -1,0 +1,483 @@
+{
+  "schema_version": 2,
+  "status": "post_execution_equivalence_archive_hash_checked",
+  "scope": "Append-only verification-only new-gate evidence. Historical run/receipts/logs and their first inventory remain byte-identical. Existing shared locked environment; no new native fits/math reruns, baseline recapture, fresh-environment or final-seal claim.",
+  "historical_inventory": "inventory.json",
+  "historical_inventory_sha256": "1f42f5d9f94da1af27403e6a6820d1ca02dbb9381fecf2dd6a5e9b6df63c2667",
+  "historical_passed_run_sha256": "a2700901744ec96ebb8bc382120564c5e462931da531f86ba4fa728c8b06ff69",
+  "post_execution_eq_receipt": "post_execution_eq/receipt.json",
+  "post_execution_eq_receipt_sha256": "9639f08ac4b4556a4cbea94609da69228d9ae6352676e5e1ecf164dade8ef764",
+  "semantic_files_checked": 534,
+  "npz_arrays_checked": 8338,
+  "logical_requests": 354,
+  "native_fits_executed": 0,
+  "verification_only_additions": [
+    {
+      "path": "scripts/verify_arrivals_review_equivalence.py",
+      "before_sha256": null,
+      "after_sha256": "2842268151076db451464e1b6fa42f91e12d5f6e6742666a71baaf541675c03d",
+      "root_source_sha256": "2842268151076db451464e1b6fa42f91e12d5f6e6742666a71baaf541675c03d",
+      "role": "Post-execution verification source/evidence only"
+    },
+    {
+      "path": "scripts/verify_derived_proof_guards.py",
+      "before_sha256": null,
+      "after_sha256": "24edd443f387611494d73d13a4f9528380ca6af68a9a4e13e1e238a34e4c18c4",
+      "root_source_sha256": "24edd443f387611494d73d13a4f9528380ca6af68a9a4e13e1e238a34e4c18c4",
+      "role": "Post-execution verification source/evidence only"
+    },
+    {
+      "path": "replication/extensions/review_evidence/derived_proof_guard_revision.json",
+      "before_sha256": null,
+      "after_sha256": "ffd65f514a0e67cd993c6247058bf32381357bdd6c4777b6fbea33f77369691a",
+      "root_source_sha256": "ffd65f514a0e67cd993c6247058bf32381357bdd6c4777b6fbea33f77369691a",
+      "role": "Post-execution verification source/evidence only"
+    },
+    {
+      "path": "replication/extensions/review_evidence/arrivals_review_baseline.json",
+      "before_sha256": null,
+      "after_sha256": "2086d5fd7b73c19c4e8d308da01bb2613f4b24341a20b22aa40c561fcba210e1",
+      "root_source_sha256": "2086d5fd7b73c19c4e8d308da01bb2613f4b24341a20b22aa40c561fcba210e1",
+      "role": "Post-execution verification source/evidence only"
+    }
+  ],
+  "original_compact_members_unchanged": 58,
+  "model_artifacts_unchanged": true,
+  "files": [
+    {
+      "path": "README.md",
+      "historical_source": "/Volumes/datadrive/heat_econ/replication/extensions/review_evidence/relocated_native/README.md",
+      "role": "Unchanged original compact evidence index/README/checksums",
+      "size_bytes": 10044,
+      "sha256": "3b6f5e64fc2e5e4e3c95bcce8d95fe9ab1e3c2ff8252bfabe1e355eab6d89ce6"
+    },
+    {
+      "path": "SHA256SUMS",
+      "historical_source": "/Volumes/datadrive/heat_econ/replication/extensions/review_evidence/relocated_native/SHA256SUMS",
+      "role": "Unchanged original compact evidence index/README/checksums",
+      "size_bytes": 6349,
+      "sha256": "6ab9ec8e75d096800c032fd93c853df3d6ab8e1c6cc0657965fdd6865405525f"
+    },
+    {
+      "path": "derived_verification_lineage_failure.json",
+      "size_bytes": 289,
+      "sha256": "a12b98d071861f8d710b3ad57bde60855c9ad7efad8f84908b0b2d6011d5196a",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/derived_verification_lineage_failure.json",
+      "role": "Preserved predecessor/failure/reconciliation history; not upgraded to passed"
+    },
+    {
+      "path": "environment.json",
+      "size_bytes": 1727,
+      "sha256": "4bf0f7e43a8ffd4038a56773e85ea2b7b51ee015915d934f1eb41e3078e088a7",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/environment.json",
+      "role": "Passed authoritative execution/provenance"
+    },
+    {
+      "path": "execution_manifest.json",
+      "size_bytes": 890,
+      "sha256": "5311c6081ee79e66ca27afeca721b23c065ec1a87e2b3f4c7e8233bd2049ab20",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/execution_manifest.json",
+      "role": "Passed authoritative execution/provenance"
+    },
+    {
+      "path": "execution_sources/guard_revision_execution_driver.py.txt",
+      "size_bytes": 5770,
+      "sha256": "b17f5b07c4fa2a52acaf8a5c8eebb2c5e9fadd5f0d4e35f81b6c24ffd7b7b094",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard_revision_execution_driver.py",
+      "role": "Exact final historical execution driver; absolute paths intentionally retained, not a portable rerun entry point"
+    },
+    {
+      "path": "guard_revision_run.json",
+      "size_bytes": 37672,
+      "sha256": "a2700901744ec96ebb8bc382120564c5e462931da531f86ba4fa728c8b06ff69",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard_revision_run.json",
+      "role": "Passed authoritative execution/provenance"
+    },
+    {
+      "path": "inventory.json",
+      "historical_source": "/Volumes/datadrive/heat_econ/replication/extensions/review_evidence/relocated_native/inventory.json",
+      "role": "Unchanged original compact evidence index/README/checksums",
+      "size_bytes": 26124,
+      "sha256": "1f42f5d9f94da1af27403e6a6820d1ca02dbb9381fecf2dd6a5e9b6df63c2667"
+    },
+    {
+      "path": "numerical_receipts/complete_va_controls.json",
+      "size_bytes": 10797,
+      "sha256": "634c71190c03b8b6135eb7a4c6e29a4f027b2459494e8a78ec50eb8723f70ca1",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/outputs/complete_va_controls/verification.json",
+      "role": "Passed numerical receipt for this exact historical replay generation"
+    },
+    {
+      "path": "numerical_receipts/crisis_sensitivity.json",
+      "size_bytes": 27083,
+      "sha256": "afb5083b64663c3342d21766ca46fb7589a23ac9aa7ce344483195e38613620c",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/outputs/crisis_sensitivity/verification.json",
+      "role": "Passed numerical receipt for this exact historical replay generation"
+    },
+    {
+      "path": "numerical_receipts/crisis_sensitivity__annual.json",
+      "size_bytes": 7411,
+      "sha256": "b0f11b448ba9ef7a904b5e399a3601a428a4d3c7963f33f52d08e94d5fc896b9",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/outputs/crisis_sensitivity/annual/verification.json",
+      "role": "Passed numerical receipt for this exact historical replay generation"
+    },
+    {
+      "path": "numerical_receipts/literature_sensitivity.json",
+      "size_bytes": 20986,
+      "sha256": "1efeb7c2badbff90d26b11ce841d941b75ecb89e622801b96bdecb2b00f8d2f2",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/outputs/literature_sensitivity/verification.json",
+      "role": "Passed numerical receipt for this exact historical replay generation"
+    },
+    {
+      "path": "numerical_receipts/literature_sensitivity__annual.json",
+      "size_bytes": 3642,
+      "sha256": "ce58cc94b27cc996fc6e69ede364fc63b7e37fdc0b61bb6e1026f08d4309f5c8",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/outputs/literature_sensitivity/annual/verification.json",
+      "role": "Passed numerical receipt for this exact historical replay generation"
+    },
+    {
+      "path": "numerical_receipts/literature_sensitivity__annual_seasonal.json",
+      "size_bytes": 257674,
+      "sha256": "667e30b59fb311bd2f5a49fc31dcd88290d0b07120104a841d0bf7cce9085bae",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/outputs/literature_sensitivity/annual_seasonal/verification.json",
+      "role": "Passed numerical receipt for this exact historical replay generation"
+    },
+    {
+      "path": "numerical_receipts/literature_sensitivity__full_controls.json",
+      "size_bytes": 21264,
+      "sha256": "f733f781848f17c9b9b05edd4a8112c60b16fa1b6a21b860f4209fbdb734a73b",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/outputs/literature_sensitivity/full_controls/verification.json",
+      "role": "Passed numerical receipt for this exact historical replay generation"
+    },
+    {
+      "path": "numerical_receipts/visitor_rigour__annual.json",
+      "size_bytes": 23398,
+      "sha256": "f20809abcc2845caef0ba2bdbf191d1afe955391df68ec6bd1bb1c08d3a44a11",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/outputs/visitor_rigour/annual/verification.json",
+      "role": "Passed numerical receipt for this exact historical replay generation"
+    },
+    {
+      "path": "numerical_receipts/visitor_rigour__monthly.json",
+      "size_bytes": 79146,
+      "sha256": "c3868edba705c999d648e71dec45cbcabbd0a798a2733ffe8d8011b7f8a8bce7",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/outputs/visitor_rigour/monthly/verification.json",
+      "role": "Passed numerical receipt for this exact historical replay generation"
+    },
+    {
+      "path": "numerical_receipts/visitor_rigour__origin_year.json",
+      "size_bytes": 29277,
+      "sha256": "55f905ceae38bc8758b41b3aa9372408c287914c8ea4036a1c3484509ad2e37d",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/outputs/visitor_rigour/origin_year/verification.json",
+      "role": "Passed numerical receipt for this exact historical replay generation"
+    },
+    {
+      "path": "numerical_receipts/visitor_rigour__ppml.json",
+      "size_bytes": 28311,
+      "sha256": "69bfe7d84032ca4e012cb729d761a7c88d2f2e658e9dcef6210c756412cb4bf6",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/outputs/visitor_rigour/ppml/verification.json",
+      "role": "Passed numerical receipt for this exact historical replay generation"
+    },
+    {
+      "path": "numerical_run.json",
+      "size_bytes": 2628,
+      "sha256": "373706da094bdf9a579401664001b38a2ed2f344b7a1964d22651b03771e94e8",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/numerical_run.json",
+      "role": "Preserved predecessor/failure/reconciliation history; not upgraded to passed"
+    },
+    {
+      "path": "post_execution_eq/execution_driver.py.txt",
+      "size_bytes": 3901,
+      "sha256": "f904e1713f42405d67e2b4bdef2cef0b5f20b77709ef8eef316f9264f92ca8ef",
+      "historical_source": "/tmp/run_relocated_post_execution_eq.py",
+      "role": "Historical new-gate invocation source with original absolute IDs; not the portable reproduction entry point"
+    },
+    {
+      "path": "post_execution_eq/receipt.json",
+      "size_bytes": 6538,
+      "sha256": "9639f08ac4b4556a4cbea94609da69228d9ae6352676e5e1ecf164dade8ef764",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/outputs/visitor_rigour/review_equivalence.json",
+      "role": "Passed new exact semantic/array gate against fresh refitted relocated arrivals; not a rerun of prior mathematical audits"
+    },
+    {
+      "path": "post_execution_eq/scope.json",
+      "size_bytes": 115621,
+      "sha256": "3f81907c64a98181439a53c144f99748d9f1b54bb484c60ae3d52b8966d95dc7",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/post_execution_eq.scope.json",
+      "role": "Explicit four verification-only additions and unchanged model-byte/source boundary"
+    },
+    {
+      "path": "post_execution_eq/stdout.txt",
+      "size_bytes": 1953,
+      "sha256": "f6f67bd367c4edfa1a949a55dd338c936d01ecd8f9a70ed6b8bdef26e5c467b6",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/post_execution_eq.stdout.txt",
+      "role": "Exact new-gate CLI stdout/stderr"
+    },
+    {
+      "path": "resumed_production_verification.json",
+      "size_bytes": 35206,
+      "sha256": "00447c5960407dacfef318115a17923d860b3618a5be56ea4d41bf185f991e26",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/resumed_production_verification.json",
+      "role": "Preserved predecessor/failure/reconciliation history; not upgraded to passed"
+    },
+    {
+      "path": "resumed_run.json",
+      "size_bytes": 31709,
+      "sha256": "2a86cb89286025d3c009760d5cfb9671d6e50aea1885c30090ca0999d91ba5ed",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/resumed_run.json",
+      "role": "Preserved predecessor/failure/reconciliation history; not upgraded to passed"
+    },
+    {
+      "path": "run.json",
+      "size_bytes": 33798,
+      "sha256": "62e8b784d6824b3ed5dd9c9198afe65e95952b0e1baf3a0ecbc9a62cf07de3bf",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/run.json",
+      "role": "Preserved predecessor/failure/reconciliation history; not upgraded to passed"
+    },
+    {
+      "path": "stdout/01-crisis_sensitivity.py.txt",
+      "size_bytes": 5151,
+      "sha256": "d4a3d2e64ffaad9eabc91034fc98c724fd5610e63146b487370ab463b7ca0c07",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/01-crisis_sensitivity.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/02-annual_crisis_sensitivity.py.txt",
+      "size_bytes": 7837,
+      "sha256": "ac0ef7ceef3da07628e189e04037e6435ac53b47eb0ba226a8db2b1e6f85d735",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/02-annual_crisis_sensitivity.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/03-complete_va_controls.py.txt",
+      "size_bytes": 805,
+      "sha256": "8015862761eae9afb97500be2fb605da36bcc1c0c5d6aeeb106867ed43049078",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/03-complete_va_controls.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/04-annual_literature_sensitivity.py.txt",
+      "size_bytes": 52574,
+      "sha256": "7021aaa85d59966cfbf94f0df526329134491c7b791a13105674ad28f7700eef",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/04-annual_literature_sensitivity.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/05-literature_sensitivity.py.txt",
+      "size_bytes": 15457,
+      "sha256": "b4bf3cbace1be1097734f26029d1a5e0e98ebb34293c4948884c2c824338c06f",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/05-literature_sensitivity.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/06-annual_seasonal_literature.py.txt",
+      "size_bytes": 1675,
+      "sha256": "0bbbd2027d6dbb284dd9675d5379a3276d334e978e82da7eb12fe32ad20f7e62",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/06-annual_seasonal_literature.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/07-literature_full_controls.py.txt",
+      "size_bytes": 45439,
+      "sha256": "666e3ebdcf9c17ad70a7b5a406687d5572528f45763a4c0e62a800b98faf5d29",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/07-literature_full_controls.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/08-literature_rank_correction.py.txt",
+      "size_bytes": 185,
+      "sha256": "2b31669260c2694b7559b17b6f338b5c93848d3c61fe161f7e618c95b239325b",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/08-literature_rank_correction.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/09-literature_restrictions.py.txt",
+      "size_bytes": 85,
+      "sha256": "ffdfdf3e86bdd76f5415e5805dfd3b38b23190fb2c4526f1d524fe850286a9e2",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/09-literature_restrictions.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/10-literature_full_controls_restrictions.py.txt",
+      "size_bytes": 963,
+      "sha256": "b38221e8d7799c7c20bc8c68479393efc1c6e6d42e12f721b680ef80a7dc902f",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/10-literature_full_controls_restrictions.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/guard-v2-01-literature_sensitivity.py.txt",
+      "size_bytes": 15457,
+      "sha256": "b4bf3cbace1be1097734f26029d1a5e0e98ebb34293c4948884c2c824338c06f",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard-v2-01-literature_sensitivity.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/guard-v2-02-annual_seasonal_literature.py.txt",
+      "size_bytes": 1675,
+      "sha256": "0bbbd2027d6dbb284dd9675d5379a3276d334e978e82da7eb12fe32ad20f7e62",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard-v2-02-annual_seasonal_literature.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/guard-v2-03-literature_rank_correction.py.txt",
+      "size_bytes": 185,
+      "sha256": "2b31669260c2694b7559b17b6f338b5c93848d3c61fe161f7e618c95b239325b",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard-v2-03-literature_rank_correction.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/guard-v2-04-literature_restrictions.py.txt",
+      "size_bytes": 85,
+      "sha256": "ffdfdf3e86bdd76f5415e5805dfd3b38b23190fb2c4526f1d524fe850286a9e2",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard-v2-04-literature_restrictions.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/guard-v2-05-literature_full_controls.py.txt",
+      "size_bytes": 45439,
+      "sha256": "666e3ebdcf9c17ad70a7b5a406687d5572528f45763a4c0e62a800b98faf5d29",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard-v2-05-literature_full_controls.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/guard-v2-06-literature_full_controls_restrictions.py.txt",
+      "size_bytes": 85,
+      "sha256": "d8f9fd006fa2918971c7271f6d92165742bc8d4a25538fc82e26a6766b07a0f0",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard-v2-06-literature_full_controls_restrictions.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/guard-v2-07-visitor_rigour_monthly.py.txt",
+      "size_bytes": 39250,
+      "sha256": "620c40e61093e5689ce4b0a1072e28a9e17c4a2f9c253cf63c4fc3dc2a773b76",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard-v2-07-visitor_rigour_monthly.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/guard-v2-08-visitor_rigour_companions.py.txt",
+      "size_bytes": 1465,
+      "sha256": "5f08add319407943c602a4bddc4d27e4ee89aeefb9a390da9423237d61bef66a",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard-v2-08-visitor_rigour_companions.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/guard-v2-09-visitor_origin_year.py.txt",
+      "size_bytes": 3308,
+      "sha256": "e7031aeff2a4a6eb61ba9e3dc8cd5715963e6fdabbd5c9dcb6a5937c5d4d97d3",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard-v2-09-visitor_origin_year.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/guard-v2-10-verify_literature_sensitivity.py.txt",
+      "size_bytes": 2159,
+      "sha256": "424fd25bec9f7b30b7df9ed54fe274b6856540588c45af2da0cdb36169f24af4",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard-v2-10-verify_literature_sensitivity.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/guard-v2-11-verify_annual_seasonal_literature.py.txt",
+      "size_bytes": 113,
+      "sha256": "e3b2f938f73e5fa69a249266f173cbcce9d004601e11c429d314ef7a28b0b61c",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard-v2-11-verify_annual_seasonal_literature.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/guard-v2-12-verify_literature_full_controls.py.txt",
+      "size_bytes": 113783,
+      "sha256": "410a4a891cd0f309d8025fd752654bf51796de23ad2f0eca0383d72173d698ec",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard-v2-12-verify_literature_full_controls.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/guard-v2-13-verify_visitor_rigour.py.txt",
+      "size_bytes": 904,
+      "sha256": "140e2aca7a4e9421d67752f5e65288c37df1557cdcd341b789dbf0063f172e6c",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard-v2-13-verify_visitor_rigour.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/guard-v2-14-verify_visitor_rigour_companions.py.txt",
+      "size_bytes": 94,
+      "sha256": "cef0e6c92cb896cc88d5d908ed528009e0be592822d5dc3b00ff2d72191502da",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard-v2-14-verify_visitor_rigour_companions.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/guard-v2-15-verify_visitor_origin_year.py.txt",
+      "size_bytes": 1037,
+      "sha256": "d4e8dadd3b6b48840ed6aa42101e184a66df0b7927edb80b126d9d2a5a498658",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/guard-v2-15-verify_visitor_origin_year.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/resume-01-literature_full_controls.py.txt",
+      "size_bytes": 45439,
+      "sha256": "666e3ebdcf9c17ad70a7b5a406687d5572528f45763a4c0e62a800b98faf5d29",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/resume-01-literature_full_controls.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/resume-02-literature_full_controls_restrictions.py.txt",
+      "size_bytes": 85,
+      "sha256": "d8f9fd006fa2918971c7271f6d92165742bc8d4a25538fc82e26a6766b07a0f0",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/resume-02-literature_full_controls_restrictions.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/resume-03-visitor_rigour_monthly.py.txt",
+      "size_bytes": 39250,
+      "sha256": "620c40e61093e5689ce4b0a1072e28a9e17c4a2f9c253cf63c4fc3dc2a773b76",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/resume-03-visitor_rigour_monthly.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/resume-04-visitor_rigour_companions.py.txt",
+      "size_bytes": 1465,
+      "sha256": "5f08add319407943c602a4bddc4d27e4ee89aeefb9a390da9423237d61bef66a",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/resume-04-visitor_rigour_companions.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/resume-05-visitor_origin_year.py.txt",
+      "size_bytes": 3308,
+      "sha256": "e7031aeff2a4a6eb61ba9e3dc8cd5715963e6fdabbd5c9dcb6a5937c5d4d97d3",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/resume-05-visitor_origin_year.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/verify-01-verify_crisis_sensitivity.py.txt",
+      "size_bytes": 1102,
+      "sha256": "ef9ebaef86d88f0d71464cbcf1f6078ab7424c4063b710f13c9c62514eb2262c",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/verify-01-verify_crisis_sensitivity.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/verify-02-verify_annual_crisis_sensitivity.py.txt",
+      "size_bytes": 479,
+      "sha256": "cf87fa25714735b690020c9db5f7e30565b98c25b54f9f6478105444a2e75fb0",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/verify-02-verify_annual_crisis_sensitivity.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/verify-03-verify_complete_va_controls.py.txt",
+      "size_bytes": 101,
+      "sha256": "1a003e930c3373111d4266c11be582f5817d82f68f6094bba14f43716f4af436",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/verify-03-verify_complete_va_controls.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/verify-04-verify_annual_literature_sensitivity.py.txt",
+      "size_bytes": 121,
+      "sha256": "56c70e8096a3035c1ada3470568165a9318db451e82fd475206d28d8da54aabd",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/verify-04-verify_annual_literature_sensitivity.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    },
+    {
+      "path": "stdout/verify-05-verify_literature_sensitivity.py.txt",
+      "size_bytes": 1605,
+      "sha256": "af3f57b71dd35a4a135bc9da9b2b6c1fd4e4cf1fa4e23a4668e269bb9781832f",
+      "historical_source": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/verify-05-verify_literature_sensitivity.py.log",
+      "role": "Byte-exact native/math subprocess stdout+stderr transcript; extension renamed for distribution"
+    }
+  ],
+  "self_hash_policy": "This v2 inventory, its new README and checksum list are excluded here to avoid self reference; SHA256SUMS_after_eq covers the inventory and README, excluding only its own digest."
+}

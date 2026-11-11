@@ -1,0 +1,1464 @@
+{
+ "probe": "09 complete-partition PPML aggregation identities (8 exhaustive pairs) and 8 non-exhaustive comparators",
+ "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python audit_probes/probe09_ppml_partition_identities.py",
+ "production_reference": "scripts/visitor_rigour_companions.py:446-471 aggregation_checks; :310-443 ppml_models",
+ "hierarchy": {
+  "series": 62,
+  "regions": 9,
+  "named_markets": 42,
+  "residual_categories": 10,
+  "months": 225,
+  "complete10_minus_total_max_abs": 0,
+  "complete52_minus_total_max_abs": 0,
+  "region_children_plus_residual_minus_region_max_abs": 0,
+  "selected_regions_share_of_total": 0.9999158054146812,
+  "named_markets_share_of_total": 0.9682796777624937,
+  "named_markets_share_min_max_by_month": [
+   0.938810258593168,
+   0.9909263136902982
+  ],
+  "zero_cells": {
+   "complete10": 50,
+   "complete52": 134,
+   "regions": 0,
+   "named": 50,
+   "total": 0
+  },
+  "saved_reconciliation_rows": 2475,
+  "saved_reconciliation_identities": 11,
+  "saved_reconciliation_max_abs_difference": 0.0
+ },
+ "summary": {
+  "exhaustive_pairs": 8,
+  "worst_over_8_exhaustive_pairs": {
+   "counts_sum_minus_aggregate_max_abs": 0.0,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "beta_max_abs_diff": 2.310651670001107e-15,
+   "beta_max_rel_diff": 8.391753128222472e-13,
+   "fitted_sum_max_rel_diff": 1.3721462079141657e-11,
+   "fitted_share_spread_within_cell_max": 1.384400783086846e-11,
+   "fitted_share_vs_observed_cell_share_max_rel": 1.0933141102386908e-09,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 1.093314090322274e-09,
+   "xr_equals_aggregate_xr_max_abs": 1.000088900582341e-12,
+   "information_max_rel": 1.5248231742360127e-13,
+   "bread_max_rel": 8.614555429028859e-14,
+   "date_summed_scores_max_rel": 2.1679599026153285e-12,
+   "date_summed_influence_max_rel": 1.9422374601291123e-12,
+   "raw_hac12_component_vs_aggregate_max_rel": 1.6101891607806313e-12,
+   "raw_hac24_component_vs_aggregate_max_rel": 1.2719993966859975e-12,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 1.6103645817590364e-12,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 1.2714878344914727e-12,
+   "corrected_hac12_component_vs_aggregate_max_rel": 1.6101732134189581e-12,
+   "corrected_hac24_component_vs_aggregate_max_rel": 1.2720459023400454e-12,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 1.6105081080140952e-12,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 1.2715575929725442e-12,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 1.7855938949651318e-11
+  },
+  "worst_over_8_nonexhaustive_pairs": {
+   "counts_sum_minus_aggregate_max_abs": 83996.0,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "beta_max_abs_diff": 0.0039042844051728476,
+   "beta_max_rel_diff": 1.345135164273625,
+   "fitted_sum_max_rel_diff": 0.05849440075899212,
+   "fitted_share_spread_within_cell_max": 0.04223062364842512,
+   "fitted_share_vs_observed_cell_share_max_rel": 0.024620080700279053,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 0.024028497161067128,
+   "xr_equals_aggregate_xr_max_abs": 0.021635578575502024,
+   "information_max_rel": 0.04005372552732869,
+   "bread_max_rel": 0.04040103011932272,
+   "date_summed_scores_max_rel": 0.04146321536710528,
+   "date_summed_influence_max_rel": 0.1191476719187366,
+   "raw_hac12_component_vs_aggregate_max_rel": 0.0897138698132027,
+   "raw_hac24_component_vs_aggregate_max_rel": 0.1001506088351837,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 0.08971386981320287,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 0.10015060883518345,
+   "corrected_hac12_component_vs_aggregate_max_rel": 0.08971386981320276,
+   "corrected_hac24_component_vs_aggregate_max_rel": 0.1001506088351837,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 0.08971386981320276,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 0.10015060883518354,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 0.936047350995679
+  },
+  "exhaustive_all_balanced": true,
+  "exhaustive_all_local_designs_identical": true,
+  "exhaustive_k_time_equal": true,
+  "exhaustive_corrections_equal": true,
+  "exhaustive_df_equal": true,
+  "exhaustive_min_cell_total": 67.0,
+  "exhaustive_zero_cells_retained": {
+   "complete10/long/all_eligible": 50,
+   "complete10/long/event_dates_excluded": 35,
+   "complete10/full/all_eligible": 28,
+   "complete10/full/event_dates_excluded": 16,
+   "complete52/long/all_eligible": 134,
+   "complete52/long/event_dates_excluded": 35,
+   "complete52/full/all_eligible": 106,
+   "complete52/full/event_dates_excluded": 16
+  },
+  "exhaustive_saved_rows_all_verified": true,
+  "nonexhaustive_saved_rows": 0,
+  "row_level_hc0_ratio_range_exhaustive": [
+   0.13195612944186272,
+   1.5542965262780135
+  ],
+  "origin_cluster_over_calendar_se_ratio": {
+   "complete10/long/all_eligible": 0.3996,
+   "complete10/long/event_dates_excluded": 0.8917,
+   "complete10/full/all_eligible": 0.1478,
+   "complete10/full/event_dates_excluded": 0.05,
+   "complete52/long/all_eligible": 0.2835,
+   "complete52/long/event_dates_excluded": 0.7197,
+   "complete52/full/all_eligible": 0.0869,
+   "complete52/full/event_dates_excluded": 0.228,
+   "region/long/all_eligible": 0.4023,
+   "region/long/event_dates_excluded": 0.8981,
+   "region/full/all_eligible": 0.149,
+   "region/full/event_dates_excluded": 0.05,
+   "country/long/all_eligible": 0.2983,
+   "country/long/event_dates_excluded": 0.7435,
+   "country/full/all_eligible": 0.091,
+   "country/full/event_dates_excluded": 0.2249
+  },
+  "origin_cluster_score_sum_exhaustive_max": 6.880290991289524e-14,
+  "origin_cluster_score_sum_nonexhaustive_max": 8.072815504795763e-14,
+  "nonexhaustive_temperature_100beta": {
+   "region/long/all_eligible": [
+    2.236362,
+    2.238354,
+    0.9999
+   ],
+   "region/long/event_dates_excluded": [
+    0.371747,
+    0.374071,
+    0.9999
+   ],
+   "region/full/all_eligible": [
+    -0.253064,
+    -0.262967,
+    1.0
+   ],
+   "region/full/event_dates_excluded": [
+    -1.565976,
+    -1.576202,
+    1.0
+   ],
+   "country/long/all_eligible": [
+    2.29534,
+    2.238354,
+    0.9683
+   ],
+   "country/long/event_dates_excluded": [
+    0.459318,
+    0.374071,
+    0.9683
+   ],
+   "country/full/all_eligible": [
+    -0.616694,
+    -0.262967,
+    0.964
+   ],
+   "country/full/event_dates_excluded": [
+    -1.740837,
+    -1.576202,
+    0.9644
+   ]
+  }
+ },
+ "pairs": [
+  {
+   "panel": "complete10",
+   "control_set": "long",
+   "sample_variant": "all_eligible",
+   "exhaustive_partition": true,
+   "n_obs": 2250,
+   "n_units": 10,
+   "n_months": 225,
+   "balanced_same_dates_every_unit": true,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "counts_sum_minus_aggregate_max_abs": 0.0,
+   "zero_cells_retained": 50,
+   "min_origin_season_cell_total": 891.0,
+   "share_of_aggregate_count": 1.0,
+   "beta_max_abs_diff": 2.0903417885520525e-16,
+   "beta_max_rel_diff": 4.090445630951545e-14,
+   "temperature_100beta_component": 2.2383540093108523,
+   "temperature_100beta_aggregate": 2.2383540093108505,
+   "fitted_sum_max_abs_diff": 3.805616870522499e-07,
+   "fitted_sum_max_rel_diff": 6.935815835046973e-13,
+   "fitted_share_spread_within_cell_max": 7.940378108232115e-13,
+   "fitted_share_vs_observed_cell_share_max_rel": 1.0933141102386908e-09,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 1.093314090322274e-09,
+   "xr_equals_aggregate_xr_max_abs": 1.3566925360919413e-13,
+   "information_max_rel": 1.5248231742360127e-13,
+   "bread_max_rel": 8.614555429028859e-14,
+   "date_summed_scores_max_rel": 2.37141764657269e-13,
+   "date_summed_influence_max_rel": 2.582355112364276e-13,
+   "row_level_hc0_temperature_ratio_component_over_aggregate": 0.33147253180075636,
+   "local_time_design_identical_for_every_unit_and_aggregate": true,
+   "k_time_mine": 35,
+   "k_time_component": 35,
+   "k_time_aggregate": 35,
+   "local_ranks_saved_component_unique": [
+    35
+   ],
+   "corrections_component": [
+    1.1842105263157894,
+    1.1842105263157894,
+    1.1859937773559037
+   ],
+   "corrections_aggregate": [
+    1.1842105263157894,
+    1.1842105263157894
+   ],
+   "inference_df_component": [
+    224,
+    224,
+    9
+   ],
+   "inference_df_aggregate": [
+    224,
+    224
+   ],
+   "covariance_labels_component": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "covariance_labels_aggregate": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "raw_hac12_component_vs_aggregate_max_rel": 2.2542598594484757e-13,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 2.2490855828009277e-13,
+   "corrected_hac12_component_vs_aggregate_max_rel": 2.2546048112249794e-13,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 2.2502354220559388e-13,
+   "raw_hac24_component_vs_aggregate_max_rel": 2.3338380622875345e-13,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 2.3321194775583097e-13,
+   "corrected_hac24_component_vs_aggregate_max_rel": 2.3350601669838726e-13,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 2.3336089176569715e-13,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 1.2576606422953773e-12,
+   "origin_cluster_scores_sum_over_origins_max_abs_over_scale": 8.466835973278682e-15,
+   "origin_cluster_rank": 5,
+   "temperature_se_origin_cluster_over_calendar_hac12": 0.3995856008996824,
+   "saved_aggregation_check_rows": 1,
+   "saved_status": "verified within native numerical tolerance",
+   "saved_diffs_beta_mu_covariance": [
+    2.0903417885520523e-16,
+    3.80445271730423e-07,
+    6.977925182116708e-16
+   ],
+   "saved_same_time_correction": true,
+   "saved_interpretation": "Count-specific shared-X PPML likelihood factorization; not additivity of component log growth or an identity for selected nonexhaustive cuts"
+  },
+  {
+   "panel": "complete10",
+   "control_set": "long",
+   "sample_variant": "event_dates_excluded",
+   "exhaustive_partition": true,
+   "n_obs": 1650,
+   "n_units": 10,
+   "n_months": 165,
+   "balanced_same_dates_every_unit": true,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "counts_sum_minus_aggregate_max_abs": 0.0,
+   "zero_cells_retained": 35,
+   "min_origin_season_cell_total": 273.0,
+   "share_of_aggregate_count": 1.0,
+   "beta_max_abs_diff": 1.5178830414797062e-16,
+   "beta_max_rel_diff": 7.569112301078511e-14,
+   "temperature_100beta_component": 0.3740714975193258,
+   "temperature_100beta_aggregate": 0.37407149751932534,
+   "fitted_sum_max_abs_diff": 6.100162863731384e-08,
+   "fitted_sum_max_rel_diff": 4.4921961473396584e-14,
+   "fitted_share_spread_within_cell_max": 1.6173663233763804e-14,
+   "fitted_share_vs_observed_cell_share_max_rel": 8.883974774194826e-10,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 8.883974902545231e-10,
+   "xr_equals_aggregate_xr_max_abs": 2.3092638912203256e-14,
+   "information_max_rel": 1.9033468835177443e-14,
+   "bread_max_rel": 1.9833349277177874e-14,
+   "date_summed_scores_max_rel": 1.2287095292573498e-13,
+   "date_summed_influence_max_rel": 3.2053164650563325e-13,
+   "row_level_hc0_temperature_ratio_component_over_aggregate": 1.4585199712900394,
+   "local_time_design_identical_for_every_unit_and_aggregate": true,
+   "k_time_mine": 30,
+   "k_time_component": 30,
+   "k_time_aggregate": 30,
+   "local_ranks_saved_component_unique": [
+    30
+   ],
+   "corrections_component": [
+    1.2222222222222223,
+    1.2222222222222223,
+    1.2117871840094063
+   ],
+   "corrections_aggregate": [
+    1.2222222222222223,
+    1.2222222222222223
+   ],
+   "inference_df_component": [
+    164,
+    164,
+    9
+   ],
+   "inference_df_aggregate": [
+    164,
+    164
+   ],
+   "covariance_labels_component": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "covariance_labels_aggregate": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "raw_hac12_component_vs_aggregate_max_rel": 7.083346789227869e-14,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 7.050169520894249e-14,
+   "corrected_hac12_component_vs_aggregate_max_rel": 7.084854846879396e-14,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 7.030564771424381e-14,
+   "raw_hac24_component_vs_aggregate_max_rel": 3.6082574481942876e-14,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 3.6065092614461314e-14,
+   "corrected_hac24_component_vs_aggregate_max_rel": 3.6087342263983296e-14,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 3.6058735571740743e-14,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 1.4033219031261979e-13,
+   "origin_cluster_scores_sum_over_origins_max_abs_over_scale": 1.524495936553231e-15,
+   "origin_cluster_rank": 5,
+   "temperature_se_origin_cluster_over_calendar_hac12": 0.8916896445413969,
+   "saved_aggregation_check_rows": 1,
+   "saved_status": "verified within native numerical tolerance",
+   "saved_diffs_beta_mu_covariance": [
+    1.5178830414797062e-16,
+    6.100162863731384e-08,
+    2.8297676701871666e-17
+   ],
+   "saved_same_time_correction": true,
+   "saved_interpretation": "Count-specific shared-X PPML likelihood factorization; not additivity of component log growth or an identity for selected nonexhaustive cuts"
+  },
+  {
+   "panel": "complete10",
+   "control_set": "full",
+   "sample_variant": "all_eligible",
+   "exhaustive_partition": true,
+   "n_obs": 1000,
+   "n_units": 10,
+   "n_months": 100,
+   "balanced_same_dates_every_unit": true,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "counts_sum_minus_aggregate_max_abs": 0.0,
+   "zero_cells_retained": 28,
+   "min_origin_season_cell_total": 95.0,
+   "share_of_aggregate_count": 1.0,
+   "beta_max_abs_diff": 1.6479873021779667e-15,
+   "beta_max_rel_diff": 6.266887668657863e-13,
+   "temperature_100beta_component": -0.2629674232747079,
+   "temperature_100beta_aggregate": -0.2629674232745431,
+   "fitted_sum_max_abs_diff": 6.163027137517929e-07,
+   "fitted_sum_max_rel_diff": 1.3643025290366276e-11,
+   "fitted_share_spread_within_cell_max": 1.373025394332857e-11,
+   "fitted_share_vs_observed_cell_share_max_rel": 1.498226536625652e-11,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 1.4982219531183634e-11,
+   "xr_equals_aggregate_xr_max_abs": 9.983125437429408e-13,
+   "information_max_rel": 4.676659507553108e-14,
+   "bread_max_rel": 8.23952333412479e-14,
+   "date_summed_scores_max_rel": 4.2250842419269574e-13,
+   "date_summed_influence_max_rel": 4.821544396601493e-13,
+   "row_level_hc0_temperature_ratio_component_over_aggregate": 0.2878603982419012,
+   "local_time_design_identical_for_every_unit_and_aggregate": true,
+   "k_time_mine": 27,
+   "k_time_component": 27,
+   "k_time_aggregate": 27,
+   "local_ranks_saved_component_unique": [
+    27
+   ],
+   "corrections_component": [
+    1.36986301369863,
+    1.36986301369863,
+    1.283236994219653
+   ],
+   "corrections_aggregate": [
+    1.36986301369863,
+    1.36986301369863
+   ],
+   "inference_df_component": [
+    99,
+    99,
+    9
+   ],
+   "inference_df_aggregate": [
+    99,
+    99
+   ],
+   "covariance_labels_component": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "covariance_labels_aggregate": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "raw_hac12_component_vs_aggregate_max_rel": 5.690471175810831e-13,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 5.691778728930272e-13,
+   "corrected_hac12_component_vs_aggregate_max_rel": 5.690811139621885e-13,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 5.690811139621885e-13,
+   "raw_hac24_component_vs_aggregate_max_rel": 5.796458673153953e-13,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 5.795198573442397e-13,
+   "corrected_hac24_component_vs_aggregate_max_rel": 5.797038319021268e-13,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 5.795198573442397e-13,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 1.780620095814811e-11,
+   "origin_cluster_scores_sum_over_origins_max_abs_over_scale": 4.030704345059145e-14,
+   "origin_cluster_rank": 7,
+   "temperature_se_origin_cluster_over_calendar_hac12": 0.14782838765452966,
+   "saved_aggregation_check_rows": 1,
+   "saved_status": "verified within native numerical tolerance",
+   "saved_diffs_beta_mu_covariance": [
+    1.647987302177967e-15,
+    6.163027137517929e-07,
+    4.3728909382423353e-14
+   ],
+   "saved_same_time_correction": true,
+   "saved_interpretation": "Count-specific shared-X PPML likelihood factorization; not additivity of component log growth or an identity for selected nonexhaustive cuts"
+  },
+  {
+   "panel": "complete10",
+   "control_set": "full",
+   "sample_variant": "event_dates_excluded",
+   "exhaustive_partition": true,
+   "n_obs": 660,
+   "n_units": 10,
+   "n_months": 66,
+   "balanced_same_dates_every_unit": true,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "counts_sum_minus_aggregate_max_abs": 0.0,
+   "zero_cells_retained": 16,
+   "min_origin_season_cell_total": 67.0,
+   "share_of_aggregate_count": 1.0,
+   "beta_max_abs_diff": 2.310651670001107e-15,
+   "beta_max_rel_diff": 8.391753128222472e-13,
+   "temperature_100beta_component": -1.5762016397909049,
+   "temperature_100beta_aggregate": -1.576201639790674,
+   "fitted_sum_max_abs_diff": 1.8533319234848022e-07,
+   "fitted_sum_max_rel_diff": 1.3106045753833793e-13,
+   "fitted_share_spread_within_cell_max": 7.120816592235119e-14,
+   "fitted_share_vs_observed_cell_share_max_rel": 2.4203038899184687e-10,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 2.420303588667007e-10,
+   "xr_equals_aggregate_xr_max_abs": 2.007283228522283e-13,
+   "information_max_rel": 7.088713796357391e-14,
+   "bread_max_rel": 1.399544716555479e-14,
+   "date_summed_scores_max_rel": 1.4945244756490804e-12,
+   "date_summed_influence_max_rel": 1.3605316007312272e-12,
+   "row_level_hc0_temperature_ratio_component_over_aggregate": 1.5542965262780135,
+   "local_time_design_identical_for_every_unit_and_aggregate": true,
+   "k_time_mine": 24,
+   "k_time_component": 24,
+   "k_time_aggregate": 24,
+   "local_ranks_saved_component_unique": [
+    24
+   ],
+   "corrections_component": [
+    1.5714285714285714,
+    1.5714285714285714,
+    1.386784511784512
+   ],
+   "corrections_aggregate": [
+    1.5714285714285714,
+    1.5714285714285714
+   ],
+   "inference_df_component": [
+    65,
+    65,
+    9
+   ],
+   "inference_df_aggregate": [
+    65,
+    65
+   ],
+   "covariance_labels_component": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "covariance_labels_aggregate": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "raw_hac12_component_vs_aggregate_max_rel": 7.557135749692733e-13,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 7.557135749692733e-13,
+   "corrected_hac12_component_vs_aggregate_max_rel": 7.557454696926198e-13,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 7.557454696926198e-13,
+   "raw_hac24_component_vs_aggregate_max_rel": 7.609487643556892e-13,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 7.606929832584268e-13,
+   "corrected_hac24_component_vs_aggregate_max_rel": 7.609487643556893e-13,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 7.607046096719388e-13,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 3.148148408627094e-12,
+   "origin_cluster_scores_sum_over_origins_max_abs_over_scale": 6.880290991289524e-14,
+   "origin_cluster_rank": 7,
+   "temperature_se_origin_cluster_over_calendar_hac12": 0.049958896823942285,
+   "saved_aggregation_check_rows": 1,
+   "saved_status": "verified within native numerical tolerance",
+   "saved_diffs_beta_mu_covariance": [
+    2.310651670001107e-15,
+    1.855660229921341e-07,
+    7.340048707726865e-16
+   ],
+   "saved_same_time_correction": true,
+   "saved_interpretation": "Count-specific shared-X PPML likelihood factorization; not additivity of component log growth or an identity for selected nonexhaustive cuts"
+  },
+  {
+   "panel": "complete52",
+   "control_set": "long",
+   "sample_variant": "all_eligible",
+   "exhaustive_partition": true,
+   "n_obs": 11700,
+   "n_units": 52,
+   "n_months": 225,
+   "balanced_same_dates_every_unit": true,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "counts_sum_minus_aggregate_max_abs": 0.0,
+   "zero_cells_retained": 134,
+   "min_origin_season_cell_total": 875.0,
+   "share_of_aggregate_count": 1.0,
+   "beta_max_abs_diff": 1.93421667571414e-16,
+   "beta_max_rel_diff": 3.7849351688887743e-14,
+   "temperature_100beta_component": 2.2383540093108647,
+   "temperature_100beta_aggregate": 2.2383540093108505,
+   "fitted_sum_max_abs_diff": 3.543682396411896e-07,
+   "fitted_sum_max_rel_diff": 8.110756479840835e-12,
+   "fitted_share_spread_within_cell_max": 8.433310173478444e-12,
+   "fitted_share_vs_observed_cell_share_max_rel": 1.6823999044095557e-10,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 1.682400312976312e-10,
+   "xr_equals_aggregate_xr_max_abs": 2.0961010704922955e-13,
+   "information_max_rel": 5.2019172767019896e-14,
+   "bread_max_rel": 4.382127722191616e-14,
+   "date_summed_scores_max_rel": 1.3323528737726938e-13,
+   "date_summed_influence_max_rel": 2.882186993230718e-13,
+   "row_level_hc0_temperature_ratio_component_over_aggregate": 0.1973914188919717,
+   "local_time_design_identical_for_every_unit_and_aggregate": true,
+   "k_time_mine": 35,
+   "k_time_component": 35,
+   "k_time_aggregate": 35,
+   "local_ranks_saved_component_unique": [
+    35
+   ],
+   "corrections_component": [
+    1.1842105263157894,
+    1.1842105263157894,
+    1.0791995075420922
+   ],
+   "corrections_aggregate": [
+    1.1842105263157894,
+    1.1842105263157894
+   ],
+   "inference_df_component": [
+    224,
+    224,
+    51
+   ],
+   "inference_df_aggregate": [
+    224,
+    224
+   ],
+   "covariance_labels_component": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "covariance_labels_aggregate": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "raw_hac12_component_vs_aggregate_max_rel": 1.555732512029476e-13,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 1.555732512029476e-13,
+   "corrected_hac12_component_vs_aggregate_max_rel": 1.5555025441784742e-13,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 1.5540460811221273e-13,
+   "raw_hac24_component_vs_aggregate_max_rel": 2.380239849976609e-13,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 2.380239849976609e-13,
+   "corrected_hac24_component_vs_aggregate_max_rel": 2.380048896117807e-13,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 2.380048896117807e-13,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 1.298516849601583e-12,
+   "origin_cluster_scores_sum_over_origins_max_abs_over_scale": 6.219243160044842e-15,
+   "origin_cluster_rank": 5,
+   "temperature_se_origin_cluster_over_calendar_hac12": 0.2834659927591961,
+   "saved_aggregation_check_rows": 1,
+   "saved_status": "verified within native numerical tolerance",
+   "saved_diffs_beta_mu_covariance": [
+    1.93421667571414e-16,
+    3.537861630320549e-07,
+    7.112366251504909e-16
+   ],
+   "saved_same_time_correction": true,
+   "saved_interpretation": "Count-specific shared-X PPML likelihood factorization; not additivity of component log growth or an identity for selected nonexhaustive cuts"
+  },
+  {
+   "panel": "complete52",
+   "control_set": "long",
+   "sample_variant": "event_dates_excluded",
+   "exhaustive_partition": true,
+   "n_obs": 8580,
+   "n_units": 52,
+   "n_months": 165,
+   "balanced_same_dates_every_unit": true,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "counts_sum_minus_aggregate_max_abs": 0.0,
+   "zero_cells_retained": 35,
+   "min_origin_season_cell_total": 273.0,
+   "share_of_aggregate_count": 1.0,
+   "beta_max_abs_diff": 1.4094628242311558e-16,
+   "beta_max_rel_diff": 1.0461527423575014e-13,
+   "temperature_100beta_component": 0.3740714975193366,
+   "temperature_100beta_aggregate": 0.37407149751932534,
+   "fitted_sum_max_abs_diff": 5.122274160385132e-09,
+   "fitted_sum_max_rel_diff": 3.3684818924940002e-15,
+   "fitted_share_spread_within_cell_max": 9.033061442307502e-15,
+   "fitted_share_vs_observed_cell_share_max_rel": 6.86108337433322e-12,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 6.861095851104416e-12,
+   "xr_equals_aggregate_xr_max_abs": 7.105427357601002e-15,
+   "information_max_rel": 3.956395207312165e-15,
+   "bread_max_rel": 5.47546452437426e-15,
+   "date_summed_scores_max_rel": 9.350959078987308e-15,
+   "date_summed_influence_max_rel": 1.7351247453448134e-14,
+   "row_level_hc0_temperature_ratio_component_over_aggregate": 1.2624263126016697,
+   "local_time_design_identical_for_every_unit_and_aggregate": true,
+   "k_time_mine": 30,
+   "k_time_component": 30,
+   "k_time_aggregate": 30,
+   "local_ranks_saved_component_unique": [
+    30
+   ],
+   "corrections_component": [
+    1.2222222222222223,
+    1.2222222222222223,
+    1.10194201137245
+   ],
+   "corrections_aggregate": [
+    1.2222222222222223,
+    1.2222222222222223
+   ],
+   "inference_df_component": [
+    164,
+    164,
+    51
+   ],
+   "inference_df_aggregate": [
+    164,
+    164
+   ],
+   "covariance_labels_component": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "covariance_labels_aggregate": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "raw_hac12_component_vs_aggregate_max_rel": 6.85317949016338e-15,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 6.842811593809124e-15,
+   "corrected_hac12_component_vs_aggregate_max_rel": 6.854122026195585e-15,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 6.854122026195585e-15,
+   "raw_hac24_component_vs_aggregate_max_rel": 7.482239282108309e-15,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 7.482239282108309e-15,
+   "corrected_hac24_component_vs_aggregate_max_rel": 7.480650021428166e-15,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 7.494953367549444e-15,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 3.941291737419306e-14,
+   "origin_cluster_scores_sum_over_origins_max_abs_over_scale": 6.239138086542408e-15,
+   "origin_cluster_rank": 5,
+   "temperature_se_origin_cluster_over_calendar_hac12": 0.7197206963561452,
+   "saved_aggregation_check_rows": 1,
+   "saved_status": "verified within native numerical tolerance",
+   "saved_diffs_beta_mu_covariance": [
+    1.4094628242311558e-16,
+    5.587935447692871e-09,
+    3.5439858513119934e-18
+   ],
+   "saved_same_time_correction": true,
+   "saved_interpretation": "Count-specific shared-X PPML likelihood factorization; not additivity of component log growth or an identity for selected nonexhaustive cuts"
+  },
+  {
+   "panel": "complete52",
+   "control_set": "full",
+   "sample_variant": "all_eligible",
+   "exhaustive_partition": true,
+   "n_obs": 5200,
+   "n_units": 52,
+   "n_months": 100,
+   "balanced_same_dates_every_unit": true,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "counts_sum_minus_aggregate_max_abs": 0.0,
+   "zero_cells_retained": 106,
+   "min_origin_season_cell_total": 95.0,
+   "share_of_aggregate_count": 1.0,
+   "beta_max_abs_diff": 1.4103301859691442e-15,
+   "beta_max_rel_diff": 5.363136499598782e-13,
+   "temperature_100beta_component": -0.26296742327468414,
+   "temperature_100beta_aggregate": -0.2629674232745431,
+   "fitted_sum_max_abs_diff": 6.684567779302597e-07,
+   "fitted_sum_max_rel_diff": 1.3721462079141657e-11,
+   "fitted_share_spread_within_cell_max": 1.384400783086846e-11,
+   "fitted_share_vs_observed_cell_share_max_rel": 1.0502426409408547e-09,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 1.0502425817387277e-09,
+   "xr_equals_aggregate_xr_max_abs": 1.000088900582341e-12,
+   "information_max_rel": 4.911798812402147e-14,
+   "bread_max_rel": 5.66728635418228e-14,
+   "date_summed_scores_max_rel": 4.2791776362245075e-13,
+   "date_summed_influence_max_rel": 4.893995655657406e-13,
+   "row_level_hc0_temperature_ratio_component_over_aggregate": 0.13195612944186272,
+   "local_time_design_identical_for_every_unit_and_aggregate": true,
+   "k_time_mine": 27,
+   "k_time_component": 27,
+   "k_time_aggregate": 27,
+   "local_ranks_saved_component_unique": [
+    27
+   ],
+   "corrections_component": [
+    1.36986301369863,
+    1.36986301369863,
+    1.162232224615345
+   ],
+   "corrections_aggregate": [
+    1.36986301369863,
+    1.36986301369863
+   ],
+   "inference_df_component": [
+    99,
+    99,
+    51
+   ],
+   "inference_df_aggregate": [
+    99,
+    99
+   ],
+   "covariance_labels_component": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "covariance_labels_aggregate": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "raw_hac12_component_vs_aggregate_max_rel": 5.715314685080225e-13,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 5.714007131960783e-13,
+   "corrected_hac12_component_vs_aggregate_max_rel": 5.715628497828891e-13,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 5.713719470274506e-13,
+   "raw_hac24_component_vs_aggregate_max_rel": 5.785117775749955e-13,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 5.77881727719218e-13,
+   "corrected_hac24_component_vs_aggregate_max_rel": 5.785079972758609e-13,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 5.778640863232562e-13,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 1.7855938949651318e-11,
+   "origin_cluster_scores_sum_over_origins_max_abs_over_scale": 5.185598768233258e-14,
+   "origin_cluster_rank": 7,
+   "temperature_se_origin_cluster_over_calendar_hac12": 0.08686005384133037,
+   "saved_aggregation_check_rows": 1,
+   "saved_status": "verified within native numerical tolerance",
+   "saved_diffs_beta_mu_covariance": [
+    1.4103301859691442e-15,
+    6.682239472866058e-07,
+    4.3638703761672566e-14
+   ],
+   "saved_same_time_correction": true,
+   "saved_interpretation": "Count-specific shared-X PPML likelihood factorization; not additivity of component log growth or an identity for selected nonexhaustive cuts"
+  },
+  {
+   "panel": "complete52",
+   "control_set": "full",
+   "sample_variant": "event_dates_excluded",
+   "exhaustive_partition": true,
+   "n_obs": 3432,
+   "n_units": 52,
+   "n_months": 66,
+   "balanced_same_dates_every_unit": true,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "counts_sum_minus_aggregate_max_abs": 0.0,
+   "zero_cells_retained": 16,
+   "min_origin_season_cell_total": 67.0,
+   "share_of_aggregate_count": 1.0,
+   "beta_max_abs_diff": 1.3123183095764546e-15,
+   "beta_max_rel_diff": 5.934434439355271e-13,
+   "temperature_100beta_component": -1.5762016397907603,
+   "temperature_100beta_aggregate": -1.576201639790674,
+   "fitted_sum_max_abs_diff": 2.8312206268310547e-07,
+   "fitted_sum_max_rel_diff": 2.0047587773650901e-13,
+   "fitted_share_spread_within_cell_max": 8.358854411178529e-14,
+   "fitted_share_vs_observed_cell_share_max_rel": 6.540762481789921e-10,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 6.540762438853088e-10,
+   "xr_equals_aggregate_xr_max_abs": 1.5987211554602254e-13,
+   "information_max_rel": 7.254531662938851e-14,
+   "bread_max_rel": 1.4848828090283743e-14,
+   "date_summed_scores_max_rel": 2.1679599026153285e-12,
+   "date_summed_influence_max_rel": 1.9422374601291123e-12,
+   "row_level_hc0_temperature_ratio_component_over_aggregate": 1.2612595787964305,
+   "local_time_design_identical_for_every_unit_and_aggregate": true,
+   "k_time_mine": 24,
+   "k_time_component": 24,
+   "k_time_aggregate": 24,
+   "local_ranks_saved_component_unique": [
+    24
+   ],
+   "corrections_component": [
+    1.5714285714285714,
+    1.5714285714285714,
+    1.2511711408454653
+   ],
+   "corrections_aggregate": [
+    1.5714285714285714,
+    1.5714285714285714
+   ],
+   "inference_df_component": [
+    65,
+    65,
+    51
+   ],
+   "inference_df_aggregate": [
+    65,
+    65
+   ],
+   "covariance_labels_component": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "covariance_labels_aggregate": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "raw_hac12_component_vs_aggregate_max_rel": 1.6101891607806313e-12,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 1.6103645817590364e-12,
+   "corrected_hac12_component_vs_aggregate_max_rel": 1.6101732134189581e-12,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 1.6105081080140952e-12,
+   "raw_hac24_component_vs_aggregate_max_rel": 1.2719993966859975e-12,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 1.2714878344914727e-12,
+   "corrected_hac24_component_vs_aggregate_max_rel": 1.2720459023400454e-12,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 1.2715575929725442e-12,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 5.0963677722393186e-12,
+   "origin_cluster_scores_sum_over_origins_max_abs_over_scale": 5.627883042896459e-14,
+   "origin_cluster_rank": 7,
+   "temperature_se_origin_cluster_over_calendar_hac12": 0.2279888790617967,
+   "saved_aggregation_check_rows": 1,
+   "saved_status": "verified within native numerical tolerance",
+   "saved_diffs_beta_mu_covariance": [
+    1.3123183095764546e-15,
+    2.8265640139579773e-07,
+    1.5638532135930916e-15
+   ],
+   "saved_same_time_correction": true,
+   "saved_interpretation": "Count-specific shared-X PPML likelihood factorization; not additivity of component log growth or an identity for selected nonexhaustive cuts"
+  },
+  {
+   "panel": "region",
+   "control_set": "long",
+   "sample_variant": "all_eligible",
+   "exhaustive_partition": false,
+   "n_obs": 2025,
+   "n_units": 9,
+   "n_months": 225,
+   "balanced_same_dates_every_unit": true,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "counts_sum_minus_aggregate_max_abs": 5821.0,
+   "zero_cells_retained": 0,
+   "min_origin_season_cell_total": 71454.0,
+   "share_of_aggregate_count": 0.9999158054146812,
+   "beta_max_abs_diff": 1.992461447541949e-05,
+   "beta_max_rel_diff": 0.00856939650805398,
+   "temperature_100beta_component": 2.2363615478633085,
+   "temperature_100beta_aggregate": 2.2383540093108505,
+   "fitted_sum_max_abs_diff": 1045.9557913169265,
+   "fitted_sum_max_rel_diff": 0.000946127296103134,
+   "fitted_share_spread_within_cell_max": 0.0007701736129297216,
+   "fitted_share_vs_observed_cell_share_max_rel": 0.0006232689442476365,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 0.000623657650693064,
+   "xr_equals_aggregate_xr_max_abs": 0.00046219632902655405,
+   "information_max_rel": 9.897765390964557e-05,
+   "bread_max_rel": 6.199622683999647e-05,
+   "date_summed_scores_max_rel": 0.001317899810851774,
+   "date_summed_influence_max_rel": 0.0005481034750570444,
+   "row_level_hc0_temperature_ratio_component_over_aggregate": 0.3315027517799852,
+   "local_time_design_identical_for_every_unit_and_aggregate": true,
+   "k_time_mine": 35,
+   "k_time_component": 35,
+   "k_time_aggregate": 35,
+   "local_ranks_saved_component_unique": [
+    35
+   ],
+   "corrections_component": [
+    1.1842105263157894,
+    1.1842105263157894,
+    1.2022175290390706
+   ],
+   "corrections_aggregate": [
+    1.1842105263157894,
+    1.1842105263157894
+   ],
+   "inference_df_component": [
+    224,
+    224,
+    8
+   ],
+   "inference_df_aggregate": [
+    224,
+    224
+   ],
+   "covariance_labels_component": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "covariance_labels_aggregate": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "raw_hac12_component_vs_aggregate_max_rel": 4.472213898113059e-05,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 4.472213898114137e-05,
+   "corrected_hac12_component_vs_aggregate_max_rel": 4.472213898113083e-05,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 4.472213898113994e-05,
+   "raw_hac24_component_vs_aggregate_max_rel": 0.00015886806632996975,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 0.00015886806633031347,
+   "corrected_hac24_component_vs_aggregate_max_rel": 0.0001588680663298552,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 0.00015886806633014545,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 0.002848195618565086,
+   "origin_cluster_scores_sum_over_origins_max_abs_over_scale": 1.6015884915513685e-14,
+   "origin_cluster_rank": 5,
+   "temperature_se_origin_cluster_over_calendar_hac12": 0.40225426754074634,
+   "saved_aggregation_check_rows": 0
+  },
+  {
+   "panel": "region",
+   "control_set": "long",
+   "sample_variant": "event_dates_excluded",
+   "exhaustive_partition": false,
+   "n_obs": 1485,
+   "n_units": 9,
+   "n_months": 165,
+   "balanced_same_dates_every_unit": true,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "counts_sum_minus_aggregate_max_abs": 5821.0,
+   "zero_cells_retained": 0,
+   "min_origin_season_cell_total": 58466.0,
+   "share_of_aggregate_count": 0.9999380909096489,
+   "beta_max_abs_diff": 2.324112654272228e-05,
+   "beta_max_rel_diff": 0.01407281491645047,
+   "temperature_100beta_component": 0.3717473848650531,
+   "temperature_100beta_aggregate": 0.37407149751932534,
+   "fitted_sum_max_abs_diff": 1099.4126583545003,
+   "fitted_sum_max_rel_diff": 0.0009516599700756703,
+   "fitted_share_spread_within_cell_max": 0.0007109070944109441,
+   "fitted_share_vs_observed_cell_share_max_rel": 0.0005580536030446537,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 0.0005583652007567536,
+   "xr_equals_aggregate_xr_max_abs": 0.0005144362425317794,
+   "information_max_rel": 9.89207715389348e-05,
+   "bread_max_rel": 4.93600574678977e-05,
+   "date_summed_scores_max_rel": 0.007097644520447364,
+   "date_summed_influence_max_rel": 0.003661463893521125,
+   "row_level_hc0_temperature_ratio_component_over_aggregate": 1.4584961978960531,
+   "local_time_design_identical_for_every_unit_and_aggregate": true,
+   "k_time_mine": 30,
+   "k_time_component": 30,
+   "k_time_aggregate": 30,
+   "local_ranks_saved_component_unique": [
+    30
+   ],
+   "corrections_component": [
+    1.2222222222222223,
+    1.2222222222222223,
+    1.228476821192053
+   ],
+   "corrections_aggregate": [
+    1.2222222222222223,
+    1.2222222222222223
+   ],
+   "inference_df_component": [
+    164,
+    164,
+    8
+   ],
+   "inference_df_aggregate": [
+    164,
+    164
+   ],
+   "covariance_labels_component": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "covariance_labels_aggregate": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "raw_hac12_component_vs_aggregate_max_rel": 0.001219827600094001,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 0.001219827600094001,
+   "corrected_hac12_component_vs_aggregate_max_rel": 0.0012198276000940612,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 0.0012198276000940612,
+   "raw_hac24_component_vs_aggregate_max_rel": 0.0008805600176988306,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 0.0008805600176992502,
+   "corrected_hac24_component_vs_aggregate_max_rel": 0.0008805600176989069,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 0.0008805600176993646,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 0.004975162231602104,
+   "origin_cluster_scores_sum_over_origins_max_abs_over_scale": 5.028950769358912e-15,
+   "origin_cluster_rank": 5,
+   "temperature_se_origin_cluster_over_calendar_hac12": 0.8981052011808272,
+   "saved_aggregation_check_rows": 0
+  },
+  {
+   "panel": "region",
+   "control_set": "full",
+   "sample_variant": "all_eligible",
+   "exhaustive_partition": false,
+   "n_obs": 900,
+   "n_units": 9,
+   "n_months": 100,
+   "balanced_same_dates_every_unit": true,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "counts_sum_minus_aggregate_max_abs": 808.0,
+   "zero_cells_retained": 0,
+   "min_origin_season_cell_total": 24835.0,
+   "share_of_aggregate_count": 0.9999641759942482,
+   "beta_max_abs_diff": 9.903738767953404e-05,
+   "beta_max_rel_diff": 0.03766146636959556,
+   "temperature_100beta_component": -0.25306368450658967,
+   "temperature_100beta_aggregate": -0.2629674232745431,
+   "fitted_sum_max_abs_diff": 287.9226968532894,
+   "fitted_sum_max_rel_diff": 0.00023009047394605093,
+   "fitted_share_spread_within_cell_max": 0.00018542167437154744,
+   "fitted_share_vs_observed_cell_share_max_rel": 0.0001198979430733697,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 0.00011991232031396338,
+   "xr_equals_aggregate_xr_max_abs": 0.00014499516824062475,
+   "information_max_rel": 3.6802466160273297e-05,
+   "bread_max_rel": 4.525850652019511e-05,
+   "date_summed_scores_max_rel": 6.818732217074453e-05,
+   "date_summed_influence_max_rel": 0.0002753242443455388,
+   "row_level_hc0_temperature_ratio_component_over_aggregate": 0.28788028808968646,
+   "local_time_design_identical_for_every_unit_and_aggregate": true,
+   "k_time_mine": 27,
+   "k_time_component": 27,
+   "k_time_aggregate": 27,
+   "local_ranks_saved_component_unique": [
+    27
+   ],
+   "corrections_component": [
+    1.36986301369863,
+    1.36986301369863,
+    1.3016409266409266
+   ],
+   "corrections_aggregate": [
+    1.36986301369863,
+    1.36986301369863
+   ],
+   "inference_df_component": [
+    99,
+    99,
+    8
+   ],
+   "inference_df_aggregate": [
+    99,
+    99
+   ],
+   "covariance_labels_component": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "covariance_labels_aggregate": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "raw_hac12_component_vs_aggregate_max_rel": 3.8843106054268964e-05,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 3.884310605421993e-05,
+   "corrected_hac12_component_vs_aggregate_max_rel": 3.884310605426128e-05,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 3.884310605420162e-05,
+   "raw_hac24_component_vs_aggregate_max_rel": 6.743392728576733e-05,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 6.743392728576733e-05,
+   "corrected_hac24_component_vs_aggregate_max_rel": 6.743392728577867e-05,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 6.743392728577867e-05,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 0.011946827784839797,
+   "origin_cluster_scores_sum_over_origins_max_abs_over_scale": 2.6182781746809068e-14,
+   "origin_cluster_rank": 7,
+   "temperature_se_origin_cluster_over_calendar_hac12": 0.1489690110190843,
+   "saved_aggregation_check_rows": 0
+  },
+  {
+   "panel": "region",
+   "control_set": "full",
+   "sample_variant": "event_dates_excluded",
+   "exhaustive_partition": false,
+   "n_obs": 594,
+   "n_units": 9,
+   "n_months": 66,
+   "balanced_same_dates_every_unit": true,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "counts_sum_minus_aggregate_max_abs": 808.0,
+   "zero_cells_retained": 0,
+   "min_origin_season_cell_total": 21307.0,
+   "share_of_aggregate_count": 0.9999684852756477,
+   "beta_max_abs_diff": 0.00010225805289670181,
+   "beta_max_rel_diff": 0.02092447340083215,
+   "temperature_100beta_component": -1.5659758345010037,
+   "temperature_100beta_aggregate": -1.576201639790674,
+   "fitted_sum_max_abs_diff": 310.7027006666176,
+   "fitted_sum_max_rel_diff": 0.00023621765582500326,
+   "fitted_share_spread_within_cell_max": 0.00018197622591657398,
+   "fitted_share_vs_observed_cell_share_max_rel": 0.00012586956838200764,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 0.0001258854135246801,
+   "xr_equals_aggregate_xr_max_abs": 0.00013659041775904157,
+   "information_max_rel": 3.9534508698906727e-05,
+   "bread_max_rel": 4.368015916492245e-05,
+   "date_summed_scores_max_rel": 0.0006092891433788328,
+   "date_summed_influence_max_rel": 0.0038489306065903365,
+   "row_level_hc0_temperature_ratio_component_over_aggregate": 1.5542492592652248,
+   "local_time_design_identical_for_every_unit_and_aggregate": true,
+   "k_time_mine": 24,
+   "k_time_component": 24,
+   "k_time_aggregate": 24,
+   "local_ranks_saved_component_unique": [
+    24
+   ],
+   "corrections_component": [
+    1.5714285714285714,
+    1.5714285714285714,
+    1.4074367088607596
+   ],
+   "corrections_aggregate": [
+    1.5714285714285714,
+    1.5714285714285714
+   ],
+   "inference_df_component": [
+    65,
+    65,
+    8
+   ],
+   "inference_df_aggregate": [
+    65,
+    65
+   ],
+   "covariance_labels_component": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "covariance_labels_aggregate": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "raw_hac12_component_vs_aggregate_max_rel": 0.0035009680799357695,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 0.0035009680799357695,
+   "corrected_hac12_component_vs_aggregate_max_rel": 0.0035009680799358176,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 0.0035009680799357058,
+   "raw_hac24_component_vs_aggregate_max_rel": 0.003951629564954329,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 0.003951629564954841,
+   "corrected_hac24_component_vs_aggregate_max_rel": 0.003951629564954306,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 0.003951629564954795,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 0.02111130299688213,
+   "origin_cluster_scores_sum_over_origins_max_abs_over_scale": 8.072815504795763e-14,
+   "origin_cluster_rank": 7,
+   "temperature_se_origin_cluster_over_calendar_hac12": 0.04995275934129626,
+   "saved_aggregation_check_rows": 0
+  },
+  {
+   "panel": "country",
+   "control_set": "long",
+   "sample_variant": "all_eligible",
+   "exhaustive_partition": false,
+   "n_obs": 9450,
+   "n_units": 42,
+   "n_months": 225,
+   "balanced_same_dates_every_unit": true,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "counts_sum_minus_aggregate_max_abs": 83996.0,
+   "zero_cells_retained": 50,
+   "min_origin_season_cell_total": 4509.0,
+   "share_of_aggregate_count": 0.9682796777624937,
+   "beta_max_abs_diff": 0.0005698569222545961,
+   "beta_max_rel_diff": 0.11600350735687164,
+   "temperature_100beta_component": 2.29533970153631,
+   "temperature_100beta_aggregate": 2.2383540093108505,
+   "fitted_sum_max_abs_diff": 69708.80166463554,
+   "fitted_sum_max_rel_diff": 0.05314709983876218,
+   "fitted_share_spread_within_cell_max": 0.035506978509010946,
+   "fitted_share_vs_observed_cell_share_max_rel": 0.018993550561440056,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 0.019361290205900626,
+   "xr_equals_aggregate_xr_max_abs": 0.01544883139347597,
+   "information_max_rel": 0.03622650908373884,
+   "bread_max_rel": 0.0342947906012833,
+   "date_summed_scores_max_rel": 0.04046840724506168,
+   "date_summed_influence_max_rel": 0.01755490129810871,
+   "row_level_hc0_temperature_ratio_component_over_aggregate": 0.2098802885361178,
+   "local_time_design_identical_for_every_unit_and_aggregate": true,
+   "k_time_mine": 35,
+   "k_time_component": 35,
+   "k_time_aggregate": 35,
+   "local_ranks_saved_component_unique": [
+    35
+   ],
+   "corrections_component": [
+    1.1842105263157894,
+    1.1842105263157894,
+    1.0847768031641989
+   ],
+   "corrections_aggregate": [
+    1.1842105263157894,
+    1.1842105263157894
+   ],
+   "inference_df_component": [
+    224,
+    224,
+    41
+   ],
+   "inference_df_aggregate": [
+    224,
+    224
+   ],
+   "covariance_labels_component": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "covariance_labels_aggregate": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "raw_hac12_component_vs_aggregate_max_rel": 0.02830250972800663,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 0.02830250972800663,
+   "corrected_hac12_component_vs_aggregate_max_rel": 0.028302509728006606,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 0.028302509728006606,
+   "raw_hac24_component_vs_aggregate_max_rel": 0.032782952206017124,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 0.032782952206017464,
+   "corrected_hac24_component_vs_aggregate_max_rel": 0.03278295220601701,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 0.032782952206017305,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 0.23503365602696213,
+   "origin_cluster_scores_sum_over_origins_max_abs_over_scale": 1.2188505637432613e-14,
+   "origin_cluster_rank": 5,
+   "temperature_se_origin_cluster_over_calendar_hac12": 0.2982952594742996,
+   "saved_aggregation_check_rows": 0
+  },
+  {
+   "panel": "country",
+   "control_set": "long",
+   "sample_variant": "event_dates_excluded",
+   "exhaustive_partition": false,
+   "n_obs": 6930,
+   "n_units": 42,
+   "n_months": 165,
+   "balanced_same_dates_every_unit": true,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "counts_sum_minus_aggregate_max_abs": 83996.0,
+   "zero_cells_retained": 0,
+   "min_origin_season_cell_total": 3927.0,
+   "share_of_aggregate_count": 0.9683358714488846,
+   "beta_max_abs_diff": 0.0008524626994672671,
+   "beta_max_rel_diff": 0.3038060265895964,
+   "temperature_100beta_component": 0.4593177674660521,
+   "temperature_100beta_aggregate": 0.37407149751932534,
+   "fitted_sum_max_abs_diff": 69502.92042543809,
+   "fitted_sum_max_rel_diff": 0.04864177358847133,
+   "fitted_share_spread_within_cell_max": 0.022155256861076188,
+   "fitted_share_vs_observed_cell_share_max_rel": 0.012372963280382954,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 0.012527971410624287,
+   "xr_equals_aggregate_xr_max_abs": 0.010667957145519935,
+   "information_max_rel": 0.03603701253112288,
+   "bread_max_rel": 0.03405242792613247,
+   "date_summed_scores_max_rel": 0.0297992281665839,
+   "date_summed_influence_max_rel": 0.1191476719187366,
+   "row_level_hc0_temperature_ratio_component_over_aggregate": 1.3386997090268618,
+   "local_time_design_identical_for_every_unit_and_aggregate": true,
+   "k_time_mine": 30,
+   "k_time_component": 30,
+   "k_time_aggregate": 30,
+   "local_ranks_saved_component_unique": [
+    30
+   ],
+   "corrections_component": [
+    1.2222222222222223,
+    1.2222222222222223,
+    1.107677902621723
+   ],
+   "corrections_aggregate": [
+    1.2222222222222223,
+    1.2222222222222223
+   ],
+   "inference_df_component": [
+    164,
+    164,
+    41
+   ],
+   "inference_df_aggregate": [
+    164,
+    164
+   ],
+   "covariance_labels_component": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "covariance_labels_aggregate": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "raw_hac12_component_vs_aggregate_max_rel": 0.009118091587550262,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 0.009118091587550262,
+   "corrected_hac12_component_vs_aggregate_max_rel": 0.009118091587550201,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 0.009118091587550201,
+   "raw_hac24_component_vs_aggregate_max_rel": 0.0027640963348595764,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 0.0027640963348595678,
+   "corrected_hac24_component_vs_aggregate_max_rel": 0.0027640963348595647,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 0.0027640963348595504,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 0.10319616828035727,
+   "origin_cluster_scores_sum_over_origins_max_abs_over_scale": 3.296554854485072e-15,
+   "origin_cluster_rank": 5,
+   "temperature_se_origin_cluster_over_calendar_hac12": 0.7434653258960823,
+   "saved_aggregation_check_rows": 0
+  },
+  {
+   "panel": "country",
+   "control_set": "full",
+   "sample_variant": "all_eligible",
+   "exhaustive_partition": false,
+   "n_obs": 4200,
+   "n_units": 42,
+   "n_months": 100,
+   "balanced_same_dates_every_unit": true,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "counts_sum_minus_aggregate_max_abs": 70340.0,
+   "zero_cells_retained": 46,
+   "min_origin_season_cell_total": 1447.0,
+   "share_of_aggregate_count": 0.9639567082043812,
+   "beta_max_abs_diff": 0.0039042844051728476,
+   "beta_max_rel_diff": 1.345135164273625,
+   "temperature_100beta_component": -0.6166941513795574,
+   "temperature_100beta_aggregate": -0.2629674232745431,
+   "fitted_sum_max_abs_diff": 84671.06790542649,
+   "fitted_sum_max_rel_diff": 0.05849440075899212,
+   "fitted_share_spread_within_cell_max": 0.04223062364842512,
+   "fitted_share_vs_observed_cell_share_max_rel": 0.024620080700279053,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 0.024028497161067128,
+   "xr_equals_aggregate_xr_max_abs": 0.021635578575502024,
+   "information_max_rel": 0.04005372552732869,
+   "bread_max_rel": 0.04040103011932272,
+   "date_summed_scores_max_rel": 0.04146321536710528,
+   "date_summed_influence_max_rel": 0.007758050665477197,
+   "row_level_hc0_temperature_ratio_component_over_aggregate": 0.14150710692782878,
+   "local_time_design_identical_for_every_unit_and_aggregate": true,
+   "k_time_mine": 27,
+   "k_time_component": 27,
+   "k_time_aggregate": 27,
+   "local_ranks_saved_component_unique": [
+    27
+   ],
+   "corrections_component": [
+    1.36986301369863,
+    1.36986301369863,
+    1.168545132884092
+   ],
+   "corrections_aggregate": [
+    1.36986301369863,
+    1.36986301369863
+   ],
+   "inference_df_component": [
+    99,
+    99,
+    41
+   ],
+   "inference_df_aggregate": [
+    99,
+    99
+   ],
+   "covariance_labels_component": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "covariance_labels_aggregate": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "raw_hac12_component_vs_aggregate_max_rel": 0.018534540072206732,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 0.018534540072206864,
+   "corrected_hac12_component_vs_aggregate_max_rel": 0.01853454007220683,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 0.01853454007220683,
+   "raw_hac24_component_vs_aggregate_max_rel": 0.019923676784448806,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 0.019923676784448934,
+   "corrected_hac24_component_vs_aggregate_max_rel": 0.019923676784448802,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 0.019923676784448986,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 0.936047350995679,
+   "origin_cluster_scores_sum_over_origins_max_abs_over_scale": 1.0839748029516118e-14,
+   "origin_cluster_rank": 7,
+   "temperature_se_origin_cluster_over_calendar_hac12": 0.09098693495930892,
+   "saved_aggregation_check_rows": 0
+  },
+  {
+   "panel": "country",
+   "control_set": "full",
+   "sample_variant": "event_dates_excluded",
+   "exhaustive_partition": false,
+   "n_obs": 2772,
+   "n_units": 42,
+   "n_months": 66,
+   "balanced_same_dates_every_unit": true,
+   "regressors_equal_aggregate_row_by_row_max_abs": 0.0,
+   "counts_sum_minus_aggregate_max_abs": 67865.0,
+   "zero_cells_retained": 0,
+   "min_origin_season_cell_total": 1300.0,
+   "share_of_aggregate_count": 0.9644126865759816,
+   "beta_max_abs_diff": 0.001646354554162864,
+   "beta_max_rel_diff": 0.6175301523313603,
+   "temperature_100beta_component": -1.7408370952069603,
+   "temperature_100beta_aggregate": -1.576201639790674,
+   "fitted_sum_max_abs_diff": 68520.82487003086,
+   "fitted_sum_max_rel_diff": 0.04679148355418629,
+   "fitted_share_spread_within_cell_max": 0.014256163576086686,
+   "fitted_share_vs_observed_cell_share_max_rel": 0.008105560114756502,
+   "mu_from_aggregate_fit_times_observed_share_max_rel": 0.00804038826433407,
+   "xr_equals_aggregate_xr_max_abs": 0.015290540754693716,
+   "information_max_rel": 0.03873415098837817,
+   "bread_max_rel": 0.03941058864513688,
+   "date_summed_scores_max_rel": 0.029033294671786468,
+   "date_summed_influence_max_rel": 0.039101703377957105,
+   "row_level_hc0_temperature_ratio_component_over_aggregate": 1.3524149738952869,
+   "local_time_design_identical_for_every_unit_and_aggregate": true,
+   "k_time_mine": 24,
+   "k_time_component": 24,
+   "k_time_aggregate": 24,
+   "local_ranks_saved_component_unique": [
+    24
+   ],
+   "corrections_component": [
+    1.5714285714285714,
+    1.5714285714285714,
+    1.2582381940840686
+   ],
+   "corrections_aggregate": [
+    1.5714285714285714,
+    1.5714285714285714
+   ],
+   "inference_df_component": [
+    65,
+    65,
+    41
+   ],
+   "inference_df_aggregate": [
+    65,
+    65
+   ],
+   "covariance_labels_component": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "covariance_labels_aggregate": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "raw_hac12_component_vs_aggregate_max_rel": 0.0897138698132027,
+   "raw_hac12_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 0.08971386981320287,
+   "corrected_hac12_component_vs_aggregate_max_rel": 0.08971386981320276,
+   "corrected_hac12_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 0.08971386981320276,
+   "raw_hac24_component_vs_aggregate_max_rel": 0.1001506088351837,
+   "raw_hac24_independent_rebuild_from_component_influence_vs_aggregate_max_rel": 0.10015060883518345,
+   "corrected_hac24_component_vs_aggregate_max_rel": 0.1001506088351837,
+   "corrected_hac24_rebuilt_times_T_over_T_minus_K_vs_aggregate_max_rel": 0.10015060883518354,
+   "ledger_calendar_rows_max_abs_diff_all_terms": 0.43782939087677875,
+   "origin_cluster_scores_sum_over_origins_max_abs_over_scale": 8.35765095345827e-15,
+   "origin_cluster_rank": 7,
+   "temperature_se_origin_cluster_over_calendar_hac12": 0.2249472981484816,
+   "saved_aggregation_check_rows": 0
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+  "policy_id": "sg_broad_crisis_rebound_v1",
+  "status": "fixed_calendar_sensitivity_not_preregistered",
+  "calendar_frequency": "M",
+  "intervals_inclusive": true,
+  "label": "Singapore crisis and rebound blocks; calendar-defined sensitivity",
+  "events": [
+    {
+      "event_id": "sg_1985_recession",
+      "label": "1985 recession and recovery buffer",
+      "start": "1985-01",
+      "end": "1986-12",
+      "source_urls": [
+        "https://www.sg101.gov.sg/economy/case-studies/1985/",
+        "https://www.mas.gov.sg/-/media/MAS/Monetary-Policy-and-Economics/Education-and-Research/Education/Explorer/Economics-Explorer-2-Inflation.pdf"
+      ]
+    },
+    {
+      "event_id": "asian_financial_crisis",
+      "label": "Asian financial crisis block",
+      "start": "1997-01",
+      "end": "1998-12",
+      "source_urls": [
+        "https://www.sg101.gov.sg/economy/growing-our-economy/1997/"
+      ]
+    },
+    {
+      "event_id": "dotcom_sars",
+      "label": "Dot-com slowdown through SARS; broad combined block",
+      "start": "2001-01",
+      "end": "2003-12",
+      "source_urls": [
+        "https://www.sg101.gov.sg/economy/growing-our-economy/1997/",
+        "https://www.mti.gov.sg/resources/economic-survey-of-singapore/economic-survey-of-singapore-and-feature-articles/employment-trends-during-recession---a-comparison-from-peak-to-trough/"
+      ]
+    },
+    {
+      "event_id": "global_financial_crisis",
+      "label": "Global financial crisis block",
+      "start": "2008-01",
+      "end": "2009-12",
+      "source_urls": [
+        "https://www.mti.gov.sg/resources/economic-survey-of-singapore/economic-survey-of-singapore-and-feature-articles/employment-trends-during-recession---a-comparison-from-peak-to-trough/"
+      ]
+    },
+    {
+      "event_id": "covid_reopening",
+      "label": "COVID and reopening block retained from existing convention",
+      "start": "2020-01",
+      "end": "2022-12",
+      "source_urls": [
+        "https://www.mti.gov.sg/resources/economic-survey-of-singapore/"
+      ]
+    }
+  ],
+  "variants": [
+    "all_eligible",
+    "event_dates_excluded",
+    "strict_growth_window_clean"
+  ],
+  "strict_growth_window_rule": "For outcome date t, require every calendar period from t-h through t inclusive to be outside the event blocks; h=4 quarters or12 months. Use the SAME resulting YoY-safe dates for all five outcomes within each context.",
+  "event_dates_rule": "Only the observation date t must be outside the event blocks; this can retain affected YoY denominators and is labelled as such.",
+  "controls": [
+    "temp_c",
+    "rain_100mm",
+    "rh_pct"
+  ],
+  "outcomes": [
+    "y_short",
+    "y_yoy_nsa",
+    "y_yoy",
+    "y_log_level",
+    "y_raw_level"
+  ],
+  "invariants": [
+    "Compute growth/lags from full source history BEFORE exclusions.",
+    "Never select or delete observations by realised growth, residual size, p-values, or stationarity test outcomes.",
+    "Preserve actual calendar gaps in HAC lag distances.",
+    "Use exact parent eligibility and common dates across outcomes within each context.",
+    "Different taxonomy/history contexts remain explicit; matched broad/detail comparisons use identical dates.",
+    "One-sector regressions retain calendar HAC; pooled common slopes retain requested sector CR1 alongside DK; sector-specific total effects retain joint DK."
+  ],
+  "interpretation": "These intentionally broad event/rebound blocks are an analysis choice, not an official recession-dating series, an exhaustive list of every sectoral shock, or a claim all unusual growth has been removed. The resulting non-crisis estimates are sensitivity analyses, not causal certification."
+}

@@ -1,0 +1,117 @@
+{
+  "status": "passed",
+  "scope": "354 final arrival-rigour requests; model arrays, actual samples, semantic exports/statuses and all319 native ledger rows",
+  "comparison_policy": "Exact dtype/shape/array bytes; exact canonical CSV cells except separately-bound provenance hash fields. No numeric tolerance, baseline refresh, model refit or source reseal.",
+  "baseline_sha256": "2086d5fd7b73c19c4e8d308da01bb2613f4b24341a20b22aa40c561fcba210e1",
+  "verifier_source_sha256": "2842268151076db451464e1b6fa42f91e12d5f6e6742666a71baaf541675c03d",
+  "semantic_files_checked": 534,
+  "npz_arrays_checked": 8338,
+  "counts": {
+    "monthly": {
+      "requests": 270,
+      "native_fits": 260,
+      "statuses": {
+        "estimated": 260,
+        "unavailable: underidentified or rank-deficient design": 10
+      }
+    },
+    "annual": {
+      "requests": 30,
+      "native_fits": 15,
+      "statuses": {
+        "estimated": 15,
+        "unavailable: underidentified or rank-deficient design": 15
+      }
+    },
+    "ppml": {
+      "requests": 30,
+      "native_fits": 20,
+      "statuses": {
+        "estimated": 30
+      }
+    },
+    "origin_year": {
+      "requests": 24,
+      "native_fits": 24,
+      "statuses": {
+        "estimated": 24
+      }
+    }
+  },
+  "source_bindings_checked": 18,
+  "authorized_post_snapshot_guard_only_source_changes": [
+    {
+      "path": "scripts/literature_sensitivity.py",
+      "before_sha256": "95d4d2fdd3b95a0dc0dc30875d50b314ab2d53b3774746d29bf9e8dcf5cbdca7",
+      "after_sha256": "69c41f73524081aef1fb7977066667d5281ea70984d419f317e56d808000ed1b",
+      "excluded_guard_node": "protected_paths",
+      "all_other_AST_identical": true,
+      "removed_derived_bindings": [
+        "outputs/crisis_sensitivity/verification.json",
+        "outputs/complete_va_controls/verification.json"
+      ],
+      "byte_identical_other_functions_sha256": {
+        "relative": "fc3b1ac1e9b64e0276d253bd052a724dc77599e6e6aaabd24085479a377b028d",
+        "weather_history": "5cb4b3be6398c4b9f955589a0873062a67ee3a1fdd3ffd632cad17746b2f3381",
+        "raw_growth_registry": "0ea663274225232266fcc93ed482bcb7fed99ded96edab3bf5e37db8a7d794ff",
+        "maximum_raw_history": "efac91f97197f0613d384aba2d0a8692449dee487b93e0824bf18fc831e0d5ff",
+        "prepare_history": "c5e07292f28d26c47fe4173673d97c3e478aa5f956d6492a88a2fbf70ee7dd7c",
+        "design": "53cb1bb1398bc7a39b4f5d8b2899745fc6379ea4a66c9941e863bb9503ebb5e8",
+        "calendar_covariance": "b8d6cdb9ecad5424dfe608b0da4cb9307f2b9a0b7f827390821d39171144c6bd",
+        "test_record": "43ca1895e976b662aba88ee871c71924fbc40809788ab5d3ae830fb2651481b5",
+        "restrictions": "395b7da058382d29229d40bdb712cc8da74953db88d90b8d2f6b65320cc3b626",
+        "inference_rows": "48ab4339b680b3de2e8d6a8eed0cd84fde91bdf052d9b1e9f10a817a582b0be6",
+        "fit_spec": "07157afd80dd11c522a418ae5ab1929a347adeb2a007df54f770efa3d92eae14"
+      }
+    },
+    {
+      "path": "scripts/literature_full_controls.py",
+      "before_sha256": "c075ad3cae37bc02aa63521ead29b8b47891a616483ce336125561609eeda8b2",
+      "after_sha256": "385bbdacc012e685ade603c96231ca5d751500bd4fa6866894575cbe6afa792f",
+      "excluded_guard_node": "protected_inventory",
+      "all_other_AST_identical": true,
+      "removed_derived_bindings": "Derived verification-prefixed/history and named presentation records only; actual behavior tested separately",
+      "byte_identical_other_functions_sha256": {
+        "relative": "052cade5cf0c2705f1e66a2e24f8df7298f667fbc1259ab18372f51624474850",
+        "controls": "4220790e44e4c37685712b746edf943da1b046255d6269575a5c34b85bd1eaa5",
+        "raw_full_control_history": "fb0c96cb11f52ac6813c8cade6126df86cd1871554c3004234ceaa1fd4aaa457",
+        "prepare": "1cf31301b157fafe7024742578831c682498ba2340e72f426223c09f68c6031b",
+        "design": "e4735a7ece300f0491dfd36fa48fd3505ac3a67673344dae5e227c4c399a984f",
+        "matrix_rank": "9d8496ab478a37920a46e4a3ad662da342d3f5e6494c4cd0bd61e312059d72d8",
+        "wald": "2c8ab38cf3ccf0659941b9803a119493257982e92c6ebe3b21dfd2609a9fe1d5",
+        "unavailable_test": "e9c38ebecd83852ba8fe9f90b7cf41898770df974dad2e02d86c37320e49f133",
+        "effect": "333e8c0537dd951413ba8378d17ae615a88d4c6eada9a57f5eb287706724faed",
+        "fit_spec": "a332d895104ddf52e3e90f06d6ef274044c7f7f3c6155f5901d52345bf8e27c7",
+        "run_literature_full_controls": "ff7b004fba6a4844a0bf6a0ae3146a7cebd0ba54262651b749d352bc752ca5a5"
+      }
+    },
+    {
+      "path": "scripts/annual_seasonal_literature.py",
+      "before_sha256": "f80fb4d8695d134e5a0775d34cd612f977ab7dea4b1faa87da66f15320addb72",
+      "after_sha256": "12c5d214ef510f63a6aad4ae0a8d3bc7cf765d0a9561ae3f722dbb1ca5c0a30e",
+      "excluded_guard_node": "protected_names",
+      "all_other_AST_identical": true,
+      "removed_derived_bindings": [
+        "outputs/crisis_sensitivity/verification.json"
+      ],
+      "byte_identical_other_functions_sha256": {
+        "holm_probabilities": "e6f025028348d103b87d3d38c5d015733731fc345346552385e126f953554055",
+        "rel": "18ad8980b2708e217bfe013c0f7c718fc797ecfce19bded3bacc5f3889a7ab87",
+        "feature_names": "3a5a97ccc3ddcee5f297f7e1b9ca23f7b2b2c940ebf7b1440e876354c1553e5a",
+        "parent_histories": "9d3650926b7f221089be0b755de1520d06b8e868b60efe24098fdf01c1ecd2fb",
+        "history_eligible": "605ee5f35902e5c2acb1c70d272246f4b053a23673191dbf2dad8c7bf8d7ff54",
+        "sample_frame": "263d5984aaeab9ca955443682e939e491aba43efe1466be1d460ee0072bc398a",
+        "design": "72a4bc8975655ccf5e4695c3c63c38697d73a909552dc63647c010d7fa7a918e",
+        "effect_contrasts": "0129509d8ab4097d62d4ab6624de70016c017808a274b29e780dcfe1bdacc806",
+        "nulls": "a16e1168f996d550e36bd66c44ed51e964d67d90bd7793a25edc89e3b87164b1",
+        "fit_spec": "e09be2f691feb67c0ecbf37d0263a3c1a24d3e42e883f205c81ce8af9b429391"
+      }
+    }
+  ],
+  "guard_revision_sha256": "ffd65f514a0e67cd993c6247058bf32381357bdd6c4777b6fbea33f77369691a",
+  "guard_verifier_sha256": "24edd443f387611494d73d13a4f9528380ca6af68a9a4e13e1e238a34e4c18c4",
+  "numeric_or_status_differences": [],
+  "native_fits_executed_by_this_verifier": 0,
+  "claim": "Current arrival model/sample/array/export/native-ledger semantics exactly match the immutable reviewed generation. Explicit guard-only source revisions preserve every other AST node.",
+  "limits": "A later pass establishes semantic identity with the reviewed generation, not that the AI reviewed later report/driver/privacy code or that inference/causality is validated."
+}

@@ -7,7 +7,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from scipy.stats import t as student_t
-from statsmodels.stats.sandwich_covariance import cov_nw_groupsum
+from calendar_hac import cov_nw_groupsum
 
 from estimate import estimates, fit
 

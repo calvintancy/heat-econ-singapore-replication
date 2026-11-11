@@ -1,0 +1,52 @@
+from __future__ import annotations
+import csv,hashlib,json,shutil,subprocess,sys,time
+from datetime import datetime,timezone
+from pathlib import Path
+BASE=Path('/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310');PARENT=Path('/Volumes/datadrive/heat_econ')
+prior=json.loads((BASE/'resumed_production_verification.json').read_text());ROOT=Path(prior['relocated_root']);sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+evidence_path=PARENT/'replication/extensions/review_evidence/derived_proof_guard_revision.json';revision=json.loads(evidence_path.read_text())
+source_before={name:sha(ROOT/name) for name in prior['source_sha256']}
+changes=[]
+for item in revision['changes']:
+ name=item['path'];assert source_before[name]==item['before_sha256'] and sha(PARENT/name)==item['after_sha256'];changes.append({k:item[k] for k in ['path','before_sha256','after_sha256']});shutil.copy2(PARENT/name,ROOT/name)
+sources={name:sha(ROOT/name) for name in source_before}
+assert {name for name in sources if sources[name]!=source_before[name]}=={item['path'] for item in changes}
+sys.path.insert(0,str(ROOT/'scripts'));import replicate,replicate_extensions as driver
+producer_steps=['literature_sensitivity.py','annual_seasonal_literature.py','literature_rank_correction.py','literature_restrictions.py','literature_full_controls.py','literature_full_controls_restrictions.py']+driver.ARRIVAL_PRODUCERS
+verify_steps=['verify_literature_sensitivity.py','verify_annual_seasonal_literature.py','verify_literature_full_controls.py']+driver.ARRIVAL_NUMERICAL
+unaffected=['crisis_sensitivity','crisis_sensitivity/annual','complete_va_controls','literature_sensitivity/annual']
+reuse={folder:sha(ROOT/'outputs'/folder/'verification.json') for folder in unaffected}
+assert all(json.loads((ROOT/'outputs'/f/'verification.json').read_text())['status']=='passed' for f in unaffected)
+result={'status':'running','started_utc':datetime.now(timezone.utc).isoformat(),'relocated_root':str(ROOT),'python_executable':prior['python_executable'],
+ 'scope':'Explicit guard-only source revision; affected three literature and dependent arrival producers rerun, first four unaffected passed mathematical audits reused, remaining six independent audits replayed. Shared locked environment, no final source seal or fresh-environment claim',
+ 'prior_failed_numerical_receipt_sha256':sha(BASE/'numerical_run.json'),'guard_revision_evidence_sha256':sha(evidence_path),'guard_AST_fixture_verification_sha256':sha(PARENT/'outputs/derived_proof_guards/verification.json'),
+ 'explicit_source_changes':changes,'source_sha256':sources,'reused_unaffected_passed_receipts':reuse,'steps':[]}
+def save():(BASE/'guard_revision_run.json').write_text(json.dumps(result,indent=2)+'\n')
+save();start=time.monotonic()
+try:
+ for i,(kind,name) in enumerate([('producer',n) for n in producer_steps]+[('independent_numerical',n) for n in verify_steps],1):
+  step={'kind':kind,'script':'scripts/'+name,'status':'running','source_sha256':sha(ROOT/'scripts'/name)};result['steps'].append(step);save();t=time.monotonic();log=BASE/f'guard-v2-{i:02d}-{name}.log';print(f'[{i}/15] {kind}: {name}',flush=True)
+  with log.open('w') as f:completed=subprocess.run([prior['python_executable'],'-c',replicate.FROZEN_LAUNCHER,str(ROOT/'scripts'/name)],cwd=ROOT,env=replicate.child_environment(),stdout=f,stderr=subprocess.STDOUT)
+  step.update(status='passed' if completed.returncode==0 else 'failed',exit_code=completed.returncode,seconds=time.monotonic()-t,log=str(log));save()
+  if completed.returncode:raise RuntimeError(name+' failed')
+ expected={'crisis_sensitivity':2655,'crisis_sensitivity/annual':1656,'complete_va_controls':750,'literature_sensitivity/annual':2428,'literature_sensitivity':2361,'literature_sensitivity/annual_seasonal':684,'literature_sensitivity/full_controls':574,'visitor_rigour/monthly':260,'visitor_rigour/annual':15,'visitor_rigour/origin_year':24,'visitor_rigour/ppml':20}
+ records={}
+ for folder,count in expected.items():
+  ledger=ROOT/'outputs'/folder/'pyfixest/fit_log.csv'
+  with ledger.open() as f:rows=list(csv.DictReader(f))
+  assert len(rows)==count
+  assert {r['native_class'] for r in rows}=={'Fepois' if folder.endswith('/ppml') else 'Feols'}
+  proof=ROOT/'outputs'/folder/'verification.json';assert json.loads(proof.read_text())['status']=='passed'
+  records[folder]={'native_fits':count,'native_ledger_sha256':sha(ledger),'verification_sha256':sha(proof)}
+ original=json.loads((ROOT/'replication/manifest.json').read_text());members=original['archives']['inputs']['members'];assert len(members)==526
+ assert all(sha(ROOT/r['path'])==r['sha256'] and sha(PARENT/r['path'])==r['sha256'] for r in members)
+ assert all(sha(ROOT/name)==value for name,value in sources.items())
+ assert all(sha(PARENT/name)==value for name,value in prior['original_references_sha256'].items())
+ assert all(sha(PARENT/name)==value for name,value in prior['parent_native_ledgers_sha256'].items())
+ assert all(sha(PARENT/'scripts'/name)==sources['scripts/'+name] for name in driver.HEAT_PRODUCERS+driver.ARRIVAL_PRODUCERS)
+ assert all(sha(ROOT/'outputs'/folder/'verification.json')==value for folder,value in reuse.items())
+ result.update(status='passed',elapsed_seconds=time.monotonic()-start,native_families=records,current_saved_native_fits=sum(expected.values()),frozen_526_inputs_unchanged=True,parent_references_native_ledgers_producer_sources_unchanged=True,relocated_sources_unchanged=True)
+ assert result['current_saved_native_fits']==11427
+ save();print('Guard-revised relocated native and independent numerical execution PASSED',flush=True)
+except BaseException as e:
+ result.update(status='failed',error=repr(e),elapsed_seconds=time.monotonic()-start);save();raise

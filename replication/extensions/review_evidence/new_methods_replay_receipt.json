@@ -1,0 +1,138 @@
+{
+  "status": "verified_selected_current_design_adjudication",
+  "provider_model_verified": "claude-fable-5-2",
+  "provider_review_sha256": "d0d50f60d487a21e93441a281f2b76cba6af958b38fa0a4c52e1cf9eded06ac6",
+  "provider_receipt_sha256": "fe7ee83407b0624211b3fe67264686803cf966ee61ad1228a2bd7443692df55a",
+  "semantic_replay_receipt_sha256": "263f0319cbdd1060539938617baa640bf5c5c87fe20d510bdf67a7cbfa3a63c1",
+  "semantic_replays": [
+    {
+      "probe": "p1_calendar_history.py",
+      "command": [
+        "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/fable-new-methods/.venv/bin/python",
+        "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/native_claims/new_methods_adjudication/replay.py",
+        "p1_calendar_history.py"
+      ],
+      "cwd": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/fable-new-methods",
+      "exit_code": 0,
+      "seconds": 5.017,
+      "stdout": "dist/aea_audit_20261111/native_claims/new_methods_adjudication/replay/p1_calendar_history.log",
+      "stdout_sha256": "70b26d11b741deb9bd8ce8b56bca0976ab441ff9eecd36bba337df0bf9830399"
+    },
+    {
+      "probe": "p3_test_semantics.py",
+      "command": [
+        "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/fable-new-methods/.venv/bin/python",
+        "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/native_claims/new_methods_adjudication/replay.py",
+        "p3_test_semantics.py"
+      ],
+      "cwd": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/fable-new-methods",
+      "exit_code": 0,
+      "seconds": 2.292,
+      "stdout": "dist/aea_audit_20261111/native_claims/new_methods_adjudication/replay/p3_test_semantics.log",
+      "stdout_sha256": "09941b4ef04d0fd6b1a74cd8664619e1c996e94eaf89922520b8b3e1bfc4548a"
+    },
+    {
+      "probe": "p4_identities.py",
+      "command": [
+        "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/fable-new-methods/.venv/bin/python",
+        "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/native_claims/new_methods_adjudication/replay.py",
+        "p4_identities.py"
+      ],
+      "cwd": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/fable-new-methods",
+      "exit_code": 0,
+      "seconds": 0.932,
+      "stdout": "dist/aea_audit_20261111/native_claims/new_methods_adjudication/replay/p4_identities.log",
+      "stdout_sha256": "af0963d78efa59fcafc0aed3dd202291969d4cc21812234b719b5f57d5ae876a"
+    },
+    {
+      "probe": "p6_annual_test_semantics.py",
+      "command": [
+        "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/fable-new-methods/.venv/bin/python",
+        "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/native_claims/new_methods_adjudication/replay.py",
+        "p6_annual_test_semantics.py"
+      ],
+      "cwd": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/fable-new-methods",
+      "exit_code": 0,
+      "seconds": 1.405,
+      "stdout": "dist/aea_audit_20261111/native_claims/new_methods_adjudication/replay/p6_annual_test_semantics.log",
+      "stdout_sha256": "2556ee9ea32d4a436e6325b2b4fd78e98152235d4cf0c3262274f8517f552d01"
+    }
+  ],
+  "preserved_sandbox_files": 14479,
+  "native_fits_run": 0,
+  "decisive_execution": {
+    "status": "passed",
+    "exit_code": 0,
+    "command": [
+      "/Volumes/datadrive/heat_econ/.venv/bin/python",
+      "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/native_claims/new_methods_adjudication/decisive_probes.py"
+    ],
+    "executed_sources_sha256": {
+      "dist/aea_audit_20261111/native_claims/new_methods_adjudication/decisive_probes.py": "c1f3fbad3eb219e71b6918c75ae1a368531576106b69f1f23ef49b1414bdbbe4",
+      "dist/aea_audit_20261111/fable-new-methods/audit_probes/p4_null_calibration.py": "5a00e2f7c1b6873062d2ae02ca6efcee09d897b0f3a800235e4f110671479fd7",
+      "dist/aea_audit_20261111/fable-new-methods/audit_probes/common.py": "18bfffd67573d895d3b5bb3efafb11a6d15c6501347254e519a3f2dd0f7290ed"
+    },
+    "stdout_sha256": "2497e4c1b1bc9b7747bb423fe8cd66d7e8613ac47755b56361254266295a0850",
+    "mathematical_proof_sha256": "06bf7c3a5fd7617c244ed0d59fb05732b263d0294210bc0eef8c67a76a045416",
+    "comparison_csv_sha256": "8e7b86dfc4b5aa896f74d69297d5085376dd2883b0720181fc4761a2595c24d7"
+  },
+  "mathematical_proof_sha256": "06bf7c3a5fd7617c244ed0d59fb05732b263d0294210bc0eef8c67a76a045416",
+  "comparison_csv_sha256": "8e7b86dfc4b5aa896f74d69297d5085376dd2883b0720181fc4761a2595c24d7",
+  "portable_current_route": {
+    "source": "scripts/selected_null_calibration.py",
+    "source_sha256": "2173bf69fc0db0cb6e9b636cef958567a1e2c2a8dc29c4433fd801c1d3d24884",
+    "command": "uv run --locked python scripts/selected_null_calibration.py",
+    "summary_sha256": "ebfd6237130142ff0d2f6fbf2ed7eddba0a3dcc78b68710dc63ecbc9eb60a1e8",
+    "rejections_sha256": "1c4f8a2eadc08416cd89115f7057706e9edaf3780eac66080443ff751d70ae79",
+    "draw_statistics_sha256": "3fde33f6116d482f1013eecc5ef5c5c70aec9ad5c1a129dee413a4c14a45b4a7",
+    "all_four_independent_reference_rejection_counts_match": true
+  },
+  "current_array_bindings_exact": {
+    "X": {
+      "shape": [
+        2088,
+        157
+      ],
+      "dtype": "float64",
+      "sha256": "a7c3dfc68c7ee3c4366924d80695d2ba49fa7e86a8a8f43dd6ad6d38860c1738",
+      "exactly_equal_current_vs_reviewed": true
+    },
+    "Y": {
+      "shape": [
+        2088
+      ],
+      "dtype": "float64",
+      "sha256": "672f04ab69b9578ba3e0b184d1f9ddf037556f1b2ef283a336e26a185f8433a6",
+      "exactly_equal_current_vs_reviewed": true
+    },
+    "time": {
+      "shape": [
+        2088
+      ],
+      "dtype": "int64",
+      "sha256": "fd0013603cb98a1e088b2a7cfbc6b8e046df8043ffb891ca03affeecd7715d4f",
+      "exactly_equal_current_vs_reviewed": true
+    },
+    "periods": {
+      "shape": [
+        2088
+      ],
+      "dtype": "<U6",
+      "sha256": "0d17ca6cfe3fd98f8d64a642c41abce3488286df330c481854461338f52c2ef7",
+      "exactly_equal_current_vs_reviewed": true
+    },
+    "units": {
+      "shape": [
+        2088
+      ],
+      "dtype": "<U5",
+      "sha256": "be84c41f74e72f92854835c3fee27f84c0ea30dc4c913990acec276deea28419",
+      "exactly_equal_current_vs_reviewed": true
+    },
+    "reviewed_archive_sha256": "0719e38ba359d8738032420ca2a752c65a3e6d288e033e5d283521596269acae",
+    "current_archive_sha256": "0719e38ba359d8738032420ca2a752c65a3e6d288e033e5d283521596269acae"
+  },
+  "sector_CR1_main_retained": true,
+  "generation_difference_definition": "39 context \u00d7 outcome \u00d7 variant sample-calendar rows, all y_short; not native fit groups or distinct context-date counts",
+  "scope": "Demonstrated selected current-design IID-null joint calibration failure; conditional Hotelling/convention diagnostics; no universal rank guard or causal certification"
+}

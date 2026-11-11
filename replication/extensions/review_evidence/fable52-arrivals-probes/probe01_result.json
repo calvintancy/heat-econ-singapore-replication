@@ -1,0 +1,406 @@
+{
+ "probe": "01 scope counts / native ledger binding / source generation",
+ "families": {
+  "monthly": {
+   "requests": 270,
+   "unique_spec_ids": 270,
+   "status_counts": {
+    "estimated": 260,
+    "unavailable: underidentified or rank-deficient design": 10
+   },
+   "fit_log_rows": 260,
+   "fit_log_sha256_matches_receipt": true,
+   "receipt_native_count": 260,
+   "native_classes": [
+    "Feols"
+   ],
+   "estimator_versions": [
+    "0.70.0"
+   ],
+   "estimated_specs_with_fit_id": 260,
+   "fit_ids_unique_and_complete": true,
+   "native_dropped_rows_total": 0,
+   "native_dropped_coefficients_total": 0,
+   "max_native_residual_identity_error": 3.2009950245992513e-12,
+   "native_estimates": 260,
+   "design_archive_binding": {
+    "checked": 260,
+    "y_hash_mismatch": 0,
+    "beta_hash_mismatch": 0,
+    "residual_hash_mismatch": 0,
+    "label_or_shape_mismatch": 0,
+    "missing_design_npz": 0,
+    "unestimated_with_finite_beta": 0,
+    "sample_sha_mismatch": 0,
+    "sample_sha_checked": 72
+   },
+   "design_npz_files": 270,
+   "sample_csv_files": 72,
+   "manifest_status": "computed_not_yet_independently_verified",
+   "manifest_pins": {
+    "pinned_files": 23,
+    "matched_current_bytes": 23,
+    "mismatched": [],
+    "missing": []
+   }
+  },
+  "annual": {
+   "requests": 30,
+   "unique_spec_ids": 30,
+   "status_counts": {
+    "estimated": 15,
+    "unavailable: underidentified or rank-deficient design": 15
+   },
+   "fit_log_rows": 15,
+   "fit_log_sha256_matches_receipt": true,
+   "receipt_native_count": 15,
+   "native_classes": [
+    "Feols"
+   ],
+   "estimator_versions": [
+    "0.70.0"
+   ],
+   "estimated_specs_with_fit_id": 15,
+   "fit_ids_unique_and_complete": true,
+   "native_dropped_rows_total": 0,
+   "native_dropped_coefficients_total": 0,
+   "max_native_residual_identity_error": 1.1617373729677638e-12,
+   "native_estimates": 15,
+   "design_archive_binding": {
+    "checked": 15,
+    "y_hash_mismatch": 0,
+    "beta_hash_mismatch": 0,
+    "residual_hash_mismatch": 0,
+    "label_or_shape_mismatch": 0,
+    "missing_design_npz": 0,
+    "unestimated_with_finite_beta": 0,
+    "sample_sha_mismatch": 0,
+    "sample_sha_checked": 30
+   },
+   "design_npz_files": 30,
+   "sample_csv_files": 30,
+   "manifest_status": "estimated_not_yet_independently_verified",
+   "manifest_pins": {
+    "pinned_files": 751,
+    "matched_current_bytes": 750,
+    "mismatched": [],
+    "missing": [
+     "outputs/visitor_arrivals/report_verification.json"
+    ]
+   }
+  },
+  "ppml": {
+   "requests": 30,
+   "unique_spec_ids": 30,
+   "status_counts": {
+    "estimated": 30
+   },
+   "fit_log_rows": 20,
+   "fit_log_sha256_matches_receipt": true,
+   "receipt_native_count": 20,
+   "native_classes": [
+    "Fepois"
+   ],
+   "estimator_versions": [
+    "0.70.0"
+   ],
+   "native_executed_specs": 20,
+   "alias_specs": 10,
+   "alias_table_rows": 10,
+   "alias_variants": [
+    "strict_growth_window_clean"
+   ],
+   "alias_targets_all_native_event": true,
+   "alias_rows_marked_not_fitted": true,
+   "log_spec_ids_equal_native_specs": true,
+   "log_all_converged": true,
+   "log_postprocessing_complete": true,
+   "log_dropped_rows_all_empty": true,
+   "alias_ledger_rows_equal_parent": {
+    "temperature_effects": {
+     "numeric_cells_compared": 420,
+     "max_abs_difference": 0.0
+    },
+    "control_estimates": {
+     "numeric_cells_compared": 1820,
+     "max_abs_difference": 0.0
+    },
+    "tests": {
+     "numeric_cells_compared": 252,
+     "max_abs_difference": 0.0
+    }
+   },
+   "native_estimates": 20,
+   "design_archive_binding": {
+    "checked": 20,
+    "y_hash_mismatch": 0,
+    "beta_hash_mismatch": 0,
+    "residual_hash_mismatch": 0,
+    "label_or_shape_mismatch": 0,
+    "missing_design_npz": 0,
+    "unestimated_with_finite_beta": 0,
+    "sample_sha_mismatch": 0,
+    "sample_sha_checked": 40
+   },
+   "design_npz_files": 20,
+   "sample_csv_files": 20,
+   "manifest_status": "estimated_not_yet_independently_verified",
+   "manifest_pins": {
+    "pinned_files": 751,
+    "matched_current_bytes": 750,
+    "mismatched": [],
+    "missing": [
+     "outputs/visitor_arrivals/report_verification.json"
+    ]
+   }
+  },
+  "origin_year": {
+   "requests": 24,
+   "unique_spec_ids": 24,
+   "status_counts": {
+    "estimated": 24
+   },
+   "fit_log_rows": 24,
+   "fit_log_sha256_matches_receipt": true,
+   "receipt_native_count": 24,
+   "native_classes": [
+    "Feols"
+   ],
+   "estimator_versions": [
+    "0.70.0"
+   ],
+   "estimated_specs_with_fit_id": 24,
+   "fit_ids_unique_and_complete": true,
+   "native_dropped_rows_total": 0,
+   "native_dropped_coefficients_total": 0,
+   "max_native_residual_identity_error": 2.387423592153937e-12,
+   "native_estimates": 24,
+   "design_archive_binding": {
+    "checked": 24,
+    "y_hash_mismatch": 0,
+    "beta_hash_mismatch": 0,
+    "residual_hash_mismatch": 0,
+    "label_or_shape_mismatch": 0,
+    "missing_design_npz": 0,
+    "unestimated_with_finite_beta": 0,
+    "sample_sha_mismatch": 0,
+    "sample_sha_checked": 24
+   },
+   "design_npz_files": 24,
+   "sample_csv_files": 0,
+   "manifest_status": "computed_not_yet_independently_verified",
+   "manifest_pins": {
+    "pinned_files": 622,
+    "matched_current_bytes": 538,
+    "mismatched": [],
+    "missing": [
+     "outputs/visitor_rigour/monthly/preflight/channel_estimates.csv",
+     "outputs/visitor_rigour/monthly/preflight/coefficients.csv",
+     "outputs/visitor_rigour/monthly/preflight/control_estimates.csv",
+     "outputs/visitor_rigour/monthly/preflight/interaction_components.csv",
+     "outputs/visitor_rigour/monthly/preflight/manifest.json",
+     "outputs/visitor_rigour/monthly/preflight/masks.csv",
+     "outputs/visitor_rigour/monthly/preflight/policy.json",
+     "outputs/visitor_rigour/monthly/preflight/sample_inventory.csv",
+     "outputs/visitor_rigour/monthly/preflight/samples/aggregate__y_mom_nsa__full__matched_maximum_growth_history__all_eligible.csv",
+     "outputs/visitor_rigour/monthly/preflight/samples/aggregate__y_mom_nsa__full__matched_maximum_growth_history__event_dates_excluded.csv",
+     "outputs/visitor_rigour/monthly/preflight/samples/aggregate__y_mom_nsa__full__matched_maximum_growth_history__strict_growth_window_clean.csv",
+     "outputs/visitor_rigour/monthly/preflight/samples/aggregate__y_mom_nsa__full__own_current_history__all_eligible.csv",
+     "outputs/visitor_rigour/monthly/preflight/samples/aggregate__y_mom_nsa__full__own_current_history__event_dates_excluded.csv",
+     "outputs/visitor_rigour/monthly/preflight/samples/aggregate__y_mom_nsa__full__own_current_history__strict_growth_window_clean.csv",
+     "outputs/visitor_rigour/monthly/preflight/samples/aggregate__y_mom_nsa__long__matched_maximum_growth_history__all_eligible.csv",
+     "outputs/visitor_rigour/monthly/preflight/samples/aggregate__y_mom_nsa__long__matched_maximum_growth_history__event_dates_excluded.csv",
+     "outputs/visitor_rigour/monthly/preflight/samples/aggregate__y_mom_nsa__long__matched_maximum_growth_history__strict_growth_window_clean.csv",
+     "outputs/visitor_rigour/monthly/preflight/samples/aggregate__y_mom_nsa__long__own_current_history__all_eligible.csv",
+     "outputs/visitor_rigour/monthly/preflight/samples/aggregate__y_mom_nsa__long__own_current_history__event_dates_excluded.csv",
+     "outputs/visitor_rigour/monthly/preflight/samples/aggregate__y_mom_nsa__long__own_current_history__strict_growth_window_clean.csv"
+    ]
+   }
+  }
+ },
+ "monthly_unavailable_requests": [
+  {
+   "spec_id": "aggregate__y_yoy_nsa__full__strict_growth_window_clean__common__distributed",
+   "n_obs": 44,
+   "n_periods": 44,
+   "n_parameters": 46,
+   "design_rank": 44,
+   "time_design_rank": 44,
+   "time_residual_df": 0,
+   "status": "unavailable: underidentified or rank-deficient design"
+  },
+  {
+   "spec_id": "aggregate__y_yoy_nsa__full__strict_growth_window_clean__common__dynamic",
+   "n_obs": 44,
+   "n_periods": 44,
+   "n_parameters": 58,
+   "design_rank": 44,
+   "time_design_rank": 44,
+   "time_residual_df": 0,
+   "status": "unavailable: underidentified or rank-deficient design"
+  },
+  {
+   "spec_id": "region__y_yoy_nsa__full__strict_growth_window_clean__common__distributed",
+   "n_obs": 396,
+   "n_periods": 44,
+   "n_parameters": 142,
+   "design_rank": 140,
+   "time_design_rank": 44,
+   "time_residual_df": 0,
+   "status": "unavailable: underidentified or rank-deficient design"
+  },
+  {
+   "spec_id": "region__y_yoy_nsa__full__strict_growth_window_clean__H1__distributed",
+   "n_obs": 396,
+   "n_periods": 44,
+   "n_parameters": 246,
+   "design_rank": 244,
+   "time_design_rank": 44,
+   "time_residual_df": 0,
+   "status": "unavailable: underidentified or rank-deficient design"
+  },
+  {
+   "spec_id": "region__y_yoy_nsa__full__strict_growth_window_clean__common__dynamic",
+   "n_obs": 396,
+   "n_periods": 44,
+   "n_parameters": 154,
+   "design_rank": 152,
+   "time_design_rank": 44,
+   "time_residual_df": 0,
+   "status": "unavailable: underidentified or rank-deficient design"
+  },
+  {
+   "spec_id": "region__y_yoy_nsa__full__strict_growth_window_clean__H1__dynamic",
+   "n_obs": 396,
+   "n_periods": 44,
+   "n_parameters": 258,
+   "design_rank": 256,
+   "time_design_rank": 44,
+   "time_residual_df": 0,
+   "status": "unavailable: underidentified or rank-deficient design"
+  },
+  {
+   "spec_id": "country__y_yoy_nsa__full__strict_growth_window_clean__common__distributed",
+   "n_obs": 1848,
+   "n_periods": 44,
+   "n_parameters": 538,
+   "design_rank": 536,
+   "time_design_rank": 44,
+   "time_residual_df": 0,
+   "status": "unavailable: underidentified or rank-deficient design"
+  },
+  {
+   "spec_id": "country__y_yoy_nsa__full__strict_growth_window_clean__H1__distributed",
+   "n_obs": 1848,
+   "n_periods": 44,
+   "n_parameters": 1071,
+   "design_rank": 1069,
+   "time_design_rank": 44,
+   "time_residual_df": 0,
+   "status": "unavailable: underidentified or rank-deficient design"
+  },
+  {
+   "spec_id": "country__y_yoy_nsa__full__strict_growth_window_clean__common__dynamic",
+   "n_obs": 1848,
+   "n_periods": 44,
+   "n_parameters": 550,
+   "design_rank": 548,
+   "time_design_rank": 44,
+   "time_residual_df": 0,
+   "status": "unavailable: underidentified or rank-deficient design"
+  },
+  {
+   "spec_id": "country__y_yoy_nsa__full__strict_growth_window_clean__H1__dynamic",
+   "n_obs": 1848,
+   "n_periods": 44,
+   "n_parameters": 1083,
+   "design_rank": 1081,
+   "time_design_rank": 44,
+   "time_residual_df": 0,
+   "status": "unavailable: underidentified or rank-deficient design"
+  }
+ ],
+ "annual_status_by_control_set": {
+  "full|unavailable: underidentified or rank-def": 15,
+  "long|estimated": 15
+ },
+ "annual_full_controls_listed": [
+  "[\"rain_100mm\", \"rh_pct\", \"wind_mps\", \"pm25_10ug\"]"
+ ],
+ "origin_year_parent_specs_all_exist_in_monthly": true,
+ "origin_year_parent_filter": [
+  {
+   "panel": "country",
+   "model": "H1",
+   "model_spec": "own_current",
+   "n": 12
+  },
+  {
+   "panel": "region",
+   "model": "H1",
+   "model_spec": "own_current",
+   "n": 12
+  }
+ ],
+ "totals": {
+  "logical_requests": 354,
+  "native_estimates": 319,
+  "spec_ids_globally_unique": true,
+  "expected": {
+   "logical_requests": 354,
+   "native_estimates": 319
+  }
+ },
+ "snapshot": {
+  "parent_scope": {
+   "status": "frozen_ready_for_exact_review",
+   "logical_requests": 354,
+   "native_fits": 319,
+   "snapshot_files": 2250,
+   "protected_root_files": 1911,
+   "base_commit": "e47edeefeb750fd8a64106658d9351783db6e7fa",
+   "overlay": "Current audited354-generation; base commit alone does not identify reviewed bytes",
+   "snapshot_manifest_sha256": "77b47a53ec17fa3dd01bd61093604d2b367122c5c48441b7efde0b9a888b2cd4"
+  },
+  "git_head": "e47edeefeb750fd8a64106658d9351783db6e7fa",
+  "head_equals_declared_base_commit": true
+ },
+ "source_generation_sha256": {
+  "scripts/visitor_rigour_monthly.py": "7798c0a47c65740b801ce530700cd014bc24fef759a87cbea6f83903ca70757b",
+  "scripts/visitor_rigour_companions.py": "f8a5960628acb4e74f89c3ecb822665db9c040600c077dd5f813013a7d8f1712",
+  "scripts/visitor_origin_year.py": "384eef7f3a990d8d35b006b51adc7d1d6815e265ffd14a300b8e8d60d3970aa6",
+  "notes/visitor_rigour_protocol.md": "5ebd154176a6b5343d4b3d86b38469fb55ee0b83a3ce816ab5d3334c361ba9bc",
+  "notes/visitor_origin_year_protocol.md": "dff6a24028e160055a4d50e2f6f7a5e432914daa2df163d9871e95581d8e9d9b",
+  "notes/crisis_sensitivity_policy.json": "f0ab8230980c843aace7888228a24cfca17336659b1489a953ef25f2d4ed3301",
+  "scripts/pyfixest_backend.py": "a35da97924d120cb688e8dad103a30e043afd3d702b75a1e35110b33f5471362",
+  "scripts/crisis_sensitivity.py": "ad7965b169e3b93cd1084b3d4ae561a0724336c56f375e43fe71b1da0752506c",
+  "scripts/literature_sensitivity.py": "95d4d2fdd3b95a0dc0dc30875d50b314ab2d53b3774746d29bf9e8dcf5cbdca7",
+  "scripts/literature_full_controls.py": "c075ad3cae37bc02aa63521ead29b8b47891a616483ce336125561609eeda8b2",
+  "scripts/visitor_counts.py": "0e2f6c37a9cc8131cb4e5a399237bb0429dc90b074fc61321ada908767689541",
+  "data/raw/visitor_arrivals/nsa.csv": "3d8d498dce66a70722c883a6cfa5b2552e27dfd0fac849d5c152bae9b22a4202",
+  "data/raw/visitor_arrivals/nsa_singstat_metadata.json": "d607945463c5350ac23bf71435485c405964f805ed4c156960f464c41e52261f",
+  "data/processed/visitor_arrivals/all_source_counts.csv": "80c8e9b4754c6dc4cd184e8802f9eec441031a38a9fcfc881f33da745dad185c",
+  "data/processed/visitor_arrivals/lunar_new_year.csv": "5dbf18c30fa48864f6bbeaccd08f39b835b685a7dd9f87b5162b4e3e66cce811",
+  "data/processed/extended_controls/monthly_controls.csv": "5cfab30efb5cbe28aaf8f5ec8b8de11fc45e0ea50434c8b8295d508b94c61721",
+  "replication/extensions/supplementary_inputs/calendar/T2007e.txt": "2eeec2ef316267d92c2ec93e44d2ccb3a889e02c408aecdcc696a2c350416673",
+  "replication/extensions/supplementary_inputs/calendar/sources.json": "66b91a40f0fc06b5717cde5cd79d61084fbd2815f47c98f11e47d25e12bee868",
+  "data/raw/temperature_monthly.csv": "5ea1646a4e3136a9979094124ab2dc7e4d9c271235a49ddcab991f896fac6b80",
+  "data/raw/humidity_monthly.csv": "47449b875513742352f6b859ad4495ba5cb43feb8ed4b7bafdd49331c8f66a26",
+  "data/raw/rainfall_monthly.csv": "9880c5cd4c2068b7085f483009290d7d11702aeecd2355739960d02d5469c9cb"
+ },
+ "pinned_files_absent_from_snapshot": {
+  "per_family": {
+   "monthly": 0,
+   "annual": 1,
+   "ppml": 1,
+   "origin_year": 84
+  },
+  "distinct": 85,
+  "by_folder": {
+   "outputs/visitor_rigour/monthly/preflight/samples": 72,
+   "outputs/visitor_rigour/monthly/preflight": 12,
+   "outputs/visitor_arrivals": 1
+  }
+ },
+ "verdict": "counts, native-ledger binding and every pinned file present in the snapshot reconcile (0 byte mismatches); 85 run-time pinned files are absent from the reviewed snapshot and cannot be re-hashed here"
+}

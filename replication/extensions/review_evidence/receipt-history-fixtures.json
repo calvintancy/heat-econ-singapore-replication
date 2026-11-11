@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "fixtures": [
+    "successful child: all eight pinned bytes restored, fresh receipt archived, nonterminal until complete",
+    "failed child: exit 9 and failure preserved despite passed payload; all eight restored",
+    "analytical data mutation rejected and not restored/hidden",
+    "pre-tampered receipt rejected without blessing or restoring it",
+    "immutable reference mutation rejected and not restored/hidden",
+    "pre-tampered checkpoint rejected against published manifest hash",
+    "reproduce integration: receipt preservation begins after producer/checkpoint update",
+    "existing generated-note preservation retained on failure"
+  ],
+  "count": 8,
+  "scope": "Synthetic mutation/failure lifecycle fixtures plus wrapper phase integration; real all-family runs are separate."
+}

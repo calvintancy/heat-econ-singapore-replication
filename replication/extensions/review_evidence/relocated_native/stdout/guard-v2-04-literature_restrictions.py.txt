@@ -1,0 +1,1 @@
+Computed 4104 rank-safe two-channel-span tests from 384 saved native fits; no refits

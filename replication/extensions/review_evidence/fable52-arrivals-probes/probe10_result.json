@@ -1,0 +1,1839 @@
+{
+ "probe": "10 claim layer and origin x year reporting",
+ "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python audit_probes/probe10_claim_layer_origin_year_reporting.py",
+ "A_origin_year_reporting": {
+  "requests": 24,
+  "status": {
+   "estimated": 24
+  },
+  "nuisance_spec": {
+   "origin_year": 24
+  },
+  "source_ids_unique": true,
+  "source_ids_all_in_monthly": true,
+  "parents_all_H1_own_current": true,
+  "child_id_is_parent_plus_suffix": true,
+  "all_monthly_H1_own_current_parents_covered": 24,
+  "child_covariances": {
+   "Calendar HAC 12": 1224,
+   "Calendar HAC 24": 1224
+  },
+  "child_main_inference_by_method": {
+   "Calendar HAC 12": {
+    "True": 1224
+   },
+   "Calendar HAC 24": {
+    "False": 1224
+   }
+  },
+  "change_or_selection_columns_in_child_ledgers": [],
+  "label_sets_equal_parent": {
+   "calibration_status": {
+    "child": [
+     "Nominal working convention; no exact or demonstrated general small-sample calibration"
+    ],
+    "parent": [
+     "Nominal working convention; no exact or demonstrated general small-sample calibration"
+    ]
+   },
+   "finite_sample_correction_formula": {
+    "child": [
+     "T/(T−K_time), K_time=max per-origin local full-design rank"
+    ],
+    "parent": [
+     "T/(T−K_time), K_time=max per-origin local full-design rank"
+    ]
+   },
+   "interpretation": {
+    "child": [
+     "Direct conditional lag sum; not an unconditional long-run multiplier with lagged growth"
+    ],
+    "parent": [
+     "Direct conditional lag sum; not an unconditional long-run multiplier with lagged growth"
+    ]
+   },
+   "inference_status": {
+    "child": [
+     "available"
+    ],
+    "parent": [
+     "available"
+    ]
+   },
+   "multiplicity_family_size": {
+    "child": [
+     "42",
+     "9"
+    ],
+    "parent": [
+     "42",
+     "9"
+    ]
+   }
+  },
+  "change_table_rows": 24,
+  "all_rows_matched_one_to_one": true,
+  "origin_slopes": 612,
+  "nominal_p05_parent": 25,
+  "nominal_p05_oy": 27,
+  "nominal_p05_both": 11,
+  "holm_p05_parent": 0,
+  "holm_p05_oy": 1,
+  "sign_changes": 85,
+  "mean_change_across_origins_max_abs": 4.879271589938331e-13,
+  "max_abs_change_range": [
+   1.7999044227523062,
+   48.861719673702936
+  ],
+  "median_se_ratio_range": [
+   0.8898479973709845,
+   1.3834308090490277
+  ],
+  "time_df_same_as_parent": true,
+  "correction_same_as_parent": true,
+  "min_time_residual_df": 33,
+  "specs_with_time_df_below_10": 0
+ },
+ "B_label_vocabulary": {
+  "monthly": {
+   "spec_status": {
+    "estimated": 260,
+    "unavailable: underidentified or rank-deficient design": 10
+   },
+   "effect_rows": 39600,
+   "test_rows": 18912,
+   "methods": {
+    "Calendar HAC 12 main=True": 19440,
+    "Calendar HAC 24 main=False": 19440,
+    "Origin cluster 0 main=False": 720
+   },
+   "effects.calibration_status": {
+    "Nominal working convention; no exact or demonstrated general small-sample calibration": 39600
+   },
+   "tests.calibration_status": {
+    "Nominal approximate conditional inference": 9900,
+    "Not established; nominal asymptotic diagnostic": 9012
+   },
+   "effects.finite_sample_correction_formula": {
+    "T/(T−K_time), K_time=max per-origin local full-design rank": 38880,
+    "G/(G−1)×(N−1)/(N−K)": 720
+   },
+   "tests.finite_sample_correction_formula": {
+    "T/(T−K_time), K_time=max per-origin local full-design rank": 18576,
+    "G/(G−1)×(N−1)/(N−K)": 336
+   },
+   "effects.inference_status": {
+    "available": 36520,
+    "unavailable: working calendar correction undefined because T≤K_time": 3024,
+    "unavailable: native point design": 56
+   },
+   "effects.interpretation": {
+    "<missing>": 33660,
+    "Direct conditional lag sum; not an unconditional long-run multiplier with lagged growth": 5940
+   },
+   "specifications.inference_reference_scope": {
+    "Working finite-sample convention; t(T−1)/F(q,T−1) is approximate, not exact or empirically calibrated": 270
+   },
+   "specifications.native_point_guard": {
+    "N>K and full scaled-column design rank; temporal covariance guard is separate": 270
+   },
+   "multiplicity_family_examples": [
+    "All requested origin total effects for this single feature/sum, spec and covariance; unavailable slots retained; does not adjust across the research grid"
+   ],
+   "multiplicity_family_sizes": {
+    "42": 30240,
+    "9": 6480,
+    "1": 2880
+   }
+  },
+  "origin_year": {
+   "spec_status": {
+    "estimated": 24
+   },
+   "effect_rows": 2448,
+   "test_rows": 2544,
+   "methods": {
+    "Calendar HAC 12 main=True": 1224,
+    "Calendar HAC 24 main=False": 1224
+   },
+   "effects.calibration_status": {
+    "Nominal working convention; no exact or demonstrated general small-sample calibration": 2448
+   },
+   "tests.calibration_status": {
+    "Nominal approximate conditional inference": 2448,
+    "Not established; nominal asymptotic diagnostic": 96
+   },
+   "effects.finite_sample_correction_formula": {
+    "T/(T−K_time), K_time=max per-origin local full-design rank": 2448
+   },
+   "tests.finite_sample_correction_formula": {
+    "T/(T−K_time), K_time=max per-origin local full-design rank": 2544
+   },
+   "effects.inference_status": {
+    "available": 2448
+   },
+   "effects.interpretation": {
+    "<missing>": 1224,
+    "Direct conditional lag sum; not an unconditional long-run multiplier with lagged growth": 1224
+   },
+   "specifications.inference_reference_scope": {
+    "Working finite-sample convention; t(T−1)/F(q,T−1) is approximate, not exact or empirically calibrated": 24
+   },
+   "specifications.native_point_guard": {
+    "N>K and full scaled-column design rank; temporal covariance guard is separate": 24
+   },
+   "multiplicity_family_examples": [
+    "All requested origin total effects for this single feature/sum, spec and covariance; unavailable slots retained; does not adjust across the research grid"
+   ],
+   "multiplicity_family_sizes": {
+    "42": 2016,
+    "9": 432
+   }
+  },
+  "annual": {
+   "spec_status": {
+    "estimated": 15,
+    "unavailable: underidentified or rank-deficient design": 15
+   },
+   "effect_rows": 660,
+   "test_rows": 48,
+   "methods": {
+    "Calendar HAC 1 main=True": 324,
+    "Calendar HAC 2 main=False": 324,
+    "Origin cluster 0 main=False": 12
+   },
+   "tests.calibration_status": {
+    "Not established; nominal/asymptotic diagnostic, not calibrated headline inference": 48
+   },
+   "effects.inference_status": {
+    "available": 330,
+    "unavailable: point design": 330
+   },
+   "effects.finite_sample_rule": {
+    "Calendar T/(T−max local rank); approximate t(T−1); no stationarity or finite-sample calibration certificate": 660
+   },
+   "tests.finite_sample_rule": {
+    "Calendar T/(T−max local rank); approximate t(T−1); no stationarity or finite-sample calibration certificate": 48
+   },
+   "specifications.finite_sample_rule": {
+    "Calendar T/(T−max local rank); approximate t(T−1); no stationarity or finite-sample calibration certificate": 30
+   },
+   "effects.units": {
+    "100 log points annual NSA count growth per1°C annual mean temperature": 660
+   },
+   "tests.units": {
+    "100 log points annual NSA count growth per1°C annual mean temperature": 48
+   },
+   "specifications.units": {
+    "100 log points annual NSA count growth per1°C annual mean temperature": 30
+   }
+  },
+  "ppml": {
+   "spec_status": {
+    "estimated": 30
+   },
+   "effect_rows": 84,
+   "test_rows": 84,
+   "methods": {
+    "Calendar HAC 12 main=True": 30,
+    "Calendar HAC 24 main=False": 30,
+    "Origin cluster 0 main=False": 24
+   },
+   "tests.calibration_status": {
+    "Not established; nominal/asymptotic diagnostic, not calibrated headline inference": 84
+   },
+   "effects.inference_status": {
+    "available": 84
+   },
+   "effects.coefficient_units": {
+    "100 log expected-count points per1°C; raw_native_coefficient is log-mean semi-elasticity; exact0.1°C percent effect separately saved": 84
+   },
+   "tests.coefficient_units": {
+    "100 log expected-count points per1°C; raw_native_coefficient is log-mean semi-elasticity; exact0.1°C percent effect separately saved": 84
+   },
+   "specifications.coefficient_units": {
+    "100 log expected-count points per1°C; raw_native_coefficient is log-mean semi-elasticity; exact0.1°C percent effect separately saved": 30
+   },
+   "effects.primary_inference": {
+    "Calendar HAC12/24, T/(T−max local rank), approximate t(T−1)": 84
+   },
+   "tests.primary_inference": {
+    "Calendar HAC12/24, T/(T−max local rank), approximate t(T−1)": 84
+   },
+   "specifications.primary_inference": {
+    "Calendar HAC12/24, T/(T−max local rank), approximate t(T−1)": 30
+   },
+   "effects.zero_retention_status": {
+    "All input zeros retained": 84
+   },
+   "tests.zero_retention_status": {
+    "All input zeros retained": 84
+   },
+   "specifications.zero_retention_status": {
+    "All input zeros retained": 30
+   }
+  }
+ },
+ "C_main_inference_counts": {
+  "monthly": [
+   {
+    "model": "H1",
+    "effect": "cumulative_direct",
+    "time_df": "time_df<10",
+    "rows": 255,
+    "with_p": 153,
+    "nominal_p05": 4,
+    "share_nominal_p05": 0.026143790849673203,
+    "with_holm": 153,
+    "holm_p05": 2,
+    "specs": 10
+   },
+   {
+    "model": "H1",
+    "effect": "cumulative_direct",
+    "time_df": "time_df>=10",
+    "rows": 2499,
+    "with_p": 2499,
+    "nominal_p05": 105,
+    "share_nominal_p05": 0.04201680672268908,
+    "with_holm": 2499,
+    "holm_p05": 1,
+    "specs": 98
+   },
+   {
+    "model": "H1",
+    "effect": "lag",
+    "time_df": "time_df<10",
+    "rows": 3315,
+    "with_p": 1989,
+    "nominal_p05": 48,
+    "share_nominal_p05": 0.024132730015082957,
+    "with_holm": 1989,
+    "holm_p05": 22,
+    "specs": 10
+   },
+   {
+    "model": "H1",
+    "effect": "lag",
+    "time_df": "time_df>=10",
+    "rows": 12291,
+    "with_p": 12291,
+    "nominal_p05": 515,
+    "share_nominal_p05": 0.04190057765844927,
+    "with_holm": 12291,
+    "holm_p05": 29,
+    "specs": 98
+   },
+   {
+    "model": "common",
+    "effect": "cumulative_direct",
+    "time_df": "time_df<10",
+    "rows": 15,
+    "with_p": 9,
+    "nominal_p05": 1,
+    "share_nominal_p05": 0.1111111111111111,
+    "with_holm": 9,
+    "holm_p05": 1,
+    "specs": 15
+   },
+   {
+    "model": "common",
+    "effect": "cumulative_direct",
+    "time_df": "time_df>=10",
+    "rows": 147,
+    "with_p": 147,
+    "nominal_p05": 8,
+    "share_nominal_p05": 0.05442176870748299,
+    "with_holm": 147,
+    "holm_p05": 8,
+    "specs": 147
+   },
+   {
+    "model": "common",
+    "effect": "lag",
+    "time_df": "time_df<10",
+    "rows": 195,
+    "with_p": 117,
+    "nominal_p05": 15,
+    "share_nominal_p05": 0.1282051282051282,
+    "with_holm": 117,
+    "holm_p05": 15,
+    "specs": 15
+   },
+   {
+    "model": "common",
+    "effect": "lag",
+    "time_df": "time_df>=10",
+    "rows": 723,
+    "with_p": 723,
+    "nominal_p05": 44,
+    "share_nominal_p05": 0.06085753803596127,
+    "with_holm": 723,
+    "holm_p05": 44,
+    "specs": 147
+   }
+  ],
+  "origin_year": [
+   {
+    "model": "H1",
+    "effect": "cumulative_direct",
+    "time_df": "time_df>=10",
+    "rows": 612,
+    "with_p": 612,
+    "nominal_p05": 27,
+    "share_nominal_p05": 0.04411764705882353,
+    "with_holm": 612,
+    "holm_p05": 1,
+    "specs": 24
+   },
+   {
+    "model": "H1",
+    "effect": "lag",
+    "time_df": "time_df>=10",
+    "rows": 612,
+    "with_p": 612,
+    "nominal_p05": 27,
+    "share_nominal_p05": 0.04411764705882353,
+    "with_holm": 612,
+    "holm_p05": 1,
+    "specs": 24
+   }
+  ],
+  "annual": [
+   {
+    "model": "H1",
+    "effect": "current",
+    "time_df": "time_df<10",
+    "rows": 255,
+    "with_p": 102,
+    "nominal_p05": 2,
+    "share_nominal_p05": 0.0196078431372549,
+    "with_holm": 102,
+    "holm_p05": 0,
+    "specs": 10
+   },
+   {
+    "model": "H1",
+    "effect": "current",
+    "time_df": "time_df>=10",
+    "rows": 51,
+    "with_p": 51,
+    "nominal_p05": 0,
+    "share_nominal_p05": 0.0,
+    "with_holm": 51,
+    "holm_p05": 0,
+    "specs": 2
+   },
+   {
+    "model": "common",
+    "effect": "current",
+    "time_df": "time_df<10",
+    "rows": 15,
+    "with_p": 6,
+    "nominal_p05": 0,
+    "share_nominal_p05": 0.0,
+    "with_holm": 0,
+    "holm_p05": 0,
+    "specs": 15
+   },
+   {
+    "model": "common",
+    "effect": "current",
+    "time_df": "time_df>=10",
+    "rows": 3,
+    "with_p": 3,
+    "nominal_p05": 0,
+    "share_nominal_p05": 0.0,
+    "with_holm": 0,
+    "holm_p05": 0,
+    "specs": 3
+   }
+  ],
+  "ppml": [
+   {
+    "model": "common",
+    "effect": "current",
+    "time_df": "time_df>=10",
+    "rows": 30,
+    "with_p": 30,
+    "nominal_p05": 0,
+    "share_nominal_p05": 0.0,
+    "with_holm": 0,
+    "holm_p05": 0,
+    "specs": 30
+   }
+  ]
+ },
+ "D_origin_cluster_vs_calendar": {
+  "monthly": {
+   "origin_cluster_rows": 744,
+   "specs": 108,
+   "main_inference_flag_cluster_rows": {
+    "False": 744
+   },
+   "models_with_cluster_rows": {
+    "common": 744
+   },
+   "se_ratio_cluster_over_calendar": {
+    "n": 688,
+    "min": 0.07699532354042181,
+    "q10": 0.19110339154855688,
+    "median": 0.5040885653730811,
+    "q90": 1.0713818417360295,
+    "max": 3.0349761687603047
+   },
+   "share_ratio_below_half": 0.4583333333333333,
+   "share_ratio_below_one": 0.8158602150537635,
+   "cluster_p05": 232,
+   "calendar_p05": 29,
+   "cluster_p05_but_calendar_not": 205,
+   "calendar_p05_but_cluster_not": 2,
+   "cluster_p001_but_calendar_not_p05": 72,
+   "strongest_conflicts": [
+    {
+     "spec_id": "country__y_yoy_nsa__long__event_dates_excluded__common__own_current",
+     "term": "temp_l0",
+     "coefficient": -14.705,
+     "se_cluster": 1.2178,
+     "p_cluster": 4.389016258574681e-15,
+     "se_calendar": 14.397,
+     "p_calendar": 0.3086,
+     "df_cluster": 41
+    },
+    {
+     "spec_id": "country__y_yoy_nsa__long__event_dates_excluded__common__own_current",
+     "term": "sum_temperature_lags",
+     "coefficient": -14.705,
+     "se_cluster": 1.2178,
+     "p_cluster": 4.389016258574681e-15,
+     "se_calendar": 14.397,
+     "p_calendar": 0.3086,
+     "df_cluster": 41
+    },
+    {
+     "spec_id": "country__y_yoy_nsa__full__all_eligible__common__distributed",
+     "term": "temp_l1",
+     "coefficient": -26.2686,
+     "se_cluster": 3.132,
+     "p_cluster": 1.9601047011052214e-10,
+     "se_calendar": 14.9771,
+     "p_calendar": 0.0843,
+     "df_cluster": 41
+    },
+    {
+     "spec_id": "country__y_yoy_nsa__long__strict_growth_window_clean__common__dynamic",
+     "term": "temp_l4",
+     "coefficient": 3.655,
+     "se_cluster": 0.4959,
+     "p_cluster": 4.963159615903281e-09,
+     "se_calendar": 2.1971,
+     "p_calendar": 0.0989,
+     "df_cluster": 41
+    },
+    {
+     "spec_id": "country__y_mom_nsa__full__all_eligible__common__dynamic",
+     "term": "temp_l0",
+     "coefficient": 17.5474,
+     "se_cluster": 2.3989,
+     "p_cluster": 5.943606726569676e-09,
+     "se_calendar": 15.1452,
+     "p_calendar": 0.25,
+     "df_cluster": 41
+    },
+    {
+     "spec_id": "country__y_yoy_nsa__full__event_dates_excluded__common__own_current",
+     "term": "sum_temperature_lags",
+     "coefficient": -25.1938,
+     "se_cluster": 3.4691,
+     "p_cluster": 7.042082913402183e-09,
+     "se_calendar": 22.3621,
+     "p_calendar": 0.264,
+     "df_cluster": 41
+    },
+    {
+     "spec_id": "country__y_yoy_nsa__full__event_dates_excluded__common__own_current",
+     "term": "temp_l0",
+     "coefficient": -25.1938,
+     "se_cluster": 3.4691,
+     "p_cluster": 7.042082913402183e-09,
+     "se_calendar": 22.3621,
+     "p_calendar": 0.264,
+     "df_cluster": 41
+    },
+    {
+     "spec_id": "country__y_mom_nsa__full__all_eligible__common__distributed",
+     "term": "temp_l0",
+     "coefficient": 17.8583,
+     "se_cluster": 2.4697,
+     "p_cluster": 7.795223926201988e-09,
+     "se_calendar": 15.5916,
+     "p_calendar": 0.2554,
+     "df_cluster": 41
+    }
+   ],
+   "calibration_status_cluster_rows": {
+    "Nominal working convention; no exact or demonstrated general small-sample calibration": 744
+   }
+  },
+  "origin_year": {
+   "origin_cluster_rows": 0
+  },
+  "annual": {
+   "origin_cluster_rows": 12,
+   "specs": 12,
+   "main_inference_flag_cluster_rows": {
+    "False": 12
+   },
+   "models_with_cluster_rows": {
+    "common": 12
+   },
+   "se_ratio_cluster_over_calendar": {
+    "n": 6,
+    "min": 0.028303882634625948,
+    "q10": 0.05074871190634985,
+    "median": 0.08623517180562479,
+    "q90": 0.8631345559072104,
+    "max": 1.1425783171655437
+   },
+   "share_ratio_below_half": 0.3333333333333333,
+   "share_ratio_below_one": 0.4166666666666667,
+   "cluster_p05": 3,
+   "calendar_p05": 0,
+   "cluster_p05_but_calendar_not": 3,
+   "calendar_p05_but_cluster_not": 0,
+   "cluster_p001_but_calendar_not_p05": 2,
+   "strongest_conflicts": [
+    {
+     "spec_id": "annual__country__long__event_dates_excluded__common",
+     "term": "temp_c",
+     "coefficient": -19.6384,
+     "se_cluster": 3.2394,
+     "p_cluster": 3.52704590146037e-07,
+     "se_calendar": 44.258,
+     "p_calendar": 0.6651,
+     "df_cluster": 41
+    },
+    {
+     "spec_id": "annual__country__long__all_eligible__common",
+     "term": "temp_c",
+     "coefficient": -22.444,
+     "se_cluster": 4.7398,
+     "p_cluster": 2.6179250939989367e-05,
+     "se_calendar": 167.4627,
+     "p_calendar": 0.8951,
+     "df_cluster": 41
+    },
+    {
+     "spec_id": "annual__region__long__event_dates_excluded__common",
+     "term": "temp_c",
+     "coefficient": -17.6005,
+     "se_cluster": 4.4717,
+     "p_cluster": 0.004320080162162394,
+     "se_calendar": 45.7647,
+     "p_calendar": 0.7073,
+     "df_cluster": 8
+    }
+   ],
+   "calibration_status_cluster_rows": null
+  },
+  "ppml": {
+   "origin_cluster_rows": 24,
+   "specs": 24,
+   "main_inference_flag_cluster_rows": {
+    "False": 24
+   },
+   "models_with_cluster_rows": {
+    "common": 24
+   },
+   "se_ratio_cluster_over_calendar": {
+    "n": 24,
+    "min": 0.04995275934129626,
+    "q10": 0.04995889682394228,
+    "median": 0.2557274359104964,
+    "q90": 0.8916896445413969,
+    "max": 0.8981052011808273
+   },
+   "share_ratio_below_half": 0.6666666666666666,
+   "share_ratio_below_one": 1.0,
+   "cluster_p05": 8,
+   "calendar_p05": 0,
+   "cluster_p05_but_calendar_not": 8,
+   "calendar_p05_but_cluster_not": 0,
+   "cluster_p001_but_calendar_not_p05": 4,
+   "strongest_conflicts": [
+    {
+     "spec_id": "ppml__complete10__full__event_dates_excluded",
+     "term": "temp_c",
+     "coefficient": -1.5762,
+     "se_cluster": 0.1557,
+     "p_cluster": 3.230007811261915e-06,
+     "se_calendar": 3.1165,
+     "p_calendar": 0.6147,
+     "df_cluster": 9
+    },
+    {
+     "spec_id": "ppml__complete10__full__strict_growth_window_clean",
+     "term": "temp_c",
+     "coefficient": -1.5762,
+     "se_cluster": 0.1557,
+     "p_cluster": 3.230007811261915e-06,
+     "se_calendar": 3.1165,
+     "p_calendar": 0.6147,
+     "df_cluster": 9
+    },
+    {
+     "spec_id": "ppml__region__full__event_dates_excluded",
+     "term": "temp_c",
+     "coefficient": -1.566,
+     "se_cluster": 0.1559,
+     "p_cluster": 8.228771810506719e-06,
+     "se_calendar": 3.1219,
+     "p_calendar": 0.6176,
+     "df_cluster": 8
+    },
+    {
+     "spec_id": "ppml__region__full__strict_growth_window_clean",
+     "term": "temp_c",
+     "coefficient": -1.566,
+     "se_cluster": 0.1559,
+     "p_cluster": 8.228771810506719e-06,
+     "se_calendar": 3.1219,
+     "p_calendar": 0.6176,
+     "df_cluster": 8
+    },
+    {
+     "spec_id": "ppml__country__full__event_dates_excluded",
+     "term": "temp_c",
+     "coefficient": -1.7408,
+     "se_cluster": 0.7318,
+     "p_cluster": 0.022108110080774675,
+     "se_calendar": 3.2533,
+     "p_calendar": 0.5944,
+     "df_cluster": 41
+    },
+    {
+     "spec_id": "ppml__country__full__strict_growth_window_clean",
+     "term": "temp_c",
+     "coefficient": -1.7408,
+     "se_cluster": 0.7318,
+     "p_cluster": 0.022108110080774675,
+     "se_calendar": 3.2533,
+     "p_calendar": 0.5944,
+     "df_cluster": 41
+    },
+    {
+     "spec_id": "ppml__complete52__full__event_dates_excluded",
+     "term": "temp_c",
+     "coefficient": -1.5762,
+     "se_cluster": 0.7105,
+     "p_cluster": 0.03100735867517205,
+     "se_calendar": 3.1165,
+     "p_calendar": 0.6147,
+     "df_cluster": 51
+    },
+    {
+     "spec_id": "ppml__complete52__full__strict_growth_window_clean",
+     "term": "temp_c",
+     "coefficient": -1.5762,
+     "se_cluster": 0.7105,
+     "p_cluster": 0.03100735867517205,
+     "se_calendar": 3.1165,
+     "p_calendar": 0.6147,
+     "df_cluster": 51
+    }
+   ],
+   "calibration_status_cluster_rows": null
+  }
+ },
+ "E_joint_tests": {
+  "monthly": {
+   "rows": 18912,
+   "single_restriction_rows": 9900,
+   "multi_restriction_rows": 9012,
+   "multi_with_p": 8008,
+   "multi_without_p": 1004,
+   "status": {
+    "available": 17688,
+    "unavailable: working calendar correction undefined because T≤K_time": 1096,
+    "unavailable: rank-deficient or numerically degenerate restriction covariance": 108,
+    "unavailable: native point design": 20
+   },
+   "calibration_status": {
+    "Nominal approximate conditional inference": 9900,
+    "Not established; nominal asymptotic diagnostic": 9012
+   },
+   "restrictions": {
+    "n": 8008,
+    "min": 2.0,
+    "q10": 3.0,
+    "median": 11.0,
+    "q90": 13.0,
+    "max": 168.0
+   },
+   "flagged_fragile": 998,
+   "p05": 2954,
+   "p05_and_fragile": 106,
+   "p05_not_fragile": 2848,
+   "p05_not_fragile_restrictions_ge_20": 174,
+   "p001_not_fragile": 1466,
+   "share_p05_among_available": 0.3688811188811189,
+   "by_method": {
+    "Calendar HAC 12": {
+     "with_p": 3954,
+     "p05": 1030,
+     "p05_not_fragile": 1003
+    },
+    "Calendar HAC 24": {
+     "with_p": 3954,
+     "p05": 1842,
+     "p05_not_fragile": 1771
+    },
+    "Origin cluster 0": {
+     "with_p": 100,
+     "p05": 82,
+     "p05_not_fragile": 74
+    }
+   },
+   "smallest_p_not_fragile": [
+    {
+     "spec_id": "country__y_yoy_nsa__long__all_eligible__H1__two_channel",
+     "test": "All origin temperature response coefficients jointly zero",
+     "covariance": "Calendar HAC 24",
+     "restrictions": 84,
+     "bound": 160,
+     "f": 224.928,
+     "p": 2.0490088664395464e-134
+    },
+    {
+     "spec_id": "country__y_yoy_nsa__long__event_dates_excluded__H1__two_channel",
+     "test": "All origin temperature response coefficients jointly zero",
+     "covariance": "Calendar HAC 24",
+     "restrictions": 84,
+     "bound": 157,
+     "f": 226.03,
+     "p": 2.2562132191658066e-132
+    },
+    {
+     "spec_id": "country__y_yoy_nsa__long__strict_growth_window_clean__H1__two_channel",
+     "test": "All origin temperature response coefficients jointly zero",
+     "covariance": "Calendar HAC 24",
+     "restrictions": 84,
+     "bound": 116,
+     "f": 617.295,
+     "p": 1.8230130421033986e-126
+    },
+    {
+     "spec_id": "region__y_yoy_nsa__long__all_eligible__H1__distributed",
+     "test": "All origin temperature response coefficients jointly zero",
+     "covariance": "Calendar HAC 24",
+     "restrictions": 117,
+     "bound": 160,
+     "f": 147.097,
+     "p": 2.20362780122033e-124
+    },
+    {
+     "spec_id": "country__y_yoy_nsa__long__strict_growth_window_clean__H1__two_channel",
+     "test": "All origin temperature response coefficients jointly zero",
+     "covariance": "Calendar HAC 12",
+     "restrictions": 84,
+     "bound": 116,
+     "f": 383.915,
+     "p": 1.4649447995452804e-114
+    },
+    {
+     "spec_id": "country__y_yoy_nsa__long__all_eligible__H1__two_channel",
+     "test": "All origin temperature response coefficients jointly zero",
+     "covariance": "Calendar HAC 12",
+     "restrictions": 84,
+     "bound": 160,
+     "f": 116.207,
+     "p": 7.028250173960137e-112
+    }
+   ]
+  },
+  "origin_year": {
+   "rows": 2544,
+   "single_restriction_rows": 2448,
+   "multi_restriction_rows": 96,
+   "multi_with_p": 88,
+   "multi_without_p": 8,
+   "status": {
+    "available": 2536,
+    "unavailable: rank-deficient or numerically degenerate restriction covariance": 8
+   },
+   "calibration_status": {
+    "Nominal approximate conditional inference": 2448,
+    "Not established; nominal asymptotic diagnostic": 96
+   },
+   "restrictions": {
+    "n": 88,
+    "min": 8.0,
+    "q10": 8.0,
+    "median": 9.0,
+    "q90": 42.0,
+    "max": 42.0
+   },
+   "flagged_fragile": 0,
+   "p05": 61,
+   "p05_and_fragile": 0,
+   "p05_not_fragile": 61,
+   "p05_not_fragile_restrictions_ge_20": 40,
+   "p001_not_fragile": 46,
+   "share_p05_among_available": 0.6931818181818182,
+   "by_method": {
+    "Calendar HAC 12": {
+     "with_p": 44,
+     "p05": 27,
+     "p05_not_fragile": 27
+    },
+    "Calendar HAC 24": {
+     "with_p": 44,
+     "p05": 34,
+     "p05_not_fragile": 34
+    }
+   },
+   "smallest_p_not_fragile": [
+    {
+     "spec_id": "country__y_yoy_nsa__long__all_eligible__H1__own_current__origin_year",
+     "test": "All origin cumulative direct effects equal",
+     "covariance": "Calendar HAC 24",
+     "restrictions": 41,
+     "bound": 188,
+     "f": 45.77,
+     "p": 9.6473364229821e-78
+    },
+    {
+     "spec_id": "country__y_yoy_nsa__long__all_eligible__H1__own_current__origin_year",
+     "test": "All origin temperature response coefficients jointly zero",
+     "covariance": "Calendar HAC 24",
+     "restrictions": 42,
+     "bound": 188,
+     "f": 44.682,
+     "p": 2.1804800825759694e-77
+    },
+    {
+     "spec_id": "country__y_yoy_nsa__long__event_dates_excluded__H1__own_current__origin_year",
+     "test": "All origin temperature response coefficients jointly zero",
+     "covariance": "Calendar HAC 24",
+     "restrictions": 42,
+     "bound": 164,
+     "f": 49.133,
+     "p": 2.2822686309028713e-73
+    },
+    {
+     "spec_id": "country__y_yoy_nsa__full__event_dates_excluded__H1__own_current__origin_year",
+     "test": "All origin cumulative direct effects equal",
+     "covariance": "Calendar HAC 24",
+     "restrictions": 41,
+     "bound": 65,
+     "f": 589.464,
+     "p": 2.5138598000954384e-70
+    },
+    {
+     "spec_id": "country__y_yoy_nsa__full__event_dates_excluded__H1__own_current__origin_year",
+     "test": "All origin temperature response coefficients jointly zero",
+     "covariance": "Calendar HAC 24",
+     "restrictions": 42,
+     "bound": 65,
+     "f": 575.453,
+     "p": 4.046403188866967e-70
+    },
+    {
+     "spec_id": "country__y_yoy_nsa__long__event_dates_excluded__H1__own_current__origin_year",
+     "test": "All origin cumulative direct effects equal",
+     "covariance": "Calendar HAC 24",
+     "restrictions": 41,
+     "bound": 164,
+     "f": 44.347,
+     "p": 1.248761963656629e-69
+    }
+   ]
+  },
+  "annual": {
+   "rows": 48,
+   "single_restriction_rows": 0,
+   "multi_restriction_rows": 48,
+   "multi_with_p": 12,
+   "multi_without_p": 36,
+   "status": {
+    "unavailable: working temporal degrees of freedom": 24,
+    "computable: calibration not established": 12,
+    "unavailable: singular restriction covariance": 12
+   },
+   "calibration_status": {
+    "Not established; nominal/asymptotic diagnostic, not calibrated headline inference": 48
+   },
+   "restrictions": {
+    "n": 12,
+    "min": 8.0,
+    "q10": 8.0,
+    "median": 8.5,
+    "q90": 9.0,
+    "max": 9.0
+   },
+   "flagged_fragile": 8,
+   "p05": 12,
+   "p05_and_fragile": 8,
+   "p05_not_fragile": 4,
+   "p05_not_fragile_restrictions_ge_20": 0,
+   "p001_not_fragile": 4,
+   "share_p05_among_available": 1.0,
+   "by_method": {
+    "Calendar HAC 1": {
+     "with_p": 6,
+     "p05": 6,
+     "p05_not_fragile": 2
+    },
+    "Calendar HAC 2": {
+     "with_p": 6,
+     "p05": 6,
+     "p05_not_fragile": 2
+    }
+   },
+   "smallest_p_not_fragile": [
+    {
+     "spec_id": "annual__region__long__all_eligible__H1",
+     "test": "All origin temperature slopes zero",
+     "covariance": "Calendar HAC 2",
+     "restrictions": 9,
+     "bound": 16,
+     "f": 18.459,
+     "p": 7.790160031808322e-07
+    },
+    {
+     "spec_id": "annual__region__long__all_eligible__H1",
+     "test": "All origin temperature slopes zero",
+     "covariance": "Calendar HAC 1",
+     "restrictions": 9,
+     "bound": 16,
+     "f": 14.641,
+     "p": 3.871025612260543e-06
+    },
+    {
+     "spec_id": "annual__region__long__all_eligible__H1",
+     "test": "All origin temperature slopes equal",
+     "covariance": "Calendar HAC 1",
+     "restrictions": 8,
+     "bound": 16,
+     "f": 10.955,
+     "p": 3.422768437782034e-05
+    },
+    {
+     "spec_id": "annual__region__long__all_eligible__H1",
+     "test": "All origin temperature slopes equal",
+     "covariance": "Calendar HAC 2",
+     "restrictions": 8,
+     "bound": 16,
+     "f": 8.357,
+     "p": 0.00018157464264223315
+    }
+   ]
+  },
+  "ppml": {
+   "rows": 84,
+   "single_restriction_rows": 84,
+   "multi_restriction_rows": 0,
+   "multi_with_p": 0,
+   "multi_without_p": 0,
+   "status": {
+    "computable: calibration not established": 84
+   },
+   "calibration_status": {
+    "Not established; nominal/asymptotic diagnostic, not calibrated headline inference": 84
+   },
+   "restrictions": null,
+   "flagged_fragile": 0,
+   "p05": 0,
+   "p05_and_fragile": 0,
+   "p05_not_fragile": 0,
+   "p05_not_fragile_restrictions_ge_20": 0,
+   "p001_not_fragile": 0,
+   "share_p05_among_available": null,
+   "by_method": {},
+   "smallest_p_not_fragile": []
+  }
+ },
+ "F_diagnostic_coverage": {
+  "distinct_diagnostics": 6623,
+  "completed": 65,
+  "states": {
+   "unavailable-gaps": 6503,
+   "unavailable-short": 55,
+   "unit-root-concern": 38,
+   "inconclusive": 17,
+   "sensitivity-dependent": 6,
+   "trend-stationarity-compatible": 3,
+   "stationarity-compatible": 1
+  },
+  "links": 20352,
+  "links_by_branch_role": {
+   "annual/X": {
+    "links": 120,
+    "completed": 0,
+    "specs": 30,
+    "specs_with_any_completed": 0
+   },
+   "annual/Y": {
+    "links": 618,
+    "completed": 0,
+    "specs": 30,
+    "specs_with_any_completed": 0
+   },
+   "monthly/X": {
+    "links": 12540,
+    "completed": 0,
+    "specs": 270,
+    "specs_with_any_completed": 0
+   },
+   "monthly/Y": {
+    "links": 5562,
+    "completed": 0,
+    "specs": 270,
+    "specs_with_any_completed": 0
+   },
+   "origin_year/X": {
+    "links": 96,
+    "completed": 0,
+    "specs": 24,
+    "specs_with_any_completed": 0
+   },
+   "origin_year/Y": {
+    "links": 612,
+    "completed": 0,
+    "specs": 24,
+    "specs_with_any_completed": 0
+   },
+   "ppml/X": {
+    "links": 120,
+    "completed": 15,
+    "specs": 30,
+    "specs_with_any_completed": 5
+   },
+   "ppml/Y": {
+    "links": 684,
+    "completed": 114,
+    "specs": 30,
+    "specs_with_any_completed": 5
+   }
+  },
+  "completed_by_variables_and_state": {
+   "[\"arrival_count\"] | [\"ppml\"] | inconclusive": 17,
+   "[\"arrival_count\"] | [\"ppml\"] | sensitivity-dependent": 6,
+   "[\"arrival_count\"] | [\"ppml\"] | trend-stationarity-compatible": 2,
+   "[\"arrival_count\"] | [\"ppml\"] | unit-root-concern": 37,
+   "[\"rain_100mm\"] | [\"ppml\"] | stationarity-compatible": 1,
+   "[\"rh_pct\"] | [\"ppml\"] | unit-root-concern": 1,
+   "[\"temp_c\"] | [\"ppml\"] | trend-stationarity-compatible": 1
+  },
+  "completed_growth_outcome_diagnostics": 0,
+  "gapped_all_eligible_growth_example": [
+   {
+    "n_periods": 207,
+    "calendar_gaps": 17,
+    "state": "unavailable-gaps",
+    "label": "Not established · calendar gaps"
+   }
+  ]
+ },
+ "G_means_units": {
+  "mean_sd_by_family": {
+   "annual": {
+    "specs": 30,
+    "with_archive_and_mean": 30,
+    "mean_max_abs_diff": 0.0,
+    "sd_ddof1_max_abs_diff": 0.0,
+    "sd_ddof0_max_abs_diff": 18.424932323310202
+   },
+   "monthly": {
+    "specs": 270,
+    "with_archive_and_mean": 270,
+    "mean_max_abs_diff": 0.0,
+    "sd_ddof1_max_abs_diff": 0.0,
+    "sd_ddof0_max_abs_diff": 0.7457570167087368
+   },
+   "origin_year": {
+    "specs": 24,
+    "with_archive_and_mean": 24,
+    "mean_max_abs_diff": 0.0,
+    "sd_ddof1_max_abs_diff": 0.0,
+    "sd_ddof0_max_abs_diff": 0.09369950376955671
+   },
+   "ppml": {
+    "specs": 30,
+    "with_archive_and_mean": 30,
+    "mean_max_abs_diff": 0.0,
+    "sd_ddof1_max_abs_diff": 0.0,
+    "sd_ddof0_max_abs_diff": 3051.2400808110833
+   }
+  },
+  "ppml_rows": 84,
+  "ppml_coefficient_is_100_raw_max_abs": 0.0,
+  "ppml_effect_0p1c_is_10_raw_max_abs": 0.0,
+  "ppml_exact_percent_is_100_expm1_max_abs": 0.0,
+  "ppml_alias_rows_equal_native_rows_max_abs": 0.0,
+  "ppml_main_p05_rows": 0
+ },
+ "status_fields": {
+  "monthly/manifest.json": "computed_not_yet_independently_verified",
+  "origin_year/manifest.json": "computed_not_yet_independently_verified",
+  "annual/manifest.json": "estimated_not_yet_independently_verified",
+  "ppml/manifest.json": "estimated_not_yet_independently_verified",
+  "companions_manifest.json": "estimated_not_yet_independently_verified",
+  "monthly/verification.json": "passed",
+  "origin_year/verification.json": "passed",
+  "annual/verification.json": "passed",
+  "ppml/verification.json": "passed",
+  "diagnostics/verification.json": "passed",
+  "diagnostics/summary.json": "computed_not_yet_independently_verified"
+ },
+ "origin_year_change_table": [
+  {
+   "spec_id": "region__y_mom_nsa__long__all_eligible__H1__own_current__origin_year",
+   "panel": "region",
+   "outcome": "y_mom_nsa",
+   "control_set": "long",
+   "sample_variant": "all_eligible",
+   "origins": 9,
+   "rows_child": 36,
+   "rows_parent_calendar": 36,
+   "n_periods": 207,
+   "time_residual_df": 172,
+   "time_residual_df_parent": 172,
+   "n_parameters": 283,
+   "n_parameters_parent": 139,
+   "max_abs_change": 3.3387896554170684,
+   "median_abs_change": 0.8992936985932027,
+   "mean_change_across_origins": -1.4778302038899306e-14,
+   "sign_changes": 0,
+   "median_se_ratio_oy_over_parent": 1.0584893137213565,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 0,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.2034883720930232,
+   "finite_sample_correction_parent": 1.2034883720930232
+  },
+  {
+   "spec_id": "region__y_mom_nsa__long__event_dates_excluded__H1__own_current__origin_year",
+   "panel": "region",
+   "outcome": "y_mom_nsa",
+   "control_set": "long",
+   "sample_variant": "event_dates_excluded",
+   "origins": 9,
+   "rows_child": 36,
+   "rows_parent_calendar": 36,
+   "n_periods": 165,
+   "time_residual_df": 135,
+   "time_residual_df_parent": 135,
+   "n_parameters": 238,
+   "n_parameters_parent": 134,
+   "max_abs_change": 2.345847913773536,
+   "median_abs_change": 0.4108974372310071,
+   "mean_change_across_origins": 3.2566542055671257e-15,
+   "sign_changes": 0,
+   "median_se_ratio_oy_over_parent": 1.2887818011609942,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 0,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.2222222222222223,
+   "finite_sample_correction_parent": 1.2222222222222223
+  },
+  {
+   "spec_id": "region__y_mom_nsa__long__strict_growth_window_clean__H1__own_current__origin_year",
+   "panel": "region",
+   "outcome": "y_mom_nsa",
+   "control_set": "long",
+   "sample_variant": "strict_growth_window_clean",
+   "origins": 9,
+   "rows_child": 36,
+   "rows_parent_calendar": 36,
+   "n_periods": 141,
+   "time_residual_df": 113,
+   "time_residual_df_parent": 113,
+   "n_parameters": 220,
+   "n_parameters_parent": 132,
+   "max_abs_change": 2.4843978532419877,
+   "median_abs_change": 0.34767786430368575,
+   "mean_change_across_origins": 2.881645539471517e-14,
+   "sign_changes": 0,
+   "median_se_ratio_oy_over_parent": 1.3834308090490277,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 0,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.247787610619469,
+   "finite_sample_correction_parent": 1.247787610619469
+  },
+  {
+   "spec_id": "region__y_mom_nsa__full__all_eligible__H1__own_current__origin_year",
+   "panel": "region",
+   "outcome": "y_mom_nsa",
+   "control_set": "full",
+   "sample_variant": "all_eligible",
+   "origins": 9,
+   "rows_child": 36,
+   "rows_parent_calendar": 36,
+   "n_periods": 85,
+   "time_residual_df": 58,
+   "time_residual_df_parent": 58,
+   "n_parameters": 195,
+   "n_parameters_parent": 131,
+   "max_abs_change": 8.741958242137251,
+   "median_abs_change": 3.6994530268737638,
+   "mean_change_across_origins": -6.681075445966498e-14,
+   "sign_changes": 2,
+   "median_se_ratio_oy_over_parent": 0.9968500470577845,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 0,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.4655172413793103,
+   "finite_sample_correction_parent": 1.4655172413793103
+  },
+  {
+   "spec_id": "region__y_mom_nsa__full__event_dates_excluded__H1__own_current__origin_year",
+   "panel": "region",
+   "outcome": "y_mom_nsa",
+   "control_set": "full",
+   "sample_variant": "event_dates_excluded",
+   "origins": 9,
+   "rows_child": 36,
+   "rows_parent_calendar": 36,
+   "n_periods": 66,
+   "time_residual_df": 42,
+   "time_residual_df_parent": 42,
+   "n_parameters": 168,
+   "n_parameters_parent": 128,
+   "max_abs_change": 1.7999044227523062,
+   "median_abs_change": 0.4858673726825211,
+   "mean_change_across_origins": 1.0164708581012545e-14,
+   "sign_changes": 1,
+   "median_se_ratio_oy_over_parent": 1.1392595080575814,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 0,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.5714285714285714,
+   "finite_sample_correction_parent": 1.5714285714285714
+  },
+  {
+   "spec_id": "region__y_mom_nsa__full__strict_growth_window_clean__H1__own_current__origin_year",
+   "panel": "region",
+   "outcome": "y_mom_nsa",
+   "control_set": "full",
+   "sample_variant": "strict_growth_window_clean",
+   "origins": 9,
+   "rows_child": 36,
+   "rows_parent_calendar": 36,
+   "n_periods": 56,
+   "time_residual_df": 33,
+   "time_residual_df_parent": 33,
+   "n_parameters": 159,
+   "n_parameters_parent": 127,
+   "max_abs_change": 2.004910057081843,
+   "median_abs_change": 0.40976438406943405,
+   "mean_change_across_origins": -7.0067408665232105e-15,
+   "sign_changes": 0,
+   "median_se_ratio_oy_over_parent": 1.2479425992118607,
+   "nominal_p05_parent": 1,
+   "nominal_p05_oy": 2,
+   "nominal_p05_both": 1,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.696969696969697,
+   "finite_sample_correction_parent": 1.696969696969697
+  },
+  {
+   "spec_id": "region__y_yoy_nsa__long__all_eligible__H1__own_current__origin_year",
+   "panel": "region",
+   "outcome": "y_yoy_nsa",
+   "control_set": "long",
+   "sample_variant": "all_eligible",
+   "origins": 9,
+   "rows_child": 36,
+   "rows_parent_calendar": 36,
+   "n_periods": 189,
+   "time_residual_df": 155,
+   "time_residual_df_parent": 155,
+   "n_parameters": 274,
+   "n_parameters_parent": 138,
+   "max_abs_change": 8.708116653560687,
+   "median_abs_change": 2.7740863820227393,
+   "mean_change_across_origins": 1.3105566015130736e-13,
+   "sign_changes": 2,
+   "median_se_ratio_oy_over_parent": 0.9885193395599237,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 0,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.2193548387096773,
+   "finite_sample_correction_parent": 1.2193548387096773
+  },
+  {
+   "spec_id": "region__y_yoy_nsa__long__event_dates_excluded__H1__own_current__origin_year",
+   "panel": "region",
+   "outcome": "y_yoy_nsa",
+   "control_set": "long",
+   "sample_variant": "event_dates_excluded",
+   "origins": 9,
+   "rows_child": 36,
+   "rows_parent_calendar": 36,
+   "n_periods": 165,
+   "time_residual_df": 135,
+   "time_residual_df_parent": 135,
+   "n_parameters": 238,
+   "n_parameters_parent": 134,
+   "max_abs_change": 10.080088081297909,
+   "median_abs_change": 2.2654771694506532,
+   "mean_change_across_origins": 3.572450977016059e-14,
+   "sign_changes": 1,
+   "median_se_ratio_oy_over_parent": 1.003437962741813,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 0,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.2222222222222223,
+   "finite_sample_correction_parent": 1.2222222222222223
+  },
+  {
+   "spec_id": "region__y_yoy_nsa__long__strict_growth_window_clean__H1__own_current__origin_year",
+   "panel": "region",
+   "outcome": "y_yoy_nsa",
+   "control_set": "long",
+   "sample_variant": "strict_growth_window_clean",
+   "origins": 9,
+   "rows_child": 36,
+   "rows_parent_calendar": 36,
+   "n_periods": 141,
+   "time_residual_df": 113,
+   "time_residual_df_parent": 113,
+   "n_parameters": 220,
+   "n_parameters_parent": 132,
+   "max_abs_change": 7.864542489120562,
+   "median_abs_change": 3.318192330586893,
+   "mean_change_across_origins": 1.5296406117057712e-14,
+   "sign_changes": 3,
+   "median_se_ratio_oy_over_parent": 0.9671552291202694,
+   "nominal_p05_parent": 1,
+   "nominal_p05_oy": 2,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.247787610619469,
+   "finite_sample_correction_parent": 1.247787610619469
+  },
+  {
+   "spec_id": "region__y_yoy_nsa__full__all_eligible__H1__own_current__origin_year",
+   "panel": "region",
+   "outcome": "y_yoy_nsa",
+   "control_set": "full",
+   "sample_variant": "all_eligible",
+   "origins": 9,
+   "rows_child": 36,
+   "rows_parent_calendar": 36,
+   "n_periods": 78,
+   "time_residual_df": 51,
+   "time_residual_df_parent": 51,
+   "n_parameters": 195,
+   "n_parameters_parent": 131,
+   "max_abs_change": 33.922544924349666,
+   "median_abs_change": 4.401003395149807,
+   "mean_change_across_origins": -4.8159007645962345e-14,
+   "sign_changes": 0,
+   "median_se_ratio_oy_over_parent": 0.9764511874776273,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 0,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.5294117647058822,
+   "finite_sample_correction_parent": 1.5294117647058822
+  },
+  {
+   "spec_id": "region__y_yoy_nsa__full__event_dates_excluded__H1__own_current__origin_year",
+   "panel": "region",
+   "outcome": "y_yoy_nsa",
+   "control_set": "full",
+   "sample_variant": "event_dates_excluded",
+   "origins": 9,
+   "rows_child": 36,
+   "rows_parent_calendar": 36,
+   "n_periods": 66,
+   "time_residual_df": 42,
+   "time_residual_df_parent": 42,
+   "n_parameters": 168,
+   "n_parameters_parent": 128,
+   "max_abs_change": 15.16824792200794,
+   "median_abs_change": 4.237118055064808,
+   "mean_change_across_origins": 6.434359218272018e-14,
+   "sign_changes": 0,
+   "median_se_ratio_oy_over_parent": 0.9865435031680925,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 0,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.5714285714285714,
+   "finite_sample_correction_parent": 1.5714285714285714
+  },
+  {
+   "spec_id": "region__y_yoy_nsa__full__strict_growth_window_clean__H1__own_current__origin_year",
+   "panel": "region",
+   "outcome": "y_yoy_nsa",
+   "control_set": "full",
+   "sample_variant": "strict_growth_window_clean",
+   "origins": 9,
+   "rows_child": 36,
+   "rows_parent_calendar": 36,
+   "n_periods": 56,
+   "time_residual_df": 33,
+   "time_residual_df_parent": 33,
+   "n_parameters": 159,
+   "n_parameters_parent": 127,
+   "max_abs_change": 13.827853053990783,
+   "median_abs_change": 4.171512766502604,
+   "mean_change_across_origins": -3.947459643111668e-15,
+   "sign_changes": 3,
+   "median_se_ratio_oy_over_parent": 1.1275514178755397,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 0,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.696969696969697,
+   "finite_sample_correction_parent": 1.696969696969697
+  },
+  {
+   "spec_id": "country__y_mom_nsa__long__all_eligible__H1__own_current__origin_year",
+   "panel": "country",
+   "outcome": "y_mom_nsa",
+   "control_set": "long",
+   "sample_variant": "all_eligible",
+   "origins": 42,
+   "rows_child": 168,
+   "rows_parent_calendar": 168,
+   "n_periods": 207,
+   "time_residual_df": 172,
+   "time_residual_df_parent": 172,
+   "n_parameters": 1306,
+   "n_parameters_parent": 568,
+   "max_abs_change": 6.5937758517332155,
+   "median_abs_change": 1.2151233503923333,
+   "mean_change_across_origins": -5.1926716894610894e-14,
+   "sign_changes": 6,
+   "median_se_ratio_oy_over_parent": 1.185694579800058,
+   "nominal_p05_parent": 4,
+   "nominal_p05_oy": 1,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.2034883720930232,
+   "finite_sample_correction_parent": 1.2034883720930232
+  },
+  {
+   "spec_id": "country__y_mom_nsa__long__event_dates_excluded__H1__own_current__origin_year",
+   "panel": "country",
+   "outcome": "y_mom_nsa",
+   "control_set": "long",
+   "sample_variant": "event_dates_excluded",
+   "origins": 42,
+   "rows_child": 168,
+   "rows_parent_calendar": 168,
+   "n_periods": 165,
+   "time_residual_df": 135,
+   "time_residual_df_parent": 135,
+   "n_parameters": 1096,
+   "n_parameters_parent": 563,
+   "max_abs_change": 4.222768018468986,
+   "median_abs_change": 0.6357796055892049,
+   "mean_change_across_origins": 3.512534178861686e-14,
+   "sign_changes": 8,
+   "median_se_ratio_oy_over_parent": 1.2999889438142949,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 3,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.2222222222222223,
+   "finite_sample_correction_parent": 1.2222222222222223
+  },
+  {
+   "spec_id": "country__y_mom_nsa__long__strict_growth_window_clean__H1__own_current__origin_year",
+   "panel": "country",
+   "outcome": "y_mom_nsa",
+   "control_set": "long",
+   "sample_variant": "strict_growth_window_clean",
+   "origins": 42,
+   "rows_child": 168,
+   "rows_parent_calendar": 168,
+   "n_periods": 141,
+   "time_residual_df": 113,
+   "time_residual_df_parent": 113,
+   "n_parameters": 1012,
+   "n_parameters_parent": 561,
+   "max_abs_change": 4.63695063718086,
+   "median_abs_change": 0.9091173035593927,
+   "mean_change_across_origins": 5.491903228479108e-14,
+   "sign_changes": 5,
+   "median_se_ratio_oy_over_parent": 1.3723129219739998,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 3,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.247787610619469,
+   "finite_sample_correction_parent": 1.247787610619469
+  },
+  {
+   "spec_id": "country__y_mom_nsa__full__all_eligible__H1__own_current__origin_year",
+   "panel": "country",
+   "outcome": "y_mom_nsa",
+   "control_set": "full",
+   "sample_variant": "all_eligible",
+   "origins": 42,
+   "rows_child": 168,
+   "rows_parent_calendar": 168,
+   "n_periods": 85,
+   "time_residual_df": 58,
+   "time_residual_df_parent": 58,
+   "n_parameters": 888,
+   "n_parameters_parent": 560,
+   "max_abs_change": 14.776916266268511,
+   "median_abs_change": 4.189994325938539,
+   "mean_change_across_origins": -1.7137614079166227e-13,
+   "sign_changes": 8,
+   "median_se_ratio_oy_over_parent": 0.9744863368524218,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 0,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.4655172413793103,
+   "finite_sample_correction_parent": 1.4655172413793103
+  },
+  {
+   "spec_id": "country__y_mom_nsa__full__event_dates_excluded__H1__own_current__origin_year",
+   "panel": "country",
+   "outcome": "y_mom_nsa",
+   "control_set": "full",
+   "sample_variant": "event_dates_excluded",
+   "origins": 42,
+   "rows_child": 168,
+   "rows_parent_calendar": 168,
+   "n_periods": 66,
+   "time_residual_df": 42,
+   "time_residual_df_parent": 42,
+   "n_parameters": 762,
+   "n_parameters_parent": 557,
+   "max_abs_change": 5.144338314692408,
+   "median_abs_change": 1.383754534245347,
+   "mean_change_across_origins": -4.768672229580434e-14,
+   "sign_changes": 2,
+   "median_se_ratio_oy_over_parent": 1.1554100706421189,
+   "nominal_p05_parent": 6,
+   "nominal_p05_oy": 5,
+   "nominal_p05_both": 5,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 1,
+   "finite_sample_correction_oy": 1.5714285714285714,
+   "finite_sample_correction_parent": 1.5714285714285714
+  },
+  {
+   "spec_id": "country__y_mom_nsa__full__strict_growth_window_clean__H1__own_current__origin_year",
+   "panel": "country",
+   "outcome": "y_mom_nsa",
+   "control_set": "full",
+   "sample_variant": "strict_growth_window_clean",
+   "origins": 42,
+   "rows_child": 168,
+   "rows_parent_calendar": 168,
+   "n_periods": 56,
+   "time_residual_df": 33,
+   "time_residual_df_parent": 33,
+   "n_parameters": 720,
+   "n_parameters_parent": 556,
+   "max_abs_change": 9.613245404596633,
+   "median_abs_change": 1.4925653001258339,
+   "mean_change_across_origins": 1.727718497369053e-14,
+   "sign_changes": 3,
+   "median_se_ratio_oy_over_parent": 1.2501816550873948,
+   "nominal_p05_parent": 8,
+   "nominal_p05_oy": 6,
+   "nominal_p05_both": 5,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.696969696969697,
+   "finite_sample_correction_parent": 1.696969696969697
+  },
+  {
+   "spec_id": "country__y_yoy_nsa__long__all_eligible__H1__own_current__origin_year",
+   "panel": "country",
+   "outcome": "y_yoy_nsa",
+   "control_set": "long",
+   "sample_variant": "all_eligible",
+   "origins": 42,
+   "rows_child": 168,
+   "rows_parent_calendar": 168,
+   "n_periods": 189,
+   "time_residual_df": 155,
+   "time_residual_df_parent": 155,
+   "n_parameters": 1264,
+   "n_parameters_parent": 567,
+   "max_abs_change": 20.00173644357375,
+   "median_abs_change": 2.1496673624243705,
+   "mean_change_across_origins": 4.879271589938331e-13,
+   "sign_changes": 11,
+   "median_se_ratio_oy_over_parent": 0.991771798027276,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 0,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.2193548387096773,
+   "finite_sample_correction_parent": 1.2193548387096773
+  },
+  {
+   "spec_id": "country__y_yoy_nsa__long__event_dates_excluded__H1__own_current__origin_year",
+   "panel": "country",
+   "outcome": "y_yoy_nsa",
+   "control_set": "long",
+   "sample_variant": "event_dates_excluded",
+   "origins": 42,
+   "rows_child": 168,
+   "rows_parent_calendar": 168,
+   "n_periods": 165,
+   "time_residual_df": 135,
+   "time_residual_df_parent": 135,
+   "n_parameters": 1096,
+   "n_parameters_parent": 563,
+   "max_abs_change": 22.424313333848026,
+   "median_abs_change": 3.2352782184716498,
+   "mean_change_across_origins": 9.279349775343214e-14,
+   "sign_changes": 0,
+   "median_se_ratio_oy_over_parent": 0.9678899530391986,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 0,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.2222222222222223,
+   "finite_sample_correction_parent": 1.2222222222222223
+  },
+  {
+   "spec_id": "country__y_yoy_nsa__long__strict_growth_window_clean__H1__own_current__origin_year",
+   "panel": "country",
+   "outcome": "y_yoy_nsa",
+   "control_set": "long",
+   "sample_variant": "strict_growth_window_clean",
+   "origins": 42,
+   "rows_child": 168,
+   "rows_parent_calendar": 168,
+   "n_periods": 141,
+   "time_residual_df": 113,
+   "time_residual_df_parent": 113,
+   "n_parameters": 1012,
+   "n_parameters_parent": 561,
+   "max_abs_change": 19.28047391584721,
+   "median_abs_change": 2.8023701140540878,
+   "mean_change_across_origins": 9.30472630162036e-15,
+   "sign_changes": 14,
+   "median_se_ratio_oy_over_parent": 0.8898479973709845,
+   "nominal_p05_parent": 3,
+   "nominal_p05_oy": 3,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.247787610619469,
+   "finite_sample_correction_parent": 1.247787610619469
+  },
+  {
+   "spec_id": "country__y_yoy_nsa__full__all_eligible__H1__own_current__origin_year",
+   "panel": "country",
+   "outcome": "y_yoy_nsa",
+   "control_set": "full",
+   "sample_variant": "all_eligible",
+   "origins": 42,
+   "rows_child": 168,
+   "rows_parent_calendar": 168,
+   "n_periods": 78,
+   "time_residual_df": 51,
+   "time_residual_df_parent": 51,
+   "n_parameters": 888,
+   "n_parameters_parent": 560,
+   "max_abs_change": 48.861719673702936,
+   "median_abs_change": 7.040861267407005,
+   "mean_change_across_origins": -1.0662370457447694e-13,
+   "sign_changes": 4,
+   "median_se_ratio_oy_over_parent": 0.9988003036842823,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 0,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.5294117647058822,
+   "finite_sample_correction_parent": 1.5294117647058822
+  },
+  {
+   "spec_id": "country__y_yoy_nsa__full__event_dates_excluded__H1__own_current__origin_year",
+   "panel": "country",
+   "outcome": "y_yoy_nsa",
+   "control_set": "full",
+   "sample_variant": "event_dates_excluded",
+   "origins": 42,
+   "rows_child": 168,
+   "rows_parent_calendar": 168,
+   "n_periods": 66,
+   "time_residual_df": 42,
+   "time_residual_df_parent": 42,
+   "n_parameters": 762,
+   "n_parameters_parent": 557,
+   "max_abs_change": 25.73187824448106,
+   "median_abs_change": 4.985146181530146,
+   "mean_change_across_origins": 7.951311566839217e-15,
+   "sign_changes": 1,
+   "median_se_ratio_oy_over_parent": 0.9611907506828461,
+   "nominal_p05_parent": 0,
+   "nominal_p05_oy": 1,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.5714285714285714,
+   "finite_sample_correction_parent": 1.5714285714285714
+  },
+  {
+   "spec_id": "country__y_yoy_nsa__full__strict_growth_window_clean__H1__own_current__origin_year",
+   "panel": "country",
+   "outcome": "y_yoy_nsa",
+   "control_set": "full",
+   "sample_variant": "strict_growth_window_clean",
+   "origins": 42,
+   "rows_child": 168,
+   "rows_parent_calendar": 168,
+   "n_periods": 56,
+   "time_residual_df": 33,
+   "time_residual_df_parent": 33,
+   "n_parameters": 720,
+   "n_parameters_parent": 556,
+   "max_abs_change": 27.89740639427253,
+   "median_abs_change": 3.8096519817362036,
+   "mean_change_across_origins": 4.380622848592403e-14,
+   "sign_changes": 11,
+   "median_se_ratio_oy_over_parent": 1.04485890228758,
+   "nominal_p05_parent": 2,
+   "nominal_p05_oy": 1,
+   "nominal_p05_both": 0,
+   "holm_p05_parent": 0,
+   "holm_p05_oy": 0,
+   "finite_sample_correction_oy": 1.696969696969697,
+   "finite_sample_correction_parent": 1.696969696969697
+  }
+ ]
+}

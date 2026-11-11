@@ -28,6 +28,8 @@ import sys
 import time
 import tomllib
 
+from verification_receipt_history import REFERENCE, VerificationReceiptHistory
+
 ROOT = Path(__file__).resolve().parents[1]
 CALENDAR = "data/raw/visitor_arrivals/calendar/extract_lunar_new_year.py"
 RESTORE = "scripts/restore_replication.py"
@@ -151,7 +153,7 @@ def environment() -> tuple[dict, list[str]]:
 
 def helper_inventory(only: str) -> tuple[dict, list[str]]:
     planned = production_plan(only) + verification_plan(only, False)
-    required = {"pyproject.toml", "uv.lock", RESTORE}
+    required = {"pyproject.toml", "uv.lock", RESTORE, "scripts/verification_receipt_history.py"}
     required.update(step[0] for step in planned)
     if families(only)[1]:
         required.update(("scripts/setup_visitor_r.R", "replication/renv.lock"))
@@ -247,19 +249,24 @@ def inventory(only: str, manifest: Path) -> dict:
     return report
 
 
-def execute(steps: list[tuple[str, ...]]) -> None:
+def execute(steps: list[tuple[str, ...]], *, receipt_history: VerificationReceiptHistory | None = None) -> None:
     for number, step in enumerate(steps, 1):
         runtime = "node" if step[0].endswith(".mjs") else "Rscript" if step[0].endswith(".R") else "python"
         print(f"[{number}/{len(steps)}] {runtime} {' '.join(step)}", flush=True)
         started = time.monotonic()
-        if step[0].endswith(".mjs"):
-            subprocess.run([shutil.which("node"), str(ROOT / step[0]), *step[1:]],
-                           cwd=ROOT, env=child_environment(), check=True)
-        elif step[0].endswith(".R"):
-            subprocess.run([shutil.which("Rscript"), "--vanilla", str(ROOT / step[0]), *step[1:]],
-                           cwd=ROOT, env=child_environment(), check=True)
+        def operation():
+            if step[0].endswith(".mjs"):
+                subprocess.run([shutil.which("node"), str(ROOT / step[0]), *step[1:]],
+                               cwd=ROOT, env=child_environment(), check=True)
+            elif step[0].endswith(".R"):
+                subprocess.run([shutil.which("Rscript"), "--vanilla", str(ROOT / step[0]), *step[1:]],
+                               cwd=ROOT, env=child_environment(), check=True)
+            else:
+                run_python(step[0], step[1:])
+        if receipt_history is None:
+            operation()
         else:
-            run_python(step[0], step[1:])
+            receipt_history.run_step(step, operation)
         print(f"  Passed in {time.monotonic()-started:.1f}s", flush=True)
 
 
@@ -283,12 +290,14 @@ def main() -> int:
     if args.command == "inventory":
         inventory(args.only, args.manifest.resolve())
         return 0
-    steps = production_plan(args.only) if args.command == "reproduce" else []
-    steps += verification_plan(args.only, args.quick)
+    production = production_plan(args.only) if args.command == "reproduce" else []
+    verification = verification_plan(args.only, args.quick)
+    steps = production+verification
     if args.dry_run:
         print(json.dumps({"command": args.command, "scope": args.only,
               "verification": "quick (representative main; complete visitor; all presentation)" if args.quick else "all existing independent verifiers",
               "preflight_and_postflight": "Frozen input-group SHA256 verification; outputs may be regenerated",
+              "receipt_policy": "After production, pin eight historical auxiliary receipts; archive fresh per-verifier receipts separately and restore only those eight paths between checks.",
               "prerequisites": {"node": "24", "main_reproduction": "pdftotext (Poppler)", "visitor_reproduction": "Rscript plus locked gt/jsonlite; no R needed for verify or main-only"},
               "steps": [{"runtime": "node24" if step[0].endswith(".mjs") else "Rscript (native gt)" if step[0].endswith(".R") else "python3.11 (HTTP disabled)",
                          "script": step[0], "arguments": step[1:]} for step in steps]}, indent=2))
@@ -298,16 +307,34 @@ def main() -> int:
     if args.command == "reproduce":
         production_prerequisites(args.only)
     notes = {ROOT / name: (ROOT / name).read_bytes() for name in GENERATED_NOTES if (ROOT / name).is_file()}
+    history = None
     try:
-        execute(steps)
-    finally:
-        # These two verifiers append machine-dependent summary blocks to source
-        # documentation. Keep sealed source bytes; fresh numerical JSON/CSV
-        # receipts remain the authoritative record of this execution.
-        for path, content in notes.items():
-            if path.read_bytes() != content:
-                path.write_bytes(content)
-    check_inputs(args.manifest.resolve(), postflight=True)
+        try:
+            execute(production)
+            # Production may intentionally capture a new pre-pairing checkpoint.
+            # Never restore pre-production audit snapshots over that checkpoint.
+            expected_reference = None
+            if args.command == "verify":
+                published = json.loads(args.manifest.read_text())
+                references = [row for row in published["archives"]["outputs"]["members"] if row["path"] == REFERENCE]
+                if len(references) != 1:
+                    raise RuntimeError("Published manifest must pin the original-input checkpoint exactly once")
+                expected_reference = references[0]["sha256"]
+            history = VerificationReceiptHistory(ROOT, command=args.command, scope=args.only,
+                                                 expected_reference_sha256=expected_reference,
+                                                 execution_manifest=args.manifest)
+            print(f"Fresh verification evidence: {history.directory / 'index.html'}", flush=True)
+            execute(verification, receipt_history=history)
+        finally:
+            for path, content in notes.items():
+                if not path.is_file() or path.read_bytes() != content:
+                    path.write_bytes(content)
+        check_inputs(args.manifest.resolve(), postflight=True)
+        history.complete()
+    except BaseException as error:
+        if history is not None:
+            history.fail(error)
+        raise
     print(f"Frozen {args.command} passed: scope={args.only}, verification={'quick' if args.quick else 'all'}, "
           f"{len(steps)} subprocesses, {time.monotonic()-started:.1f}s. No source refresh performed.", flush=True)
     return 0

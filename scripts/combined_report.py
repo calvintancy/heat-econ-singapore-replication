@@ -19,6 +19,12 @@ from stationarity_context import model_assessment
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "outputs"
 REPORTS = [
+    ("complete-crisis", "Complete GVA & crises", "crisis_sensitivity.html"),
+    ("literature-models", "Literature & dynamics", "literature_sensitivity.html"),
+    ("referee-audit", "Audit & evidence limits", "aea_audit.html"),
+    ("new-stationarity", "New-model unit roots", "extension_stationarity.html"),
+    ("stata-check", "Stata: VA / IIP", "stata_key_results.html"),
+    ("visitor-rigour", "Arrivals: FE & checks", "visitor_arrivals_rigour.html"),
     ("covid", "Full vs no COVID", "covid_comparison.html"),
     ('annual','Annual analyses','annual.html'),
     ("aggregate", "Aggregate VA", "aggregate_va.html"),
@@ -26,16 +32,18 @@ REPORTS = [
     ("granular-va", "Detailed VA", "granular_va.html"),
     ("iip", "IIP: long history", "iip_results.html"),
     ("manufacturing", "Manufacturing detail", "manufacturing_detail.html"),
+    ("visitors", "Arrivals: original", "visitor_arrivals.html"),
     ("growth-levels", "Growth & levels", "outcome_comparisons.html"),
     ("wind-pm", "Wind / PM2.5", "extended_controls.html"),
     ("heterogeneity", "Heterogeneity", "sector_heterogeneity.html"),
-    ("cluster-sensitivity", "Sector-cluster sensitivity", "clustered_sector_sensitivity.html"),
+    ("cluster-sensitivity", "CR1: qualified sensitivity", "clustered_sector_sensitivity_qualified.html"),
     ("tables", "Regression tables", "regression_tables.html"),
     ("reconciliation", "Aggregate checks", "reconciliation.html"),
-    ("stationarity", "Stationarity", "stationarity.html"),
+    ("stationarity", "Legacy unit roots", "stationarity.html"),
 ]
 DESTINATIONS = {filename: key for key, _, filename in REPORTS}
 DESTINATIONS["heat_economy.html"] = "overview"
+DESTINATIONS["clustered_sector_sensitivity.html"] = "cluster-sensitivity"
 UNITS = {"short": "MoM/QoQ growth log points", "yoy": "YoY growth log points"}
 
 
@@ -48,7 +56,7 @@ def download(path: Path, label: str) -> str:
 def overview_data() -> list[dict]:
     from sample_context import model_statistics
     rows = []
-    analyses = [("aggregate", "Aggregate VA", "quarterly"), ("va", "Sector VA panel", "quarterly"),
+    analyses = [("aggregate", "Aggregate VA", "quarterly"), ("va", "VA · legacy 11-sector panel (excludes dwellings)", "quarterly"),
                 ("iip-monthly", "IIP sector panel", "monthly"), ("iip-quarterly", "IIP sector panel", "quarterly")]
     for context, label, frequency in analyses:
         for growth in ["short", "yoy_nsa", "yoy"]:
@@ -87,7 +95,7 @@ def overview_data() -> list[dict]:
                           "target": "aggregate" if context == "aggregate" else "sector-va" if context == "va" else "iip"}
                 rows.append(record)
     for context, label, frequency, target in [
-        ("va-detailed", "VA · 19-sector mean benchmark", "quarterly", "granular-va"),
+        ("va-detailed", "VA · legacy 19-sector mean (excludes dwellings)", "quarterly", "granular-va"),
         ("iip-monthly-total", "IIP · official weighted total", "monthly", "manufacturing"),
         ("iip-quarterly-total", "IIP · official weighted total", "quarterly", "manufacturing"),
         ("iip-monthly-detailed", "IIP · 18-industry mean benchmark", "monthly", "manufacturing"),
@@ -109,6 +117,33 @@ def overview_data() -> list[dict]:
         record.update(is_baseline=record["window"]=="full", significance=significance_label(record["p_value"]), significance_class=significance_class(record["p_value"]),
             p_display=p_format(record["p_value"]), stationarity_y=assessment["y_label"],stationarity_all=assessment["all_label"],
             analysis_role=assessment["analysis_role"])
+    return rows
+
+
+def complete_overview_data() -> list[dict]:
+    """New complete partitions; preserve the original 81-row comparison ledger."""
+    rows=[]
+    for context,label in [("va12","Complete GVA · 12 broad components"),
+                          ("va12-matched","Complete GVA · 12 components, detailed dates"),
+                          ("va20","Complete GVA · 20 detailed components")]:
+        for window,folder,variant in [("long",OUT/"crisis_sensitivity","all_eligible"),
+                                      ("full",OUT/"complete_va_controls","all_eligible"),
+                                      ("exclude",OUT/"complete_va_controls","event_dates_excluded")]:
+            path=folder/"estimates.csv"
+            frame=pd.read_csv(path)
+            for growth,outcome in [("short","y_short"),("yoy_nsa","y_yoy_nsa"),("yoy","y_yoy")]:
+                f=frame[frame.context.eq(context)&frame.sample_variant.eq(variant)&frame.outcome.eq(outcome)&frame.term.eq("temp_c")&frame.main_inference.eq(True)]
+                assert len(f)==1,(context,window,outcome)
+                r=f.iloc[0]
+                rows.append({"context":context,"label":label,"window":window,"growth":growth,"sample_variant":variant,
+                    "outcome":outcome,"outcome_label":("QoQ log growth (SA)" if growth=="short" else "YoY log growth (NSA)" if growth=="yoy_nsa" else "YoY log growth (SA)"),
+                    "frequency":"quarterly","coefficient":float(r.coefficient),"std_error":float(r.std_error),
+                    "p_value":float(r.p_value),"mean_y":float(r.mean_y),"sd_y":float(r.sd_y),
+                    "ci_lower":float(r.ci_lower),"ci_upper":float(r.ci_upper),"periods":int(r.n_periods),"n_obs":int(r.n_obs),
+                    "start":str(r.start),"end":str(r.end),"covariance":r.covariance,"n_clusters":int(r.n_clusters),
+                    "source_csv":str(path.relative_to(ROOT)),"sample_csv":r.sample_csv,"spec_id":r.spec_id,
+                    "p_display":p_format(r.p_value),"significance":significance_label(r.p_value),"significance_class":significance_class(r.p_value),
+                    "target":"complete-crisis","includes_dwellings":True})
     return rows
 
 
@@ -144,7 +179,7 @@ def embedded_report(filename: str, key: str) -> tuple[str, dict]:
     path = OUT / filename
     source = path.read_text()
     doc = lxml_html.fromstring(source, parser=lxml_html.HTMLParser(huge_tree=True))
-    if key not in {'covid','annual','reconciliation','stationarity','cluster-sensitivity'}:
+    if key not in {'covid','annual','reconciliation','stationarity','cluster-sensitivity','complete-crisis','literature-models','referee-audit','visitors','new-stationarity','visitor-rigour','stata-check'}:
         container=doc.find('.//main')
         if container is None:container=doc.find('body')
         banner=lxml_html.fragment_fromstring('<p style="padding:12px 17px;background:#e9f3fa;border-left:3px solid #1f77b4;font-size:13px"><a href="covid_comparison.html"><strong>Full versus excluding 2020–2022: paired regression tables for every specification →</strong></a></p>')
@@ -199,6 +234,13 @@ def methods_html() -> str:
               'nsa_yoy_provenance_methods.md':'Retained SA and added NSA YoY: official sources, transformations and validation',
               'annual_methods.md':'Annual output and weather: AEA comparison, fixed effects and sample limits',
               'temperature_horizon_review.md':'Further literature: quarterly YoY growth, temperature differences and exposure lags',
+              'literature_specification_protocol.md':'Implemented literature extension: exact specification protocol and paper boundaries',
+              'literature_history_alignment_v2.md':'Corrected raw output-lag histories and target-calendar alignment',
+              'literature_joint_test_rank.md':'Joint temperature restrictions: valid score-rank bounds and correction lineage',
+              'annual_seasonal_specification_protocol.md':'Annual calendar-quarter exposure, AR1 and matched histories',
+              'literature_full_controls_protocol.md':'Wind and PM2.5 literature companion: controls, sample loss and unavailable designs',
+              'visitor_rigour_protocol.md':'International arrivals: raw growth histories, calendar masks, lag models, counts and inference',
+              'visitor_origin_year_protocol.md':'International arrivals: origin-specific year effects and relative interpretation',
               "heterogeneity_review.md": "Sector heterogeneity: models and identification",
               "stationarity_methods.md": "Legacy stationarity and persistence diagnostics",
               "stationarity_expanded_methods.md": "Expanded all-series stationarity audit and inference labels",
@@ -255,12 +297,15 @@ def build_combined_report() -> Path:
     for key, _, filename in REPORTS:
         reports[key], manifest[key] = embedded_report(filename, key)
     overview = overview_data()
+    complete_overview = complete_overview_data()
     folder = OUT / "collection"
     folder.mkdir(exist_ok=True)
     pd.DataFrame(overview).to_csv(folder / "overview.csv", index=False)
+    pd.DataFrame(complete_overview).to_csv(folder/"complete_overview.csv",index=False)
     manifest["overview"] = {"rows": len(overview), "source": "Exact saved coefficients and sample statistics"}
+    manifest["complete_overview"]={"rows":len(complete_overview),"source":"Complete GVA12/20 common slopes; includes dwellings; native PyFixest source estimates"}
     (folder / "manifest.json").write_text(json.dumps(manifest, indent=2)+"\n")
-    payload = json.dumps({"reports": reports, "overview": overview}, ensure_ascii=False, allow_nan=False).replace("<", "\\u003c")
+    payload = json.dumps({"reports": reports, "overview": overview,"complete_overview":complete_overview}, ensure_ascii=False, allow_nan=False).replace("<", "\\u003c")
     tabs = '<button type="button" role="tab" id="tab-overview" aria-controls="panel-overview" aria-selected="true" data-tab="overview">Overview & scale</button>'
     tabs += "".join(f'<button type="button" role="tab" id="tab-{key}" aria-controls="panel-{key}" aria-selected="false" data-tab="{key}">{label}</button>' for key, label, _ in REPORTS)
     tabs += '<button type="button" role="tab" id="tab-methods" aria-controls="panel-methods" aria-selected="false" data-tab="methods">Methods & sources</button>'

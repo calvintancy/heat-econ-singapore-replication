@@ -1,0 +1,2 @@
+Rank correction subannual: 48090 tests; 172 rank fields, 32 availability changes; no fits
+Rank correction annual_seasonal: 58696 tests; 448 rank fields, 0 availability changes; no fits

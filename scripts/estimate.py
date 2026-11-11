@@ -8,7 +8,8 @@ import numpy as np
 import pandas as pd
 from pyfixest_backend import fit as pyfixest_fit, ESTIMATOR_VERSION
 from scipy.stats import t as student_t
-from statsmodels.stats.sandwich_covariance import cov_cluster, cov_nw_groupsum
+from statsmodels.stats.sandwich_covariance import cov_cluster
+from calendar_hac import cov_nw_groupsum
 
 from sector_cluster import common_slope_terms, sector_cluster_covariance
 from cumulative_inference import cluster_sum

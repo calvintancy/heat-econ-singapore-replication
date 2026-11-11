@@ -1,0 +1,51 @@
+{
+  "status": "failed",
+  "started_utc": "2026-11-11T15:47:19.911612+00:00",
+  "scope": "Independent numerical replay after all relocated extension producers; shared locked Python environment, no new dependency install, old-v1 economic grid/diagnostics/Stata/presentation not rerun",
+  "relocated_root": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project",
+  "production_execution_sha256": "00447c5960407dacfef318115a17923d860b3618a5be56ea4d41bf185f991e26",
+  "steps": [
+    {
+      "script": "scripts/verify_crisis_sensitivity.py",
+      "source_sha256": "c74a752b625ef912d715785f45744432f31e8ec2a64a999365ee389c46615186",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 110.55458716722205,
+      "log": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/verify-01-verify_crisis_sensitivity.py.log"
+    },
+    {
+      "script": "scripts/verify_annual_crisis_sensitivity.py",
+      "source_sha256": "787d435a539d49f865979cd688c31c0a72455830cc8292a273b22bb34a3c6d30",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 11.902958124876022,
+      "log": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/verify-02-verify_annual_crisis_sensitivity.py.log"
+    },
+    {
+      "script": "scripts/verify_complete_va_controls.py",
+      "source_sha256": "160cc57690dd8303a9026a16f900e8c681c3d9effe92e334efce0af1e043cb18",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 25.2626606663689,
+      "log": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/verify-03-verify_complete_va_controls.py.log"
+    },
+    {
+      "script": "scripts/verify_annual_literature_sensitivity.py",
+      "source_sha256": "c955da1e402761f0a30f67b2acc7e7a91aaaa92ef2912def0bb353cff08eb383",
+      "status": "passed",
+      "exit_code": 0,
+      "seconds": 42.825449833180755,
+      "log": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/verify-04-verify_annual_literature_sensitivity.py.log"
+    },
+    {
+      "script": "scripts/verify_literature_sensitivity.py",
+      "source_sha256": "5dfc111e07380d75c263999117895c5448477bdd2505e1bb5f397dd921e3312c",
+      "status": "failed",
+      "exit_code": 1,
+      "seconds": 0.7557277497835457,
+      "log": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/verify-05-verify_literature_sensitivity.py.log"
+    }
+  ],
+  "error": "RuntimeError('verify_literature_sensitivity.py failed')",
+  "elapsed_seconds": 191.3058640002273
+}

@@ -1,0 +1,3438 @@
+{
+ "probe": "07 annual reconstruction",
+ "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python audit_probes/probe07_annual_reconstruction.py",
+ "production_reference": "scripts/visitor_rigour_companions.py:155-168 annual_data, 171-179 annual_design, 182-284 annual_models",
+ "A_counts": {
+  "complete_level_years": [
+   2008,
+   2025,
+   18
+  ],
+  "incomplete_years_excluded_with_month_counts": {
+   "2026": 9
+  },
+  "growth_years": [
+   2009,
+   2025,
+   17
+  ],
+  "saved_rows": 1116,
+  "expected_rows": 1116,
+  "arrivals_max_abs_diff": 0.0,
+  "previous_arrivals_max_abs_diff": 0.0,
+  "growth_max_abs_diff": 2.7711166694643907e-13,
+  "growth_nan_mismatches": 0,
+  "annual_totals_equal_zero": [],
+  "zero_months_inside_complete_years_named_markets": 50,
+  "aggregate_annual_growth": {
+   "2009": -4.378,
+   "2010": 18.425,
+   "2011": 12.345,
+   "2012": 9.584,
+   "2013": 7.133,
+   "2014": -3.084,
+   "2015": 0.899,
+   "2016": 7.413,
+   "2017": 6.039,
+   "2018": 6.034,
+   "2019": 3.231,
+   "2020": -194.168,
+   "2021": -211.733,
+   "2022": 294.994,
+   "2023": 76.877,
+   "2024": 19.472,
+   "2025": 2.31
+  },
+  "aggregate_annual_arrivals": {
+   "2008": 10116054,
+   "2009": 9682690,
+   "2010": 11641701,
+   "2011": 13171303,
+   "2012": 14496092,
+   "2013": 15567923,
+   "2014": 15095152,
+   "2015": 15231469,
+   "2016": 16403459,
+   "2017": 17424611,
+   "2018": 18508302,
+   "2019": 19116016,
+   "2020": 2742443,
+   "2021": 330059,
+   "2022": 6305744,
+   "2023": 13602215,
+   "2024": 16526344,
+   "2025": 16912560
+  }
+ },
+ "B_weather": {
+  "max_abs_diff_vs_saved": {
+   "temp_c": 7.105427357601002e-15,
+   "rh_pct": 1.4210854715202004e-14,
+   "rain_100mm": 3.552713678800501e-15,
+   "pm25_10ug": 2.220446049250313e-16,
+   "wind_mps": 4.440892098500626e-16
+  },
+  "nan_or_eligibility_mismatches": 0,
+  "eligible_flag_equals_both_coverages_ge_090_all_12_months_mismatches": 0,
+  "max_abs_gap_day_weighted_vs_unweighted_mean": {
+   "temp_c": 0.00671232876712935,
+   "rh_pct": 0.037123287671235516,
+   "pm25_10ug": 0.002783415837244174,
+   "wind_mps": 0.006207604285980661
+  },
+  "eligible_90_years": [
+   2017,
+   2020,
+   2022,
+   2024,
+   2025
+  ],
+  "months_eligible_by_year": {
+   "2017": 12,
+   "2018": 10,
+   "2019": 10,
+   "2020": 12,
+   "2021": 10,
+   "2022": 12,
+   "2023": 10,
+   "2024": 12,
+   "2025": 12
+  },
+  "wind_and_pm_finite_years": [
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025
+  ],
+  "annual_lny_window_days_2008_2025": [
+   15
+  ]
+ },
+ "C_masks": {
+  "mask_rows": 198,
+  "mask_errors": 0,
+  "policy_event_years_in_window": [
+   2008,
+   2009,
+   2020,
+   2021,
+   2022
+  ],
+  "retained_years_aggregate": {
+   "long|all_eligible": [
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "long|event_dates_excluded": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2023,
+    2024,
+    2025
+   ],
+   "long|strict_growth_window_clean": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2024,
+    2025
+   ],
+   "full|all_eligible": [
+    2017,
+    2020,
+    2022,
+    2024,
+    2025
+   ],
+   "full|event_dates_excluded": [
+    2017,
+    2024,
+    2025
+   ],
+   "full|strict_growth_window_clean": [
+    2017,
+    2024,
+    2025
+   ]
+  },
+  "retained_sets_identical_across_panels": true
+ },
+ "D_statuses": {
+  "requests": 30,
+  "status_counts_mine": {
+   "estimated": 15,
+   "unavailable": 15
+  },
+  "failed_checks": {
+   "status_ok": 0,
+   "names_equal": 0,
+   "k_ledger_ok": 0,
+   "rank_ledger_ok": 0,
+   "k_time_ledger_ok": 0,
+   "time_df_ledger_ok": 0,
+   "t_ledger_ok": 0,
+   "time_correction_available_ok": 0,
+   "primary_available_ok": 0,
+   "balanced": 0
+  },
+  "x_max_abs_diff": 0.0,
+  "y_max_abs_diff": 0.0,
+  "sample_growth_max_abs_diff_vs_raw": 2.7711166694643907e-13,
+  "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+  "full_control_requests": 15,
+  "full_control_unavailable": 15,
+  "full_control_wind_pm_columns_present": 15,
+  "full_control_archives_with_beta": 0,
+  "full_control_ledger_rows": 330,
+  "full_control_ledger_rows_with_coefficient": 0,
+  "full_control_ledger_rows_with_p": 0,
+  "full_control_years": {
+   "all_eligible": [
+    2017,
+    2020,
+    2022,
+    2024,
+    2025
+   ],
+   "event_dates_excluded": [
+    2017,
+    2024,
+    2025
+   ],
+   "strict_growth_window_clean": [
+    2017,
+    2024,
+    2025
+   ]
+  },
+  "full_control_n_k_rank": [
+   [
+    3,
+    7,
+    3,
+    3,
+    3
+   ],
+   [
+    5,
+    7,
+    5,
+    5,
+    5
+   ],
+   [
+    27,
+    15,
+    11,
+    3,
+    3
+   ],
+   [
+    27,
+    23,
+    19,
+    3,
+    3
+   ],
+   [
+    45,
+    15,
+    13,
+    5,
+    5
+   ],
+   [
+    45,
+    23,
+    21,
+    5,
+    5
+   ],
+   [
+    126,
+    48,
+    44,
+    3,
+    3
+   ],
+   [
+    126,
+    89,
+    85,
+    3,
+    3
+   ],
+   [
+    210,
+    48,
+    46,
+    5,
+    5
+   ],
+   [
+    210,
+    89,
+    87,
+    5,
+    5
+   ]
+  ],
+  "long_requests_estimated": 15,
+  "flags_year_fe_origin_fe_trend_lny": [
+   [
+    false,
+    true,
+    true,
+    false
+   ]
+  ],
+  "unavailable_ledger_inference_status": [
+   "unavailable: point design"
+  ]
+ },
+ "E_fits": {
+  "estimated": 15,
+  "beta_max_abs_diff": 1.936228954946273e-12,
+  "residual_max_abs_diff": 1.0373923942097463e-12,
+  "influence_max_rel_diff": 8.74519270554023e-15,
+  "hc0_max_rel_diff": 1.3573829839066275e-14,
+  "covariance_max_rel_diff": 1.9012730081809107e-14,
+  "cluster_presence_ok": true,
+  "ledger_max_abs_diff": {
+   "coefficient": 1.5916157281026244e-12,
+   "variance_rel": 2.8144011428969116e-14,
+   "p": 1.554312234475219e-14,
+   "ci": 4.774847184307873e-12,
+   "holm": 3.802513859341161e-15
+  },
+  "joint_tests": 24,
+  "joint_available_mismatch": 0,
+  "joint_available": 12,
+  "joint_f_max_rel_diff": 3.700647272695501e-12,
+  "joint_p_max_abs_diff": 4.196370627287255e-17,
+  "joint_by_panel": {
+   "region": {
+    "rows": 12,
+    "available": 12,
+    "fragile": 8,
+    "available_p_lt_05": 12
+   },
+   "country": {
+    "rows": 12,
+    "available": 0,
+    "fragile": 12,
+    "available_p_lt_05": 0
+   }
+  },
+  "joint_calibration_status": [
+   "Not established; nominal/asymptotic diagnostic, not calibrated headline inference"
+  ],
+  "h1_hac1_rows": {
+   "rows": 153,
+   "p_lt_05": 2,
+   "holm_lt_05": 0
+  }
+ },
+ "F_design_facts": [
+  {
+   "spec_id": "annual__aggregate__long__all_eligible__common",
+   "t": 17,
+   "k_time": 5,
+   "time_df": 12,
+   "correction": 1.4166666666666667,
+   "temp_coefficient": -10.85388163180943,
+   "ledger_hac1": {
+    "std_error": 152.1277066036894,
+    "p_value": 0.9440056685637358,
+    "ci": [
+     -333.35021301934677,
+     311.642449755728
+    ]
+   },
+   "sd_annual_temperature_c": 0.28702328065969407,
+   "corr_temperature_trend": 0.44310556575336085,
+   "r2_temperature_on_other_regressors": 0.6068354774211682,
+   "sd_residual_temperature_c": 0.17997172741765094,
+   "largest_year_shares_of_residual_temperature_variation": [
+    [
+     2010,
+     0.24152664401527868
+    ],
+    [
+     2024,
+     0.17402009492871132
+    ],
+    [
+     2022,
+     0.09663662233552844
+    ],
+    [
+     2025,
+     0.08055137103220252
+    ]
+   ],
+   "leave_one_year_out_min_max": [
+    -101.78928023488987,
+    144.04206798799643
+   ],
+   "leave_one_year_out_extreme_years": [
+    2021,
+    2022
+   ],
+   "leave_one_year_out_sign_changes": 3,
+   "sd_outcome": 105.02840546551622,
+   "residual_sd": 119.26581090481488,
+   "pooled_slope_equals_mean_equation_slope_abs_diff": 0.0,
+   "exact_fixed_design_gaussian_hac1": {
+    "exact_null_rejection_at_nominal_5pct": 0.0974558487507684,
+    "nominal_critical": 2.1199052992212546,
+    "exact_5pct_critical_abs_t": 2.6091951339278165,
+    "p_exact_benchmark": 0.9505623662842115,
+    "expected_variance_ratio": 0.8135446300019503,
+    "satterthwaite_df": 6.177657357919978
+   },
+   "exact_fixed_design_gaussian_hac2_rejection": 0.11956796652737355
+  },
+  {
+   "spec_id": "annual__aggregate__long__event_dates_excluded__common",
+   "t": 13,
+   "k_time": 5,
+   "time_df": 8,
+   "correction": 1.625,
+   "temp_coefficient": -9.888227839216254,
+   "ledger_hac1": {
+    "std_error": 42.23323142994727,
+    "p_value": 0.8188280192859401,
+    "ci": [
+     -101.90653431709069,
+     82.13007863865798
+    ]
+   },
+   "sd_annual_temperature_c": 0.32704458606690395,
+   "corr_temperature_trend": 0.5434996971488095,
+   "r2_temperature_on_other_regressors": 0.7167646265106514,
+   "sd_residual_temperature_c": 0.17405267810823563,
+   "largest_year_shares_of_residual_temperature_variation": [
+    [
+     2010,
+     0.44235893775450297
+    ],
+    [
+     2014,
+     0.09536255663200807
+    ],
+    [
+     2024,
+     0.09214877605760241
+    ],
+    [
+     2013,
+     0.08855846289259281
+    ]
+   ],
+   "leave_one_year_out_min_max": [
+    -74.46701794046226,
+    23.389711455311307
+   ],
+   "leave_one_year_out_extreme_years": [
+    2010,
+    2023
+   ],
+   "leave_one_year_out_sign_changes": 2,
+   "sd_outcome": 20.291132014280993,
+   "residual_sd": 21.54404476478169,
+   "pooled_slope_equals_mean_equation_slope_abs_diff": 0.0,
+   "exact_fixed_design_gaussian_hac1": {
+    "exact_null_rejection_at_nominal_5pct": 0.11901064702385633,
+    "nominal_critical": 2.1788128296672284,
+    "exact_5pct_critical_abs_t": 2.9642158212026732,
+    "p_exact_benchmark": 0.8467487093164252,
+    "expected_variance_ratio": 0.7649042684543172,
+    "satterthwaite_df": 4.047626434728935
+   },
+   "exact_fixed_design_gaussian_hac2_rejection": 0.12928920967256297
+  },
+  {
+   "spec_id": "annual__aggregate__long__strict_growth_window_clean__common",
+   "t": 11,
+   "k_time": 5,
+   "time_df": 6,
+   "correction": 1.8333333333333333,
+   "temp_coefficient": 26.59489003685946,
+   "ledger_hac1": {
+    "std_error": 15.72860874375162,
+    "p_value": 0.12174145639857119,
+    "ci": [
+     -8.450634192784548,
+     61.640414266503456
+    ]
+   },
+   "sd_annual_temperature_c": 0.35379234922916764,
+   "corr_temperature_trend": 0.6306761612892519,
+   "r2_temperature_on_other_regressors": 0.9260738094007938,
+   "sd_residual_temperature_c": 0.0961939150922467,
+   "largest_year_shares_of_residual_temperature_variation": [
+    [
+     2011,
+     0.29646646663799947
+    ],
+    [
+     2018,
+     0.18480540677794777
+    ],
+    [
+     2014,
+     0.17081373779097644
+    ],
+    [
+     2013,
+     0.16037634119272892
+    ]
+   ],
+   "leave_one_year_out_min_max": [
+    17.096560788341524,
+    38.432141402386904
+   ],
+   "leave_one_year_out_extreme_years": [
+    2024,
+    2018
+   ],
+   "leave_one_year_out_sign_changes": 0,
+   "sd_outcome": 6.042186912299435,
+   "residual_sd": 5.801418781691867,
+   "pooled_slope_equals_mean_equation_slope_abs_diff": 0.0,
+   "exact_fixed_design_gaussian_hac1": {
+    "exact_null_rejection_at_nominal_5pct": 0.11678419318036434,
+    "nominal_critical": 2.228138851986274,
+    "exact_5pct_critical_abs_t": 3.08157970439138,
+    "p_exact_benchmark": 0.20445968478582488,
+    "expected_variance_ratio": 0.8344534132465192,
+    "satterthwaite_df": 3.2105988793192504
+   },
+   "exact_fixed_design_gaussian_hac2_rejection": 0.1282397269388387
+  },
+  {
+   "spec_id": "annual__region__long__all_eligible__common",
+   "t": 17,
+   "k_time": 5,
+   "time_df": 12,
+   "correction": 1.4166666666666667,
+   "temp_coefficient": -16.018935428710147,
+   "ledger_hac1": {
+    "std_error": 161.8730676573787,
+    "p_value": 0.9223993830776828,
+    "ci": [
+     -359.1745093567877,
+     327.13663849936785
+    ]
+   },
+   "sd_annual_temperature_c": 0.28702328065969407,
+   "corr_temperature_trend": 0.44310556575336085,
+   "r2_temperature_on_other_regressors": 0.6068354774211682,
+   "sd_residual_temperature_c": 0.17997172741765094,
+   "largest_year_shares_of_residual_temperature_variation": [
+    [
+     2010,
+     0.24152664401527893
+    ],
+    [
+     2024,
+     0.17402009492871104
+    ],
+    [
+     2022,
+     0.09663662233552864
+    ],
+    [
+     2025,
+     0.08055137103220247
+    ]
+   ],
+   "leave_one_year_out_min_max": [
+    -118.68809600680396,
+    149.9376896434762
+   ],
+   "leave_one_year_out_extreme_years": [
+    2021,
+    2022
+   ],
+   "leave_one_year_out_sign_changes": 2,
+   "sd_outcome": 113.51651427543597,
+   "residual_sd": 115.93731148219334,
+   "pooled_slope_equals_mean_equation_slope_abs_diff": 1.5631940186722204e-13,
+   "exact_fixed_design_gaussian_hac1": {
+    "exact_null_rejection_at_nominal_5pct": 0.09745584875076801,
+    "nominal_critical": 2.1199052992212546,
+    "exact_5pct_critical_abs_t": 2.6091951339278125,
+    "p_exact_benchmark": 0.9314794862679244,
+    "expected_variance_ratio": 0.8135446300019522,
+    "satterthwaite_df": 6.177657357919996
+   },
+   "exact_fixed_design_gaussian_hac2_rejection": 0.11956796652737321,
+   "origin_cluster": {
+    "std_error": 12.10170371242617,
+    "p_value": 0.2221785874308267,
+    "se_ratio_cluster_over_hac1": 0.07476045204777791,
+    "main_inference": false,
+    "inference_df": 8
+   }
+  },
+  {
+   "spec_id": "annual__region__long__event_dates_excluded__common",
+   "t": 13,
+   "k_time": 5,
+   "time_df": 8,
+   "correction": 1.625,
+   "temp_coefficient": -17.600469727035485,
+   "ledger_hac1": {
+    "std_error": 45.76465990130449,
+    "p_value": 0.7072726692691765,
+    "ci": [
+     -117.31309786535506,
+     82.11215841128411
+    ]
+   },
+   "sd_annual_temperature_c": 0.32704458606690395,
+   "corr_temperature_trend": 0.5434996971488095,
+   "r2_temperature_on_other_regressors": 0.7167646265106514,
+   "sd_residual_temperature_c": 0.17405267810823566,
+   "largest_year_shares_of_residual_temperature_variation": [
+    [
+     2010,
+     0.4423589377545015
+    ],
+    [
+     2014,
+     0.09536255663200827
+    ],
+    [
+     2024,
+     0.09214877605760267
+    ],
+    [
+     2013,
+     0.08855846289259305
+    ]
+   ],
+   "leave_one_year_out_min_max": [
+    -87.57646613123667,
+    17.895046969880525
+   ],
+   "leave_one_year_out_extreme_years": [
+    2010,
+    2023
+   ],
+   "leave_one_year_out_sign_changes": 1,
+   "sd_outcome": 24.778837202499634,
+   "residual_sd": 22.36656834067528,
+   "pooled_slope_equals_mean_equation_slope_abs_diff": 2.1316282072803006e-14,
+   "exact_fixed_design_gaussian_hac1": {
+    "exact_null_rejection_at_nominal_5pct": 0.1190106470238562,
+    "nominal_critical": 2.1788128296672284,
+    "exact_5pct_critical_abs_t": 2.9642158212026724,
+    "p_exact_benchmark": 0.7518425224895476,
+    "expected_variance_ratio": 0.7649042684543177,
+    "satterthwaite_df": 4.047626434728937
+   },
+   "exact_fixed_design_gaussian_hac2_rejection": 0.12928920967256297,
+   "origin_cluster": {
+    "std_error": 4.471659956395622,
+    "p_value": 0.004320080162162394,
+    "se_ratio_cluster_over_hac1": 0.09770989156347168,
+    "main_inference": false,
+    "inference_df": 8
+   }
+  },
+  {
+   "spec_id": "annual__region__long__strict_growth_window_clean__common",
+   "t": 11,
+   "k_time": 5,
+   "time_df": 6,
+   "correction": 1.8333333333333333,
+   "temp_coefficient": 19.423566249623786,
+   "ledger_hac1": {
+    "std_error": 10.479504281521946,
+    "p_value": 0.09350978315418884,
+    "ci": [
+     -3.9262243895917663,
+     42.77335688883934
+    ]
+   },
+   "sd_annual_temperature_c": 0.35379234922916764,
+   "corr_temperature_trend": 0.6306761612892519,
+   "r2_temperature_on_other_regressors": 0.9260738094007938,
+   "sd_residual_temperature_c": 0.0961939150922467,
+   "largest_year_shares_of_residual_temperature_variation": [
+    [
+     2011,
+     0.2964664666379959
+    ],
+    [
+     2018,
+     0.18480540677794818
+    ],
+    [
+     2014,
+     0.17081373779097644
+    ],
+    [
+     2013,
+     0.16037634119273045
+    ]
+   ],
+   "leave_one_year_out_min_max": [
+    12.44158117200155,
+    27.030067379228967
+   ],
+   "leave_one_year_out_extreme_years": [
+    2024,
+    2018
+   ],
+   "leave_one_year_out_sign_changes": 0,
+   "sd_outcome": 8.754589867074355,
+   "residual_sd": 7.92863895363348,
+   "pooled_slope_equals_mean_equation_slope_abs_diff": 1.4210854715202004e-14,
+   "exact_fixed_design_gaussian_hac1": {
+    "exact_null_rejection_at_nominal_5pct": 0.11678419318036427,
+    "nominal_critical": 2.228138851986274,
+    "exact_5pct_critical_abs_t": 3.0815797043913786,
+    "p_exact_benchmark": 0.1723793768499229,
+    "expected_variance_ratio": 0.8344534132465196,
+    "satterthwaite_df": 3.2105988793192495
+   },
+   "exact_fixed_design_gaussian_hac2_rejection": 0.12823972693883856,
+   "origin_cluster": {
+    "std_error": 11.973654366710456,
+    "p_value": 0.14341939932943817,
+    "se_ratio_cluster_over_hac1": 1.1425783171655437,
+    "main_inference": false,
+    "inference_df": 8
+   }
+  },
+  {
+   "spec_id": "annual__country__long__all_eligible__common",
+   "t": 17,
+   "k_time": 5,
+   "time_df": 12,
+   "correction": 1.4166666666666667,
+   "temp_coefficient": -22.443996423403235,
+   "ledger_hac1": {
+    "std_error": 167.4626769208187,
+    "p_value": 0.8950550446130068,
+    "ci": [
+     -377.44901264962357,
+     332.5610198028173
+    ]
+   },
+   "sd_annual_temperature_c": 0.28702328065969407,
+   "corr_temperature_trend": 0.44310556575336085,
+   "r2_temperature_on_other_regressors": 0.6068354774211682,
+   "sd_residual_temperature_c": 0.17997172741765094,
+   "largest_year_shares_of_residual_temperature_variation": [
+    [
+     2010,
+     0.2415266440152785
+    ],
+    [
+     2024,
+     0.17402009492871162
+    ],
+    [
+     2022,
+     0.09663662233552829
+    ],
+    [
+     2025,
+     0.08055137103220292
+    ]
+   ],
+   "leave_one_year_out_min_max": [
+    -131.16103136547912,
+    151.86992188281926
+   ],
+   "leave_one_year_out_extreme_years": [
+    2021,
+    2022
+   ],
+   "leave_one_year_out_sign_changes": 1,
+   "sd_outcome": 117.32084801851599,
+   "residual_sd": 118.45549922402941,
+   "pooled_slope_equals_mean_equation_slope_abs_diff": 3.552713678800501e-15,
+   "exact_fixed_design_gaussian_hac1": {
+    "exact_null_rejection_at_nominal_5pct": 0.09745584875076817,
+    "nominal_critical": 2.1199052992212546,
+    "exact_5pct_critical_abs_t": 2.6091951339278143,
+    "p_exact_benchmark": 0.9073192178969118,
+    "expected_variance_ratio": 0.8135446300019513,
+    "satterthwaite_df": 6.177657357919989
+   },
+   "exact_fixed_design_gaussian_hac2_rejection": 0.1195679665273734,
+   "origin_cluster": {
+    "std_error": 4.739843953247136,
+    "p_value": 2.6179250939989367e-05,
+    "se_ratio_cluster_over_hac1": 0.028303882634625948,
+    "main_inference": false,
+    "inference_df": 41
+   }
+  },
+  {
+   "spec_id": "annual__country__long__event_dates_excluded__common",
+   "t": 13,
+   "k_time": 5,
+   "time_df": 8,
+   "correction": 1.625,
+   "temp_coefficient": -19.638426831176638,
+   "ledger_hac1": {
+    "std_error": 44.25795647397539,
+    "p_value": 0.6651354334879673,
+    "ci": [
+     -116.06823021152807,
+     76.79137654917464
+    ]
+   },
+   "sd_annual_temperature_c": 0.32704458606690395,
+   "corr_temperature_trend": 0.5434996971488095,
+   "r2_temperature_on_other_regressors": 0.7167646265106514,
+   "sd_residual_temperature_c": 0.17405267810823566,
+   "largest_year_shares_of_residual_temperature_variation": [
+    [
+     2010,
+     0.4423589377545037
+    ],
+    [
+     2014,
+     0.0953625566320075
+    ],
+    [
+     2024,
+     0.09214877605760165
+    ],
+    [
+     2013,
+     0.08855846289259303
+    ]
+   ],
+   "leave_one_year_out_min_max": [
+    -89.79443356432479,
+    13.517291613949677
+   ],
+   "leave_one_year_out_extreme_years": [
+    2010,
+    2023
+   ],
+   "leave_one_year_out_sign_changes": 1,
+   "sd_outcome": 25.06596540353471,
+   "residual_sd": 23.176212760443676,
+   "pooled_slope_equals_mean_equation_slope_abs_diff": 2.842170943040401e-14,
+   "exact_fixed_design_gaussian_hac1": {
+    "exact_null_rejection_at_nominal_5pct": 0.11901064702385633,
+    "nominal_critical": 2.1788128296672284,
+    "exact_5pct_critical_abs_t": 2.9642158212026732,
+    "p_exact_benchmark": 0.7157906814323284,
+    "expected_variance_ratio": 0.7649042684543171,
+    "satterthwaite_df": 4.047626434728937
+   },
+   "exact_fixed_design_gaussian_hac2_rejection": 0.129289209672563,
+   "origin_cluster": {
+    "std_error": 3.239396559635314,
+    "p_value": 3.52704590146037e-07,
+    "se_ratio_cluster_over_hac1": 0.07319354117807375,
+    "main_inference": false,
+    "inference_df": 41
+   }
+  },
+  {
+   "spec_id": "annual__country__long__strict_growth_window_clean__common",
+   "t": 11,
+   "k_time": 5,
+   "time_df": 6,
+   "correction": 1.8333333333333333,
+   "temp_coefficient": 6.662578727857652,
+   "ledger_hac1": {
+    "std_error": 10.69558799119824,
+    "p_value": 0.547274481707754,
+    "ci": [
+     -17.16867642016903,
+     30.493833875884217
+    ]
+   },
+   "sd_annual_temperature_c": 0.35379234922916764,
+   "corr_temperature_trend": 0.6306761612892519,
+   "r2_temperature_on_other_regressors": 0.9260738094007938,
+   "sd_residual_temperature_c": 0.0961939150922467,
+   "largest_year_shares_of_residual_temperature_variation": [
+    [
+     2011,
+     0.29646646663799536
+    ],
+    [
+     2018,
+     0.18480540677794854
+    ],
+    [
+     2014,
+     0.17081373779097675
+    ],
+    [
+     2013,
+     0.1603763411927314
+    ]
+   ],
+   "leave_one_year_out_min_max": [
+    -1.7081844073895338,
+    14.189427916353234
+   ],
+   "leave_one_year_out_extreme_years": [
+    2013,
+    2018
+   ],
+   "leave_one_year_out_sign_changes": 1,
+   "sd_outcome": 11.970048237706353,
+   "residual_sd": 11.484301088093677,
+   "pooled_slope_equals_mean_equation_slope_abs_diff": 6.217248937900877e-15,
+   "exact_fixed_design_gaussian_hac1": {
+    "exact_null_rejection_at_nominal_5pct": 0.11678419318036433,
+    "nominal_critical": 2.228138851986274,
+    "exact_5pct_critical_abs_t": 3.081579704391379,
+    "p_exact_benchmark": 0.6035895390626506,
+    "expected_variance_ratio": 0.8344534132465191,
+    "satterthwaite_df": 3.210598879319251
+   },
+   "exact_fixed_design_gaussian_hac2_rejection": 0.1282397269388386,
+   "origin_cluster": {
+    "std_error": 6.242916253819489,
+    "p_value": 0.29211549593645547,
+    "se_ratio_cluster_over_hac1": 0.5836907946488772,
+    "main_inference": false,
+    "inference_df": 41
+   }
+  }
+ ],
+ "status_rows": [
+  {
+   "spec_id": "annual__aggregate__long__all_eligible__common",
+   "n": 17,
+   "k": 5,
+   "t": 17,
+   "g": 1,
+   "rank_mine": 5,
+   "k_time_mine": 5,
+   "time_df_mine": 12,
+   "status_mine": "estimated",
+   "status_ledger": "estimated",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 2.7711166694643907e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": false,
+   "archive_has_beta": true,
+   "ledger_rows": 2,
+   "ledger_rows_with_coefficient": 2,
+   "ledger_rows_with_p": 2,
+   "ledger_inference_status": [
+    "available"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__aggregate__long__event_dates_excluded__common",
+   "n": 13,
+   "k": 5,
+   "t": 13,
+   "g": 1,
+   "rank_mine": 5,
+   "k_time_mine": 5,
+   "time_df_mine": 8,
+   "status_mine": "estimated",
+   "status_ledger": "estimated",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 2.7711166694643907e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2023,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": false,
+   "archive_has_beta": true,
+   "ledger_rows": 2,
+   "ledger_rows_with_coefficient": 2,
+   "ledger_rows_with_p": 2,
+   "ledger_inference_status": [
+    "available"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__aggregate__long__strict_growth_window_clean__common",
+   "n": 11,
+   "k": 5,
+   "t": 11,
+   "g": 1,
+   "rank_mine": 5,
+   "k_time_mine": 5,
+   "time_df_mine": 6,
+   "status_mine": "estimated",
+   "status_ledger": "estimated",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 2.7711166694643907e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": false,
+   "archive_has_beta": true,
+   "ledger_rows": 2,
+   "ledger_rows_with_coefficient": 2,
+   "ledger_rows_with_p": 2,
+   "ledger_inference_status": [
+    "available"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__aggregate__full__all_eligible__common",
+   "n": 5,
+   "k": 7,
+   "t": 5,
+   "g": 1,
+   "rank_mine": 5,
+   "k_time_mine": 5,
+   "time_df_mine": 0,
+   "status_mine": "unavailable",
+   "status_ledger": "unavailable",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.2789769243681803e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2017,
+    2020,
+    2022,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": true,
+   "archive_has_beta": false,
+   "ledger_rows": 2,
+   "ledger_rows_with_coefficient": 0,
+   "ledger_rows_with_p": 0,
+   "ledger_inference_status": [
+    "unavailable: point design"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__aggregate__full__event_dates_excluded__common",
+   "n": 3,
+   "k": 7,
+   "t": 3,
+   "g": 1,
+   "rank_mine": 3,
+   "k_time_mine": 3,
+   "time_df_mine": 0,
+   "status_mine": "unavailable",
+   "status_ledger": "unavailable",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.2789769243681803e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2017,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": true,
+   "archive_has_beta": false,
+   "ledger_rows": 2,
+   "ledger_rows_with_coefficient": 0,
+   "ledger_rows_with_p": 0,
+   "ledger_inference_status": [
+    "unavailable: point design"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__aggregate__full__strict_growth_window_clean__common",
+   "n": 3,
+   "k": 7,
+   "t": 3,
+   "g": 1,
+   "rank_mine": 3,
+   "k_time_mine": 3,
+   "time_df_mine": 0,
+   "status_mine": "unavailable",
+   "status_ledger": "unavailable",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.2789769243681803e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2017,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": true,
+   "archive_has_beta": false,
+   "ledger_rows": 2,
+   "ledger_rows_with_coefficient": 0,
+   "ledger_rows_with_p": 0,
+   "ledger_inference_status": [
+    "unavailable: point design"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__region__long__all_eligible__common",
+   "n": 153,
+   "k": 13,
+   "t": 17,
+   "g": 9,
+   "rank_mine": 13,
+   "k_time_mine": 5,
+   "time_df_mine": 12,
+   "status_mine": "estimated",
+   "status_ledger": "estimated",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.7053025658242404e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": false,
+   "archive_has_beta": true,
+   "ledger_rows": 3,
+   "ledger_rows_with_coefficient": 3,
+   "ledger_rows_with_p": 3,
+   "ledger_inference_status": [
+    "available"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__region__long__all_eligible__H1",
+   "n": 153,
+   "k": 21,
+   "t": 17,
+   "g": 9,
+   "rank_mine": 21,
+   "k_time_mine": 5,
+   "time_df_mine": 12,
+   "status_mine": "estimated",
+   "status_ledger": "estimated",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.7053025658242404e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": false,
+   "archive_has_beta": true,
+   "ledger_rows": 18,
+   "ledger_rows_with_coefficient": 18,
+   "ledger_rows_with_p": 18,
+   "ledger_inference_status": [
+    "available"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__region__long__event_dates_excluded__common",
+   "n": 117,
+   "k": 13,
+   "t": 13,
+   "g": 9,
+   "rank_mine": 13,
+   "k_time_mine": 5,
+   "time_df_mine": 8,
+   "status_mine": "estimated",
+   "status_ledger": "estimated",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.5987211554602254e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2023,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": false,
+   "archive_has_beta": true,
+   "ledger_rows": 3,
+   "ledger_rows_with_coefficient": 3,
+   "ledger_rows_with_p": 3,
+   "ledger_inference_status": [
+    "available"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__region__long__event_dates_excluded__H1",
+   "n": 117,
+   "k": 21,
+   "t": 13,
+   "g": 9,
+   "rank_mine": 21,
+   "k_time_mine": 5,
+   "time_df_mine": 8,
+   "status_mine": "estimated",
+   "status_ledger": "estimated",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.5987211554602254e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2023,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": false,
+   "archive_has_beta": true,
+   "ledger_rows": 18,
+   "ledger_rows_with_coefficient": 18,
+   "ledger_rows_with_p": 18,
+   "ledger_inference_status": [
+    "available"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__region__long__strict_growth_window_clean__common",
+   "n": 99,
+   "k": 13,
+   "t": 11,
+   "g": 9,
+   "rank_mine": 13,
+   "k_time_mine": 5,
+   "time_df_mine": 6,
+   "status_mine": "estimated",
+   "status_ledger": "estimated",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.5987211554602254e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": false,
+   "archive_has_beta": true,
+   "ledger_rows": 3,
+   "ledger_rows_with_coefficient": 3,
+   "ledger_rows_with_p": 3,
+   "ledger_inference_status": [
+    "available"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__region__long__strict_growth_window_clean__H1",
+   "n": 99,
+   "k": 21,
+   "t": 11,
+   "g": 9,
+   "rank_mine": 21,
+   "k_time_mine": 5,
+   "time_df_mine": 6,
+   "status_mine": "estimated",
+   "status_ledger": "estimated",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.5987211554602254e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": false,
+   "archive_has_beta": true,
+   "ledger_rows": 18,
+   "ledger_rows_with_coefficient": 18,
+   "ledger_rows_with_p": 18,
+   "ledger_inference_status": [
+    "available"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__region__full__all_eligible__common",
+   "n": 45,
+   "k": 15,
+   "t": 5,
+   "g": 9,
+   "rank_mine": 13,
+   "k_time_mine": 5,
+   "time_df_mine": 0,
+   "status_mine": "unavailable",
+   "status_ledger": "unavailable",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.7053025658242404e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2017,
+    2020,
+    2022,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": true,
+   "archive_has_beta": false,
+   "ledger_rows": 3,
+   "ledger_rows_with_coefficient": 0,
+   "ledger_rows_with_p": 0,
+   "ledger_inference_status": [
+    "unavailable: point design"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__region__full__all_eligible__H1",
+   "n": 45,
+   "k": 23,
+   "t": 5,
+   "g": 9,
+   "rank_mine": 21,
+   "k_time_mine": 5,
+   "time_df_mine": 0,
+   "status_mine": "unavailable",
+   "status_ledger": "unavailable",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.7053025658242404e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2017,
+    2020,
+    2022,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": true,
+   "archive_has_beta": false,
+   "ledger_rows": 18,
+   "ledger_rows_with_coefficient": 0,
+   "ledger_rows_with_p": 0,
+   "ledger_inference_status": [
+    "unavailable: point design"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__region__full__event_dates_excluded__common",
+   "n": 27,
+   "k": 15,
+   "t": 3,
+   "g": 9,
+   "rank_mine": 11,
+   "k_time_mine": 3,
+   "time_df_mine": 0,
+   "status_mine": "unavailable",
+   "status_ledger": "unavailable",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.3500311979441904e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2017,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": true,
+   "archive_has_beta": false,
+   "ledger_rows": 3,
+   "ledger_rows_with_coefficient": 0,
+   "ledger_rows_with_p": 0,
+   "ledger_inference_status": [
+    "unavailable: point design"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__region__full__event_dates_excluded__H1",
+   "n": 27,
+   "k": 23,
+   "t": 3,
+   "g": 9,
+   "rank_mine": 19,
+   "k_time_mine": 3,
+   "time_df_mine": 0,
+   "status_mine": "unavailable",
+   "status_ledger": "unavailable",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.3500311979441904e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2017,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": true,
+   "archive_has_beta": false,
+   "ledger_rows": 18,
+   "ledger_rows_with_coefficient": 0,
+   "ledger_rows_with_p": 0,
+   "ledger_inference_status": [
+    "unavailable: point design"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__region__full__strict_growth_window_clean__common",
+   "n": 27,
+   "k": 15,
+   "t": 3,
+   "g": 9,
+   "rank_mine": 11,
+   "k_time_mine": 3,
+   "time_df_mine": 0,
+   "status_mine": "unavailable",
+   "status_ledger": "unavailable",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.3500311979441904e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2017,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": true,
+   "archive_has_beta": false,
+   "ledger_rows": 3,
+   "ledger_rows_with_coefficient": 0,
+   "ledger_rows_with_p": 0,
+   "ledger_inference_status": [
+    "unavailable: point design"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__region__full__strict_growth_window_clean__H1",
+   "n": 27,
+   "k": 23,
+   "t": 3,
+   "g": 9,
+   "rank_mine": 19,
+   "k_time_mine": 3,
+   "time_df_mine": 0,
+   "status_mine": "unavailable",
+   "status_ledger": "unavailable",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.3500311979441904e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2017,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": true,
+   "archive_has_beta": false,
+   "ledger_rows": 18,
+   "ledger_rows_with_coefficient": 0,
+   "ledger_rows_with_p": 0,
+   "ledger_inference_status": [
+    "unavailable: point design"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__country__long__all_eligible__common",
+   "n": 714,
+   "k": 46,
+   "t": 17,
+   "g": 42,
+   "rank_mine": 46,
+   "k_time_mine": 5,
+   "time_df_mine": 12,
+   "status_mine": "estimated",
+   "status_ledger": "estimated",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.7053025658242404e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": false,
+   "archive_has_beta": true,
+   "ledger_rows": 3,
+   "ledger_rows_with_coefficient": 3,
+   "ledger_rows_with_p": 3,
+   "ledger_inference_status": [
+    "available"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__country__long__all_eligible__H1",
+   "n": 714,
+   "k": 87,
+   "t": 17,
+   "g": 42,
+   "rank_mine": 87,
+   "k_time_mine": 5,
+   "time_df_mine": 12,
+   "status_mine": "estimated",
+   "status_ledger": "estimated",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.7053025658242404e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": false,
+   "archive_has_beta": true,
+   "ledger_rows": 84,
+   "ledger_rows_with_coefficient": 84,
+   "ledger_rows_with_p": 84,
+   "ledger_inference_status": [
+    "available"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__country__long__event_dates_excluded__common",
+   "n": 546,
+   "k": 46,
+   "t": 13,
+   "g": 42,
+   "rank_mine": 46,
+   "k_time_mine": 5,
+   "time_df_mine": 8,
+   "status_mine": "estimated",
+   "status_ledger": "estimated",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.6342482922482304e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2023,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": false,
+   "archive_has_beta": true,
+   "ledger_rows": 3,
+   "ledger_rows_with_coefficient": 3,
+   "ledger_rows_with_p": 3,
+   "ledger_inference_status": [
+    "available"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__country__long__event_dates_excluded__H1",
+   "n": 546,
+   "k": 87,
+   "t": 13,
+   "g": 42,
+   "rank_mine": 87,
+   "k_time_mine": 5,
+   "time_df_mine": 8,
+   "status_mine": "estimated",
+   "status_ledger": "estimated",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.6342482922482304e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2023,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": false,
+   "archive_has_beta": true,
+   "ledger_rows": 84,
+   "ledger_rows_with_coefficient": 84,
+   "ledger_rows_with_p": 84,
+   "ledger_inference_status": [
+    "available"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__country__long__strict_growth_window_clean__common",
+   "n": 462,
+   "k": 46,
+   "t": 11,
+   "g": 42,
+   "rank_mine": 46,
+   "k_time_mine": 5,
+   "time_df_mine": 6,
+   "status_mine": "estimated",
+   "status_ledger": "estimated",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.6342482922482304e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": false,
+   "archive_has_beta": true,
+   "ledger_rows": 3,
+   "ledger_rows_with_coefficient": 3,
+   "ledger_rows_with_p": 3,
+   "ledger_inference_status": [
+    "available"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__country__long__strict_growth_window_clean__H1",
+   "n": 462,
+   "k": 87,
+   "t": 11,
+   "g": 42,
+   "rank_mine": 87,
+   "k_time_mine": 5,
+   "time_df_mine": 6,
+   "status_mine": "estimated",
+   "status_ledger": "estimated",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.6342482922482304e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": false,
+   "archive_has_beta": true,
+   "ledger_rows": 84,
+   "ledger_rows_with_coefficient": 84,
+   "ledger_rows_with_p": 84,
+   "ledger_inference_status": [
+    "available"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__country__full__all_eligible__common",
+   "n": 210,
+   "k": 48,
+   "t": 5,
+   "g": 42,
+   "rank_mine": 46,
+   "k_time_mine": 5,
+   "time_df_mine": 0,
+   "status_mine": "unavailable",
+   "status_ledger": "unavailable",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.7053025658242404e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2017,
+    2020,
+    2022,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": true,
+   "archive_has_beta": false,
+   "ledger_rows": 3,
+   "ledger_rows_with_coefficient": 0,
+   "ledger_rows_with_p": 0,
+   "ledger_inference_status": [
+    "unavailable: point design"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__country__full__all_eligible__H1",
+   "n": 210,
+   "k": 89,
+   "t": 5,
+   "g": 42,
+   "rank_mine": 87,
+   "k_time_mine": 5,
+   "time_df_mine": 0,
+   "status_mine": "unavailable",
+   "status_ledger": "unavailable",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.7053025658242404e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2017,
+    2020,
+    2022,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": true,
+   "archive_has_beta": false,
+   "ledger_rows": 84,
+   "ledger_rows_with_coefficient": 0,
+   "ledger_rows_with_p": 0,
+   "ledger_inference_status": [
+    "unavailable: point design"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__country__full__event_dates_excluded__common",
+   "n": 126,
+   "k": 48,
+   "t": 3,
+   "g": 42,
+   "rank_mine": 44,
+   "k_time_mine": 3,
+   "time_df_mine": 0,
+   "status_mine": "unavailable",
+   "status_ledger": "unavailable",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.6342482922482304e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2017,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": true,
+   "archive_has_beta": false,
+   "ledger_rows": 3,
+   "ledger_rows_with_coefficient": 0,
+   "ledger_rows_with_p": 0,
+   "ledger_inference_status": [
+    "unavailable: point design"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__country__full__event_dates_excluded__H1",
+   "n": 126,
+   "k": 89,
+   "t": 3,
+   "g": 42,
+   "rank_mine": 85,
+   "k_time_mine": 3,
+   "time_df_mine": 0,
+   "status_mine": "unavailable",
+   "status_ledger": "unavailable",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.6342482922482304e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2017,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": true,
+   "archive_has_beta": false,
+   "ledger_rows": 84,
+   "ledger_rows_with_coefficient": 0,
+   "ledger_rows_with_p": 0,
+   "ledger_inference_status": [
+    "unavailable: point design"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__country__full__strict_growth_window_clean__common",
+   "n": 126,
+   "k": 48,
+   "t": 3,
+   "g": 42,
+   "rank_mine": 44,
+   "k_time_mine": 3,
+   "time_df_mine": 0,
+   "status_mine": "unavailable",
+   "status_ledger": "unavailable",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.6342482922482304e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2017,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": true,
+   "archive_has_beta": false,
+   "ledger_rows": 3,
+   "ledger_rows_with_coefficient": 0,
+   "ledger_rows_with_p": 0,
+   "ledger_inference_status": [
+    "unavailable: point design"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  },
+  {
+   "spec_id": "annual__country__full__strict_growth_window_clean__H1",
+   "n": 126,
+   "k": 89,
+   "t": 3,
+   "g": 42,
+   "rank_mine": 85,
+   "k_time_mine": 3,
+   "time_df_mine": 0,
+   "status_mine": "unavailable",
+   "status_ledger": "unavailable",
+   "status_ok": true,
+   "x_max_abs_diff": 0.0,
+   "names_equal": true,
+   "y_max_abs_diff": 0.0,
+   "k_ledger_ok": true,
+   "rank_ledger_ok": true,
+   "k_time_ledger_ok": true,
+   "time_df_ledger_ok": true,
+   "t_ledger_ok": true,
+   "time_correction_available_ok": true,
+   "primary_available_ok": true,
+   "sample_growth_max_abs_diff_vs_raw": 1.6342482922482304e-13,
+   "sample_weather_max_abs_diff_vs_raw": 1.4210854715202004e-14,
+   "balanced": true,
+   "years": [
+    2017,
+    2024,
+    2025
+   ],
+   "wind_pm_columns_present": true,
+   "archive_has_beta": false,
+   "ledger_rows": 84,
+   "ledger_rows_with_coefficient": 0,
+   "ledger_rows_with_p": 0,
+   "ledger_inference_status": [
+    "unavailable: point design"
+   ],
+   "flags_no_year_fe_no_lny": [
+    false,
+    true,
+    true,
+    false
+   ]
+  }
+ ],
+ "fits": [
+  {
+   "spec_id": "annual__aggregate__long__all_eligible__common",
+   "beta_max_abs_diff": 9.547918011776346e-14,
+   "residual_max_abs_diff": 5.684341886080802e-14,
+   "influence_max_rel_diff": 2.682151367561433e-15,
+   "hc0_max_rel_diff": 3.0370222838734307e-15,
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "bandwidths": [
+    1,
+    2
+   ],
+   "inference_df": [
+    16,
+    16
+   ],
+   "corrections_saved": [
+    1.4166666666666667,
+    1.4166666666666667
+   ],
+   "correction_mine": 1.4166666666666667,
+   "cluster_presence_ok": true,
+   "covariance_0_Calendar HAC_1_max_rel_diff": 2.9081396449417312e-15,
+   "covariance_0_df_ok": true,
+   "covariance_1_Calendar HAC_2_max_rel_diff": 2.8041556567173476e-15,
+   "covariance_1_df_ok": true,
+   "ledger_max_abs_diff": {
+    "coefficient": 4.085620730620576e-14,
+    "variance_rel": 4.715902126932537e-16,
+    "p": 2.220446049250313e-16,
+    "ci": 1.7053025658242404e-13,
+    "holm": 0.0
+   },
+   "joint_tests": []
+  },
+  {
+   "spec_id": "annual__aggregate__long__event_dates_excluded__common",
+   "beta_max_abs_diff": 1.0125233984581428e-13,
+   "residual_max_abs_diff": 4.973799150320701e-14,
+   "influence_max_rel_diff": 2.0170325028362637e-15,
+   "hc0_max_rel_diff": 1.7051390675614766e-15,
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "bandwidths": [
+    1,
+    2
+   ],
+   "inference_df": [
+    12,
+    12
+   ],
+   "corrections_saved": [
+    1.625,
+    1.625
+   ],
+   "correction_mine": 1.625,
+   "cluster_presence_ok": true,
+   "covariance_0_Calendar HAC_1_max_rel_diff": 1.4022461062452715e-15,
+   "covariance_0_df_ok": true,
+   "covariance_1_Calendar HAC_2_max_rel_diff": 1.3181274537929606e-15,
+   "covariance_1_df_ok": true,
+   "ledger_max_abs_diff": {
+    "coefficient": 1.0125233984581428e-13,
+    "variance_rel": 1.4022461062452715e-15,
+    "p": 1.7763568394002505e-15,
+    "ci": 1.5631940186722204e-13,
+    "holm": 0.0
+   },
+   "joint_tests": []
+  },
+  {
+   "spec_id": "annual__aggregate__long__strict_growth_window_clean__common",
+   "beta_max_abs_diff": 3.9968028886505635e-14,
+   "residual_max_abs_diff": 1.4210854715202004e-14,
+   "influence_max_rel_diff": 2.3281824756348865e-15,
+   "hc0_max_rel_diff": 1.4013456115179816e-15,
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "bandwidths": [
+    1,
+    2
+   ],
+   "inference_df": [
+    10,
+    10
+   ],
+   "corrections_saved": [
+    1.8333333333333333,
+    1.8333333333333333
+   ],
+   "correction_mine": 1.8333333333333333,
+   "cluster_presence_ok": true,
+   "covariance_0_Calendar HAC_1_max_rel_diff": 1.3786398335674658e-15,
+   "covariance_0_df_ok": true,
+   "covariance_1_Calendar HAC_2_max_rel_diff": 1.3031959821524785e-15,
+   "covariance_1_df_ok": true,
+   "ledger_max_abs_diff": {
+    "coefficient": 7.105427357601002e-15,
+    "variance_rel": 1.3786398335674658e-15,
+    "p": 2.498001805406602e-16,
+    "ci": 2.842170943040401e-14,
+    "holm": 0.0
+   },
+   "joint_tests": []
+  },
+  {
+   "spec_id": "annual__region__long__all_eligible__common",
+   "beta_max_abs_diff": 1.8474111129762605e-13,
+   "residual_max_abs_diff": 1.7053025658242404e-13,
+   "influence_max_rel_diff": 5.750487277643596e-15,
+   "hc0_max_rel_diff": 1.3573829839066275e-14,
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "bandwidths": [
+    1,
+    2,
+    0
+   ],
+   "inference_df": [
+    16,
+    16,
+    8
+   ],
+   "corrections_saved": [
+    1.4166666666666667,
+    1.4166666666666667,
+    1.2214285714285715
+   ],
+   "correction_mine": 1.4166666666666667,
+   "cluster_presence_ok": true,
+   "covariance_0_Calendar HAC_1_max_rel_diff": 1.4994594515106075e-14,
+   "covariance_0_df_ok": true,
+   "covariance_1_Calendar HAC_2_max_rel_diff": 1.5703091438567467e-14,
+   "covariance_1_df_ok": true,
+   "covariance_2_Origin cluster_0_max_rel_diff": 1.6199361940951562e-15,
+   "covariance_2_df_ok": true,
+   "ledger_max_abs_diff": {
+    "coefficient": 1.8474111129762605e-13,
+    "variance_rel": 1.5703091438567467e-14,
+    "p": 5.412337245047638e-15,
+    "ci": 2.7853275241795927e-12,
+    "holm": 0.0
+   },
+   "joint_tests": []
+  },
+  {
+   "spec_id": "annual__region__long__all_eligible__H1",
+   "beta_max_abs_diff": 1.6342482922482304e-13,
+   "residual_max_abs_diff": 1.6342482922482304e-13,
+   "influence_max_rel_diff": 4.679024572278741e-15,
+   "hc0_max_rel_diff": 3.356452192357152e-15,
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "bandwidths": [
+    1,
+    2
+   ],
+   "inference_df": [
+    16,
+    16
+   ],
+   "corrections_saved": [
+    1.4166666666666667,
+    1.4166666666666667
+   ],
+   "correction_mine": 1.4166666666666667,
+   "cluster_presence_ok": true,
+   "covariance_0_Calendar HAC_1_max_rel_diff": 2.843327574579499e-15,
+   "covariance_0_df_ok": true,
+   "covariance_1_Calendar HAC_2_max_rel_diff": 2.701218235784226e-15,
+   "covariance_1_df_ok": true,
+   "ledger_max_abs_diff": {
+    "coefficient": 2.3092638912203256e-13,
+    "variance_rel": 3.650498962946743e-15,
+    "p": 1.1102230246251565e-15,
+    "ci": 7.389644451905042e-13,
+    "holm": 0.0
+   },
+   "joint_tests": [
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 1,
+     "test": "All origin temperature slopes equal",
+     "q": 8,
+     "rank_bound": 16,
+     "numerical_rank_mine": 8,
+     "available_mine": true,
+     "status_ledger": "computable: calibration not established",
+     "available_ok": true,
+     "fragile_ledger": false,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference",
+     "f_mine": 10.95480868962895,
+     "f_ledger": 10.954808689628544,
+     "f_rel_diff": 3.6970920338088547e-14,
+     "p_mine": 3.422768437781228e-05,
+     "p_ledger": 3.422768437782034e-05
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 1,
+     "test": "All origin temperature slopes zero",
+     "q": 9,
+     "rank_bound": 16,
+     "numerical_rank_mine": 9,
+     "available_mine": true,
+     "status_ledger": "computable: calibration not established",
+     "available_ok": true,
+     "fragile_ledger": false,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference",
+     "f_mine": 14.640866019231218,
+     "f_ledger": 14.640866019254553,
+     "f_rel_diff": 1.5937734428874832e-12,
+     "p_mine": 3.871025612302507e-06,
+     "p_ledger": 3.871025612260543e-06
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 2,
+     "test": "All origin temperature slopes equal",
+     "q": 8,
+     "rank_bound": 16,
+     "numerical_rank_mine": 8,
+     "available_mine": true,
+     "status_ledger": "computable: calibration not established",
+     "available_ok": true,
+     "fragile_ledger": false,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference",
+     "f_mine": 8.357468911920417,
+     "f_ledger": 8.357468911920142,
+     "f_rel_diff": 3.294482013739015e-14,
+     "p_mine": 0.00018157464264219748,
+     "p_ledger": 0.00018157464264223315
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 2,
+     "test": "All origin temperature slopes zero",
+     "q": 9,
+     "rank_bound": 16,
+     "numerical_rank_mine": 9,
+     "available_mine": true,
+     "status_ledger": "computable: calibration not established",
+     "available_ok": true,
+     "fragile_ledger": false,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference",
+     "f_mine": 18.458917381938328,
+     "f_ledger": 18.458917381924593,
+     "f_rel_diff": 7.440734902303733e-13,
+     "p_mine": 7.790160031767583e-07,
+     "p_ledger": 7.790160031808322e-07
+    }
+   ]
+  },
+  {
+   "spec_id": "annual__region__long__event_dates_excluded__common",
+   "beta_max_abs_diff": 1.794120407794253e-13,
+   "residual_max_abs_diff": 6.039613253960852e-14,
+   "influence_max_rel_diff": 5.700415703054535e-15,
+   "hc0_max_rel_diff": 7.717055296631893e-15,
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "bandwidths": [
+    1,
+    2,
+    0
+   ],
+   "inference_df": [
+    12,
+    12,
+    8
+   ],
+   "corrections_saved": [
+    1.625,
+    1.625,
+    1.2548076923076923
+   ],
+   "correction_mine": 1.625,
+   "cluster_presence_ok": true,
+   "covariance_0_Calendar HAC_1_max_rel_diff": 7.504380528053755e-15,
+   "covariance_0_df_ok": true,
+   "covariance_1_Calendar HAC_2_max_rel_diff": 7.157571073552569e-15,
+   "covariance_1_df_ok": true,
+   "covariance_2_Origin cluster_0_max_rel_diff": 8.134708501486667e-15,
+   "covariance_2_df_ok": true,
+   "ledger_max_abs_diff": {
+    "coefficient": 7.105427357601002e-15,
+    "variance_rel": 3.020449565065172e-15,
+    "p": 4.440892098500626e-16,
+    "ci": 1.2789769243681803e-13,
+    "holm": 0.0
+   },
+   "joint_tests": []
+  },
+  {
+   "spec_id": "annual__region__long__event_dates_excluded__H1",
+   "beta_max_abs_diff": 2.469136006766348e-13,
+   "residual_max_abs_diff": 5.861977570020827e-14,
+   "influence_max_rel_diff": 4.524426482726744e-15,
+   "hc0_max_rel_diff": 3.666637619236086e-15,
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "bandwidths": [
+    1,
+    2
+   ],
+   "inference_df": [
+    12,
+    12
+   ],
+   "corrections_saved": [
+    1.625,
+    1.625
+   ],
+   "correction_mine": 1.625,
+   "cluster_presence_ok": true,
+   "covariance_0_Calendar HAC_1_max_rel_diff": 7.351821422677672e-15,
+   "covariance_0_df_ok": true,
+   "covariance_1_Calendar HAC_2_max_rel_diff": 7.0534832434435275e-15,
+   "covariance_1_df_ok": true,
+   "ledger_max_abs_diff": {
+    "coefficient": 8.881784197001252e-14,
+    "variance_rel": 7.337922253896741e-15,
+    "p": 1.3322676295501878e-15,
+    "ci": 3.979039320256561e-13,
+    "holm": 0.0
+   },
+   "joint_tests": [
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 1,
+     "test": "All origin temperature slopes equal",
+     "q": 8,
+     "rank_bound": 12,
+     "numerical_rank_mine": 8,
+     "available_mine": true,
+     "status_ledger": "computable: calibration not established",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference",
+     "f_mine": 111.5873326794651,
+     "f_ledger": 111.58733267945625,
+     "f_rel_diff": 7.9340210711935e-14,
+     "p_mine": 4.4202726336643667e-10,
+     "p_ledger": 4.4202726336664326e-10
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 1,
+     "test": "All origin temperature slopes zero",
+     "q": 9,
+     "rank_bound": 12,
+     "numerical_rank_mine": 9,
+     "available_mine": true,
+     "status_ledger": "computable: calibration not established",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference",
+     "f_mine": 100.53381179763795,
+     "f_ledger": 100.53381179800999,
+     "f_rel_diff": 3.700647272695501e-12,
+     "p_mine": 6.540979940702741e-10,
+     "p_ledger": 6.540979940560368e-10
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 2,
+     "test": "All origin temperature slopes equal",
+     "q": 8,
+     "rank_bound": 12,
+     "numerical_rank_mine": 8,
+     "available_mine": true,
+     "status_ledger": "computable: calibration not established",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference",
+     "f_mine": 40.514011692962576,
+     "f_ledger": 40.514011692965056,
+     "f_rel_diff": 6.120830903135042e-14,
+     "p_mine": 1.584876187227295e-07,
+     "p_ledger": 1.584876187226742e-07
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 2,
+     "test": "All origin temperature slopes zero",
+     "q": 9,
+     "rank_bound": 12,
+     "numerical_rank_mine": 9,
+     "available_mine": true,
+     "status_ledger": "computable: calibration not established",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference",
+     "f_mine": 38.011135716156694,
+     "f_ledger": 38.011135716161576,
+     "f_rel_diff": 1.28421014071316e-13,
+     "p_mine": 1.8489223237397336e-07,
+     "p_ledger": 1.8489223237383805e-07
+    }
+   ]
+  },
+  {
+   "spec_id": "annual__region__long__strict_growth_window_clean__common",
+   "beta_max_abs_diff": 8.038014698286133e-14,
+   "residual_max_abs_diff": 4.263256414560601e-14,
+   "influence_max_rel_diff": 3.802637874125542e-15,
+   "hc0_max_rel_diff": 3.716169166146471e-15,
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "bandwidths": [
+    1,
+    2,
+    0
+   ],
+   "inference_df": [
+    10,
+    10,
+    8
+   ],
+   "corrections_saved": [
+    1.8333333333333333,
+    1.8333333333333333,
+    1.2819767441860466
+   ],
+   "correction_mine": 1.8333333333333333,
+   "cluster_presence_ok": true,
+   "covariance_0_Calendar HAC_1_max_rel_diff": 4.399645022583238e-15,
+   "covariance_0_df_ok": true,
+   "covariance_1_Calendar HAC_2_max_rel_diff": 4.916238019604388e-15,
+   "covariance_1_df_ok": true,
+   "covariance_2_Origin cluster_0_max_rel_diff": 3.791491310981914e-15,
+   "covariance_2_df_ok": true,
+   "ledger_max_abs_diff": {
+    "coefficient": 0.0,
+    "variance_rel": 4.916238019604388e-15,
+    "p": 9.159339953157541e-16,
+    "ci": 6.394884621840902e-14,
+    "holm": 0.0
+   },
+   "joint_tests": []
+  },
+  {
+   "spec_id": "annual__region__long__strict_growth_window_clean__H1",
+   "beta_max_abs_diff": 8.881784197001252e-14,
+   "residual_max_abs_diff": 3.9968028886505635e-14,
+   "influence_max_rel_diff": 1.7903809144496764e-15,
+   "hc0_max_rel_diff": 1.4743916021641442e-15,
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "bandwidths": [
+    1,
+    2
+   ],
+   "inference_df": [
+    10,
+    10
+   ],
+   "corrections_saved": [
+    1.8333333333333333,
+    1.8333333333333333
+   ],
+   "correction_mine": 1.8333333333333333,
+   "cluster_presence_ok": true,
+   "covariance_0_Calendar HAC_1_max_rel_diff": 1.6610803909005617e-15,
+   "covariance_0_df_ok": true,
+   "covariance_1_Calendar HAC_2_max_rel_diff": 1.6722524921808597e-15,
+   "covariance_1_df_ok": true,
+   "ledger_max_abs_diff": {
+    "coefficient": 4.440892098500626e-14,
+    "variance_rel": 1.033529497792803e-14,
+    "p": 1.4988010832439613e-15,
+    "ci": 1.4210854715202004e-13,
+    "holm": 3.802513859341161e-15
+   },
+   "joint_tests": [
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 1,
+     "test": "All origin temperature slopes equal",
+     "q": 8,
+     "rank_bound": 10,
+     "numerical_rank_mine": 8,
+     "available_mine": true,
+     "status_ledger": "computable: calibration not established",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference",
+     "f_mine": 55.5218649610319,
+     "f_ledger": 55.52186496103123,
+     "f_rel_diff": 1.215765355587144e-14,
+     "p_mine": 2.7413064602573376e-07,
+     "p_ledger": 2.7413064602575e-07
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 1,
+     "test": "All origin temperature slopes zero",
+     "q": 9,
+     "rank_bound": 10,
+     "numerical_rank_mine": 9,
+     "available_mine": true,
+     "status_ledger": "computable: calibration not established",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference",
+     "f_mine": 64.93704664562534,
+     "f_ledger": 64.93704664562694,
+     "f_rel_diff": 2.451013420410626e-14,
+     "p_mine": 1.09602986691674e-07,
+     "p_ledger": 1.0960298669166097e-07
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 2,
+     "test": "All origin temperature slopes equal",
+     "q": 8,
+     "rank_bound": 10,
+     "numerical_rank_mine": 8,
+     "available_mine": true,
+     "status_ledger": "computable: calibration not established",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference",
+     "f_mine": 67.34070942663203,
+     "f_ledger": 67.34070942662657,
+     "f_rel_diff": 8.103520525846851e-14,
+     "p_mine": 1.0751825132377291e-07,
+     "p_ledger": 1.0751825132381534e-07
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 2,
+     "test": "All origin temperature slopes zero",
+     "q": 9,
+     "rank_bound": 10,
+     "numerical_rank_mine": 9,
+     "available_mine": true,
+     "status_ledger": "computable: calibration not established",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference",
+     "f_mine": 60.06186596050255,
+     "f_ledger": 60.06186596049729,
+     "f_rel_diff": 8.7543338198699e-14,
+     "p_mine": 1.6017928053492336e-07,
+     "p_ledger": 1.601792805349912e-07
+    }
+   ]
+  },
+  {
+   "spec_id": "annual__country__long__all_eligible__common",
+   "beta_max_abs_diff": 1.412203687323199e-13,
+   "residual_max_abs_diff": 1.0302869668521453e-12,
+   "influence_max_rel_diff": 2.4429835787742327e-15,
+   "hc0_max_rel_diff": 2.384241973103675e-15,
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "bandwidths": [
+    1,
+    2,
+    0
+   ],
+   "inference_df": [
+    16,
+    16,
+    41
+   ],
+   "corrections_saved": [
+    1.4166666666666667,
+    1.4166666666666667,
+    1.093398568716226
+   ],
+   "correction_mine": 1.4166666666666667,
+   "cluster_presence_ok": true,
+   "covariance_0_Calendar HAC_1_max_rel_diff": 4.864692282941534e-15,
+   "covariance_0_df_ok": true,
+   "covariance_1_Calendar HAC_2_max_rel_diff": 5.046596052142568e-15,
+   "covariance_1_df_ok": true,
+   "covariance_2_Origin cluster_0_max_rel_diff": 8.444428089853091e-15,
+   "covariance_2_df_ok": true,
+   "ledger_max_abs_diff": {
+    "coefficient": 8.526512829121202e-14,
+    "variance_rel": 7.906824961154202e-16,
+    "p": 5.551115123125783e-16,
+    "ci": 2.2737367544323206e-13,
+    "holm": 0.0
+   },
+   "joint_tests": []
+  },
+  {
+   "spec_id": "annual__country__long__all_eligible__H1",
+   "beta_max_abs_diff": 1.936228954946273e-12,
+   "residual_max_abs_diff": 1.0373923942097463e-12,
+   "influence_max_rel_diff": 8.74519270554023e-15,
+   "hc0_max_rel_diff": 4.299664953768334e-15,
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "bandwidths": [
+    1,
+    2
+   ],
+   "inference_df": [
+    16,
+    16
+   ],
+   "corrections_saved": [
+    1.4166666666666667,
+    1.4166666666666667
+   ],
+   "correction_mine": 1.4166666666666667,
+   "cluster_presence_ok": true,
+   "covariance_0_Calendar HAC_1_max_rel_diff": 1.798596031292129e-14,
+   "covariance_0_df_ok": true,
+   "covariance_1_Calendar HAC_2_max_rel_diff": 1.9012730081809107e-14,
+   "covariance_1_df_ok": true,
+   "ledger_max_abs_diff": {
+    "coefficient": 1.5916157281026244e-12,
+    "variance_rel": 2.8144011428969116e-14,
+    "p": 6.439293542825908e-15,
+    "ci": 4.774847184307873e-12,
+    "holm": 0.0
+   },
+   "joint_tests": [
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 1,
+     "test": "All origin temperature slopes equal",
+     "q": 41,
+     "rank_bound": 16,
+     "numerical_rank_mine": 15,
+     "available_mine": false,
+     "status_ledger": "unavailable: singular restriction covariance",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference"
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 1,
+     "test": "All origin temperature slopes zero",
+     "q": 42,
+     "rank_bound": 16,
+     "numerical_rank_mine": 16,
+     "available_mine": false,
+     "status_ledger": "unavailable: singular restriction covariance",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference"
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 2,
+     "test": "All origin temperature slopes equal",
+     "q": 41,
+     "rank_bound": 16,
+     "numerical_rank_mine": 15,
+     "available_mine": false,
+     "status_ledger": "unavailable: singular restriction covariance",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference"
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 2,
+     "test": "All origin temperature slopes zero",
+     "q": 42,
+     "rank_bound": 16,
+     "numerical_rank_mine": 16,
+     "available_mine": false,
+     "status_ledger": "unavailable: singular restriction covariance",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference"
+    }
+   ]
+  },
+  {
+   "spec_id": "annual__country__long__event_dates_excluded__common",
+   "beta_max_abs_diff": 1.4033219031261979e-13,
+   "residual_max_abs_diff": 1.3855583347321954e-13,
+   "influence_max_rel_diff": 9.356087829567653e-16,
+   "hc0_max_rel_diff": 1.013078684608523e-15,
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "bandwidths": [
+    1,
+    2,
+    0
+   ],
+   "inference_df": [
+    12,
+    12,
+    41
+   ],
+   "corrections_saved": [
+    1.625,
+    1.625,
+    1.1165853658536584
+   ],
+   "correction_mine": 1.625,
+   "cluster_presence_ok": true,
+   "covariance_0_Calendar HAC_1_max_rel_diff": 3.4860280458253287e-15,
+   "covariance_0_df_ok": true,
+   "covariance_1_Calendar HAC_2_max_rel_diff": 3.612264813967805e-15,
+   "covariance_1_df_ok": true,
+   "covariance_2_Origin cluster_0_max_rel_diff": 1.0956648884211865e-14,
+   "covariance_2_df_ok": true,
+   "ledger_max_abs_diff": {
+    "coefficient": 7.460698725481052e-14,
+    "variance_rel": 3.3855713813788268e-15,
+    "p": 1.1102230246251565e-15,
+    "ci": 1.8474111129762605e-13,
+    "holm": 0.0
+   },
+   "joint_tests": []
+  },
+  {
+   "spec_id": "annual__country__long__event_dates_excluded__H1",
+   "beta_max_abs_diff": 8.526512829121202e-13,
+   "residual_max_abs_diff": 3.339550858072471e-13,
+   "influence_max_rel_diff": 5.014949241709287e-15,
+   "hc0_max_rel_diff": 3.4141609459709577e-15,
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "bandwidths": [
+    1,
+    2
+   ],
+   "inference_df": [
+    12,
+    12
+   ],
+   "corrections_saved": [
+    1.625,
+    1.625
+   ],
+   "correction_mine": 1.625,
+   "cluster_presence_ok": true,
+   "covariance_0_Calendar HAC_1_max_rel_diff": 1.0249799468840132e-14,
+   "covariance_0_df_ok": true,
+   "covariance_1_Calendar HAC_2_max_rel_diff": 9.709175936881537e-15,
+   "covariance_1_df_ok": true,
+   "ledger_max_abs_diff": {
+    "coefficient": 1.2114753644709708e-12,
+    "variance_rel": 1.0935922272321073e-14,
+    "p": 1.554312234475219e-14,
+    "ci": 1.6484591469634324e-12,
+    "holm": 0.0
+   },
+   "joint_tests": [
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 1,
+     "test": "All origin temperature slopes equal",
+     "q": 41,
+     "rank_bound": 12,
+     "numerical_rank_mine": 11,
+     "available_mine": false,
+     "status_ledger": "unavailable: singular restriction covariance",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference"
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 1,
+     "test": "All origin temperature slopes zero",
+     "q": 42,
+     "rank_bound": 12,
+     "numerical_rank_mine": 12,
+     "available_mine": false,
+     "status_ledger": "unavailable: singular restriction covariance",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference"
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 2,
+     "test": "All origin temperature slopes equal",
+     "q": 41,
+     "rank_bound": 12,
+     "numerical_rank_mine": 11,
+     "available_mine": false,
+     "status_ledger": "unavailable: singular restriction covariance",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference"
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 2,
+     "test": "All origin temperature slopes zero",
+     "q": 42,
+     "rank_bound": 12,
+     "numerical_rank_mine": 12,
+     "available_mine": false,
+     "status_ledger": "unavailable: singular restriction covariance",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference"
+    }
+   ]
+  },
+  {
+   "spec_id": "annual__country__long__strict_growth_window_clean__common",
+   "beta_max_abs_diff": 5.861977570020827e-14,
+   "residual_max_abs_diff": 6.572520305780927e-14,
+   "influence_max_rel_diff": 3.990983903878029e-15,
+   "hc0_max_rel_diff": 4.556578273235411e-16,
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "bandwidths": [
+    1,
+    2,
+    0
+   ],
+   "inference_df": [
+    10,
+    10,
+    41
+   ],
+   "corrections_saved": [
+    1.8333333333333333,
+    1.8333333333333333,
+    1.135201688555347
+   ],
+   "correction_mine": 1.8333333333333333,
+   "cluster_presence_ok": true,
+   "covariance_0_Calendar HAC_1_max_rel_diff": 1.3983455855433516e-15,
+   "covariance_0_df_ok": true,
+   "covariance_1_Calendar HAC_2_max_rel_diff": 1.3562756725418937e-15,
+   "covariance_1_df_ok": true,
+   "covariance_2_Origin cluster_0_max_rel_diff": 1.6408077363906057e-15,
+   "covariance_2_df_ok": true,
+   "ledger_max_abs_diff": {
+    "coefficient": 5.861977570020827e-14,
+    "variance_rel": 3.602540463231924e-15,
+    "p": 4.496403249731884e-15,
+    "ci": 9.947598300641403e-14,
+    "holm": 0.0
+   },
+   "joint_tests": []
+  },
+  {
+   "spec_id": "annual__country__long__strict_growth_window_clean__H1",
+   "beta_max_abs_diff": 1.4210854715202004e-13,
+   "residual_max_abs_diff": 9.592326932761353e-14,
+   "influence_max_rel_diff": 2.439749050305872e-15,
+   "hc0_max_rel_diff": 6.698750955156278e-16,
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "bandwidths": [
+    1,
+    2
+   ],
+   "inference_df": [
+    10,
+    10
+   ],
+   "corrections_saved": [
+    1.8333333333333333,
+    1.8333333333333333
+   ],
+   "correction_mine": 1.8333333333333333,
+   "cluster_presence_ok": true,
+   "covariance_0_Calendar HAC_1_max_rel_diff": 9.953703162930249e-16,
+   "covariance_0_df_ok": true,
+   "covariance_1_Calendar HAC_2_max_rel_diff": 1.103516189447694e-15,
+   "covariance_1_df_ok": true,
+   "ledger_max_abs_diff": {
+    "coefficient": 1.1191048088221578e-13,
+    "variance_rel": 1.3484828641416319e-14,
+    "p": 7.105427357601002e-15,
+    "ci": 1.9184653865522705e-13,
+    "holm": 0.0
+   },
+   "joint_tests": [
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 1,
+     "test": "All origin temperature slopes equal",
+     "q": 41,
+     "rank_bound": 10,
+     "numerical_rank_mine": 9,
+     "available_mine": false,
+     "status_ledger": "unavailable: singular restriction covariance",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference"
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 1,
+     "test": "All origin temperature slopes zero",
+     "q": 42,
+     "rank_bound": 10,
+     "numerical_rank_mine": 10,
+     "available_mine": false,
+     "status_ledger": "unavailable: singular restriction covariance",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference"
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 2,
+     "test": "All origin temperature slopes equal",
+     "q": 41,
+     "rank_bound": 10,
+     "numerical_rank_mine": 9,
+     "available_mine": false,
+     "status_ledger": "unavailable: singular restriction covariance",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference"
+    },
+    {
+     "covariance": "Calendar HAC",
+     "hac_lags": 2,
+     "test": "All origin temperature slopes zero",
+     "q": 42,
+     "rank_bound": 10,
+     "numerical_rank_mine": 10,
+     "available_mine": false,
+     "status_ledger": "unavailable: singular restriction covariance",
+     "available_ok": true,
+     "fragile_ledger": true,
+     "calibration_status": "Not established; nominal/asymptotic diagnostic, not calibrated headline inference"
+    }
+   ]
+  }
+ ]
+}

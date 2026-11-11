@@ -93,7 +93,7 @@ def sector_plot() -> None:
     plt.close(fig)
 
 
-def report() -> None:
+def report(*, destination: Path | None = None, figures: bool = True) -> None:
     results = pd.read_csv(OUT / "regression_results.csv")
     temp = results[results.term.str.startswith("temp")].copy()
     main = temp[temp.covariance.eq("Sector cluster")]
@@ -112,9 +112,10 @@ def report() -> None:
                      if metadata_mismatches else "")
     sources = json.loads((ROOT / "data/raw/manifest.json").read_text())
     lag = json.loads((OUT / "distributed_lag_sum.json").read_text())
-    coefficient_plot(main)
-    partial_plot(base.coefficient)
-    sector_plot()
+    if figures:
+        coefficient_plot(main)
+        partial_plot(base.coefficient)
+        sector_plot()
     rows = [[r.model + ": " + r.label, f"{r.coefficient:.3f}",
              f"[{r.ci_lower:.3f}, {r.ci_upper:.3f}]", f"{r.p_value:.3f}", f"{r.n_obs:,}", str(r.n_quarters)]
             for r in main.itertuples()]
@@ -124,8 +125,9 @@ def report() -> None:
         [r.covariance + (f" ({r.hac_lags} lags)" if r.hac_lags else ""), f"{r.std_error:.3f}",
          f"[{r.ci_lower:.3f}, {r.ci_upper:.3f}]", f"{r.p_value:.3f}"] for r in inference.itertuples()])
     weather_controls = results[(results.model.eq("S3")) & results.term.isin(["rain_100mm", "rh_pct"])]
-    controls_table = markdown_table(["Control", "Coefficient", "95% interval"], [
-        [r.term, f"{r.coefficient:.3f}", f"[{r.ci_lower:.3f}, {r.ci_upper:.3f}]"]
+    controls_table = markdown_table(["Control", "Covariance", "Coefficient", "SE", "95% interval", "p", "Reference df"], [
+        [r.term, r.covariance + (f" ({r.hac_lags} lags)" if r.hac_lags else ""),
+         f"{r.coefficient:.3f}", f"{r.std_error:.3f}", f"[{r.ci_lower:.3f}, {r.ci_upper:.3f}]", f"{r.p_value:.3f}", str(r.inference_df)]
         for r in weather_controls.itertuples()])
     significance_note = ("None of these temperature estimates rejects zero at 5%." if main.p_value.ge(.05).all()
                          else "Some pointwise temperature tests reject zero at 5%; compare the full sensitivity table.")
@@ -215,8 +217,9 @@ Year FE remove annual macro conditions and annual temperature shifts, but leave 
 
 From the project root: `uv sync --locked`, then `uv run python scripts/run_all.py`. The default uses cached source files. `uv run python scripts/run_all.py --refresh` explicitly retrieves current data vintages and rebuilds all results. Machine-readable coefficients, complete baseline sample, fixed-effect estimates and verification records are in this output folder.
 """
-    (OUT / "first_results.md").write_text(text)
-    print("Wrote outputs/first_results.md and three figures")
+    target=destination or OUT / "first_results.md"
+    target.write_text(text)
+    print(f"Wrote {target}"+(" and three figures" if figures else ""))
 
 
 if __name__ == "__main__":

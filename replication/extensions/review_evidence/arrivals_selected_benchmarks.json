@@ -1,0 +1,232 @@
+{
+  "status": "passed",
+  "source_sha256": "df5c98472907547e5d51339f705d12dc858efee167daa7bb85d6f8949a36f5dc",
+  "baseline_sha256": "2086d5fd7b73c19c4e8d308da01bb2613f4b24341a20b22aa40c561fcba210e1",
+  "native_fits_executed": 0,
+  "designs": [
+    {
+      "spec_id": "region__y_mom_nsa__long__all_eligible__H1__own_current",
+      "n": 1863,
+      "k": 139,
+      "t": 207,
+      "q": 8,
+      "reps": 4000,
+      "seed": 2026111102,
+      "dgp": "Y*=independent N(0,1) errors on every saved observation, fixed X; all true slope coefficients zero; no AR regressors",
+      "null": "All origin temperature slopes equal (all nonreference deviations zero)",
+      "nominal_reference": "F(8,206)",
+      "nominal_5pct_critical_F": 1.98355720372425,
+      "finite_sample_correction": 1.2034883720930232,
+      "archive_sha256": "9d2ee5911dd0581bb198307195a790f99e5f7f37f4e40769edd0d61964628544",
+      "array_bindings": {
+        "X": {
+          "shape": [
+            1863,
+            139
+          ],
+          "dtype": "<f8",
+          "sha256": "0064ca6e122d49e29309f92fac6b1e5fa396e4c86cc98b88430eff5677e61e5a"
+        },
+        "Y": {
+          "shape": [
+            1863
+          ],
+          "dtype": "<f8",
+          "sha256": "a84dd454d42a011067c2d1470faf0d5345f9713015f5f028e77d1578e8f076c7"
+        },
+        "time": {
+          "shape": [
+            1863
+          ],
+          "dtype": "<i8",
+          "sha256": "387a0b806d3c2440a64c81fa13176af27b66c5847c79f063c81a796b6ce9ad12"
+        },
+        "unit_ids": {
+          "shape": [
+            1863
+          ],
+          "dtype": "<U3",
+          "sha256": "abfa850d84716d610325600ac422265ed9aee6fb52ccfea20758c0fc86b640f3"
+        },
+        "names": {
+          "shape": [
+            139
+          ],
+          "dtype": "<U25",
+          "sha256": "a38d6f59e17032d5a2b9c919ba3b82e7fe78534518d6fba58e10c11a40d9b64b"
+        },
+        "component_positions": {
+          "shape": [
+            1,
+            9
+          ],
+          "dtype": "<i8",
+          "sha256": "529fc5647455d6e5b5454012b9ff802b5d000e1e894a56ab1e740c73e307d560"
+        },
+        "beta": {
+          "shape": [
+            139
+          ],
+          "dtype": "<f8",
+          "sha256": "42af19c6e5e049591b7f10f19845fe1516a5012f01082ceb6d7d59bd8eba9194"
+        },
+        "resid": {
+          "shape": [
+            1863
+          ],
+          "dtype": "<f8",
+          "sha256": "6a4e9046d7a47f535ef9544561288e7747f8cc21aa0b96243e569f37a5914218"
+        }
+      },
+      "observed": [
+        {
+          "hac_lags": 12,
+          "f": 1.4124213146963482,
+          "nominal_p": 0.19284025277563444
+        },
+        {
+          "hac_lags": 24,
+          "f": 1.9225058504969994,
+          "nominal_p": 0.05824125059411651
+        }
+      ],
+      "results": [
+        {
+          "hac_lags": 12,
+          "available": 4000,
+          "unavailable": 0,
+          "reject_at_nominal_5pct": 1045,
+          "F_ge_observed": 1880,
+          "maximum_condition": 114.56683351529728,
+          "minimum_uncapped_rank": 8,
+          "rejection_fraction_of_requested": 0.26125,
+          "rejection_fraction_of_available": 0.26125
+        },
+        {
+          "hac_lags": 24,
+          "available": 4000,
+          "unavailable": 0,
+          "reject_at_nominal_5pct": 1948,
+          "F_ge_observed": 2018,
+          "maximum_condition": 260.7617549530321,
+          "minimum_uncapped_rank": 8,
+          "rejection_fraction_of_requested": 0.487,
+          "rejection_fraction_of_available": 0.487
+        }
+      ]
+    },
+    {
+      "spec_id": "country__y_mom_nsa__long__all_eligible__H1__own_current",
+      "n": 8694,
+      "k": 568,
+      "t": 207,
+      "q": 41,
+      "reps": 4000,
+      "seed": 2026111103,
+      "dgp": "Y*=independent N(0,1) errors on every saved observation, fixed X; all true slope coefficients zero; no AR regressors",
+      "null": "All origin temperature slopes equal (all nonreference deviations zero)",
+      "nominal_reference": "F(41,206)",
+      "nominal_5pct_critical_F": 1.448554545448515,
+      "finite_sample_correction": 1.2034883720930232,
+      "archive_sha256": "edd497f44770b1afd2ca0f8e5b68669ec4f4a8439c4c4013291f1f859e1d4361",
+      "array_bindings": {
+        "X": {
+          "shape": [
+            8694,
+            568
+          ],
+          "dtype": "<f8",
+          "sha256": "b704629de7dd2fd2fff34380556e61f93970aaf9c6a5223f637b08dd0adac793"
+        },
+        "Y": {
+          "shape": [
+            8694
+          ],
+          "dtype": "<f8",
+          "sha256": "989ba60a4d11919921082e7537fc606855c43b59f8a4ee3ff892e6aec13986dd"
+        },
+        "time": {
+          "shape": [
+            8694
+          ],
+          "dtype": "<i8",
+          "sha256": "531945de46121dc41c0538476d28122dd6383c5a4bf1daa1e8496e9b33fecb74"
+        },
+        "unit_ids": {
+          "shape": [
+            8694
+          ],
+          "dtype": "<U6",
+          "sha256": "cfead466a1667ac12f0affde6d85b8bff0936375c007e590b553f6144625a5a9"
+        },
+        "names": {
+          "shape": [
+            568
+          ],
+          "dtype": "<U28",
+          "sha256": "dca7c240b08039ac9d0b84d45a2ac3851a95f0ffb91e760a5ebaec5a1f025048"
+        },
+        "component_positions": {
+          "shape": [
+            1,
+            42
+          ],
+          "dtype": "<i8",
+          "sha256": "23ab97cdb525eb2dc845bf40fd4c397cd4cba4ddd8eccda33b631332734b67da"
+        },
+        "beta": {
+          "shape": [
+            568
+          ],
+          "dtype": "<f8",
+          "sha256": "9498856c97e1140e967240b747ddf6f7088942c37be473da8275316621d76287"
+        },
+        "resid": {
+          "shape": [
+            8694
+          ],
+          "dtype": "<f8",
+          "sha256": "932f65a98e296a686a5b9a04b4d0d5c0b7f882a741633345b1f8c31bc2a0532f"
+        }
+      },
+      "observed": [
+        {
+          "hac_lags": 12,
+          "f": 2.3926722938855214,
+          "nominal_p": 3.2691234328752876e-05
+        },
+        {
+          "hac_lags": 24,
+          "f": 5.049879395167178,
+          "nominal_p": 2.695507028832125e-15
+        }
+      ],
+      "results": [
+        {
+          "hac_lags": 12,
+          "available": 4000,
+          "unavailable": 0,
+          "reject_at_nominal_5pct": 4000,
+          "F_ge_observed": 3998,
+          "maximum_condition": 5407.271319035151,
+          "minimum_uncapped_rank": 41,
+          "rejection_fraction_of_requested": 1.0,
+          "rejection_fraction_of_available": 1.0
+        },
+        {
+          "hac_lags": 24,
+          "available": 4000,
+          "unavailable": 0,
+          "reject_at_nominal_5pct": 4000,
+          "F_ge_observed": 3992,
+          "maximum_condition": 12988.329109286617,
+          "minimum_uncapped_rank": 41,
+          "rejection_fraction_of_requested": 1.0,
+          "rejection_fraction_of_available": 1.0
+        }
+      ]
+    }
+  ],
+  "claim": "The selected nominal F tests are badly miscalibrated under these explicit fixed-design Gaussian nulls, even after numerical availability checks.",
+  "limits": "Two selected MoM designs only. Not the error law of observed arrivals; not a calibrated empirical p-value, a universal q cutoff, a verdict on all scalar tests, or a replacement covariance/reference rule."
+}

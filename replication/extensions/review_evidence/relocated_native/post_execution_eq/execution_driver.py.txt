@@ -1,0 +1,35 @@
+from __future__ import annotations
+import hashlib,json,shutil,subprocess,sys,time
+from datetime import datetime,timezone
+from pathlib import Path
+PARENT=Path('/Volumes/datadrive/heat_econ');BASE=PARENT/'dist/aea_audit_20261111/relocated_native/20261111T153310';ROOT=BASE/'no-git-project'
+assert json.loads((BASE/'guard_revision_run.json').read_text())['status']=='passed'
+sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+additions=['scripts/verify_arrivals_review_equivalence.py','scripts/verify_derived_proof_guards.py','replication/extensions/review_evidence/derived_proof_guard_revision.json','replication/extensions/review_evidence/arrivals_review_baseline.json']
+model_paths=sorted(p for family in ['monthly','annual','ppml','origin_year'] for p in (ROOT/'outputs/visitor_rigour'/family).rglob('*') if p.is_file() and p.suffix in {'.csv','.npz','.json'} and not p.name.startswith(('verification','report_')) and 'verification_history' not in p.parts)
+models_before={str(p.relative_to(ROOT)):sha(p) for p in model_paths}
+code_before={str(p.relative_to(ROOT)):sha(p) for p in (ROOT/'scripts').glob('*.py')}
+old_run_sha=sha(BASE/'guard_revision_run.json')
+record={'status':'running','started_utc':datetime.now(timezone.utc).isoformat(),'scope':'Post-execution verification-only addition and one new exact review-equivalence gate against fresh refitted 354-request relocated models. No native fit, independent-math rerun, baseline recapture or historical execution-receipt edit. Shared existing locked Python environment; no fresh-env/final-seal claim.','historical_passed_run_sha256':old_run_sha,'additions':[]}
+for name in additions:
+ source=PARENT/name;target=ROOT/name;previous=sha(target) if target.is_file() else None
+ target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
+ record['additions'].append({'path':name,'before_sha256':previous,'after_sha256':sha(target),'root_source_sha256':sha(source),'role':'Post-execution verification source/evidence only'})
+sys.path.insert(0,str(ROOT/'scripts'));import replicate
+log=BASE/'post_execution_eq.stdout.txt';receipt=BASE/'post_execution_eq.scope.json'
+command=[str(PARENT/'.venv/bin/python'),'-c',replicate.FROZEN_LAUNCHER,str(ROOT/'scripts/verify_arrivals_review_equivalence.py')]
+record.update(command=command,cwd=str(ROOT),model_artifacts_before_sha256=models_before,model_artifact_count=len(models_before));receipt.write_text(json.dumps(record,indent=2)+'\n')
+start=time.monotonic()
+with log.open('w') as f:completed=subprocess.run(command,cwd=ROOT,env=replicate.child_environment(),stdout=f,stderr=subprocess.STDOUT)
+record.update(exit_code=completed.returncode,seconds=time.monotonic()-start,stdout_sha256=sha(log))
+if completed.returncode:
+ record.update(status='failed');receipt.write_text(json.dumps(record,indent=2)+'\n');raise RuntimeError('Relocated post-execution EQ failed; see '+str(log))
+actual=json.loads((ROOT/'outputs/visitor_rigour/review_equivalence.json').read_text());assert actual['status']=='passed' and actual['native_fits_executed_by_this_verifier']==0
+assert all(sha(ROOT/name)==expected for name,expected in models_before.items())
+for name,expected in code_before.items():
+ if name not in additions:assert sha(ROOT/name)==expected
+assert sha(BASE/'guard_revision_run.json')==old_run_sha
+assert sum(r['requests'] for r in actual['counts'].values())==354
+record.update(status='passed',model_artifacts_unchanged=True,preexisting_model_sources_unchanged=True,previous_execution_receipt_unchanged=True,equivalence_receipt_sha256=sha(ROOT/'outputs/visitor_rigour/review_equivalence.json'),semantic_files_checked=actual['semantic_files_checked'],npz_arrays_checked=actual['npz_arrays_checked'],native_fits_executed=0)
+receipt.write_text(json.dumps(record,indent=2)+'\n')
+print(json.dumps({k:v for k,v in record.items() if k not in {'model_artifacts_before_sha256','command'}},indent=2))

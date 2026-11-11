@@ -1,0 +1,197 @@
+{
+  "status": "passed_bounded_mathematical_checks",
+  "native_fits_run": 0,
+  "CR1_multivariate_dispersion_max_abs_error": 2.27018404075352e-12,
+  "observed_CR1_reference_comparisons": 9,
+  "observed_DK_convention_comparisons": 12,
+  "two_channel_duplicate_pairs": 2052,
+  "DJO1_duplicate_pairs": 3204,
+  "changed_old_vs_current_sample_windows": 39,
+  "changed_outcomes": [
+    "y_short"
+  ],
+  "raw_AR_boundary_example": {
+    "context": "va20",
+    "outcome": "y_short",
+    "unit": "1.1.1",
+    "current_date": "2006Q2",
+    "AR4_source_date": "2005Q2",
+    "raw_growth": 5.531761770547832,
+    "current_AR4": 5.531761770547838,
+    "source_date_absent_from_reviewed_parent": true
+  },
+  "dynamic_polynomial_counterexample": {
+    "gamma": 2.0,
+    "phi": 0.4,
+    "h": 4,
+    "B_coefficients_lag0_to_hplus1": [
+      2.0,
+      -0.8,
+      0.0,
+      0.0,
+      -2.0,
+      0.8
+    ],
+    "interpretation": "A true instantaneous static level channel with AR1 generally needs direct T lagh+1; beta-only static-shape null is not structurally exact"
+  },
+  "selected_iid_H1_joint_null_rows": [
+    {
+      "design": "va12__y_yoy_nsa__all_eligible__H1__distributed",
+      "family": "subannual",
+      "kind": "H1",
+      "G": 12,
+      "T": 174,
+      "N": 2088,
+      "K": 157,
+      "K_time": 58,
+      "time_residual_df": 116,
+      "dgp": "iid",
+      "reps": 2000,
+      "covariance": "Driscoll-Kraay",
+      "bandwidth": 4,
+      "main_inference": true,
+      "reference_df": 173,
+      "statistic": "F",
+      "quantity": "All sector cumulative direct temperature responses equal",
+      "unit": "all",
+      "q": 11,
+      "available_share": 1.0,
+      "reject_05": 0.356,
+      "comparator": "",
+      "comparator_reject_05": null,
+      "exact_iid_size": null,
+      "mean_F": 1.6918752839040978
+    },
+    {
+      "design": "va12__y_yoy_nsa__all_eligible__H1__distributed",
+      "family": "subannual",
+      "kind": "H1",
+      "G": 12,
+      "T": 174,
+      "N": 2088,
+      "K": 157,
+      "K_time": 58,
+      "time_residual_df": 116,
+      "dgp": "iid",
+      "reps": 2000,
+      "covariance": "Driscoll-Kraay",
+      "bandwidth": 4,
+      "main_inference": true,
+      "reference_df": 173,
+      "statistic": "F",
+      "quantity": "All sector temperature-lag responses jointly zero",
+      "unit": "all",
+      "q": 60,
+      "available_share": 1.0,
+      "reject_05": 1.0,
+      "comparator": "",
+      "comparator_reject_05": null,
+      "exact_iid_size": null,
+      "mean_F": 5.655251410462436
+    },
+    {
+      "design": "va12__y_yoy_nsa__all_eligible__H1__distributed",
+      "family": "subannual",
+      "kind": "H1",
+      "G": 12,
+      "T": 174,
+      "N": 2088,
+      "K": 157,
+      "K_time": 58,
+      "time_residual_df": 116,
+      "dgp": "iid",
+      "reps": 2000,
+      "covariance": "Driscoll-Kraay",
+      "bandwidth": 8,
+      "main_inference": false,
+      "reference_df": 173,
+      "statistic": "F",
+      "quantity": "All sector cumulative direct temperature responses equal",
+      "unit": "all",
+      "q": 11,
+      "available_share": 1.0,
+      "reject_05": 0.5455,
+      "comparator": "",
+      "comparator_reject_05": null,
+      "exact_iid_size": null,
+      "mean_F": 2.2509839271413226
+    },
+    {
+      "design": "va12__y_yoy_nsa__all_eligible__H1__distributed",
+      "family": "subannual",
+      "kind": "H1",
+      "G": 12,
+      "T": 174,
+      "N": 2088,
+      "K": 157,
+      "K_time": 58,
+      "time_residual_df": 116,
+      "dgp": "iid",
+      "reps": 2000,
+      "covariance": "Driscoll-Kraay",
+      "bandwidth": 8,
+      "main_inference": false,
+      "reference_df": 173,
+      "statistic": "F",
+      "quantity": "All sector temperature-lag responses jointly zero",
+      "unit": "all",
+      "q": 60,
+      "available_share": 1.0,
+      "reject_05": 1.0,
+      "comparator": "",
+      "comparator_reject_05": null,
+      "exact_iid_size": null,
+      "mean_F": 10.921182221182567
+    }
+  ],
+  "selected_null_seed": 20261119,
+  "selected_null_chunk": 250,
+  "selected_null_repetitions_per_DGP": 2000,
+  "current_design_calendar_binding": {
+    "X": {
+      "shape": [
+        2088,
+        157
+      ],
+      "dtype": "float64",
+      "sha256": "a7c3dfc68c7ee3c4366924d80695d2ba49fa7e86a8a8f43dd6ad6d38860c1738",
+      "exactly_equal_current_vs_reviewed": true
+    },
+    "Y": {
+      "shape": [
+        2088
+      ],
+      "dtype": "float64",
+      "sha256": "672f04ab69b9578ba3e0b184d1f9ddf037556f1b2ef283a336e26a185f8433a6",
+      "exactly_equal_current_vs_reviewed": true
+    },
+    "time": {
+      "shape": [
+        2088
+      ],
+      "dtype": "int64",
+      "sha256": "fd0013603cb98a1e088b2a7cfbc6b8e046df8043ffb891ca03affeecd7715d4f",
+      "exactly_equal_current_vs_reviewed": true
+    },
+    "periods": {
+      "shape": [
+        2088
+      ],
+      "dtype": "<U6",
+      "sha256": "0d17ca6cfe3fd98f8d64a642c41abce3488286df330c481854461338f52c2ef7",
+      "exactly_equal_current_vs_reviewed": true
+    },
+    "units": {
+      "shape": [
+        2088
+      ],
+      "dtype": "<U5",
+      "sha256": "be84c41f74e72f92854835c3fee27f84c0ea30dc4c913990acec276deea28419",
+      "exactly_equal_current_vs_reviewed": true
+    },
+    "reviewed_archive_sha256": "0719e38ba359d8738032420ca2a752c65a3e6d288e033e5d283521596269acae",
+    "current_archive_sha256": "0719e38ba359d8738032420ca2a752c65a3e6d288e033e5d283521596269acae"
+  },
+  "null_scope": "One original saved fixed-X Gaussian calibration case, 2000 draws per original DGP; not the 22-design grid",
+  "source_inputs_preserved": true
+}

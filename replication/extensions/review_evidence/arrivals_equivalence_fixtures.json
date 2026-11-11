@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checks": {
+    "unchanged_fixture_identical": true,
+    "only_provenance_hash_column_ignored": true,
+    "coefficient_change_detected": true,
+    "one_array_cell_change_detected": true,
+    "native_ledger_hash_column_retained": true,
+    "failed_run_writes_failed_not_old_pass": true,
+    "baseline_recapture_refused": true,
+    "baseline_bytes_unchanged": true
+  },
+  "baseline_sha256": "2086d5fd7b73c19c4e8d308da01bb2613f4b24341a20b22aa40c561fcba210e1",
+  "verifier_source_sha256": "9b06e2ac762cc27daa3e45958386fc49be130021c53ea51fc5c79f9239849b90"
+}

@@ -1,0 +1,1 @@
+Verified annual seasonal sensitivity: 684 native fits, 420 unavailable requests, 134568 effects and 58696 tests.

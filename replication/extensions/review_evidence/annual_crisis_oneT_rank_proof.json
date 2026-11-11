@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "model_outcome_fits": 108,
+  "joint_tests": 216,
+  "maximum_scaled_score_factorization_error": 3.2028115964985596e-14,
+  "availability_changes": 0,
+  "proof": "With balanced common weather and shared controls/trend, sector differences eliminate the shared nuisances. A ONE-temperature slope contrast has date score a_t times residual differences; those residual-difference columns are orthogonal to [1,T], so their rank and covariance rank are at most T\u22122. This special argument does not cover stacked feature weights or shared unit-varying AR controls.",
+  "scope": "All 216 annual-crisis ONE-temperature equality tests only; no source/result mutation and no assertion that T\u22122 is a universal multi-feature bound."
+}

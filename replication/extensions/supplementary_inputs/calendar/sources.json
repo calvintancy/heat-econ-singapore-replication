@@ -1,0 +1,10 @@
+{
+  "purpose": "Additional historical calendar only; original 2008-2026 calendar inputs and release references remain unchanged",
+  "url": "https://www.hko.gov.hk/en/gts/time/calendar/text/files/T2007e.txt",
+  "provider": "Hong Kong Observatory",
+  "filename": "replication/extensions/supplementary_inputs/calendar/T2007e.txt",
+  "sha256": "2eeec2ef316267d92c2ec93e44d2ccb3a889e02c408aecdcc696a2c350416673",
+  "bytes": 26121,
+  "lunar_new_year": "2007-02-18",
+  "definition": "15-day Lunar New Year window, day -7 through +7 inclusive; supplement permits raw December2007 lookup before January2008 arrival context cropping"
+}

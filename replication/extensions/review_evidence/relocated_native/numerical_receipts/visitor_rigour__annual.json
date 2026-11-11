@@ -1,0 +1,321 @@
+{
+  "status": "passed",
+  "requests": 30,
+  "native_fits": 15,
+  "point_unavailable": 15,
+  "counts": {
+    "coefficients": 516,
+    "temperature_effects": 660,
+    "control_estimates": 216,
+    "interaction_components": 636,
+    "slope_covariances": 11070,
+    "tests": 48,
+    "time_design_ranks": 618,
+    "native_fits": 15,
+    "unavailable_point": 15,
+    "full_covariance_cells": 68775
+  },
+  "raw_source_audit": {
+    "source_months": 225,
+    "source_rows": 62,
+    "units_per_cut": {
+      "aggregate": 1,
+      "region": 9,
+      "country": 42,
+      "complete10": 10,
+      "complete52": 52
+    },
+    "zero_cells_per_cut": {
+      "aggregate": 0,
+      "region": 0,
+      "country": 50,
+      "complete10": 50,
+      "complete52": 134
+    },
+    "lunar_raw_tables": 20,
+    "old_lunar_calendar_rows": 228,
+    "supplement_2007_new_year": "2007-02-18",
+    "december_2007_lunar_window_days": 0,
+    "raw_hashes": {
+      "data/raw/visitor_arrivals/nsa_metadata.json": "5f3395e13d4984f9a14c7eef20cf509a5c74a4d2135c297405218a305d61ca2f",
+      "data/raw/visitor_arrivals/nsa.csv": "3d8d498dce66a70722c883a6cfa5b2552e27dfd0fac849d5c152bae9b22a4202",
+      "data/raw/visitor_arrivals/nsa_singstat_metadata.json": "d607945463c5350ac23bf71435485c405964f805ed4c156960f464c41e52261f",
+      "data/raw/visitor_arrivals/sa_metadata.json": "8333ea09771aed73a03e23571f04ff8bb68a740b8456111ad0bce26fd82a59a5",
+      "data/raw/visitor_arrivals/sa.csv": "0eedf4f9ffa96df3b1ee940f95b3e4d6e11fbcd47a3025970fe0a76054528079",
+      "data/raw/visitor_arrivals/sa_singstat_metadata.json": "5f538f20b62dd2ccec180ae1266b4e96ba8cb3ddaa027c12c0a23f4b9a1b8c99",
+      "data/raw/temperature_monthly.csv": "5ea1646a4e3136a9979094124ab2dc7e4d9c271235a49ddcab991f896fac6b80",
+      "data/raw/humidity_monthly.csv": "47449b875513742352f6b859ad4495ba5cb43feb8ed4b7bafdd49331c8f66a26",
+      "data/raw/rainfall_monthly.csv": "9880c5cd4c2068b7085f483009290d7d11702aeecd2355739960d02d5469c9cb",
+      "data/raw/visitor_arrivals/calendar/T2008e.txt": "dd3c08f02280b3781a46f00e68632399ac0220e1793e936c8503702e4cda19de",
+      "data/raw/visitor_arrivals/calendar/T2009e.txt": "5f2bc5e823a6f34a5274a45133d40d8b28f4b2cffecba0ffb2e1a9a56723ded1",
+      "data/raw/visitor_arrivals/calendar/T2010e.txt": "c507beb3cd5a279ea666b8fe0a4f501c645316373a4b646d746c31c1594b421e",
+      "data/raw/visitor_arrivals/calendar/T2011e.txt": "190a245434f85d15a81c7f4c35644a4b97aca62b35dbc153f8d0f93b0b3a3ec9",
+      "data/raw/visitor_arrivals/calendar/T2012e.txt": "3baa28e28aae7e963a93e932b586bd131a163af9bc7f4f6c26cc97a663e3984d",
+      "data/raw/visitor_arrivals/calendar/T2013e.txt": "5547e3ac578c35a7fee7124a0a828b332e952af2f98508a261445c40935d2ef0",
+      "data/raw/visitor_arrivals/calendar/T2014e.txt": "d951404fd19b2e19580f41ca2c2cc854e20a27d2c680d5c50abd5b55df62371f",
+      "data/raw/visitor_arrivals/calendar/T2015e.txt": "3a00ed814d839900f491b8f93d172b3376de7b2718534efabe90c16beb784974",
+      "data/raw/visitor_arrivals/calendar/T2016e.txt": "54fd6b05b9ef67f0d4cb415e2cf9fd7144576fa9bc8bd56b31a6fcdbf2883926",
+      "data/raw/visitor_arrivals/calendar/T2017e.txt": "61289cd623a29273ebac0bfef9d47c25d5c925ff7ad7eee4bb5b1c69d9fdfa83",
+      "data/raw/visitor_arrivals/calendar/T2018e.txt": "aa927769705f2d92e1db2614e89a2079418ea13f9d1f12a4a10f48b7143692e8",
+      "data/raw/visitor_arrivals/calendar/T2019e.txt": "678c150eb855b0c381de6afddf85c33b13cc473c6c2145309c8021dce9cd7d46",
+      "data/raw/visitor_arrivals/calendar/T2020e.txt": "0dde5ed6d41935f8f420643287fc0250588102b154d8243e0f2762bb0c473bd2",
+      "data/raw/visitor_arrivals/calendar/T2021e.txt": "d3432f28db9a868aa407720a39224d7858395389ddc818d92c3a3fa43d58360a",
+      "data/raw/visitor_arrivals/calendar/T2022e.txt": "34c1edcf7ce3b20e3963f38379cfd77cce8bcf4dbede9bb9b18412e375bc555f",
+      "data/raw/visitor_arrivals/calendar/T2023e.txt": "f3bbdef5c9b0c0158ca8328004e347da714494572effc23fea97af48052402e5",
+      "data/raw/visitor_arrivals/calendar/T2024e.txt": "81f8fba2c809d5dcea5c63699e843b82e29318553cb5de7bbf053aa66d068fdc",
+      "data/raw/visitor_arrivals/calendar/T2025e.txt": "e11ba9a4d1fcde4d09570871149d3eea329d3a92a1b79be814d3f7313ae3fa50",
+      "data/raw/visitor_arrivals/calendar/T2026e.txt": "29ef9c43977a69681ef770d0c264e4226692f21f3febc3d16a4ee5c8aa06c60c",
+      "replication/extensions/supplementary_inputs/calendar/T2007e.txt": "2eeec2ef316267d92c2ec93e44d2ccb3a889e02c408aecdcc696a2c350416673",
+      "replication/extensions/supplementary_inputs/calendar/sources.json": "66b91a40f0fc06b5717cde5cd79d61084fbd2815f47c98f11e47d25e12bee868"
+    },
+    "wind_pm": {
+      "source_hashes_checked": 5,
+      "wind_halfhours": 155115,
+      "pm_invalid_rows": 1,
+      "pm_exact_duplicates": 0,
+      "pm_conflicting_timestamp_hours": 3,
+      "pm_retained_hours": 109577,
+      "monthly_eligible_90": 100,
+      "quarterly_eligible_90": 29
+    }
+  },
+  "maximum_annual_growth_years": 17,
+  "annual_stationarity": "Not established: all annual samples shorter than20 declared years",
+  "native_fit_log_sha256": "2e261a8ebdeeccae678b0275147ffdbc9f6eed8fd22ac20bf998b3a4ed30cbf7",
+  "protected_bindings_unchanged": 751,
+  "numerical_checks": {
+    "Every complete annual arrival sum": {
+      "values": 1116,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Raw previous-calendar-year annual count": {
+      "values": 1054,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Annual log count growth before all eligibility/exclusions": {
+      "values": 1054,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Day-weighted annual weather and summed rainfall": {
+      "values": 74,
+      "maximum_absolute_error": 1.4210854715202004e-14,
+      "maximum_scaled_error": 3.589953285020695e-16,
+      "maximum_fraction_of_tolerance": 8.353043396744227e-05
+    },
+    "Annual exact raw Y/sample support": {
+      "values": 10712,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Annual retained weather bases": {
+      "values": 23072,
+      "maximum_absolute_error": 1.4210854715202004e-14,
+      "maximum_scaled_error": 3.589953285020695e-16,
+      "maximum_fraction_of_tolerance": 8.353043396744227e-05
+    },
+    "Annual exact sample mean/SD": {
+      "values": 60,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Every annual full FE design cell": {
+      "values": 308910,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Every annual native response": {
+      "values": 5356,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "All annual native FE coefficients": {
+      "values": 516,
+      "maximum_absolute_error": 7.709388682997087e-13,
+      "maximum_scaled_error": 2.2676305277968822e-13,
+      "maximum_fraction_of_tolerance": 9.47943596594874e-07
+    },
+    "All annual native residuals": {
+      "values": 4223,
+      "maximum_absolute_error": 4.405364961712621e-13,
+      "maximum_scaled_error": 2.2115642650533118e-13,
+      "maximum_fraction_of_tolerance": 7.474062297477591e-06
+    },
+    "Full annual HC0": {
+      "values": 30960,
+      "maximum_absolute_error": 6.639311322942376e-11,
+      "maximum_scaled_error": 5.605011071596311e-12,
+      "maximum_fraction_of_tolerance": 2.8025055357979048e-05
+    },
+    "All annual exported native coefficients": {
+      "values": 516,
+      "maximum_absolute_error": 7.709388682997087e-13,
+      "maximum_scaled_error": 2.2676305277968822e-13,
+      "maximum_fraction_of_tolerance": 9.47943596594874e-07
+    },
+    "Every full annual calendar/cluster covariance": {
+      "values": 68775,
+      "maximum_absolute_error": 8.276401786133647e-11,
+      "maximum_scaled_error": 1.5073275960730825e-11,
+      "maximum_fraction_of_tolerance": 4.516446537970036e-05
+    },
+    "Annual max-local-rank finite correction": {
+      "values": 36,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Every annual contrast point": {
+      "values": 708,
+      "maximum_absolute_error": 7.709388682997087e-13,
+      "maximum_scaled_error": 2.0920829774037855e-13,
+      "maximum_fraction_of_tolerance": 7.570340897164738e-07
+    },
+    "Coefficient / SE / t p / CI": {
+      "values": 3540,
+      "maximum_absolute_error": 1.3944401189291966e-12,
+      "maximum_scaled_error": 8.739675649849232e-13,
+      "maximum_fraction_of_tolerance": 1.492195195370498e-06
+    },
+    "HC0 numerical scale reference": {
+      "values": 708,
+      "maximum_absolute_error": 3.2741809263825417e-11,
+      "maximum_scaled_error": 7.939262492524922e-15,
+      "maximum_fraction_of_tolerance": 3.967017711693419e-08
+    },
+    "Numerical zero-variance threshold": {
+      "values": 708,
+      "maximum_absolute_error": 3.3087224502121107e-23,
+      "maximum_scaled_error": 3.3087224502121107e-23,
+      "maximum_fraction_of_tolerance": 3.950698174816123e-08
+    },
+    "Annual origin mean/SD": {
+      "values": 1320,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Every annual total-slope covariance cross term": {
+      "values": 11070,
+      "maximum_absolute_error": 7.275957614183426e-11,
+      "maximum_scaled_error": 2.0605739337042905e-13,
+      "maximum_fraction_of_tolerance": 7.508355012267024e-07
+    },
+    "Companion joint-test scale/rank thresholds": {
+      "values": 48,
+      "maximum_absolute_error": 1.0186340659856796e-10,
+      "maximum_scaled_error": 4.376993383476027e-15,
+      "maximum_fraction_of_tolerance": 2.188446539263742e-09
+    },
+    "Companion independently computed Wald F": {
+      "values": 12,
+      "maximum_absolute_error": 7.186429229477653e-11,
+      "maximum_scaled_error": 1.890611552139368e-12,
+      "maximum_fraction_of_tolerance": 1.84214817066033e-07
+    },
+    "Companion independent nominal F probability": {
+      "values": 12,
+      "maximum_absolute_error": 4.0657581468206416e-17,
+      "maximum_scaled_error": 4.0657581468206416e-17,
+      "maximum_fraction_of_tolerance": 1.9966254187208647e-09
+    },
+    "Annual profile Holm adjustment": {
+      "values": 306,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    }
+  },
+  "limits": "Computational/source agreement does not establish causality or calibrated small-sample inference. Full-control requests retain all controls and are explicitly unavailable.",
+  "verified_artifacts_sha256": {
+    "outputs/visitor_rigour/annual/annual_counts.csv": "de8a7d1de780db73b1db7daca8697cf9f5ef3ee298b1a90b809ce36123b16fbd",
+    "outputs/visitor_rigour/annual/annual_weather.csv": "9a076b53829016b5a093b8e2c65a3032a020fe7798a0e6c7509174306d315b82",
+    "outputs/visitor_rigour/annual/calendar_masks.csv": "bedbe55a96b673adaad34ef159ae1e68cfd357a8340e01e42bb909a794b0c465",
+    "outputs/visitor_rigour/annual/coefficients.csv": "4d003d59bc201839164534b333a628542329662c42aa6cf856be8eecc12876b0",
+    "outputs/visitor_rigour/annual/control_estimates.csv": "9aaabe59b3399c9b4a5c8c00ea22237ce446b8f076103a7768eaf3f183a25e9d",
+    "outputs/visitor_rigour/annual/designs/annual__aggregate__full__all_eligible__common.npz": "c6de4494d4b7b6b2c53664ee4a1322d71c0fd093d33d11cd7f25c2a14a67e75a",
+    "outputs/visitor_rigour/annual/designs/annual__aggregate__full__event_dates_excluded__common.npz": "2c0e5972391e1a5331ac107b9f4429035a87e24257066fa775066be469a58c82",
+    "outputs/visitor_rigour/annual/designs/annual__aggregate__full__strict_growth_window_clean__common.npz": "2c0e5972391e1a5331ac107b9f4429035a87e24257066fa775066be469a58c82",
+    "outputs/visitor_rigour/annual/designs/annual__aggregate__long__all_eligible__common.npz": "d7865d1152a2a2d064eb2d8269119a2360281a8af697ba0556b0bcbd3efb8085",
+    "outputs/visitor_rigour/annual/designs/annual__aggregate__long__event_dates_excluded__common.npz": "1ad88fa4137d88f7554971535e1c7b7e5db247a32a9a13fc6fb3a38f85abe4f1",
+    "outputs/visitor_rigour/annual/designs/annual__aggregate__long__strict_growth_window_clean__common.npz": "636be490fcd4e714bab96a2741c0f2a050b9dfb6b00ed241256cf138d45af6b5",
+    "outputs/visitor_rigour/annual/designs/annual__country__full__all_eligible__H1.npz": "eaa1a36c57a888834a5214b9814bccc72fcc549c3d3f949decf383fc8ac41934",
+    "outputs/visitor_rigour/annual/designs/annual__country__full__all_eligible__common.npz": "2a0f98c242f1638a766aee44fb5dc9e53701492580709f8f2b3df5af5a5ea941",
+    "outputs/visitor_rigour/annual/designs/annual__country__full__event_dates_excluded__H1.npz": "4eb8d8b736f47def51db8170fdf9853b2f6b52570f612fbe16f8c2254fd5a62c",
+    "outputs/visitor_rigour/annual/designs/annual__country__full__event_dates_excluded__common.npz": "152ec57c149e277a63a3a52ac9352f82607182604e405377a50d0b65c60b139a",
+    "outputs/visitor_rigour/annual/designs/annual__country__full__strict_growth_window_clean__H1.npz": "4eb8d8b736f47def51db8170fdf9853b2f6b52570f612fbe16f8c2254fd5a62c",
+    "outputs/visitor_rigour/annual/designs/annual__country__full__strict_growth_window_clean__common.npz": "152ec57c149e277a63a3a52ac9352f82607182604e405377a50d0b65c60b139a",
+    "outputs/visitor_rigour/annual/designs/annual__country__long__all_eligible__H1.npz": "ba9105cf2129016783119b20b89867a26f95eb7d78cdba3f409630c512b9ff9b",
+    "outputs/visitor_rigour/annual/designs/annual__country__long__all_eligible__common.npz": "5de24bd23c8bcb67369649c45841899e5e24c10ec5e5da17e1d0b25ebe88634e",
+    "outputs/visitor_rigour/annual/designs/annual__country__long__event_dates_excluded__H1.npz": "e44c3c4f075dc8ffd3899e623cd63f76eb6fe276cfe7ec263b8f952808e3ac2c",
+    "outputs/visitor_rigour/annual/designs/annual__country__long__event_dates_excluded__common.npz": "d8373a6b82afa8b2ef81441585feaea29ca95f433ece5e9da95a750d1e5c7a30",
+    "outputs/visitor_rigour/annual/designs/annual__country__long__strict_growth_window_clean__H1.npz": "e2f7a01cc7b4e08cbf06c5e0371d6623bf9c581a792aa6318011244e7fa3ea09",
+    "outputs/visitor_rigour/annual/designs/annual__country__long__strict_growth_window_clean__common.npz": "97bb70728034e08e13d4e2c7a34b1470e65187b3cac32f7cac62f53220cea694",
+    "outputs/visitor_rigour/annual/designs/annual__region__full__all_eligible__H1.npz": "60efdbb841156f0de3e7834044225f8f46c4ff3376e445fa5a542c5d3a8f4589",
+    "outputs/visitor_rigour/annual/designs/annual__region__full__all_eligible__common.npz": "67736fb03070d4b3041016d196eab8de38033e4916c43c094bb62a45177b610e",
+    "outputs/visitor_rigour/annual/designs/annual__region__full__event_dates_excluded__H1.npz": "8bd6b95a94b7142c49062d23bc4629e1e56d391b05c26c33658dda31764d00c3",
+    "outputs/visitor_rigour/annual/designs/annual__region__full__event_dates_excluded__common.npz": "2590712f0626232feb41dee7e4ac68bb3363e5cd12bf378b1b2a59627c212837",
+    "outputs/visitor_rigour/annual/designs/annual__region__full__strict_growth_window_clean__H1.npz": "8bd6b95a94b7142c49062d23bc4629e1e56d391b05c26c33658dda31764d00c3",
+    "outputs/visitor_rigour/annual/designs/annual__region__full__strict_growth_window_clean__common.npz": "2590712f0626232feb41dee7e4ac68bb3363e5cd12bf378b1b2a59627c212837",
+    "outputs/visitor_rigour/annual/designs/annual__region__long__all_eligible__H1.npz": "2137ae9d45fb8871a67a2337d651715e9edfa0e89bbc6175099e3f9485c56e00",
+    "outputs/visitor_rigour/annual/designs/annual__region__long__all_eligible__common.npz": "7a5bdbdb20b3cc7358a6f13a6b6b1cd4611349e22d2bdf156d85a80bb5135140",
+    "outputs/visitor_rigour/annual/designs/annual__region__long__event_dates_excluded__H1.npz": "7106bb5f9d199ebb1020efd1e92517c726f77c9c307272c45549c017f6ff5834",
+    "outputs/visitor_rigour/annual/designs/annual__region__long__event_dates_excluded__common.npz": "99c8a8d795cdb68062b97001efd8c42e9cde74f2b0db071ba6f36dc4ad824bbd",
+    "outputs/visitor_rigour/annual/designs/annual__region__long__strict_growth_window_clean__H1.npz": "c191512ecc64adb98bfb09b54e789bf9b00bc6e300b311bdccbbfba5b82e9500",
+    "outputs/visitor_rigour/annual/designs/annual__region__long__strict_growth_window_clean__common.npz": "7aae24bfec915da216004398d24ac27c1e01dbf97b906d19d62868ee1874d36b",
+    "outputs/visitor_rigour/annual/estimates.csv": "9a6088d2fdadeffb62ccf752cfa5e246b8d5c388ff6c4ee0e298ef805375903b",
+    "outputs/visitor_rigour/annual/interaction_components.csv": "22a7a67c5c50e4a64fa354936899e431296afab2ce16e6fd0def959ef2bf1714",
+    "outputs/visitor_rigour/annual/joint_tests.csv": "805bf7433e6e48ea9afc5b16dbb184d4cddcc2fd41a04d896545b1a6d23b42d8",
+    "outputs/visitor_rigour/annual/manifest.json": "a5519a2ef26ab3a8db342f55b80ff45d3f56c4d5f75853d225886b931862808b",
+    "outputs/visitor_rigour/annual/preflight_specifications.csv": "ef310456bb031757589ed7575b039b738429e4cf808ce6c4b8aa33c354080521",
+    "outputs/visitor_rigour/annual/pyfixest/estimator_manifest.json": "e08c31c72c095288ea96623bdcee454ee811f58ab457d5c907236ce5b1e11925",
+    "outputs/visitor_rigour/annual/pyfixest/fit_log.csv": "2e261a8ebdeeccae678b0275147ffdbc9f6eed8fd22ac20bf998b3a4ed30cbf7",
+    "outputs/visitor_rigour/annual/samples/annual__aggregate__full__all_eligible__common.csv": "f5f82105ef026d4e151e4a909308fb261ba8b65218e6e4c470e147ea395423fb",
+    "outputs/visitor_rigour/annual/samples/annual__aggregate__full__event_dates_excluded__common.csv": "e4f693378c467e9a3bfe9170667581b0e92c8b8860683258a2da03e39e2dee64",
+    "outputs/visitor_rigour/annual/samples/annual__aggregate__full__strict_growth_window_clean__common.csv": "e4f693378c467e9a3bfe9170667581b0e92c8b8860683258a2da03e39e2dee64",
+    "outputs/visitor_rigour/annual/samples/annual__aggregate__long__all_eligible__common.csv": "50a5ab3cdf22ca55560a1dc8f65b4ca88ea0d23bdd46ecda96ba92b6cb1cafa0",
+    "outputs/visitor_rigour/annual/samples/annual__aggregate__long__event_dates_excluded__common.csv": "27a080191df804c35ab6e83254a1808d32bcaeb8e6fbfe3096887bce0fce863b",
+    "outputs/visitor_rigour/annual/samples/annual__aggregate__long__strict_growth_window_clean__common.csv": "321f354ac619a25aa347c02b5487155c6162c9ec31d0990a965ae81840829882",
+    "outputs/visitor_rigour/annual/samples/annual__country__full__all_eligible__H1.csv": "ef67bc2d5a0b488e821ef093153b5264e13560c659f81b4ec65dc72d0bb547bd",
+    "outputs/visitor_rigour/annual/samples/annual__country__full__all_eligible__common.csv": "ef67bc2d5a0b488e821ef093153b5264e13560c659f81b4ec65dc72d0bb547bd",
+    "outputs/visitor_rigour/annual/samples/annual__country__full__event_dates_excluded__H1.csv": "c6f9d2b2e4c45db1e64c4c4ec6f5f77aad5b826ae2c67cd8dd95ca91b02c420d",
+    "outputs/visitor_rigour/annual/samples/annual__country__full__event_dates_excluded__common.csv": "c6f9d2b2e4c45db1e64c4c4ec6f5f77aad5b826ae2c67cd8dd95ca91b02c420d",
+    "outputs/visitor_rigour/annual/samples/annual__country__full__strict_growth_window_clean__H1.csv": "c6f9d2b2e4c45db1e64c4c4ec6f5f77aad5b826ae2c67cd8dd95ca91b02c420d",
+    "outputs/visitor_rigour/annual/samples/annual__country__full__strict_growth_window_clean__common.csv": "c6f9d2b2e4c45db1e64c4c4ec6f5f77aad5b826ae2c67cd8dd95ca91b02c420d",
+    "outputs/visitor_rigour/annual/samples/annual__country__long__all_eligible__H1.csv": "56a4707abe59e2ff15c0a25130fd5c306553fe63cddd4bc14f95f9ed50bff39c",
+    "outputs/visitor_rigour/annual/samples/annual__country__long__all_eligible__common.csv": "56a4707abe59e2ff15c0a25130fd5c306553fe63cddd4bc14f95f9ed50bff39c",
+    "outputs/visitor_rigour/annual/samples/annual__country__long__event_dates_excluded__H1.csv": "0834a9e8cd7ea83eef274d66430f125d5715b8f4879b4187a06a9bab8d3e575b",
+    "outputs/visitor_rigour/annual/samples/annual__country__long__event_dates_excluded__common.csv": "0834a9e8cd7ea83eef274d66430f125d5715b8f4879b4187a06a9bab8d3e575b",
+    "outputs/visitor_rigour/annual/samples/annual__country__long__strict_growth_window_clean__H1.csv": "ed4174469dad3bfcd7cef307b548c4e28dafd3289bee92d6aa45ff622e26e7b7",
+    "outputs/visitor_rigour/annual/samples/annual__country__long__strict_growth_window_clean__common.csv": "ed4174469dad3bfcd7cef307b548c4e28dafd3289bee92d6aa45ff622e26e7b7",
+    "outputs/visitor_rigour/annual/samples/annual__region__full__all_eligible__H1.csv": "69b4c9da0d71d54cab964d637cbe699b7d1246293c52fb90ea0ea6daab340ceb",
+    "outputs/visitor_rigour/annual/samples/annual__region__full__all_eligible__common.csv": "69b4c9da0d71d54cab964d637cbe699b7d1246293c52fb90ea0ea6daab340ceb",
+    "outputs/visitor_rigour/annual/samples/annual__region__full__event_dates_excluded__H1.csv": "8d3e591f55892cd86ff62ce90ba80a858e81b957659a087f7354ce8f3c67b598",
+    "outputs/visitor_rigour/annual/samples/annual__region__full__event_dates_excluded__common.csv": "8d3e591f55892cd86ff62ce90ba80a858e81b957659a087f7354ce8f3c67b598",
+    "outputs/visitor_rigour/annual/samples/annual__region__full__strict_growth_window_clean__H1.csv": "8d3e591f55892cd86ff62ce90ba80a858e81b957659a087f7354ce8f3c67b598",
+    "outputs/visitor_rigour/annual/samples/annual__region__full__strict_growth_window_clean__common.csv": "8d3e591f55892cd86ff62ce90ba80a858e81b957659a087f7354ce8f3c67b598",
+    "outputs/visitor_rigour/annual/samples/annual__region__long__all_eligible__H1.csv": "f5d144015859943663a6d95f2b75f3798eeda5401e6e93f2b3e909343d8e34f1",
+    "outputs/visitor_rigour/annual/samples/annual__region__long__all_eligible__common.csv": "f5d144015859943663a6d95f2b75f3798eeda5401e6e93f2b3e909343d8e34f1",
+    "outputs/visitor_rigour/annual/samples/annual__region__long__event_dates_excluded__H1.csv": "bef0cbee750a40d00ae2b01041ee0525c382e2a6a01ccc65b088c739e079c78d",
+    "outputs/visitor_rigour/annual/samples/annual__region__long__event_dates_excluded__common.csv": "bef0cbee750a40d00ae2b01041ee0525c382e2a6a01ccc65b088c739e079c78d",
+    "outputs/visitor_rigour/annual/samples/annual__region__long__strict_growth_window_clean__H1.csv": "55ec00dd7b4e544d9fabacb430b30bdc1ab544869a42c04fd5bb40eccb8e6f7b",
+    "outputs/visitor_rigour/annual/samples/annual__region__long__strict_growth_window_clean__common.csv": "55ec00dd7b4e544d9fabacb430b30bdc1ab544869a42c04fd5bb40eccb8e6f7b",
+    "outputs/visitor_rigour/annual/slope_covariances.csv": "15ff92c8604059a04d0c6c70750578b614ad0eea476aec2e6ccbbeeeed10657e",
+    "outputs/visitor_rigour/annual/source_checks.json": "4315287e8f025a9526bd371a1cd87b3b798dc3089d76ee40d1a5089f7b147f2d",
+    "outputs/visitor_rigour/annual/specifications.csv": "9649d41c1c036ce3a8480c8d1fcfb69521a708002d533a3084be4d3fa75bdcea",
+    "outputs/visitor_rigour/annual/temperature_effects.csv": "150108516c3061664415bd256a6231ff8c5fa1f17bc1fd1f1a281880e5ab99d3",
+    "outputs/visitor_rigour/annual/tests.csv": "805bf7433e6e48ea9afc5b16dbb184d4cddcc2fd41a04d896545b1a6d23b42d8",
+    "outputs/visitor_rigour/annual/time_design_ranks.csv": "f1b6bf98423329f3bbe03a404caef1763a0f2932e600f88c0cc6900bb167a203"
+  },
+  "artifact_binding_helper_sha256": "4c868481f44c6b633734f008f956e87ed0eac84f58976ef6852fa12fa1e8514e",
+  "verifier_source_sha256": "714962500c5892a5467be2d2bf82127ec3798e3e63dbe03ceadbd0f2553eeb7f"
+}

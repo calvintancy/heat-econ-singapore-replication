@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "counts": {
+    "source_spec_rows": 330,
+    "logical_model_outcomes": 330,
+    "model_variable_links": 19644,
+    "distinct_diagnostics": 6623,
+    "completed_diagnostics": 65,
+    "unavailable_diagnostics": 6558,
+    "error_diagnostics": 0,
+    "test_rows": 260,
+    "series_rows": 689414
+  },
+  "states": {
+    "unavailable-gaps": 6503,
+    "unavailable-short": 55,
+    "unit-root-concern": 38,
+    "inconclusive": 17,
+    "sensitivity-dependent": 6,
+    "trend-stationarity-compatible": 3,
+    "stationarity-compatible": 1
+  },
+  "numerical_checks": {
+    "Every visitor diagnostic actual native Y": {
+      "values": 717194,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Every visitor stochastic diagnostic basis before FE projection": {
+      "values": 8245428,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "All exact diagnostic raw values": {
+      "values": 689414,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Independently season-adjusted diagnostic values": {
+      "values": 14625,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Independently estimated seasonal offsets": {
+      "values": 14625,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Independent ADF lag-search AIC": {
+      "values": 130,
+      "maximum_absolute_error": 1.3642420526593924e-12,
+      "maximum_scaled_error": 3.404124856634497e-16,
+      "maximum_fraction_of_tolerance": 1.3621675763386776e-07
+    },
+    "Independent ADF/KPSS statistic, reference p and critical value": {
+      "values": 780,
+      "maximum_absolute_error": 1.8847146066036657e-12,
+      "maximum_scaled_error": 9.600098493933729e-13,
+      "maximum_fraction_of_tolerance": 7.555084779256551e-06
+    },
+    "Diagnostic evidence p summaries": {
+      "values": 260,
+      "maximum_absolute_error": 9.600098493933729e-13,
+      "maximum_scaled_error": 9.600098493933729e-13,
+      "maximum_fraction_of_tolerance": 4.641535221557247e-06
+    }
+  },
+  "source_bindings_unchanged": 469,
+  "numerical_parent_receipts": {
+    "outputs/visitor_rigour/monthly/verification.json": "8bb14cfedbe627613a8d6ef7893b5090e49d0fd9098fb8599df317dc7329e310",
+    "outputs/visitor_rigour/annual/verification.json": "71b8e11e9b992367251e91ef84ac822888fad9a13783828f1bccd38b12289de1",
+    "outputs/visitor_rigour/ppml/verification.json": "7d8545abd6ed0afc1d042c4ad7e7f1adf990a9d33f88b4659841b5df530c6192"
+  },
+  "verifier_source_sha256": "28579732c601c1d7dd80493310a079d4a1e150bfefc50d5a32039bb174fc0676",
+  "scope": "All330 model/alias requests, actual retained PPML samples, raw stochastic Y/X and declared OLS centering, shared-unit coverage/dedup, complete uncompressed calendars, short/constant/missing guards, independent seasonal offsets and ADF/KPSS arithmetic/states.",
+  "limits": "No new growth-window stationarity clearance is available: exact monthly growth windows have gaps and annual samples have fewer than20years. Completed screens concern contiguous PPML count/weather inputs, descriptively; I(0) screening is not a Poisson admission criterion or causal/inference-validity certificate."
+}

@@ -1,0 +1,35 @@
+Visitor PPML aggregate/long/all_eligible: estimated
+Visitor PPML aggregate/long/event_dates_excluded: estimated
+Visitor PPML aggregate/full/all_eligible: estimated
+Visitor PPML aggregate/full/event_dates_excluded: estimated
+Visitor PPML region/long/all_eligible: estimated
+Visitor PPML region/long/event_dates_excluded: estimated
+Visitor PPML region/full/all_eligible: estimated
+Visitor PPML region/full/event_dates_excluded: estimated
+Visitor PPML country/long/all_eligible: estimated
+Visitor PPML country/long/event_dates_excluded: estimated
+Visitor PPML country/full/all_eligible: estimated
+Visitor PPML country/full/event_dates_excluded: estimated
+Visitor PPML complete10/long/all_eligible: estimated
+Visitor PPML complete10/long/event_dates_excluded: estimated
+Visitor PPML complete10/full/all_eligible: estimated
+Visitor PPML complete10/full/event_dates_excluded: estimated
+Visitor PPML complete52/long/all_eligible: estimated
+Visitor PPML complete52/long/event_dates_excluded: estimated
+Visitor PPML complete52/full/all_eligible: estimated
+Visitor PPML complete52/full/event_dates_excluded: estimated
+{
+  "status": "estimated_not_yet_independently_verified",
+  "annual_requested": 30,
+  "annual_native_fits": 15,
+  "annual_point_statuses": {
+    "estimated": 15,
+    "unavailable: underidentified or rank-deficient design": 15
+  },
+  "ppml_requested": 30,
+  "ppml_native_calls": 20,
+  "ppml_aliases": 10,
+  "ppml_point_statuses": {
+    "estimated": 30
+  }
+}

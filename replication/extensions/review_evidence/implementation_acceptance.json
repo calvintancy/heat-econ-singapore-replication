@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "fixture_count": 8,
+  "consecutive_final_full_verify_runs": 2,
+  "subprocesses_per_run": 23,
+  "run_indexes": [
+    "dist/aea_audit_20261111/baseline-recheck/replication/logs/verification-runs/20261111T122034.522215Z-8771fb3d/index.json",
+    "dist/aea_audit_20261111/baseline-recheck/replication/logs/verification-runs/20261111T122458.446625Z-3654bae1/index.json"
+  ],
+  "logs": [
+    "dist/aea_audit_20261111/baseline-recheck/replication/logs/receipt-history-final-1.txt",
+    "dist/aea_audit_20261111/baseline-recheck/replication/logs/receipt-history-final-2.txt"
+  ],
+  "source_sha256": {
+    "scripts/replicate.py": "270e2ee718171408df446d245bf198b46e98d93c3c25fbd8d2991d90f36ee1e4",
+    "scripts/verification_receipt_history.py": "2cd93efdd79dbe58526097bdce7e7e65052b8cc08071f0a532b2834877ad6585"
+  },
+  "strict_original_checkpoint_entries_unchanged": 562,
+  "frozen_input_archive_members_unchanged": 526,
+  "published_model_CSV_sample_and_NPZ_members_unchanged": 2180,
+  "old_default_manifest_and_reference_unchanged": true,
+  "no_manual_reset_between_final_commands": true,
+  "fresh_receipt_sha256": "4d3f0cd8aca9fb81b5161a482bdd240f67245601ad6838f1a5193dcf83f0a121",
+  "historical_receipt_sha256": "9b702613a3a4487c71c40014499e4c9836108faad4c93b96918f7c550e5d8575",
+  "source_only_test_overlay": "dist/aea_audit_20261111/baseline-recheck/replication/logs/receipt-history-test-manifest.json",
+  "scope": "Existing-output verification acceptance on the isolated patched source copy; full reproduction phase boundary tested by fixture, not a new all-model refit. Published v1.0.0 tag/assets unchanged."
+}

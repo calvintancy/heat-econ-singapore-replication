@@ -1,0 +1,435 @@
+{
+  "status": "passed",
+  "logical_requests": 30,
+  "native_Fepois_models": 20,
+  "strict_aliases": 10,
+  "counts": {
+    "coefficients": 120,
+    "temperature_effects": 84,
+    "control_estimates": 420,
+    "tests": 84,
+    "mu_values": 63384,
+    "covariance_cells": 2072,
+    "retained_zero_cells": 516,
+    "canonical_models": 20
+  },
+  "raw_source_audit": {
+    "source_months": 225,
+    "source_rows": 62,
+    "units_per_cut": {
+      "aggregate": 1,
+      "region": 9,
+      "country": 42,
+      "complete10": 10,
+      "complete52": 52
+    },
+    "zero_cells_per_cut": {
+      "aggregate": 0,
+      "region": 0,
+      "country": 50,
+      "complete10": 50,
+      "complete52": 134
+    },
+    "lunar_raw_tables": 20,
+    "old_lunar_calendar_rows": 228,
+    "supplement_2007_new_year": "2007-02-18",
+    "december_2007_lunar_window_days": 0,
+    "raw_hashes": {
+      "data/raw/visitor_arrivals/nsa_metadata.json": "5f3395e13d4984f9a14c7eef20cf509a5c74a4d2135c297405218a305d61ca2f",
+      "data/raw/visitor_arrivals/nsa.csv": "3d8d498dce66a70722c883a6cfa5b2552e27dfd0fac849d5c152bae9b22a4202",
+      "data/raw/visitor_arrivals/nsa_singstat_metadata.json": "d607945463c5350ac23bf71435485c405964f805ed4c156960f464c41e52261f",
+      "data/raw/visitor_arrivals/sa_metadata.json": "8333ea09771aed73a03e23571f04ff8bb68a740b8456111ad0bce26fd82a59a5",
+      "data/raw/visitor_arrivals/sa.csv": "0eedf4f9ffa96df3b1ee940f95b3e4d6e11fbcd47a3025970fe0a76054528079",
+      "data/raw/visitor_arrivals/sa_singstat_metadata.json": "5f538f20b62dd2ccec180ae1266b4e96ba8cb3ddaa027c12c0a23f4b9a1b8c99",
+      "data/raw/temperature_monthly.csv": "5ea1646a4e3136a9979094124ab2dc7e4d9c271235a49ddcab991f896fac6b80",
+      "data/raw/humidity_monthly.csv": "47449b875513742352f6b859ad4495ba5cb43feb8ed4b7bafdd49331c8f66a26",
+      "data/raw/rainfall_monthly.csv": "9880c5cd4c2068b7085f483009290d7d11702aeecd2355739960d02d5469c9cb",
+      "data/raw/visitor_arrivals/calendar/T2008e.txt": "dd3c08f02280b3781a46f00e68632399ac0220e1793e936c8503702e4cda19de",
+      "data/raw/visitor_arrivals/calendar/T2009e.txt": "5f2bc5e823a6f34a5274a45133d40d8b28f4b2cffecba0ffb2e1a9a56723ded1",
+      "data/raw/visitor_arrivals/calendar/T2010e.txt": "c507beb3cd5a279ea666b8fe0a4f501c645316373a4b646d746c31c1594b421e",
+      "data/raw/visitor_arrivals/calendar/T2011e.txt": "190a245434f85d15a81c7f4c35644a4b97aca62b35dbc153f8d0f93b0b3a3ec9",
+      "data/raw/visitor_arrivals/calendar/T2012e.txt": "3baa28e28aae7e963a93e932b586bd131a163af9bc7f4f6c26cc97a663e3984d",
+      "data/raw/visitor_arrivals/calendar/T2013e.txt": "5547e3ac578c35a7fee7124a0a828b332e952af2f98508a261445c40935d2ef0",
+      "data/raw/visitor_arrivals/calendar/T2014e.txt": "d951404fd19b2e19580f41ca2c2cc854e20a27d2c680d5c50abd5b55df62371f",
+      "data/raw/visitor_arrivals/calendar/T2015e.txt": "3a00ed814d839900f491b8f93d172b3376de7b2718534efabe90c16beb784974",
+      "data/raw/visitor_arrivals/calendar/T2016e.txt": "54fd6b05b9ef67f0d4cb415e2cf9fd7144576fa9bc8bd56b31a6fcdbf2883926",
+      "data/raw/visitor_arrivals/calendar/T2017e.txt": "61289cd623a29273ebac0bfef9d47c25d5c925ff7ad7eee4bb5b1c69d9fdfa83",
+      "data/raw/visitor_arrivals/calendar/T2018e.txt": "aa927769705f2d92e1db2614e89a2079418ea13f9d1f12a4a10f48b7143692e8",
+      "data/raw/visitor_arrivals/calendar/T2019e.txt": "678c150eb855b0c381de6afddf85c33b13cc473c6c2145309c8021dce9cd7d46",
+      "data/raw/visitor_arrivals/calendar/T2020e.txt": "0dde5ed6d41935f8f420643287fc0250588102b154d8243e0f2762bb0c473bd2",
+      "data/raw/visitor_arrivals/calendar/T2021e.txt": "d3432f28db9a868aa407720a39224d7858395389ddc818d92c3a3fa43d58360a",
+      "data/raw/visitor_arrivals/calendar/T2022e.txt": "34c1edcf7ce3b20e3963f38379cfd77cce8bcf4dbede9bb9b18412e375bc555f",
+      "data/raw/visitor_arrivals/calendar/T2023e.txt": "f3bbdef5c9b0c0158ca8328004e347da714494572effc23fea97af48052402e5",
+      "data/raw/visitor_arrivals/calendar/T2024e.txt": "81f8fba2c809d5dcea5c63699e843b82e29318553cb5de7bbf053aa66d068fdc",
+      "data/raw/visitor_arrivals/calendar/T2025e.txt": "e11ba9a4d1fcde4d09570871149d3eea329d3a92a1b79be814d3f7313ae3fa50",
+      "data/raw/visitor_arrivals/calendar/T2026e.txt": "29ef9c43977a69681ef770d0c264e4226692f21f3febc3d16a4ee5c8aa06c60c",
+      "replication/extensions/supplementary_inputs/calendar/T2007e.txt": "2eeec2ef316267d92c2ec93e44d2ccb3a889e02c408aecdcc696a2c350416673",
+      "replication/extensions/supplementary_inputs/calendar/sources.json": "66b91a40f0fc06b5717cde5cd79d61084fbd2815f47c98f11e47d25e12bee868"
+    },
+    "wind_pm": {
+      "source_hashes_checked": 5,
+      "wind_halfhours": 155115,
+      "pm_invalid_rows": 1,
+      "pm_exact_duplicates": 0,
+      "pm_conflicting_timestamp_hours": 3,
+      "pm_retained_hours": 109577,
+      "monthly_eligible_90": 100,
+      "quarterly_eligible_90": 29
+    }
+  },
+  "zero_retention": "Every intended zero/unit/row retained in all20 observed native models; checked actual sample indices, raw counts and native receipts",
+  "count_aggregation_identities": [
+    {
+      "aggregate_spec_id": "ppml__aggregate__long__all_eligible",
+      "component_spec_id": "ppml__complete10__long__all_eligible",
+      "beta_max_abs_error": 2.0903417885520525e-16,
+      "mu_max_abs_error": 3.80445271730423e-07,
+      "scope": "Exact balanced shared-X common Poisson aggregation; no corresponding growth-slope identity"
+    },
+    {
+      "aggregate_spec_id": "ppml__aggregate__long__event_dates_excluded",
+      "component_spec_id": "ppml__complete10__long__event_dates_excluded",
+      "beta_max_abs_error": 1.5178830414797062e-16,
+      "mu_max_abs_error": 6.100162863731384e-08,
+      "scope": "Exact balanced shared-X common Poisson aggregation; no corresponding growth-slope identity"
+    },
+    {
+      "aggregate_spec_id": "ppml__aggregate__full__all_eligible",
+      "component_spec_id": "ppml__complete10__full__all_eligible",
+      "beta_max_abs_error": 1.6479873021779667e-15,
+      "mu_max_abs_error": 6.163027137517929e-07,
+      "scope": "Exact balanced shared-X common Poisson aggregation; no corresponding growth-slope identity"
+    },
+    {
+      "aggregate_spec_id": "ppml__aggregate__full__event_dates_excluded",
+      "component_spec_id": "ppml__complete10__full__event_dates_excluded",
+      "beta_max_abs_error": 2.310651670001107e-15,
+      "mu_max_abs_error": 1.855660229921341e-07,
+      "scope": "Exact balanced shared-X common Poisson aggregation; no corresponding growth-slope identity"
+    },
+    {
+      "aggregate_spec_id": "ppml__aggregate__long__all_eligible",
+      "component_spec_id": "ppml__complete52__long__all_eligible",
+      "beta_max_abs_error": 1.93421667571414e-16,
+      "mu_max_abs_error": 3.537861630320549e-07,
+      "scope": "Exact balanced shared-X common Poisson aggregation; no corresponding growth-slope identity"
+    },
+    {
+      "aggregate_spec_id": "ppml__aggregate__long__event_dates_excluded",
+      "component_spec_id": "ppml__complete52__long__event_dates_excluded",
+      "beta_max_abs_error": 1.4094628242311558e-16,
+      "mu_max_abs_error": 5.587935447692871e-09,
+      "scope": "Exact balanced shared-X common Poisson aggregation; no corresponding growth-slope identity"
+    },
+    {
+      "aggregate_spec_id": "ppml__aggregate__full__all_eligible",
+      "component_spec_id": "ppml__complete52__full__all_eligible",
+      "beta_max_abs_error": 1.4103301859691442e-15,
+      "mu_max_abs_error": 6.682239472866058e-07,
+      "scope": "Exact balanced shared-X common Poisson aggregation; no corresponding growth-slope identity"
+    },
+    {
+      "aggregate_spec_id": "ppml__aggregate__full__event_dates_excluded",
+      "component_spec_id": "ppml__complete52__full__event_dates_excluded",
+      "beta_max_abs_error": 1.3123183095764546e-15,
+      "mu_max_abs_error": 2.8265640139579773e-07,
+      "scope": "Exact balanced shared-X common Poisson aggregation; no corresponding growth-slope identity"
+    }
+  ],
+  "native_fit_log_sha256": "7078991a1be189d693a421d6cdbdc82b1a5f7e4ec2fb053fd4985cd37f8fb0d7",
+  "protected_bindings_unchanged": 751,
+  "numerical_checks": {
+    "Every retained PPML raw count including zeros": {
+      "values": 63384,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Every PPML current raw weather and broader LNY value": {
+      "values": 354768,
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "maximum_scaled_error": 3.5311154809397696e-16,
+      "maximum_fraction_of_tolerance": 2.4061311926002672e-05
+    },
+    "PPML actual time ordinals": {
+      "values": 63384,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Every PPML raw requested design cell": {
+      "values": 354768,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Every PPML native response cell": {
+      "values": 63384,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Native PPML / independent profiled Poisson IRLS coefficients": {
+      "values": 120,
+      "maximum_absolute_error": 5.552416165732765e-15,
+      "maximum_scaled_error": 5.552416165732765e-15,
+      "maximum_fraction_of_tolerance": 5.5401648554315555e-08
+    },
+    "Native PPML / independent Poisson-plus-composition fitted counts": {
+      "values": 63384,
+      "maximum_absolute_error": 6.163027137517929e-07,
+      "maximum_scaled_error": 1.0933105837325757e-09,
+      "maximum_fraction_of_tolerance": 0.0034553397960552525
+    },
+    "Native PPML linear predictor including absorbed FE": {
+      "values": 63384,
+      "maximum_absolute_error": 1.0933107752464366e-09,
+      "maximum_scaled_error": 1.092695656179643e-09,
+      "maximum_fraction_of_tolerance": 0.04711573521501253
+    },
+    "Native PPML raw response residuals": {
+      "values": 63384,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Native Poisson curvature weights": {
+      "values": 63384,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Independent weighted FE residualization of every PPML weather column": {
+      "values": 354768,
+      "maximum_absolute_error": 1.1335377081422848e-13,
+      "maximum_scaled_error": 1.1335377081422848e-13,
+      "maximum_fraction_of_tolerance": 4.1286228112522585e-07
+    },
+    "Independent Poisson efficient information": {
+      "values": 740,
+      "maximum_absolute_error": 4.172325134277344e-06,
+      "maximum_scaled_error": 3.3111317685499655e-12,
+      "maximum_fraction_of_tolerance": 4.3463137953822325e-06
+    },
+    "Independent weighted-QR PPML covariance bread": {
+      "values": 740,
+      "maximum_absolute_error": 4.446922973085077e-21,
+      "maximum_scaled_error": 4.446922973085077e-21,
+      "maximum_fraction_of_tolerance": 4.444166030858192e-11
+    },
+    "Independent raw PPML efficient scores": {
+      "values": 354768,
+      "maximum_absolute_error": 6.548361852765083e-08,
+      "maximum_scaled_error": 2.6624813188335167e-11,
+      "maximum_fraction_of_tolerance": 1.2347406665582935e-05
+    },
+    "Independent PPML full influence vectors": {
+      "values": 354768,
+      "maximum_absolute_error": 7.771561172376096e-15,
+      "maximum_scaled_error": 7.771561172376096e-15,
+      "maximum_fraction_of_tolerance": 7.878840957805016e-07
+    },
+    "Independent PPML unscaled HC0 reference": {
+      "values": 740,
+      "maximum_absolute_error": 3.0184188481996443e-15,
+      "maximum_scaled_error": 3.0184188481996443e-15,
+      "maximum_fraction_of_tolerance": 4.620744806240776e-07
+    },
+    "Every PPML raw calendar score covariance": {
+      "values": 1480,
+      "maximum_absolute_error": 5.016820292524926e-15,
+      "maximum_scaled_error": 5.016820292524926e-15,
+      "maximum_fraction_of_tolerance": 4.500119225113917e-07
+    },
+    "Every full PPML calendar/cluster covariance": {
+      "values": 2072,
+      "maximum_absolute_error": 6.869504964868156e-15,
+      "maximum_scaled_error": 6.869504964868156e-15,
+      "maximum_fraction_of_tolerance": 4.655822663377987e-07
+    },
+    "PPML declared finite correction": {
+      "values": 56,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Coefficient / SE / t p / CI": {
+      "values": 1680,
+      "maximum_absolute_error": 2.5295321393059567e-12,
+      "maximum_scaled_error": 5.921212748965963e-13,
+      "maximum_fraction_of_tolerance": 9.730860999018653e-07
+    },
+    "HC0 numerical scale reference": {
+      "values": 336,
+      "maximum_absolute_error": 3.0183855415089056e-11,
+      "maximum_scaled_error": 9.337533907863576e-14,
+      "maximum_fraction_of_tolerance": 4.5707340259254715e-07
+    },
+    "Numerical zero-variance threshold": {
+      "values": 336,
+      "maximum_absolute_error": 3.019209235818551e-23,
+      "maximum_scaled_error": 3.019209235818551e-23,
+      "maximum_fraction_of_tolerance": 4.6508153176515776e-07
+    },
+    "+0.1C scale": {
+      "values": 56,
+      "maximum_absolute_error": 2.7755575615628914e-17,
+      "maximum_scaled_error": 2.7755575615628914e-17,
+      "maximum_fraction_of_tolerance": 1.198820497399819e-10
+    },
+    "Raw PPML semi-elasticity /100-log-point export scale": {
+      "values": 336,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Exact PPML0.1C expected-count percent and log-point effects": {
+      "values": 112,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Companion joint-test scale/rank thresholds": {
+      "values": 112,
+      "maximum_absolute_error": 1.231653667943533e-15,
+      "maximum_scaled_error": 1.231653667943533e-15,
+      "maximum_fraction_of_tolerance": 5.284580527101471e-09
+    },
+    "Companion independently computed Wald F": {
+      "values": 56,
+      "maximum_absolute_error": 4.2174974623776507e-10,
+      "maximum_scaled_error": 4.1150995803376594e-12,
+      "maximum_fraction_of_tolerance": 4.075335686411256e-07
+    },
+    "Companion independent nominal F probability": {
+      "values": 56,
+      "maximum_absolute_error": 4.679590048795035e-14,
+      "maximum_scaled_error": 4.679590048795035e-14,
+      "maximum_fraction_of_tolerance": 1.8173255468197513e-07
+    },
+    "Every exported native PPML coefficient": {
+      "values": 120,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Every strict PPML alias equals its sole canonical native model": {
+      "values": 1260,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Complete-partition native PPML shared coefficient aggregation identity": {
+      "values": 48,
+      "maximum_absolute_error": 2.310651670001107e-15,
+      "maximum_scaled_error": 2.310651670001107e-15,
+      "maximum_fraction_of_tolerance": 2.2747962935207308e-08
+    },
+    "Complete-partition native PPML expected-count aggregation identity": {
+      "values": 1112,
+      "maximum_absolute_error": 6.682239472866058e-07,
+      "maximum_scaled_error": 1.3721462079329935e-11,
+      "maximum_fraction_of_tolerance": 0.0006622364178358105
+    },
+    "Complete-partition raw calendar covariance aggregation identity": {
+      "values": 592,
+      "maximum_absolute_error": 3.191891195797325e-14,
+      "maximum_scaled_error": 3.191891195797325e-14,
+      "maximum_fraction_of_tolerance": 1.1416965220513613e-05
+    },
+    "Complete-partition corrected calendar covariance aggregation identity": {
+      "values": 592,
+      "maximum_absolute_error": 4.3728909382423353e-14,
+      "maximum_scaled_error": 4.3728909382423353e-14,
+      "maximum_fraction_of_tolerance": 1.3505021647503536e-05
+    },
+    "Complete-partition common working time correction": {
+      "values": 16,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    }
+  },
+  "limits": "Count-model common-weather likelihood identity does not apply to sums of log growth or selected nonexhaustive cuts. Marginal count stationarity is not an imposed Poisson admission criterion. No causal/inference-calibration certificate.",
+  "verified_artifacts_sha256": {
+    "outputs/visitor_rigour/ppml/aggregation_checks.csv": "6f0fd2ced54e3000be35cd8b46328b9bd78cf9e58b43232c4ee01c357a4bd653",
+    "outputs/visitor_rigour/ppml/aliases.csv": "5bbd997bf5660f54975a13d9ffe0aaaf493bec2b36d7efd1c50983fa9e476951",
+    "outputs/visitor_rigour/ppml/calendar_masks.csv": "677ecc2435c990b5abc483f3a0a52f00cb1f98f4583ce93fc53c7bb7c57c07ae",
+    "outputs/visitor_rigour/ppml/coefficients.csv": "26fe781c85f61f8ecf5dd063ca6e3ca487327233134c9b15b646f0bac3b7ca75",
+    "outputs/visitor_rigour/ppml/control_estimates.csv": "21ea041b4fb2a4b674474035395af694c49d7bd1ea3c2ee365ef3bef0909a990",
+    "outputs/visitor_rigour/ppml/count_partition_reconciliation.csv": "adf7d454644493056f1ec7b3cd680d4754990dd3fd0f30fe4719c6eb3c99b37b",
+    "outputs/visitor_rigour/ppml/designs/ppml__aggregate__full__all_eligible.npz": "1a8ed58722377ef93dcfd091011fa70cde5cb86e282e9d8295880769679cbf06",
+    "outputs/visitor_rigour/ppml/designs/ppml__aggregate__full__event_dates_excluded.npz": "0be67495ea800453b5c3ca43920bc57b6b2a8db4edb7251bf2b1b750a9f74559",
+    "outputs/visitor_rigour/ppml/designs/ppml__aggregate__long__all_eligible.npz": "78b096306851a11e5a8e42d4095cebda4c4e6bdc68b33d020e6fd0f192fe2333",
+    "outputs/visitor_rigour/ppml/designs/ppml__aggregate__long__event_dates_excluded.npz": "bbb11feb73abed4d897ecdfcb237a95172b4ba82bfc319d53a2fbd86b0525ab7",
+    "outputs/visitor_rigour/ppml/designs/ppml__complete10__full__all_eligible.npz": "9eb8b422a9b1e8eeccc813b81ad67e879e0d0131cd5ae6ea9782e8bb3f9608d1",
+    "outputs/visitor_rigour/ppml/designs/ppml__complete10__full__event_dates_excluded.npz": "82cdf4974df17eaa77aadad019792e81ff8cb2ec09dea9d8fd90c5a7d1d7f6f7",
+    "outputs/visitor_rigour/ppml/designs/ppml__complete10__long__all_eligible.npz": "be1c2c5c640a10a693b899be4880b6109d469935919d12b6ecee4f50ed5080bd",
+    "outputs/visitor_rigour/ppml/designs/ppml__complete10__long__event_dates_excluded.npz": "24bf6803200c1ce2c29259aecbfc6b7417e3a1fe526bf82852f4a8bf4bef793e",
+    "outputs/visitor_rigour/ppml/designs/ppml__complete52__full__all_eligible.npz": "02eb5cc03eb3cef733be07caef5a2496d566b3c6cb9ca518fd2a6aabdabcd244",
+    "outputs/visitor_rigour/ppml/designs/ppml__complete52__full__event_dates_excluded.npz": "49ac2d47df5522ab667862169760032af6303a31922c9719ca34e1eff7773031",
+    "outputs/visitor_rigour/ppml/designs/ppml__complete52__long__all_eligible.npz": "9a3cb89ecb68bc268f5d91f225abb5af4e50ab7a2c1ab884d09d2d6cad3a0d3d",
+    "outputs/visitor_rigour/ppml/designs/ppml__complete52__long__event_dates_excluded.npz": "ec8486645e795a54412a6dc1f927274b48bfa52ce5f84804fdeef77e0a59ea9b",
+    "outputs/visitor_rigour/ppml/designs/ppml__country__full__all_eligible.npz": "a08caad0ba5ba7150facc441fd682dd24e5d00e9f20d5f1d5177fd1fb06356b5",
+    "outputs/visitor_rigour/ppml/designs/ppml__country__full__event_dates_excluded.npz": "23e626ae963409b599275c30e2b37e86faeaafc7baf4a14217fc9804d23f5b4d",
+    "outputs/visitor_rigour/ppml/designs/ppml__country__long__all_eligible.npz": "855bc3c8b921729093f70e7b0cd5a1c5ead859faaad7267622d7626457da93e7",
+    "outputs/visitor_rigour/ppml/designs/ppml__country__long__event_dates_excluded.npz": "9b336d3f3869578f2c0bd65e69b3e348f362973d906339c8d6eb51c2bc5ecfc9",
+    "outputs/visitor_rigour/ppml/designs/ppml__region__full__all_eligible.npz": "a092bafc76e15dba3843fca249eb51875f2c8f12fe6529a393ff57bf70f8e2cf",
+    "outputs/visitor_rigour/ppml/designs/ppml__region__full__event_dates_excluded.npz": "3d51fef131f1770acb12ba6f721aa030506cc9245d3ad6b2a38f327f74b6ec63",
+    "outputs/visitor_rigour/ppml/designs/ppml__region__long__all_eligible.npz": "10f89d4d8be12064183694269da076111ffd008f4ad412f8762a6b54901b5ec3",
+    "outputs/visitor_rigour/ppml/designs/ppml__region__long__event_dates_excluded.npz": "599ebf4d3d16107ec3d454e6ebe76262e87eec24f76ac39349396887cc1a07e2",
+    "outputs/visitor_rigour/ppml/dropped_observations.csv": "dffa2ed4f02f4f4af18309d0889235db99c3970644e539c0979eea51fd812dc3",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__aggregate__full__all_eligible.csv": "eeb504caab8fe4b914c2d25329f9244ef51de6a0be2d48509a3f2adb04b3195b",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__aggregate__full__event_dates_excluded.csv": "6636e07b94bbeba40d1ad554ef99a51cfb7eed055ac9f08e036b157f2fa973d6",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__aggregate__long__all_eligible.csv": "5a58e359906b977709b9fd5637db3974ecc099d5740eb9c3d310c4780d1f325a",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__aggregate__long__event_dates_excluded.csv": "f02044f635c818391dbc4000e2e4595b42f314ed571cd307272635e348aa5a1c",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__complete10__full__all_eligible.csv": "e151b492afc2b8020cd233554bc983cefed50823249617ddd989661b23f14de4",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__complete10__full__event_dates_excluded.csv": "286f33ca037512839936e857c4bb66263e927d01489894483d3bdf12d1e9a043",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__complete10__long__all_eligible.csv": "b0acbe3fe6a1b4047a5bc8e15baf2a3dcb78f3b8fa1ebffc7695ad2d143d02a8",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__complete10__long__event_dates_excluded.csv": "c84ca89099977b8f0e4eb497ca1e5b21a98c6371acd0e92335eab20923f326ef",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__complete52__full__all_eligible.csv": "1805fe0d59ae47399c11755d4f34a9568665bc5972f93c85406fb29da166793c",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__complete52__full__event_dates_excluded.csv": "b7e70e5460a42aabd5d724b4f18f9ba14f19b7bf81e8968e8a5796718be8eecd",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__complete52__long__all_eligible.csv": "001d205f0fc708418626cc916bc17ab3cc1872a1ac4c9b61c7f87b74b5ca5855",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__complete52__long__event_dates_excluded.csv": "12b6e4242a2f8bc653d839a8aca2e1d64270a4ab4c2e1a4c9c5318c1d60f068a",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__country__full__all_eligible.csv": "9b451e5c66cc4de303542a8f01c53c4313d0f312ceface76f17fa6caa493e0b0",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__country__full__event_dates_excluded.csv": "f5089c234f53aaa36dd79c0d890e11d02cfff4f17893a1d6c1390d83db4b9891",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__country__long__all_eligible.csv": "d885bdc86d4f35a46ab2d64dcc2d6d35dd8729b859bd0e720938b2d37a4c540d",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__country__long__event_dates_excluded.csv": "88377a9d24a1bf13f5d5ac62a4a3311f45467b1753cac323fac4679018518893",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__region__full__all_eligible.csv": "6e562e4a8676b34ae2b108061590c50591487ac5e6137b4f56ece0df8987dd95",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__region__full__event_dates_excluded.csv": "71752bf337d78fc58df3b36cfee13ffcf80d4d76edf80b6b56c9f9b2f1ce3653",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__region__long__all_eligible.csv": "e40be516429261299ffe5b60c6dc5a3565cb6145bb38a59bb3ee2061cc4e3e96",
+    "outputs/visitor_rigour/ppml/input_samples/ppml__region__long__event_dates_excluded.csv": "4486961008c25e116ce9ae2d7db686bab062120b0e2ec72b85189a3fd31c03e2",
+    "outputs/visitor_rigour/ppml/lunar_calendar_extended.csv": "ae25b1eaf371b13d55aa3cd274cd3dc81ce83df521640cbd02e801c9d7eb4c5b",
+    "outputs/visitor_rigour/ppml/manifest.json": "3ccb2b0cfde3d36a7d39b8683431208cceb2337dacb711beeae746b87e763a97",
+    "outputs/visitor_rigour/ppml/preflight_specifications.csv": "ee11c93bbf09209ad2dd2d29e6dd572607034309a528a446bbfbb7ef8d3fd13d",
+    "outputs/visitor_rigour/ppml/pyfixest/estimator_manifest.json": "d1081a402eb7ac82d24cb093e1950115c4bda3084557381b91c46b0653fa595e",
+    "outputs/visitor_rigour/ppml/pyfixest/fit_log.csv": "7078991a1be189d693a421d6cdbdc82b1a5f7e4ec2fb053fd4985cd37f8fb0d7",
+    "outputs/visitor_rigour/ppml/samples/ppml__aggregate__full__all_eligible.csv": "eeb504caab8fe4b914c2d25329f9244ef51de6a0be2d48509a3f2adb04b3195b",
+    "outputs/visitor_rigour/ppml/samples/ppml__aggregate__full__event_dates_excluded.csv": "6636e07b94bbeba40d1ad554ef99a51cfb7eed055ac9f08e036b157f2fa973d6",
+    "outputs/visitor_rigour/ppml/samples/ppml__aggregate__long__all_eligible.csv": "5a58e359906b977709b9fd5637db3974ecc099d5740eb9c3d310c4780d1f325a",
+    "outputs/visitor_rigour/ppml/samples/ppml__aggregate__long__event_dates_excluded.csv": "f02044f635c818391dbc4000e2e4595b42f314ed571cd307272635e348aa5a1c",
+    "outputs/visitor_rigour/ppml/samples/ppml__complete10__full__all_eligible.csv": "e151b492afc2b8020cd233554bc983cefed50823249617ddd989661b23f14de4",
+    "outputs/visitor_rigour/ppml/samples/ppml__complete10__full__event_dates_excluded.csv": "286f33ca037512839936e857c4bb66263e927d01489894483d3bdf12d1e9a043",
+    "outputs/visitor_rigour/ppml/samples/ppml__complete10__long__all_eligible.csv": "b0acbe3fe6a1b4047a5bc8e15baf2a3dcb78f3b8fa1ebffc7695ad2d143d02a8",
+    "outputs/visitor_rigour/ppml/samples/ppml__complete10__long__event_dates_excluded.csv": "c84ca89099977b8f0e4eb497ca1e5b21a98c6371acd0e92335eab20923f326ef",
+    "outputs/visitor_rigour/ppml/samples/ppml__complete52__full__all_eligible.csv": "1805fe0d59ae47399c11755d4f34a9568665bc5972f93c85406fb29da166793c",
+    "outputs/visitor_rigour/ppml/samples/ppml__complete52__full__event_dates_excluded.csv": "b7e70e5460a42aabd5d724b4f18f9ba14f19b7bf81e8968e8a5796718be8eecd",
+    "outputs/visitor_rigour/ppml/samples/ppml__complete52__long__all_eligible.csv": "001d205f0fc708418626cc916bc17ab3cc1872a1ac4c9b61c7f87b74b5ca5855",
+    "outputs/visitor_rigour/ppml/samples/ppml__complete52__long__event_dates_excluded.csv": "12b6e4242a2f8bc653d839a8aca2e1d64270a4ab4c2e1a4c9c5318c1d60f068a",
+    "outputs/visitor_rigour/ppml/samples/ppml__country__full__all_eligible.csv": "9b451e5c66cc4de303542a8f01c53c4313d0f312ceface76f17fa6caa493e0b0",
+    "outputs/visitor_rigour/ppml/samples/ppml__country__full__event_dates_excluded.csv": "f5089c234f53aaa36dd79c0d890e11d02cfff4f17893a1d6c1390d83db4b9891",
+    "outputs/visitor_rigour/ppml/samples/ppml__country__long__all_eligible.csv": "d885bdc86d4f35a46ab2d64dcc2d6d35dd8729b859bd0e720938b2d37a4c540d",
+    "outputs/visitor_rigour/ppml/samples/ppml__country__long__event_dates_excluded.csv": "88377a9d24a1bf13f5d5ac62a4a3311f45467b1753cac323fac4679018518893",
+    "outputs/visitor_rigour/ppml/samples/ppml__region__full__all_eligible.csv": "6e562e4a8676b34ae2b108061590c50591487ac5e6137b4f56ece0df8987dd95",
+    "outputs/visitor_rigour/ppml/samples/ppml__region__full__event_dates_excluded.csv": "71752bf337d78fc58df3b36cfee13ffcf80d4d76edf80b6b56c9f9b2f1ce3653",
+    "outputs/visitor_rigour/ppml/samples/ppml__region__long__all_eligible.csv": "e40be516429261299ffe5b60c6dc5a3565cb6145bb38a59bb3ee2061cc4e3e96",
+    "outputs/visitor_rigour/ppml/samples/ppml__region__long__event_dates_excluded.csv": "4486961008c25e116ce9ae2d7db686bab062120b0e2ec72b85189a3fd31c03e2",
+    "outputs/visitor_rigour/ppml/source_checks.json": "4315287e8f025a9526bd371a1cd87b3b798dc3089d76ee40d1a5089f7b147f2d",
+    "outputs/visitor_rigour/ppml/specifications.csv": "4b613f107860fa3f2fc01869d53bc3dcbd57d50c619fc55fbe5737b0e6f0fc8d",
+    "outputs/visitor_rigour/ppml/temperature_effects.csv": "f85680043f0a189fe214a59eb22dd4610f652c752413cf8ecf598d5f142c2c8e",
+    "outputs/visitor_rigour/ppml/tests.csv": "89e6040f9bb1416ab1b61f176c72a57fc706c79971f765a046cdec940dc22b24",
+    "outputs/visitor_rigour/ppml/time_design_ranks.csv": "570d46f34082cb6fb7a2a5a095ae83a88494c6e6e59da961c131f5c2903fda0a"
+  },
+  "artifact_binding_helper_sha256": "4c868481f44c6b633734f008f956e87ed0eac84f58976ef6852fa12fa1e8514e",
+  "verifier_source_sha256": "714962500c5892a5467be2d2bf82127ec3798e3e63dbe03ceadbd0f2553eeb7f"
+}

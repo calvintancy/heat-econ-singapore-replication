@@ -1,0 +1,17 @@
+Crisis sensitivity va12/all_eligible: 12 units × 29 periods
+Crisis sensitivity va12/event_dates_excluded: 12 units × 19 periods
+Crisis sensitivity va12/strict_growth_window_clean: 12 units × 17 periods
+Crisis sensitivity va12-matched/all_eligible: 12 units × 29 periods
+Crisis sensitivity va12-matched/event_dates_excluded: 12 units × 19 periods
+Crisis sensitivity va12-matched/strict_growth_window_clean: 12 units × 17 periods
+Crisis sensitivity va20/all_eligible: 20 units × 29 periods
+Crisis sensitivity va20/event_dates_excluded: 20 units × 19 periods
+Crisis sensitivity va20/strict_growth_window_clean: 20 units × 17 periods
+{
+  "status": "estimated_not_yet_independently_verified",
+  "contexts": 3,
+  "samples": 9,
+  "requested_specs": 750,
+  "native_fits": 750,
+  "unavailable_specs": 0
+}

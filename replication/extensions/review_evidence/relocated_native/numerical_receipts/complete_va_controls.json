@@ -1,0 +1,287 @@
+{
+  "status": "passed",
+  "scope": "Independent raw VA/dwellings, raw NEA wind/PM coverage and climate, calendar masks, named full-X/Patsy span, QR, CR1/DK/HAC, beta+delta, covariance cross terms, joint ranks/Holm and native receipts; no producer imports or causal/stationarity claim",
+  "contexts": 3,
+  "samples": 9,
+  "native_fits": 750,
+  "independent_designs": 150,
+  "selected_covariance_cells": 69015,
+  "joint_tests": 180,
+  "unavailable_joint_tests": 90,
+  "native_receipt": {
+    "native_fits": 750,
+    "native_api_calls": 150,
+    "native_fit_log_sha256": "6c94393ec5ebe8afba6f6143c43014ae4cfb6ff7f7cd96871ef14809d6c2be8d",
+    "no_native_row_or_coefficient_drops": true
+  },
+  "raw_source_audit": {
+    "official_VA": {
+      "table_id": "M015662",
+      "source_cells": 4534,
+      "source_hashes_checked": 2
+    },
+    "extended_weather": {
+      "source_hashes_checked": 5,
+      "wind_halfhours": 155115,
+      "pm_invalid_rows": 1,
+      "pm_exact_duplicates": 0,
+      "pm_conflicting_timestamp_hours": 3,
+      "pm_retained_hours": 109577,
+      "monthly_eligible_90": 100,
+      "quarterly_eligible_90": 29
+    },
+    "coverage_90_quarters": 29,
+    "dwellings_sector": "1.3",
+    "raw_growth_bases": "Full raw calendar before every match/exclusion"
+  },
+  "protected_files_unchanged": 21,
+  "numerical_checks": {
+    "Raw NEA/full coverage weather temp_c": {
+      "values": 1276,
+      "maximum_absolute_error": 3.552713678800501e-15,
+      "maximum_scaled_error": 1.2874179078684657e-16,
+      "maximum_fraction_of_tolerance": 1.200417432237572e-05
+    },
+    "Raw NEA/full coverage weather rain_100mm": {
+      "values": 1276,
+      "maximum_absolute_error": 1.7763568394002505e-15,
+      "maximum_scaled_error": 3.0818126984737166e-16,
+      "maximum_fraction_of_tolerance": 1.8192921337569136e-05
+    },
+    "Raw NEA/full coverage weather rh_pct": {
+      "values": 1276,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Raw NEA/full coverage weather wind_mps": {
+      "values": 1276,
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "maximum_scaled_error": 4.05720029593697e-16,
+      "maximum_fraction_of_tolerance": 2.120192144304557e-05
+    },
+    "Raw NEA/full coverage weather pm25_10ug": {
+      "values": 1276,
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "maximum_scaled_error": 1.866787829549058e-16,
+      "maximum_fraction_of_tolerance": 6.961851776755735e-06
+    },
+    "Exact parent/sample numeric values": {
+      "values": 62040,
+      "maximum_absolute_error": 1.794120407794253e-13,
+      "maximum_scaled_error": 1.7089107906542722e-13,
+      "maximum_fraction_of_tolerance": 0.0034131372275449075
+    },
+    "Mask original calendar time": {
+      "values": 87,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Raw-formula Patsy FE / centered complete-cell span": {
+      "values": 506100,
+      "maximum_absolute_error": 2.4158453015843406e-13,
+      "maximum_scaled_error": 1.645729205109085e-14,
+      "maximum_fraction_of_tolerance": 2.441874069134455e-05
+    },
+    "Every full-control design cell": {
+      "values": 506100,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Every full-control outcome cell": {
+      "values": 42900,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "All native/nuisance coefficients": {
+      "values": 16535,
+      "maximum_absolute_error": 1.7598722479306161e-10,
+      "maximum_scaled_error": 9.158118707830454e-12,
+      "maximum_fraction_of_tolerance": 2.6736058361091082e-05
+    },
+    "Every native full-control residual": {
+      "values": 42900,
+      "maximum_absolute_error": 1.127773430198431e-10,
+      "maximum_scaled_error": 4.729372449219227e-11,
+      "maximum_fraction_of_tolerance": 0.0001231132912610115
+    },
+    "Exact model outcome mean": {
+      "values": 9705,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Exact model outcome SD": {
+      "values": 9705,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Every exported native FE/nuisance point": {
+      "values": 16535,
+      "maximum_absolute_error": 1.7598722479306161e-10,
+      "maximum_scaled_error": 9.158118707830454e-12,
+      "maximum_fraction_of_tolerance": 2.6736058361091082e-05
+    },
+    "Full five-weather/component covariance": {
+      "values": 69015,
+      "maximum_absolute_error": 5.289912223815918e-07,
+      "maximum_scaled_error": 1.371472303938008e-10,
+      "maximum_fraction_of_tolerance": 0.0002577302536463921
+    },
+    "Every selected HC0 numerical reference": {
+      "values": 69015,
+      "maximum_absolute_error": 1.1012889444828033e-07,
+      "maximum_scaled_error": 5.274196393215033e-10,
+      "maximum_fraction_of_tolerance": 0.0012013166564149565
+    },
+    "Method-specific full-control finite correction": {
+      "values": 69015,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Coefficient / SE / t p / CI": {
+      "values": 51375,
+      "maximum_absolute_error": 4.192770575173199e-10,
+      "maximum_scaled_error": 1.922728642966831e-11,
+      "maximum_fraction_of_tolerance": 3.4327855835880075e-05
+    },
+    "HC0 numerical scale reference": {
+      "values": 10275,
+      "maximum_absolute_error": 1.1012889444828033e-07,
+      "maximum_scaled_error": 4.656052192312765e-12,
+      "maximum_fraction_of_tolerance": 1.654471929623373e-05
+    },
+    "Numerical zero-variance threshold": {
+      "values": 10275,
+      "maximum_absolute_error": 1.1011428314305904e-19,
+      "maximum_scaled_error": 1.1011428314305904e-19,
+      "maximum_fraction_of_tolerance": 3.053182652229836e-05
+    },
+    "Full centered R squared": {
+      "values": 8955,
+      "maximum_absolute_error": 3.8191672047105385e-14,
+      "maximum_scaled_error": 3.8191672047105385e-14,
+      "maximum_fraction_of_tolerance": 5.5422646831022845e-05
+    },
+    "Temperature total variance cross term": {
+      "values": 1320,
+      "maximum_absolute_error": 9.313225746154785e-10,
+      "maximum_scaled_error": 6.591727220036003e-14,
+      "maximum_fraction_of_tolerance": 3.2900420342762786e-07
+    },
+    "H1 total joint covariance": {
+      "values": 20640,
+      "maximum_absolute_error": 1.525040715932846e-07,
+      "maximum_scaled_error": 6.35533276040921e-11,
+      "maximum_fraction_of_tolerance": 0.00018547597591992595
+    },
+    "H1 total joint HC0 reference": {
+      "values": 20640,
+      "maximum_absolute_error": 2.514570951461792e-08,
+      "maximum_scaled_error": 1.7764726972985854e-13,
+      "maximum_fraction_of_tolerance": 5.135550888670543e-07
+    },
+    "Every serialized component covariance": {
+      "values": 20640,
+      "maximum_absolute_error": 4.367902874946594e-07,
+      "maximum_scaled_error": 3.5626723793313886e-11,
+      "maximum_fraction_of_tolerance": 6.945902645167958e-06
+    },
+    "Every serialized component HC0 reference": {
+      "values": 20640,
+      "maximum_absolute_error": 3.119930624961853e-08,
+      "maximum_scaled_error": 8.314437062349822e-13,
+      "maximum_fraction_of_tolerance": 1.6303608994804778e-06
+    },
+    "Omnibus Wald statistic": {
+      "values": 90,
+      "maximum_absolute_error": 4.213070496916771e-05,
+      "maximum_scaled_error": 8.783538934095655e-09,
+      "maximum_fraction_of_tolerance": 0.0029237825834696088
+    },
+    "Omnibus F statistic": {
+      "values": 90,
+      "maximum_absolute_error": 2.217405523197158e-06,
+      "maximum_scaled_error": 8.78353892817021e-09,
+      "maximum_fraction_of_tolerance": 0.0029201348592460853
+    },
+    "Omnibus F p": {
+      "values": 90,
+      "maximum_absolute_error": 1.411038559622933e-14,
+      "maximum_scaled_error": 1.411038559622933e-14,
+      "maximum_fraction_of_tolerance": 7.054699706965983e-07
+    },
+    "Omnibus numerical rank scale": {
+      "values": 540,
+      "maximum_absolute_error": 5.774199962615967e-07,
+      "maximum_scaled_error": 2.2249265434265789e-13,
+      "maximum_fraction_of_tolerance": 1.1124632704196685e-07
+    },
+    "Pairwise slope difference": {
+      "values": 19320,
+      "maximum_absolute_error": 8.776623872108757e-11,
+      "maximum_scaled_error": 1.7002752491093545e-11,
+      "maximum_fraction_of_tolerance": 5.9252907615677935e-05
+    },
+    "Pairwise difference SE": {
+      "values": 19320,
+      "maximum_absolute_error": 2.0450485749279323e-10,
+      "maximum_scaled_error": 1.119254990717885e-11,
+      "maximum_fraction_of_tolerance": 5.305467233229237e-05
+    },
+    "Pairwise t p": {
+      "values": 19320,
+      "maximum_absolute_error": 3.846811758023705e-12,
+      "maximum_scaled_error": 3.846811758023705e-12,
+      "maximum_fraction_of_tolerance": 4.140324697858241e-05
+    },
+    "Pairwise confidence intervals": {
+      "values": 38640,
+      "maximum_absolute_error": 4.537952236205456e-10,
+      "maximum_scaled_error": 4.045557109842727e-10,
+      "maximum_fraction_of_tolerance": 0.0005865267526709
+    },
+    "All-pairs within-family Holm": {
+      "values": 19320,
+      "maximum_absolute_error": 1.5394574504057346e-11,
+      "maximum_scaled_error": 1.5394574504057346e-11,
+      "maximum_fraction_of_tolerance": 0.0001249329804089584
+    },
+    "Singleton correction identity": {
+      "values": 1320,
+      "maximum_absolute_error": 4.440892098500626e-16,
+      "maximum_scaled_error": 1.8376105235175007e-16,
+      "maximum_fraction_of_tolerance": 0.00012997732971221346
+    },
+    "Full-control joint separate covariance": {
+      "values": 20640,
+      "maximum_absolute_error": 5.271285772323608e-07,
+      "maximum_scaled_error": 6.504122028111618e-11,
+      "maximum_fraction_of_tolerance": 0.00014646559069752068
+    },
+    "Full-control joint separate HC0 reference": {
+      "values": 20640,
+      "maximum_absolute_error": 3.9537553675472736e-08,
+      "maximum_scaled_error": 9.945390702451341e-11,
+      "maximum_fraction_of_tolerance": 0.00012665232302763667
+    },
+    "Separate joint finite correction": {
+      "values": 20640,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Separate omnibus finite correction": {
+      "values": 90,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    }
+  },
+  "policy_sha256": "8cb60bcaa06d17bb5b6328bd799e9f226bacb3b7f6431ccc7f2fe795b0cf3548"
+}

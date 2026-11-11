@@ -77,7 +77,7 @@ def scatter(path: Path, beta: float, period: str) -> str:
     return "".join(parts)
 
 
-def build_iip_report() -> Path:
+def build_iip_report(*, markdown_only: bool = False, destination: Path | None = None) -> Path:
     summary = json.loads((ROOT / "data/processed/iip/data_checks.json").read_text())
     sections, cards, markdown = [], [], ["# Heat and manufacturing IIP: monthly and quarterly analysis\n"]
     for frequency, period, bandwidth in [("monthly", "month", 12), ("quarterly", "quarter", 4)]:
@@ -90,7 +90,7 @@ def build_iip_report() -> Path:
         title = frequency.capitalize()
         growth_label = "MoM" if frequency == "monthly" else "QoQ"
         cards.append(f'<div class="result-card"><span class="eyebrow">{growth_label} IIP log growth · six clusters</span><div class="big">{fmt(base.coefficient,2)}<small>growth log points /1°C</small></div><p>95% interval {interval(base)} · p = {html.escape(p_format(base.p_value))}</p><p><strong>{significance_label(base.p_value)}</strong></p><p class="muted">{base.start}–{base.end} · {int(base[f"n_{period}s"]):,} {period}s · {int(base.n_obs):,} observations</p></div>')
-        native_main, native_robustness = tables_for(folder / "regression_results.csv", f"{growth_label} IIP log growth (SA)", frequency, f"iip-{frequency}")
+        native_main, native_robustness = ("", "") if markdown_only else tables_for(folder / "regression_results.csv", f"{growth_label} IIP log growth (SA)", frequency, f"iip-{frequency}")
         sector = pd.read_csv(folder / "sector_slopes.csv").sort_values("coefficient")
         lag = json.loads((folder / "distributed_lag_sum.json").read_text())["sector_cluster"]
         checks = json.loads((folder / "estimation_checks.json").read_text())
@@ -117,13 +117,15 @@ def build_iip_report() -> Path:
     report = template.replace("__RESULT_CARDS__", "".join(cards)).replace("__FREQUENCY_SECTIONS__", "\n".join(sections))
     report = report.replace("__SOURCE_RECONCILIATION__", f"{summary['official_quarterly_reconciliation_cells']:,} published quarterly observations reconcile within {summary['official_quarterly_max_rounding_gap']:.6f} index points, consistent with source rounding.")
     path = OUT / "iip_results.html"
-    path.write_text(report)
+    if not markdown_only:path.write_text(report)
     markdown += ["\n## Construction and interpretation\n", "Current linked IIP, 2025=100, SSIC 2025. Broad six-cluster levels begin1992Jan and detailed18-industry levels begin1996Jan. Monthly SA and NSA: SingStat M355382/M355381. Published quarterly NSA: M355391. Quarterly SA is constructed as the arithmetic average of monthly SA levels; growth is taken after aggregation, not averaged from monthly growth. All retained quarters contain three months. Weather uses the existing NEA Changi mean temperature, rainfall total and mean humidity, aggregated with the VA project's rules. Monthly controls use their published monthly readings.\n",
-                     "Year and industry-specific season effects preserve within-year national temperature variation. Inference uses12monthly or4quarterly Bartlett lags, with24/8lag checks and contemporaneous period-clustered comparisons. P-values use t(T−1); finite-sample factor T/(T−1)×(N−1)/(N−K). These are conditional associations with potential quarterly/monthly macro confounding; not causal heat impacts or permanent climate damage. The equal-cluster panel is distinct from the official aggregate manufacturing IIP. Growth coefficients at different frequencies are not directly comparable.\n",
+                     "Year and industry-specific season effects preserve within-year national temperature variation. The common-slope headline/model rows use sector-cluster CR1 across six manufacturing clusters, with t(5) reference and G/(G−1)×(N−1)/(N−K), counting the full design. Calendar Bartlett comparisons use12monthly or4quarterly lags, with24/8lag checks, approximate t(T−1), and factor T/(T−1)×(N−1)/(N−K). Individual-sector slopes and the official single national index use calendar inference as labelled; a coefficient supported by one sector cannot obtain reliable conventional sector-cluster inference. These are conditional associations with potential quarterly/monthly macro confounding; not causal heat impacts or permanent climate damage. The equal-cluster panel is distinct from the official aggregate manufacturing IIP. Growth coefficients at different frequencies are not directly comparable.\n",
                      "\nSources: https://tablebuilder.singstat.gov.sg/table/TS/M355381 ; https://tablebuilder.singstat.gov.sg/table/TS/M355382 ; https://tablebuilder.singstat.gov.sg/table/TS/M355391 ; https://www.edb.gov.sg/en/manufacturing-statistics .\n"]
-    (OUT / "iip_results.md").write_text("\n".join(markdown))
-    print(f"Wrote {path.relative_to(ROOT)}")
-    return path
+    note_path=destination or OUT / "iip_results.md"
+    note_path.write_text("\n".join(markdown))
+    result=note_path if markdown_only else path
+    print(f"Wrote {result.relative_to(ROOT)}")
+    return result
 
 
 if __name__ == "__main__":

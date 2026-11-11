@@ -1,0 +1,7 @@
+Annual crisis independent QR / covariance audit: 60/414 designs
+Annual crisis independent QR / covariance audit: 120/414 designs
+Annual crisis independent QR / covariance audit: 180/414 designs
+Annual crisis independent QR / covariance audit: 240/414 designs
+Annual crisis independent QR / covariance audit: 300/414 designs
+Annual crisis independent QR / covariance audit: 360/414 designs
+Annual crisis independent verification passed: 14 contexts, 42 samples, 1656 native fits.

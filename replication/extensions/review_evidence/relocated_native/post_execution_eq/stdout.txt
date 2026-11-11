@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "scope": "354 final arrival-rigour requests; model arrays, actual samples, semantic exports/statuses and all319 native ledger rows",
+  "comparison_policy": "Exact dtype/shape/array bytes; exact canonical CSV cells except separately-bound provenance hash fields. No numeric tolerance, baseline refresh, model refit or source reseal.",
+  "baseline_sha256": "2086d5fd7b73c19c4e8d308da01bb2613f4b24341a20b22aa40c561fcba210e1",
+  "verifier_source_sha256": "2842268151076db451464e1b6fa42f91e12d5f6e6742666a71baaf541675c03d",
+  "semantic_files_checked": 534,
+  "npz_arrays_checked": 8338,
+  "counts": {
+    "monthly": {
+      "requests": 270,
+      "native_fits": 260,
+      "statuses": {
+        "estimated": 260,
+        "unavailable: underidentified or rank-deficient design": 10
+      }
+    },
+    "annual": {
+      "requests": 30,
+      "native_fits": 15,
+      "statuses": {
+        "estimated": 15,
+        "unavailable: underidentified or rank-deficient design": 15
+      }
+    },
+    "ppml": {
+      "requests": 30,
+      "native_fits": 20,
+      "statuses": {
+        "estimated": 30
+      }
+    },
+    "origin_year": {
+      "requests": 24,
+      "native_fits": 24,
+      "statuses": {
+        "estimated": 24
+      }
+    }
+  },
+  "source_bindings_checked": 18,
+  "guard_revision_sha256": "ffd65f514a0e67cd993c6247058bf32381357bdd6c4777b6fbea33f77369691a",
+  "guard_verifier_sha256": "24edd443f387611494d73d13a4f9528380ca6af68a9a4e13e1e238a34e4c18c4",
+  "numeric_or_status_differences": [],
+  "native_fits_executed_by_this_verifier": 0,
+  "claim": "Current arrival model/sample/array/export/native-ledger semantics exactly match the immutable reviewed generation. Explicit guard-only source revisions preserve every other AST node.",
+  "limits": "A later pass establishes semantic identity with the reviewed generation, not that the AI reviewed later report/driver/privacy code or that inference/causality is validated."
+}

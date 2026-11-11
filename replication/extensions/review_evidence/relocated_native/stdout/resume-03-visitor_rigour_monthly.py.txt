@@ -1,0 +1,302 @@
+Visitor monthly fit aggregate__y_mom_nsa__long__all_eligible__common__own_current: G1 T207 K35, estimated, timeDF172
+Visitor monthly fit aggregate__y_mom_nsa__long__event_dates_excluded__common__own_current: G1 T165 K30, estimated, timeDF135
+Visitor monthly fit aggregate__y_mom_nsa__long__strict_growth_window_clean__common__own_current: G1 T141 K28, estimated, timeDF113
+Visitor monthly fit aggregate__y_mom_nsa__long__all_eligible__common__benchmark: G1 T201 K35, estimated, timeDF166
+Visitor monthly fit aggregate__y_mom_nsa__long__all_eligible__common__distributed: G1 T201 K41, estimated, timeDF160
+Visitor monthly fit aggregate__y_mom_nsa__long__all_eligible__common__dynamic: G1 T201 K44, estimated, timeDF157
+Visitor monthly fit aggregate__y_mom_nsa__long__event_dates_excluded__common__benchmark: G1 T165 K30, estimated, timeDF135
+Visitor monthly fit aggregate__y_mom_nsa__long__event_dates_excluded__common__distributed: G1 T165 K36, estimated, timeDF129
+Visitor monthly fit aggregate__y_mom_nsa__long__event_dates_excluded__common__dynamic: G1 T165 K39, estimated, timeDF126
+Visitor monthly fit aggregate__y_mom_nsa__long__strict_growth_window_clean__common__benchmark: G1 T157 K30, estimated, timeDF127
+Visitor monthly fit aggregate__y_mom_nsa__long__strict_growth_window_clean__common__distributed: G1 T157 K36, estimated, timeDF121
+Visitor monthly fit aggregate__y_mom_nsa__long__strict_growth_window_clean__common__dynamic: G1 T157 K39, estimated, timeDF118
+/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/visitor_rigour_monthly.py:159: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  coverage = weather_basis.eligible_90.fillna(False).astype(bool) if control_set == "full" else pd.Series(True, index=dates)
+Visitor monthly fit aggregate__y_mom_nsa__full__all_eligible__common__own_current: G1 T85 K27, estimated, timeDF58
+Visitor monthly fit aggregate__y_mom_nsa__full__event_dates_excluded__common__own_current: G1 T66 K24, estimated, timeDF42
+Visitor monthly fit aggregate__y_mom_nsa__full__strict_growth_window_clean__common__own_current: G1 T56 K23, estimated, timeDF33
+/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/visitor_rigour_monthly.py:159: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  coverage = weather_basis.eligible_90.fillna(False).astype(bool) if control_set == "full" else pd.Series(True, index=dates)
+Visitor monthly fit aggregate__y_mom_nsa__full__all_eligible__common__benchmark: G1 T82 K27, estimated, timeDF55
+Visitor monthly fit aggregate__y_mom_nsa__full__all_eligible__common__distributed: G1 T82 K33, estimated, timeDF49
+Visitor monthly fit aggregate__y_mom_nsa__full__all_eligible__common__dynamic: G1 T82 K36, estimated, timeDF46
+Visitor monthly fit aggregate__y_mom_nsa__full__event_dates_excluded__common__benchmark: G1 T66 K24, estimated, timeDF42
+Visitor monthly fit aggregate__y_mom_nsa__full__event_dates_excluded__common__distributed: G1 T66 K30, estimated, timeDF36
+Visitor monthly fit aggregate__y_mom_nsa__full__event_dates_excluded__common__dynamic: G1 T66 K33, estimated, timeDF33
+Visitor monthly fit aggregate__y_mom_nsa__full__strict_growth_window_clean__common__benchmark: G1 T64 K24, estimated, timeDF40
+Visitor monthly fit aggregate__y_mom_nsa__full__strict_growth_window_clean__common__distributed: G1 T64 K30, estimated, timeDF34
+Visitor monthly fit aggregate__y_mom_nsa__full__strict_growth_window_clean__common__dynamic: G1 T64 K33, estimated, timeDF31
+Visitor monthly fit aggregate__y_yoy_nsa__long__all_eligible__common__own_current: G1 T189 K34, estimated, timeDF155
+Visitor monthly fit aggregate__y_yoy_nsa__long__event_dates_excluded__common__own_current: G1 T165 K30, estimated, timeDF135
+Visitor monthly fit aggregate__y_yoy_nsa__long__strict_growth_window_clean__common__own_current: G1 T141 K28, estimated, timeDF113
+Visitor monthly fit aggregate__y_yoy_nsa__long__all_eligible__common__benchmark: G1 T161 K31, estimated, timeDF130
+Visitor monthly fit aggregate__y_yoy_nsa__long__all_eligible__common__distributed: G1 T161 K55, estimated, timeDF106
+Visitor monthly fit aggregate__y_yoy_nsa__long__all_eligible__common__dynamic: G1 T161 K67, estimated, timeDF94
+Visitor monthly fit aggregate__y_yoy_nsa__long__all_eligible__common__two_channel: G1 T161 K44, estimated, timeDF117
+Visitor monthly fit aggregate__y_yoy_nsa__long__event_dates_excluded__common__benchmark: G1 T158 K30, estimated, timeDF128
+Visitor monthly fit aggregate__y_yoy_nsa__long__event_dates_excluded__common__distributed: G1 T158 K54, estimated, timeDF104
+Visitor monthly fit aggregate__y_yoy_nsa__long__event_dates_excluded__common__dynamic: G1 T158 K66, estimated, timeDF92
+Visitor monthly fit aggregate__y_yoy_nsa__long__event_dates_excluded__common__two_channel: G1 T158 K43, estimated, timeDF115
+Visitor monthly fit aggregate__y_yoy_nsa__long__strict_growth_window_clean__common__benchmark: G1 T117 K26, estimated, timeDF91
+Visitor monthly fit aggregate__y_yoy_nsa__long__strict_growth_window_clean__common__distributed: G1 T117 K50, estimated, timeDF67
+Visitor monthly fit aggregate__y_yoy_nsa__long__strict_growth_window_clean__common__dynamic: G1 T117 K62, estimated, timeDF55
+Visitor monthly fit aggregate__y_yoy_nsa__long__strict_growth_window_clean__common__two_channel: G1 T117 K39, estimated, timeDF78
+/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/visitor_rigour_monthly.py:159: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  coverage = weather_basis.eligible_90.fillna(False).astype(bool) if control_set == "full" else pd.Series(True, index=dates)
+Visitor monthly fit aggregate__y_yoy_nsa__full__all_eligible__common__own_current: G1 T78 K27, estimated, timeDF51
+Visitor monthly fit aggregate__y_yoy_nsa__full__event_dates_excluded__common__own_current: G1 T66 K24, estimated, timeDF42
+Visitor monthly fit aggregate__y_yoy_nsa__full__strict_growth_window_clean__common__own_current: G1 T56 K23, estimated, timeDF33
+/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/visitor_rigour_monthly.py:159: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  coverage = weather_basis.eligible_90.fillna(False).astype(bool) if control_set == "full" else pd.Series(True, index=dates)
+Visitor monthly fit aggregate__y_yoy_nsa__full__all_eligible__common__benchmark: G1 T64 K25, estimated, timeDF39
+Visitor monthly fit aggregate__y_yoy_nsa__full__all_eligible__common__distributed: G1 T64 K49, estimated, timeDF15
+Visitor monthly fit aggregate__y_yoy_nsa__full__all_eligible__common__dynamic: G1 T64 K61, estimated, timeDF3
+Visitor monthly fit aggregate__y_yoy_nsa__full__all_eligible__common__two_channel: G1 T64 K38, estimated, timeDF26
+Visitor monthly fit aggregate__y_yoy_nsa__full__event_dates_excluded__common__benchmark: G1 T61 K24, estimated, timeDF37
+Visitor monthly fit aggregate__y_yoy_nsa__full__event_dates_excluded__common__distributed: G1 T61 K48, estimated, timeDF13
+Visitor monthly fit aggregate__y_yoy_nsa__full__event_dates_excluded__common__dynamic: G1 T61 K60, estimated, timeDF1
+Visitor monthly fit aggregate__y_yoy_nsa__full__event_dates_excluded__common__two_channel: G1 T61 K37, estimated, timeDF24
+Visitor monthly fit aggregate__y_yoy_nsa__full__strict_growth_window_clean__common__benchmark: G1 T44 K22, estimated, timeDF22
+Visitor monthly fit aggregate__y_yoy_nsa__full__strict_growth_window_clean__common__distributed: G1 T44 K46, unavailable: underidentified or rank-deficient design, timeDF0
+Visitor monthly fit aggregate__y_yoy_nsa__full__strict_growth_window_clean__common__dynamic: G1 T44 K58, unavailable: underidentified or rank-deficient design, timeDF0
+Visitor monthly fit aggregate__y_yoy_nsa__full__strict_growth_window_clean__common__two_channel: G1 T44 K35, estimated, timeDF9
+Visitor monthly fit region__y_mom_nsa__long__all_eligible__common__own_current: G9 T207 K131, estimated, timeDF172
+Visitor monthly fit region__y_mom_nsa__long__all_eligible__H1__own_current: G9 T207 K139, estimated, timeDF172
+Visitor monthly fit region__y_mom_nsa__long__event_dates_excluded__common__own_current: G9 T165 K126, estimated, timeDF135
+Visitor monthly fit region__y_mom_nsa__long__event_dates_excluded__H1__own_current: G9 T165 K134, estimated, timeDF135
+Visitor monthly fit region__y_mom_nsa__long__strict_growth_window_clean__common__own_current: G9 T141 K124, estimated, timeDF113
+Visitor monthly fit region__y_mom_nsa__long__strict_growth_window_clean__H1__own_current: G9 T141 K132, estimated, timeDF113
+Visitor monthly fit region__y_mom_nsa__long__all_eligible__common__benchmark: G9 T201 K131, estimated, timeDF166
+Visitor monthly fit region__y_mom_nsa__long__all_eligible__H1__benchmark: G9 T201 K139, estimated, timeDF166
+Visitor monthly fit region__y_mom_nsa__long__all_eligible__common__distributed: G9 T201 K137, estimated, timeDF160
+Visitor monthly fit region__y_mom_nsa__long__all_eligible__H1__distributed: G9 T201 K169, estimated, timeDF160
+Visitor monthly fit region__y_mom_nsa__long__all_eligible__common__dynamic: G9 T201 K140, estimated, timeDF157
+Visitor monthly fit region__y_mom_nsa__long__all_eligible__H1__dynamic: G9 T201 K172, estimated, timeDF157
+Visitor monthly fit region__y_mom_nsa__long__event_dates_excluded__common__benchmark: G9 T165 K126, estimated, timeDF135
+Visitor monthly fit region__y_mom_nsa__long__event_dates_excluded__H1__benchmark: G9 T165 K134, estimated, timeDF135
+Visitor monthly fit region__y_mom_nsa__long__event_dates_excluded__common__distributed: G9 T165 K132, estimated, timeDF129
+Visitor monthly fit region__y_mom_nsa__long__event_dates_excluded__H1__distributed: G9 T165 K164, estimated, timeDF129
+Visitor monthly fit region__y_mom_nsa__long__event_dates_excluded__common__dynamic: G9 T165 K135, estimated, timeDF126
+Visitor monthly fit region__y_mom_nsa__long__event_dates_excluded__H1__dynamic: G9 T165 K167, estimated, timeDF126
+Visitor monthly fit region__y_mom_nsa__long__strict_growth_window_clean__common__benchmark: G9 T157 K126, estimated, timeDF127
+Visitor monthly fit region__y_mom_nsa__long__strict_growth_window_clean__H1__benchmark: G9 T157 K134, estimated, timeDF127
+Visitor monthly fit region__y_mom_nsa__long__strict_growth_window_clean__common__distributed: G9 T157 K132, estimated, timeDF121
+Visitor monthly fit region__y_mom_nsa__long__strict_growth_window_clean__H1__distributed: G9 T157 K164, estimated, timeDF121
+Visitor monthly fit region__y_mom_nsa__long__strict_growth_window_clean__common__dynamic: G9 T157 K135, estimated, timeDF118
+Visitor monthly fit region__y_mom_nsa__long__strict_growth_window_clean__H1__dynamic: G9 T157 K167, estimated, timeDF118
+/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/visitor_rigour_monthly.py:159: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  coverage = weather_basis.eligible_90.fillna(False).astype(bool) if control_set == "full" else pd.Series(True, index=dates)
+Visitor monthly fit region__y_mom_nsa__full__all_eligible__common__own_current: G9 T85 K123, estimated, timeDF58
+Visitor monthly fit region__y_mom_nsa__full__all_eligible__H1__own_current: G9 T85 K131, estimated, timeDF58
+Visitor monthly fit region__y_mom_nsa__full__event_dates_excluded__common__own_current: G9 T66 K120, estimated, timeDF42
+Visitor monthly fit region__y_mom_nsa__full__event_dates_excluded__H1__own_current: G9 T66 K128, estimated, timeDF42
+Visitor monthly fit region__y_mom_nsa__full__strict_growth_window_clean__common__own_current: G9 T56 K119, estimated, timeDF33
+Visitor monthly fit region__y_mom_nsa__full__strict_growth_window_clean__H1__own_current: G9 T56 K127, estimated, timeDF33
+/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/visitor_rigour_monthly.py:159: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  coverage = weather_basis.eligible_90.fillna(False).astype(bool) if control_set == "full" else pd.Series(True, index=dates)
+Visitor monthly fit region__y_mom_nsa__full__all_eligible__common__benchmark: G9 T82 K123, estimated, timeDF55
+Visitor monthly fit region__y_mom_nsa__full__all_eligible__H1__benchmark: G9 T82 K131, estimated, timeDF55
+Visitor monthly fit region__y_mom_nsa__full__all_eligible__common__distributed: G9 T82 K129, estimated, timeDF49
+Visitor monthly fit region__y_mom_nsa__full__all_eligible__H1__distributed: G9 T82 K161, estimated, timeDF49
+Visitor monthly fit region__y_mom_nsa__full__all_eligible__common__dynamic: G9 T82 K132, estimated, timeDF46
+Visitor monthly fit region__y_mom_nsa__full__all_eligible__H1__dynamic: G9 T82 K164, estimated, timeDF46
+Visitor monthly fit region__y_mom_nsa__full__event_dates_excluded__common__benchmark: G9 T66 K120, estimated, timeDF42
+Visitor monthly fit region__y_mom_nsa__full__event_dates_excluded__H1__benchmark: G9 T66 K128, estimated, timeDF42
+Visitor monthly fit region__y_mom_nsa__full__event_dates_excluded__common__distributed: G9 T66 K126, estimated, timeDF36
+Visitor monthly fit region__y_mom_nsa__full__event_dates_excluded__H1__distributed: G9 T66 K158, estimated, timeDF36
+Visitor monthly fit region__y_mom_nsa__full__event_dates_excluded__common__dynamic: G9 T66 K129, estimated, timeDF33
+Visitor monthly fit region__y_mom_nsa__full__event_dates_excluded__H1__dynamic: G9 T66 K161, estimated, timeDF33
+Visitor monthly fit region__y_mom_nsa__full__strict_growth_window_clean__common__benchmark: G9 T64 K120, estimated, timeDF40
+Visitor monthly fit region__y_mom_nsa__full__strict_growth_window_clean__H1__benchmark: G9 T64 K128, estimated, timeDF40
+Visitor monthly fit region__y_mom_nsa__full__strict_growth_window_clean__common__distributed: G9 T64 K126, estimated, timeDF34
+Visitor monthly fit region__y_mom_nsa__full__strict_growth_window_clean__H1__distributed: G9 T64 K158, estimated, timeDF34
+Visitor monthly fit region__y_mom_nsa__full__strict_growth_window_clean__common__dynamic: G9 T64 K129, estimated, timeDF31
+Visitor monthly fit region__y_mom_nsa__full__strict_growth_window_clean__H1__dynamic: G9 T64 K161, estimated, timeDF31
+Visitor monthly fit region__y_yoy_nsa__long__all_eligible__common__own_current: G9 T189 K130, estimated, timeDF155
+Visitor monthly fit region__y_yoy_nsa__long__all_eligible__H1__own_current: G9 T189 K138, estimated, timeDF155
+Visitor monthly fit region__y_yoy_nsa__long__event_dates_excluded__common__own_current: G9 T165 K126, estimated, timeDF135
+Visitor monthly fit region__y_yoy_nsa__long__event_dates_excluded__H1__own_current: G9 T165 K134, estimated, timeDF135
+Visitor monthly fit region__y_yoy_nsa__long__strict_growth_window_clean__common__own_current: G9 T141 K124, estimated, timeDF113
+Visitor monthly fit region__y_yoy_nsa__long__strict_growth_window_clean__H1__own_current: G9 T141 K132, estimated, timeDF113
+Visitor monthly fit region__y_yoy_nsa__long__all_eligible__common__benchmark: G9 T161 K127, estimated, timeDF130
+Visitor monthly fit region__y_yoy_nsa__long__all_eligible__H1__benchmark: G9 T161 K135, estimated, timeDF130
+Visitor monthly fit region__y_yoy_nsa__long__all_eligible__common__distributed: G9 T161 K151, estimated, timeDF106
+Visitor monthly fit region__y_yoy_nsa__long__all_eligible__H1__distributed: G9 T161 K255, estimated, timeDF106
+Visitor monthly fit region__y_yoy_nsa__long__all_eligible__common__dynamic: G9 T161 K163, estimated, timeDF94
+Visitor monthly fit region__y_yoy_nsa__long__all_eligible__H1__dynamic: G9 T161 K267, estimated, timeDF94
+Visitor monthly fit region__y_yoy_nsa__long__all_eligible__common__two_channel: G9 T161 K140, estimated, timeDF117
+Visitor monthly fit region__y_yoy_nsa__long__all_eligible__H1__two_channel: G9 T161 K156, estimated, timeDF117
+Visitor monthly fit region__y_yoy_nsa__long__event_dates_excluded__common__benchmark: G9 T158 K126, estimated, timeDF128
+Visitor monthly fit region__y_yoy_nsa__long__event_dates_excluded__H1__benchmark: G9 T158 K134, estimated, timeDF128
+Visitor monthly fit region__y_yoy_nsa__long__event_dates_excluded__common__distributed: G9 T158 K150, estimated, timeDF104
+Visitor monthly fit region__y_yoy_nsa__long__event_dates_excluded__H1__distributed: G9 T158 K254, estimated, timeDF104
+Visitor monthly fit region__y_yoy_nsa__long__event_dates_excluded__common__dynamic: G9 T158 K162, estimated, timeDF92
+Visitor monthly fit region__y_yoy_nsa__long__event_dates_excluded__H1__dynamic: G9 T158 K266, estimated, timeDF92
+Visitor monthly fit region__y_yoy_nsa__long__event_dates_excluded__common__two_channel: G9 T158 K139, estimated, timeDF115
+Visitor monthly fit region__y_yoy_nsa__long__event_dates_excluded__H1__two_channel: G9 T158 K155, estimated, timeDF115
+Visitor monthly fit region__y_yoy_nsa__long__strict_growth_window_clean__common__benchmark: G9 T117 K122, estimated, timeDF91
+Visitor monthly fit region__y_yoy_nsa__long__strict_growth_window_clean__H1__benchmark: G9 T117 K130, estimated, timeDF91
+Visitor monthly fit region__y_yoy_nsa__long__strict_growth_window_clean__common__distributed: G9 T117 K146, estimated, timeDF67
+Visitor monthly fit region__y_yoy_nsa__long__strict_growth_window_clean__H1__distributed: G9 T117 K250, estimated, timeDF67
+Visitor monthly fit region__y_yoy_nsa__long__strict_growth_window_clean__common__dynamic: G9 T117 K158, estimated, timeDF55
+Visitor monthly fit region__y_yoy_nsa__long__strict_growth_window_clean__H1__dynamic: G9 T117 K262, estimated, timeDF55
+Visitor monthly fit region__y_yoy_nsa__long__strict_growth_window_clean__common__two_channel: G9 T117 K135, estimated, timeDF78
+Visitor monthly fit region__y_yoy_nsa__long__strict_growth_window_clean__H1__two_channel: G9 T117 K151, estimated, timeDF78
+/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/visitor_rigour_monthly.py:159: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  coverage = weather_basis.eligible_90.fillna(False).astype(bool) if control_set == "full" else pd.Series(True, index=dates)
+Visitor monthly fit region__y_yoy_nsa__full__all_eligible__common__own_current: G9 T78 K123, estimated, timeDF51
+Visitor monthly fit region__y_yoy_nsa__full__all_eligible__H1__own_current: G9 T78 K131, estimated, timeDF51
+Visitor monthly fit region__y_yoy_nsa__full__event_dates_excluded__common__own_current: G9 T66 K120, estimated, timeDF42
+Visitor monthly fit region__y_yoy_nsa__full__event_dates_excluded__H1__own_current: G9 T66 K128, estimated, timeDF42
+Visitor monthly fit region__y_yoy_nsa__full__strict_growth_window_clean__common__own_current: G9 T56 K119, estimated, timeDF33
+Visitor monthly fit region__y_yoy_nsa__full__strict_growth_window_clean__H1__own_current: G9 T56 K127, estimated, timeDF33
+/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/visitor_rigour_monthly.py:159: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  coverage = weather_basis.eligible_90.fillna(False).astype(bool) if control_set == "full" else pd.Series(True, index=dates)
+Visitor monthly fit region__y_yoy_nsa__full__all_eligible__common__benchmark: G9 T64 K121, estimated, timeDF39
+Visitor monthly fit region__y_yoy_nsa__full__all_eligible__H1__benchmark: G9 T64 K129, estimated, timeDF39
+Visitor monthly fit region__y_yoy_nsa__full__all_eligible__common__distributed: G9 T64 K145, estimated, timeDF15
+Visitor monthly fit region__y_yoy_nsa__full__all_eligible__H1__distributed: G9 T64 K249, estimated, timeDF15
+Visitor monthly fit region__y_yoy_nsa__full__all_eligible__common__dynamic: G9 T64 K157, estimated, timeDF3
+Visitor monthly fit region__y_yoy_nsa__full__all_eligible__H1__dynamic: G9 T64 K261, estimated, timeDF3
+Visitor monthly fit region__y_yoy_nsa__full__all_eligible__common__two_channel: G9 T64 K134, estimated, timeDF26
+Visitor monthly fit region__y_yoy_nsa__full__all_eligible__H1__two_channel: G9 T64 K150, estimated, timeDF26
+Visitor monthly fit region__y_yoy_nsa__full__event_dates_excluded__common__benchmark: G9 T61 K120, estimated, timeDF37
+Visitor monthly fit region__y_yoy_nsa__full__event_dates_excluded__H1__benchmark: G9 T61 K128, estimated, timeDF37
+Visitor monthly fit region__y_yoy_nsa__full__event_dates_excluded__common__distributed: G9 T61 K144, estimated, timeDF13
+Visitor monthly fit region__y_yoy_nsa__full__event_dates_excluded__H1__distributed: G9 T61 K248, estimated, timeDF13
+Visitor monthly fit region__y_yoy_nsa__full__event_dates_excluded__common__dynamic: G9 T61 K156, estimated, timeDF1
+Visitor monthly fit region__y_yoy_nsa__full__event_dates_excluded__H1__dynamic: G9 T61 K260, estimated, timeDF1
+Visitor monthly fit region__y_yoy_nsa__full__event_dates_excluded__common__two_channel: G9 T61 K133, estimated, timeDF24
+Visitor monthly fit region__y_yoy_nsa__full__event_dates_excluded__H1__two_channel: G9 T61 K149, estimated, timeDF24
+Visitor monthly fit region__y_yoy_nsa__full__strict_growth_window_clean__common__benchmark: G9 T44 K118, estimated, timeDF22
+Visitor monthly fit region__y_yoy_nsa__full__strict_growth_window_clean__H1__benchmark: G9 T44 K126, estimated, timeDF22
+Visitor monthly fit region__y_yoy_nsa__full__strict_growth_window_clean__common__distributed: G9 T44 K142, unavailable: underidentified or rank-deficient design, timeDF0
+Visitor monthly fit region__y_yoy_nsa__full__strict_growth_window_clean__H1__distributed: G9 T44 K246, unavailable: underidentified or rank-deficient design, timeDF0
+Visitor monthly fit region__y_yoy_nsa__full__strict_growth_window_clean__common__dynamic: G9 T44 K154, unavailable: underidentified or rank-deficient design, timeDF0
+Visitor monthly fit region__y_yoy_nsa__full__strict_growth_window_clean__H1__dynamic: G9 T44 K258, unavailable: underidentified or rank-deficient design, timeDF0
+Visitor monthly fit region__y_yoy_nsa__full__strict_growth_window_clean__common__two_channel: G9 T44 K131, estimated, timeDF9
+Visitor monthly fit region__y_yoy_nsa__full__strict_growth_window_clean__H1__two_channel: G9 T44 K147, estimated, timeDF9
+Visitor monthly fit country__y_mom_nsa__long__all_eligible__common__own_current: G42 T207 K527, estimated, timeDF172
+Visitor monthly fit country__y_mom_nsa__long__all_eligible__H1__own_current: G42 T207 K568, estimated, timeDF172
+Visitor monthly fit country__y_mom_nsa__long__event_dates_excluded__common__own_current: G42 T165 K522, estimated, timeDF135
+Visitor monthly fit country__y_mom_nsa__long__event_dates_excluded__H1__own_current: G42 T165 K563, estimated, timeDF135
+Visitor monthly fit country__y_mom_nsa__long__strict_growth_window_clean__common__own_current: G42 T141 K520, estimated, timeDF113
+Visitor monthly fit country__y_mom_nsa__long__strict_growth_window_clean__H1__own_current: G42 T141 K561, estimated, timeDF113
+Visitor monthly fit country__y_mom_nsa__long__all_eligible__common__benchmark: G42 T201 K527, estimated, timeDF166
+Visitor monthly fit country__y_mom_nsa__long__all_eligible__H1__benchmark: G42 T201 K568, estimated, timeDF166
+Visitor monthly fit country__y_mom_nsa__long__all_eligible__common__distributed: G42 T201 K533, estimated, timeDF160
+Visitor monthly fit country__y_mom_nsa__long__all_eligible__H1__distributed: G42 T201 K697, estimated, timeDF160
+Visitor monthly fit country__y_mom_nsa__long__all_eligible__common__dynamic: G42 T201 K536, estimated, timeDF157
+Visitor monthly fit country__y_mom_nsa__long__all_eligible__H1__dynamic: G42 T201 K700, estimated, timeDF157
+Visitor monthly fit country__y_mom_nsa__long__event_dates_excluded__common__benchmark: G42 T165 K522, estimated, timeDF135
+Visitor monthly fit country__y_mom_nsa__long__event_dates_excluded__H1__benchmark: G42 T165 K563, estimated, timeDF135
+Visitor monthly fit country__y_mom_nsa__long__event_dates_excluded__common__distributed: G42 T165 K528, estimated, timeDF129
+Visitor monthly fit country__y_mom_nsa__long__event_dates_excluded__H1__distributed: G42 T165 K692, estimated, timeDF129
+Visitor monthly fit country__y_mom_nsa__long__event_dates_excluded__common__dynamic: G42 T165 K531, estimated, timeDF126
+Visitor monthly fit country__y_mom_nsa__long__event_dates_excluded__H1__dynamic: G42 T165 K695, estimated, timeDF126
+Visitor monthly fit country__y_mom_nsa__long__strict_growth_window_clean__common__benchmark: G42 T157 K522, estimated, timeDF127
+Visitor monthly fit country__y_mom_nsa__long__strict_growth_window_clean__H1__benchmark: G42 T157 K563, estimated, timeDF127
+Visitor monthly fit country__y_mom_nsa__long__strict_growth_window_clean__common__distributed: G42 T157 K528, estimated, timeDF121
+Visitor monthly fit country__y_mom_nsa__long__strict_growth_window_clean__H1__distributed: G42 T157 K692, estimated, timeDF121
+Visitor monthly fit country__y_mom_nsa__long__strict_growth_window_clean__common__dynamic: G42 T157 K531, estimated, timeDF118
+Visitor monthly fit country__y_mom_nsa__long__strict_growth_window_clean__H1__dynamic: G42 T157 K695, estimated, timeDF118
+/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/visitor_rigour_monthly.py:159: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  coverage = weather_basis.eligible_90.fillna(False).astype(bool) if control_set == "full" else pd.Series(True, index=dates)
+Visitor monthly fit country__y_mom_nsa__full__all_eligible__common__own_current: G42 T85 K519, estimated, timeDF58
+Visitor monthly fit country__y_mom_nsa__full__all_eligible__H1__own_current: G42 T85 K560, estimated, timeDF58
+Visitor monthly fit country__y_mom_nsa__full__event_dates_excluded__common__own_current: G42 T66 K516, estimated, timeDF42
+Visitor monthly fit country__y_mom_nsa__full__event_dates_excluded__H1__own_current: G42 T66 K557, estimated, timeDF42
+Visitor monthly fit country__y_mom_nsa__full__strict_growth_window_clean__common__own_current: G42 T56 K515, estimated, timeDF33
+Visitor monthly fit country__y_mom_nsa__full__strict_growth_window_clean__H1__own_current: G42 T56 K556, estimated, timeDF33
+/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/visitor_rigour_monthly.py:159: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  coverage = weather_basis.eligible_90.fillna(False).astype(bool) if control_set == "full" else pd.Series(True, index=dates)
+Visitor monthly fit country__y_mom_nsa__full__all_eligible__common__benchmark: G42 T82 K519, estimated, timeDF55
+Visitor monthly fit country__y_mom_nsa__full__all_eligible__H1__benchmark: G42 T82 K560, estimated, timeDF55
+Visitor monthly fit country__y_mom_nsa__full__all_eligible__common__distributed: G42 T82 K525, estimated, timeDF49
+Visitor monthly fit country__y_mom_nsa__full__all_eligible__H1__distributed: G42 T82 K689, estimated, timeDF49
+Visitor monthly fit country__y_mom_nsa__full__all_eligible__common__dynamic: G42 T82 K528, estimated, timeDF46
+Visitor monthly fit country__y_mom_nsa__full__all_eligible__H1__dynamic: G42 T82 K692, estimated, timeDF46
+Visitor monthly fit country__y_mom_nsa__full__event_dates_excluded__common__benchmark: G42 T66 K516, estimated, timeDF42
+Visitor monthly fit country__y_mom_nsa__full__event_dates_excluded__H1__benchmark: G42 T66 K557, estimated, timeDF42
+Visitor monthly fit country__y_mom_nsa__full__event_dates_excluded__common__distributed: G42 T66 K522, estimated, timeDF36
+Visitor monthly fit country__y_mom_nsa__full__event_dates_excluded__H1__distributed: G42 T66 K686, estimated, timeDF36
+Visitor monthly fit country__y_mom_nsa__full__event_dates_excluded__common__dynamic: G42 T66 K525, estimated, timeDF33
+Visitor monthly fit country__y_mom_nsa__full__event_dates_excluded__H1__dynamic: G42 T66 K689, estimated, timeDF33
+Visitor monthly fit country__y_mom_nsa__full__strict_growth_window_clean__common__benchmark: G42 T64 K516, estimated, timeDF40
+Visitor monthly fit country__y_mom_nsa__full__strict_growth_window_clean__H1__benchmark: G42 T64 K557, estimated, timeDF40
+Visitor monthly fit country__y_mom_nsa__full__strict_growth_window_clean__common__distributed: G42 T64 K522, estimated, timeDF34
+Visitor monthly fit country__y_mom_nsa__full__strict_growth_window_clean__H1__distributed: G42 T64 K686, estimated, timeDF34
+Visitor monthly fit country__y_mom_nsa__full__strict_growth_window_clean__common__dynamic: G42 T64 K525, estimated, timeDF31
+Visitor monthly fit country__y_mom_nsa__full__strict_growth_window_clean__H1__dynamic: G42 T64 K689, estimated, timeDF31
+Visitor monthly fit country__y_yoy_nsa__long__all_eligible__common__own_current: G42 T189 K526, estimated, timeDF155
+Visitor monthly fit country__y_yoy_nsa__long__all_eligible__H1__own_current: G42 T189 K567, estimated, timeDF155
+Visitor monthly fit country__y_yoy_nsa__long__event_dates_excluded__common__own_current: G42 T165 K522, estimated, timeDF135
+Visitor monthly fit country__y_yoy_nsa__long__event_dates_excluded__H1__own_current: G42 T165 K563, estimated, timeDF135
+Visitor monthly fit country__y_yoy_nsa__long__strict_growth_window_clean__common__own_current: G42 T141 K520, estimated, timeDF113
+Visitor monthly fit country__y_yoy_nsa__long__strict_growth_window_clean__H1__own_current: G42 T141 K561, estimated, timeDF113
+Visitor monthly fit country__y_yoy_nsa__long__all_eligible__common__benchmark: G42 T161 K523, estimated, timeDF130
+Visitor monthly fit country__y_yoy_nsa__long__all_eligible__H1__benchmark: G42 T161 K564, estimated, timeDF130
+Visitor monthly fit country__y_yoy_nsa__long__all_eligible__common__distributed: G42 T161 K547, estimated, timeDF106
+Visitor monthly fit country__y_yoy_nsa__long__all_eligible__H1__distributed: G42 T161 K1080, estimated, timeDF106
+Visitor monthly fit country__y_yoy_nsa__long__all_eligible__common__dynamic: G42 T161 K559, estimated, timeDF94
+Visitor monthly fit country__y_yoy_nsa__long__all_eligible__H1__dynamic: G42 T161 K1092, estimated, timeDF94
+Visitor monthly fit country__y_yoy_nsa__long__all_eligible__common__two_channel: G42 T161 K536, estimated, timeDF117
+Visitor monthly fit country__y_yoy_nsa__long__all_eligible__H1__two_channel: G42 T161 K618, estimated, timeDF117
+Visitor monthly fit country__y_yoy_nsa__long__event_dates_excluded__common__benchmark: G42 T158 K522, estimated, timeDF128
+Visitor monthly fit country__y_yoy_nsa__long__event_dates_excluded__H1__benchmark: G42 T158 K563, estimated, timeDF128
+Visitor monthly fit country__y_yoy_nsa__long__event_dates_excluded__common__distributed: G42 T158 K546, estimated, timeDF104
+Visitor monthly fit country__y_yoy_nsa__long__event_dates_excluded__H1__distributed: G42 T158 K1079, estimated, timeDF104
+Visitor monthly fit country__y_yoy_nsa__long__event_dates_excluded__common__dynamic: G42 T158 K558, estimated, timeDF92
+Visitor monthly fit country__y_yoy_nsa__long__event_dates_excluded__H1__dynamic: G42 T158 K1091, estimated, timeDF92
+Visitor monthly fit country__y_yoy_nsa__long__event_dates_excluded__common__two_channel: G42 T158 K535, estimated, timeDF115
+Visitor monthly fit country__y_yoy_nsa__long__event_dates_excluded__H1__two_channel: G42 T158 K617, estimated, timeDF115
+Visitor monthly fit country__y_yoy_nsa__long__strict_growth_window_clean__common__benchmark: G42 T117 K518, estimated, timeDF91
+Visitor monthly fit country__y_yoy_nsa__long__strict_growth_window_clean__H1__benchmark: G42 T117 K559, estimated, timeDF91
+Visitor monthly fit country__y_yoy_nsa__long__strict_growth_window_clean__common__distributed: G42 T117 K542, estimated, timeDF67
+Visitor monthly fit country__y_yoy_nsa__long__strict_growth_window_clean__H1__distributed: G42 T117 K1075, estimated, timeDF67
+Visitor monthly fit country__y_yoy_nsa__long__strict_growth_window_clean__common__dynamic: G42 T117 K554, estimated, timeDF55
+Visitor monthly fit country__y_yoy_nsa__long__strict_growth_window_clean__H1__dynamic: G42 T117 K1087, estimated, timeDF55
+Visitor monthly fit country__y_yoy_nsa__long__strict_growth_window_clean__common__two_channel: G42 T117 K531, estimated, timeDF78
+Visitor monthly fit country__y_yoy_nsa__long__strict_growth_window_clean__H1__two_channel: G42 T117 K613, estimated, timeDF78
+/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/visitor_rigour_monthly.py:159: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  coverage = weather_basis.eligible_90.fillna(False).astype(bool) if control_set == "full" else pd.Series(True, index=dates)
+Visitor monthly fit country__y_yoy_nsa__full__all_eligible__common__own_current: G42 T78 K519, estimated, timeDF51
+Visitor monthly fit country__y_yoy_nsa__full__all_eligible__H1__own_current: G42 T78 K560, estimated, timeDF51
+Visitor monthly fit country__y_yoy_nsa__full__event_dates_excluded__common__own_current: G42 T66 K516, estimated, timeDF42
+Visitor monthly fit country__y_yoy_nsa__full__event_dates_excluded__H1__own_current: G42 T66 K557, estimated, timeDF42
+Visitor monthly fit country__y_yoy_nsa__full__strict_growth_window_clean__common__own_current: G42 T56 K515, estimated, timeDF33
+Visitor monthly fit country__y_yoy_nsa__full__strict_growth_window_clean__H1__own_current: G42 T56 K556, estimated, timeDF33
+/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/visitor_rigour_monthly.py:159: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  coverage = weather_basis.eligible_90.fillna(False).astype(bool) if control_set == "full" else pd.Series(True, index=dates)
+Visitor monthly fit country__y_yoy_nsa__full__all_eligible__common__benchmark: G42 T64 K517, estimated, timeDF39
+Visitor monthly fit country__y_yoy_nsa__full__all_eligible__H1__benchmark: G42 T64 K558, estimated, timeDF39
+Visitor monthly fit country__y_yoy_nsa__full__all_eligible__common__distributed: G42 T64 K541, estimated, timeDF15
+Visitor monthly fit country__y_yoy_nsa__full__all_eligible__H1__distributed: G42 T64 K1074, estimated, timeDF15
+Visitor monthly fit country__y_yoy_nsa__full__all_eligible__common__dynamic: G42 T64 K553, estimated, timeDF3
+Visitor monthly fit country__y_yoy_nsa__full__all_eligible__H1__dynamic: G42 T64 K1086, estimated, timeDF3
+Visitor monthly fit country__y_yoy_nsa__full__all_eligible__common__two_channel: G42 T64 K530, estimated, timeDF26
+Visitor monthly fit country__y_yoy_nsa__full__all_eligible__H1__two_channel: G42 T64 K612, estimated, timeDF26
+Visitor monthly fit country__y_yoy_nsa__full__event_dates_excluded__common__benchmark: G42 T61 K516, estimated, timeDF37
+Visitor monthly fit country__y_yoy_nsa__full__event_dates_excluded__H1__benchmark: G42 T61 K557, estimated, timeDF37
+Visitor monthly fit country__y_yoy_nsa__full__event_dates_excluded__common__distributed: G42 T61 K540, estimated, timeDF13
+Visitor monthly fit country__y_yoy_nsa__full__event_dates_excluded__H1__distributed: G42 T61 K1073, estimated, timeDF13
+Visitor monthly fit country__y_yoy_nsa__full__event_dates_excluded__common__dynamic: G42 T61 K552, estimated, timeDF1
+Visitor monthly fit country__y_yoy_nsa__full__event_dates_excluded__H1__dynamic: G42 T61 K1085, estimated, timeDF1
+Visitor monthly fit country__y_yoy_nsa__full__event_dates_excluded__common__two_channel: G42 T61 K529, estimated, timeDF24
+Visitor monthly fit country__y_yoy_nsa__full__event_dates_excluded__H1__two_channel: G42 T61 K611, estimated, timeDF24
+Visitor monthly fit country__y_yoy_nsa__full__strict_growth_window_clean__common__benchmark: G42 T44 K514, estimated, timeDF22
+Visitor monthly fit country__y_yoy_nsa__full__strict_growth_window_clean__H1__benchmark: G42 T44 K555, estimated, timeDF22
+Visitor monthly fit country__y_yoy_nsa__full__strict_growth_window_clean__common__distributed: G42 T44 K538, unavailable: underidentified or rank-deficient design, timeDF0
+Visitor monthly fit country__y_yoy_nsa__full__strict_growth_window_clean__H1__distributed: G42 T44 K1071, unavailable: underidentified or rank-deficient design, timeDF0
+Visitor monthly fit country__y_yoy_nsa__full__strict_growth_window_clean__common__dynamic: G42 T44 K550, unavailable: underidentified or rank-deficient design, timeDF0
+Visitor monthly fit country__y_yoy_nsa__full__strict_growth_window_clean__H1__dynamic: G42 T44 K1083, unavailable: underidentified or rank-deficient design, timeDF0
+Visitor monthly fit country__y_yoy_nsa__full__strict_growth_window_clean__common__two_channel: G42 T44 K527, estimated, timeDF9
+Visitor monthly fit country__y_yoy_nsa__full__strict_growth_window_clean__H1__two_channel: G42 T44 K609, estimated, timeDF9
+{
+  "status": "computed_not_yet_independently_verified",
+  "requested_specs": 270,
+  "native_fits": 260,
+  "point_unavailable_requests": 10,
+  "primary_time_correction_unavailable_requests": 10,
+  "samples": 72
+}

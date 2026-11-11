@@ -1,0 +1,354 @@
+Verified source hashes: 130 frozen files
+Verified inputs hashes: 526 frozen files
+{
+  "root": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/baseline-recheck",
+  "scope": "all",
+  "environment": {
+    "python": "3.11.14",
+    "python_executable": "/Volumes/datadrive/heat_econ/.venv/bin/python3",
+    "node": "v24.18.0",
+    "uv": "uv 0.12.3 (507230998 2026-08-07 aarch64-apple-darwin)",
+    "dependencies": {
+      "lxml": {
+        "installed": "6.1.3",
+        "locked_versions": [
+          "6.1.3"
+        ]
+      },
+      "maketables": {
+        "installed": "0.2.0",
+        "locked_versions": [
+          "0.2.0"
+        ]
+      },
+      "markdown": {
+        "installed": "3.11.3",
+        "locked_versions": [
+          "3.11.3"
+        ]
+      },
+      "matplotlib": {
+        "installed": "3.11.2",
+        "locked_versions": [
+          "3.11.2"
+        ]
+      },
+      "numpy": {
+        "installed": "2.4.6",
+        "locked_versions": [
+          "2.4.6",
+          "2.5.4"
+        ]
+      },
+      "pandas": {
+        "installed": "2.3.3",
+        "locked_versions": [
+          "2.3.3"
+        ]
+      },
+      "pyfixest": {
+        "installed": "0.70.0",
+        "locked_versions": [
+          "0.70.0"
+        ]
+      },
+      "requests": {
+        "installed": "2.34.2",
+        "locked_versions": [
+          "2.34.2"
+        ]
+      },
+      "scipy": {
+        "installed": "1.17.1",
+        "locked_versions": [
+          "1.17.1",
+          "1.18.1"
+        ]
+      },
+      "statsmodels": {
+        "installed": "0.14.6",
+        "locked_versions": [
+          "0.14.6"
+        ]
+      },
+      "threadpoolctl": {
+        "installed": "3.8.0",
+        "locked_versions": [
+          "3.8.0"
+        ]
+      }
+    }
+  },
+  "helpers": {
+    "required_helpers": [
+      "data/raw/visitor_arrivals/calendar/extract_lunar_new_year.py",
+      "pyproject.toml",
+      "replication/renv.lock",
+      "scripts/restore_replication.py",
+      "scripts/run_all.py",
+      "scripts/setup_visitor_r.R",
+      "scripts/verification_receipt_history.py",
+      "scripts/verify.py",
+      "scripts/verify_aggregate_va.py",
+      "scripts/verify_annual.py",
+      "scripts/verify_annual_report.py",
+      "scripts/verify_baseline.py",
+      "scripts/verify_cluster_contrasts.py",
+      "scripts/verify_clustered_sector_sensitivity.py",
+      "scripts/verify_collection.py",
+      "scripts/verify_covid_comparison.py",
+      "scripts/verify_covid_report.py",
+      "scripts/verify_extended_controls.py",
+      "scripts/verify_granular.py",
+      "scripts/verify_granular_interactions.py",
+      "scripts/verify_heterogeneity.py",
+      "scripts/verify_iip.py",
+      "scripts/verify_outcomes.py",
+      "scripts/verify_pyfixest_migration.py",
+      "scripts/verify_sector_cluster.py",
+      "scripts/verify_stationarity_audit.py",
+      "scripts/verify_visitor_arrivals.py",
+      "scripts/verify_visitor_crisis.py",
+      "scripts/verify_visitor_report.mjs",
+      "scripts/visitor_analysis.py",
+      "scripts/visitor_counts.py",
+      "scripts/visitor_crisis.py",
+      "scripts/visitor_gt.R",
+      "scripts/visitor_gt_data.py",
+      "scripts/visitor_inference.py",
+      "scripts/visitor_report.py",
+      "uv.lock"
+    ],
+    "python_files_parsed": 77,
+    "local_modules": [
+      "aggregate_va",
+      "aggregate_va_report",
+      "annual_analysis",
+      "annual_report",
+      "build_panel",
+      "clustered_sector_sensitivity",
+      "combined_report",
+      "covid_common",
+      "covid_comparison",
+      "covid_report",
+      "covid_sector",
+      "cumulative_inference",
+      "estimate",
+      "extended_controls",
+      "extract_lunar_new_year",
+      "fetch_data",
+      "granular_analysis",
+      "granular_interactions",
+      "granular_report",
+      "heterogeneity",
+      "heterogeneity_report",
+      "html_report",
+      "iip_analysis",
+      "iip_reconciliation",
+      "iip_report",
+      "inference_display",
+      "outcome_analysis",
+      "outcome_report",
+      "package_replication",
+      "provenance_omissions",
+      "pyfixest_backend",
+      "reconciliation_report",
+      "regression_tables",
+      "replicate",
+      "report",
+      "restore_replication",
+      "run_all",
+      "sample_context",
+      "sector_cluster",
+      "sector_readout",
+      "sector_temperature",
+      "significance",
+      "stationarity_audit",
+      "stationarity_context",
+      "stationarity_diagnostics",
+      "stationarity_report",
+      "va_reconciliation",
+      "verification_receipt_history",
+      "verify",
+      "verify_aggregate_va",
+      "verify_annual",
+      "verify_annual_report",
+      "verify_baseline",
+      "verify_cluster_contrasts",
+      "verify_clustered_sector_sensitivity",
+      "verify_collection",
+      "verify_covid_comparison",
+      "verify_covid_report",
+      "verify_extended_controls",
+      "verify_granular",
+      "verify_granular_interactions",
+      "verify_heterogeneity",
+      "verify_iip",
+      "verify_outcomes",
+      "verify_pyfixest_migration",
+      "verify_sector_cluster",
+      "verify_stationarity_audit",
+      "verify_visitor_arrivals",
+      "verify_visitor_crisis",
+      "visitor_analysis",
+      "visitor_counts",
+      "visitor_crisis",
+      "visitor_fetch",
+      "visitor_gt_data",
+      "visitor_inference",
+      "visitor_report",
+      "visitor_run"
+    ],
+    "external_imports": [
+      "lxml",
+      "maketables",
+      "markdown",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "patsy",
+      "pyfixest",
+      "requests",
+      "scipy",
+      "statsmodels",
+      "threadpoolctl",
+      "urllib3"
+    ],
+    "exhaustive_verifier_count": 22
+  },
+  "manifest": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/baseline-recheck/replication/logs/receipt-history-test-manifest.json",
+  "problems": [],
+  "source_policy": "Frozen release inputs; HTTP disabled inside every analytical Python child. No refresh and no external EMA-directory fallback.",
+  "status": "passed",
+  "input_integrity": "Frozen input members verified by restore_replication.py"
+}
+Fresh verification evidence: /Volumes/datadrive/heat_econ/dist/aea_audit_20261111/baseline-recheck/replication/logs/verification-runs/20261111T122458.446625Z-3654bae1/index.html
+[1/23] python scripts/verify.py
+Verified source hashes, leap-year aggregation, raw growth, panel/quarter-mean OLS and independent Bartlett HAC
+  Passed in 0.6s
+[2/23] python scripts/verify_iip.py
+Verified IIP raw growth, official quarter averages, panel/period-mean coefficients and independent calendar HAC
+  Passed in 0.5s
+[3/23] python scripts/verify_extended_controls.py
+Verified extended controls: source hashes, identical sample columns, period-mean OLS and direct calendar Bartlett HAC
+  Passed in 0.5s
+[4/23] python scripts/verify_outcomes.py
+Independent outcome verification passed: 204 model/bandwidth fits; raw definitions, calendar samples, estimates and R² checked.
+  Passed in 4.6s
+[5/23] python scripts/verify_heterogeneity.py
+Independent heterogeneity verification passed: 240 model/outcome/bandwidth groups, joint sector covariance, equality tests, pairwise tests and separate-series equivalence.
+  Passed in 2.7s
+[6/23] python scripts/verify_aggregate_va.py
+Independent aggregate GVA verification passed: 106 model/bandwidth fits, raw-source growth, exact samples, mean Y, 0.1°C scaling and manual HAC.
+  Passed in 2.1s
+[7/23] python scripts/verify_granular.py
+Granular verification passed: 24 sample windows, 120 pooled and 825 individual fits; raw SA/NSA source and calendar HAC checks.
+  Passed in 5.4s
+[8/23] python scripts/verify_granular_interactions.py
+Verified detailed FE interactions: 1650 sector slopes, 14310 pairwise comparisons and 90 omnibus checks.
+  Passed in 3.4s
+[9/23] python scripts/verify_sector_cluster.py
+Verified sector CR1: 974 coefficients across 245 model fits and 36 result files
+  Passed in 5.1s
+[10/23] python scripts/verify_cluster_contrasts.py
+Verified 9 sector-CR1 linear contrasts independently.
+  Passed in 1.2s
+[11/23] python scripts/verify_clustered_sector_sensitivity.py
+{
+  "status": "passed",
+  "specifications": 90,
+  "native_tables": 180,
+  "native_coefficient_SE_cells_checked": 4680,
+  "sector_readout_rows": 3510,
+  "selector_runtime": {
+    "status": "passed",
+    "selector_views": 180,
+    "default": "va-detailed/full/y_short",
+    "sandbox_history_guard": true,
+    "scope": "Actual selector JavaScript in a DOM harness; not visual browser inspection"
+  },
+  "report_sha256": "1a9aab0eae1eddce14fa8e1d8101d1ab118fc578a579217c0682ebdd4dc7fa65",
+  "source_backed_p_values_and_means": true
+}
+Verified sector-clustered H1 sensitivity: 90 native models, 3510 slope rows, 162 original DK groups preserved.
+  Passed in 19.3s
+[12/23] python scripts/verify_pyfixest_migration.py
+Verified native Pyfixest migration: 177 original reference files, 307764 original-SA numerical values and 1510 current logged production fits.
+  Passed in 7.8s
+[13/23] python scripts/verify_stationarity_audit.py
+Verified stationarity audit: 7224 manual test calculations, 25942 exact-model variable links and 825 granular individual fits.
+  Passed in 29.4s
+[14/23] python scripts/verify_annual.py
+Annual independent verification passed: 512 requested specs, 384 native models, 128 explicitly unavailable.
+  Passed in 13.9s
+[15/23] python scripts/verify_covid_comparison.py
+Independent paired common-slope audit: 241 pairs and 5640 rows passed.
+Independent paired sector audit: 183 pairs, 8076 slope rows and 516 joint tests passed.
+Verified all COVID comparisons: 424 pairs, 2204 native fits, 9146 original source rows.
+  Passed in 136.0s
+[16/23] python scripts/verify_annual_report.py
+Annual presentation passed: 56 paired views, 1104 native cells, 28 explicit unavailable columns
+  Passed in 1.3s
+[17/23] python scripts/verify_covid_report.py
+Verified 424 paired native tables, 6056 estimate cells and every selector combination.
+  Passed in 3.8s
+[18/23] python scripts/verify_collection.py
+Verified single-file collection: 14 embedded analyses, 16 tabs and all 81 exact-sample mean/coefficient comparisons.
+  Passed in 3.7s
+[19/23] python scripts/verify_baseline.py
+Verified full-control PM2.5 baseline defaults, formulas and visible main FE tables.
+  Passed in 1.6s
+[20/23] python scripts/verify_visitor_arrivals.py
+{
+  "status": "passed",
+  "counts": {
+    "source_months": 225,
+    "named_countries": 42,
+    "regions": 9,
+    "source_country_zero_cells": 50,
+    "ols_models": 269,
+    "exact_calendar_masks": 269,
+    "leave_one_year_out_models": 54,
+    "profile_model_bandwidths": 16,
+    "ppml_models": 12
+  },
+  "receipt": "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/baseline-recheck/outputs/visitor_arrivals/verification.json"
+}
+  Passed in 5.3s
+[21/23] python scripts/verify_visitor_crisis.py
+{
+  "status": "passed",
+  "counts": {
+    "crisis_OLS_models": 120,
+    "crisis_model_bandwidths": 240,
+    "core_models_preserved": 269,
+    "origin_CR1_models": 254,
+    "origin_CR1_by_source": {
+      "core": 174,
+      "crisis": 80
+    },
+    "analytical_input_hashes": 7,
+    "explicit_stacked_FE_CR1_checks": 5
+  },
+  "max_scaled_error": 1.1149196078853792e-10
+}
+  Passed in 5.6s
+[22/23] python scripts/visitor_report.py
+Wrote /Volumes/datadrive/heat_econ/dist/aea_audit_20261111/baseline-recheck/outputs/visitor_arrivals.html: 14,832,255 bytes
+  Passed in 2.5s
+[23/23] node scripts/verify_visitor_report.mjs
+{
+  "status": "passed",
+  "pooled_selector_views": 32,
+  "profile_selector_views": 24,
+  "crisis_selector_views": 64,
+  "robustness_selector_views": 18,
+  "native_gt_tables": 168,
+  "embedded_pngs": 6,
+  "verified_evidence_downloads": 31,
+  "report_sha256": "023aa7cf7f24e10d2cfef9d4b849624a8a2d57bc02049027ed5aadc3ff310f86",
+  "scope": "Source/runtime rendering and all selector combinations in an isolated JavaScript DOM harness; no visual-browser claim. Numerical estimates verified by independent Python verifiers."
+}
+  Passed in 0.5s
+Verified inputs hashes: 526 frozen files
+Frozen verify passed: scope=all, verification=all, 23 subprocesses, 258.1s. No source refresh performed.

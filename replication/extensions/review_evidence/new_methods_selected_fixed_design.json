@@ -1,0 +1,114 @@
+{
+  "status": "passed_selected_fixed_X_null_replay",
+  "design": "va12__y_yoy_nsa__all_eligible__H1__distributed",
+  "seed": 20261119,
+  "repetitions": 2000,
+  "chunk": 250,
+  "n_obs": 2088,
+  "n_parameters": 157,
+  "n_sectors": 12,
+  "n_periods": 174,
+  "time_residual_df": 116,
+  "reference_df": 173,
+  "calendar_score_rank_bound": 173,
+  "finite_sample_correction": 1.087034481519953,
+  "native_fits_run": 0,
+  "array_bindings": {
+    "X": {
+      "shape": [
+        2088,
+        157
+      ],
+      "dtype": "float64",
+      "sha256": "a7c3dfc68c7ee3c4366924d80695d2ba49fa7e86a8a8f43dd6ad6d38860c1738"
+    },
+    "Y": {
+      "shape": [
+        2088
+      ],
+      "dtype": "float64",
+      "sha256": "672f04ab69b9578ba3e0b184d1f9ddf037556f1b2ef283a336e26a185f8433a6"
+    },
+    "time": {
+      "shape": [
+        2088
+      ],
+      "dtype": "int64",
+      "sha256": "fd0013603cb98a1e088b2a7cfbc6b8e046df8043ffb891ca03affeecd7715d4f"
+    },
+    "periods": {
+      "shape": [
+        2088
+      ],
+      "dtype": "<U6",
+      "sha256": "0d17ca6cfe3fd98f8d64a642c41abce3488286df330c481854461338f52c2ef7"
+    },
+    "units": {
+      "shape": [
+        2088
+      ],
+      "dtype": "<U5",
+      "sha256": "be84c41f74e72f92854835c3fee27f84c0ea30dc4c913990acec276deea28419"
+    }
+  },
+  "frozen_sources_sha256": {
+    "outputs/literature_sensitivity/designs/va12__y_yoy_nsa__all_eligible__H1__distributed.npz": "0719e38ba359d8738032420ca2a752c65a3e6d288e033e5d283521596269acae",
+    "scripts/selected_null_calibration.py": "2173bf69fc0db0cb6e9b636cef958567a1e2c2a8dc29c4433fd801c1d3d24884",
+    "outputs/literature_sensitivity/specifications.csv": "6563901b5a7a217e41bea23d5c687dfa04925adb81f897677ebd62303f2571d7",
+    "outputs/literature_sensitivity/pyfixest/fit_log.csv": "211eacf2c0b8031246eec3f58081611c4f14131a2b742a07547c56ecdf1fa6d8",
+    "outputs/literature_sensitivity/pyfixest/estimator_manifest.json": "8ac8c2311745c531a0de32cb855b05b82e138f26fd27fc507965b1b969fbc244",
+    "outputs/pyfixest/fit_log.csv": "7db9cefabeea2f0a69a47ac4ca1f672e8bfab7ef07f82ec53148becf638943b8",
+    "outputs/pyfixest/estimator_manifest.json": "5ae9011560afe76df55554946fcb538342366311be6d4858af0591ee816b5cac"
+  },
+  "rejections": [
+    {
+      "covariance": "Driscoll-Kraay",
+      "hac_lags": 4,
+      "test": "All sector temperature-lag responses jointly zero",
+      "restrictions": 60,
+      "draws": 2000,
+      "available": 2000,
+      "rejections": 2000,
+      "rejection_rate": 1.0
+    },
+    {
+      "covariance": "Driscoll-Kraay",
+      "hac_lags": 4,
+      "test": "All sector cumulative direct temperature responses equal",
+      "restrictions": 11,
+      "draws": 2000,
+      "available": 2000,
+      "rejections": 712,
+      "rejection_rate": 0.356
+    },
+    {
+      "covariance": "Driscoll-Kraay",
+      "hac_lags": 8,
+      "test": "All sector temperature-lag responses jointly zero",
+      "restrictions": 60,
+      "draws": 2000,
+      "available": 2000,
+      "rejections": 2000,
+      "rejection_rate": 1.0
+    },
+    {
+      "covariance": "Driscoll-Kraay",
+      "hac_lags": 8,
+      "test": "All sector cumulative direct temperature responses equal",
+      "restrictions": 11,
+      "draws": 2000,
+      "available": 2000,
+      "rejections": 1091,
+      "rejection_rate": 0.5455
+    }
+  ],
+  "matches_independently_replayed_reference_counts": true,
+  "numpy_version": "2.4.6",
+  "scipy_version": "1.17.1",
+  "outputs_sha256": {
+    "draw_statistics.csv": "3fde33f6116d482f1013eecc5ef5c5c70aec9ad5c1a129dee413a4c14a45b4a7",
+    "rejections.csv": "1c4f8a2eadc08416cd89115f7057706e9edaf3780eac66080443ff751d70ae79"
+  },
+  "claim": "Selected current fixed-X multi-df Wald tests fail nominal5% calibration under this specified iid Gaussian null despite full numerical rank. Do not use their nominal p-values as calibrated headline inference for this design.",
+  "limits": "One frozen design/noise process, not every model or the observed GDP DGP; no new rank guard, universal covariance correction, model selection or causal-validity claim."
+}

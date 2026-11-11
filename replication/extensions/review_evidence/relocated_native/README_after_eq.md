@@ -1,0 +1,11 @@
+# Post-execution equivalence gate
+
+This is an append-only verification boundary after the historical relocated production/math replay. All **58** original compact members remain byte-identical, including `guard_revision_run.json`, its first inventory, README and checksum list. The historical passed run SHA remains `a2700901744ec96ebb8bc382120564c5e462931da531f86ba4fa728c8b06ff69`.
+
+Only the two verification scripts and two immutable evidence JSONs named in `post_execution_eq/scope.json` were copied into the existing relocated project after its native/math execution. The new exact equivalence CLI then passed against **354 refitted requests**, **534 semantic files** and **8,338 NPZ arrays**, with **zero native fits**. It also confirmed that the model artifact bytes and pre-existing model source files were unchanged. No baseline was recaptured and no prior mathematical audit was rerun.
+
+The check binds exact dtype, shape and array bytes, complete native ledgers, and exact canonical CSV cells other than explicitly excluded provenance hash columns; source identity is checked separately, with only the three recorded guard-only AST changes allowed. It does not claim a new AI review, causal/inferential validity, a fresh dependency environment, a final source seal or an uninterrupted replay of the historical failed attempts. Execution used the same existing locked Python environment. Historical absolute IDs and paths are retained.
+
+The passed receipt is `post_execution_eq/receipt.json`; stdout and the explicit addition/preservation scope are adjacent. The immutable baseline remains at `../arrivals_review_baseline.json`, rather than being duplicated here. The data/model/COW trees and binaries remain excluded.
+
+The updated inventory is `inventory_after_eq.json` (SHA-256 `db9378fecb76dc75fa87bafc74fe53759176fae05e849e98726e39191956ecc0`). The original inventory remains unchanged at SHA `1f42f5d9f94da1af27403e6a6820d1ca02dbb9381fecf2dd6a5e9b6df63c2667`. From this directory use `shasum -a 256 -c SHA256SUMS_after_eq` (macOS) or `sha256sum -c SHA256SUMS_after_eq` (Linux). The new checksum list covers every old member, the four new evidence members and this new inventory/README; it excludes only its own digest.

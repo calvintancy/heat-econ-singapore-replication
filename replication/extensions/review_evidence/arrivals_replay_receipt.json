@@ -1,0 +1,143 @@
+{
+  "status": "passed",
+  "scope": "Bounded native adjudication of the frozen354-request/319-native-fit arrivals generation; not a new review of later source",
+  "exact_provider_model": {
+    "provider": "claude",
+    "requested_model": "claude-fable-5-2",
+    "reported_model": "claude-fable-5-2",
+    "requested_effort": "max",
+    "authenticated": true,
+    "model_verified": true,
+    "status": "complete",
+    "session_id": "dfb80b22-0347-4e8c-bb0c-2d94d02efaac"
+  },
+  "raw_report_sha256": "551b3612e8c0521708177b833b12ea42bb9b9d540230987808a668132b84745c",
+  "raw_receipt_sha256": "c1b105cc31524901e8b81721739858f7b878f9936b8ccc81ad4a2e48346cf93c",
+  "raw_result_sha256": "6e9afda2c1f310ccbcfa9afe142675e969e92fcdfa6e0c60e1b08d5f4390ff86",
+  "snapshot_manifest_sha256": "77b47a53ec17fa3dd01bd61093604d2b367122c5c48441b7efde0b9a888b2cd4",
+  "snapshot_files_unchanged": 2250,
+  "root_bindings_checked": 1911,
+  "root_bindings_byte_unchanged": 1909,
+  "authorized_guard_only_root_changes": [
+    "scripts/literature_sensitivity.py",
+    "scripts/literature_full_controls.py"
+  ],
+  "original_reference_reset": false,
+  "native_fits_executed_by_adjudication": 0,
+  "replays": {
+    "selected_fixed_design_benchmarks": {
+      "path": "arrivals_selected_benchmarks.json",
+      "sha256": "32e395f64c8db8e695a4d799b3b96f3c6dcb2fb079dc099c8c1b59e9f75b00e8",
+      "code": "arrivals_selected_benchmarks.py",
+      "source_sha256": "df5c98472907547e5d51339f705d12dc858efee167daa7bb85d6f8949a36f5dc",
+      "command": "uv run --locked python replication/extensions/review_evidence/arrivals_selected_benchmarks.py",
+      "designs": [
+        {
+          "spec_id": "region__y_mom_nsa__long__all_eligible__H1__own_current",
+          "n": 1863,
+          "k": 139,
+          "t": 207,
+          "q": 8,
+          "seed": 2026111102,
+          "reps": 4000,
+          "results": [
+            {
+              "hac_lags": 12,
+              "available": 4000,
+              "unavailable": 0,
+              "reject_at_nominal_5pct": 1045,
+              "F_ge_observed": 1880,
+              "maximum_condition": 114.56683351529728,
+              "minimum_uncapped_rank": 8,
+              "rejection_fraction_of_requested": 0.26125,
+              "rejection_fraction_of_available": 0.26125
+            },
+            {
+              "hac_lags": 24,
+              "available": 4000,
+              "unavailable": 0,
+              "reject_at_nominal_5pct": 1948,
+              "F_ge_observed": 2018,
+              "maximum_condition": 260.7617549530321,
+              "minimum_uncapped_rank": 8,
+              "rejection_fraction_of_requested": 0.487,
+              "rejection_fraction_of_available": 0.487
+            }
+          ]
+        },
+        {
+          "spec_id": "country__y_mom_nsa__long__all_eligible__H1__own_current",
+          "n": 8694,
+          "k": 568,
+          "t": 207,
+          "q": 41,
+          "seed": 2026111103,
+          "reps": 4000,
+          "results": [
+            {
+              "hac_lags": 12,
+              "available": 4000,
+              "unavailable": 0,
+              "reject_at_nominal_5pct": 4000,
+              "F_ge_observed": 3998,
+              "maximum_condition": 5407.271319035151,
+              "minimum_uncapped_rank": 41,
+              "rejection_fraction_of_requested": 1.0,
+              "rejection_fraction_of_available": 1.0
+            },
+            {
+              "hac_lags": 24,
+              "available": 4000,
+              "unavailable": 0,
+              "reject_at_nominal_5pct": 4000,
+              "F_ge_observed": 3992,
+              "maximum_condition": 12988.329109286617,
+              "minimum_uncapped_rank": 41,
+              "rejection_fraction_of_requested": 1.0,
+              "rejection_fraction_of_available": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "algebra_and_HAC": {
+      "path": "arrivals_semantics_replay.json",
+      "sha256": "fca27a481b69c7c9760f83effb45bdcac232018492e84d3346bbb371d1ee2c18",
+      "code": "arrivals_semantics_replay.py",
+      "source_sha256": "abe5f780beea77aa0b03c7291148a3502fea55688c41ae9c5c3b0fd37b81f870",
+      "command": "uv run --locked python replication/extensions/review_evidence/arrivals_semantics_replay.py",
+      "common_shock_outside_X_fraction": 0.6480000287384658,
+      "CR1_covariance_relative_change": 1.0480697105586156e-15,
+      "calendar_covariance_relative_change": 0.7195039323961372,
+      "origin_year_requests": 24,
+      "origin_year_mean_max_abs_error": 4.879430193227563e-13,
+      "profile_sign_changes": 85
+    }
+  },
+  "accepted": [
+    "Selected multi-DF nominal F calibration failure under explicit fixed-design Gaussian nulls with all draws numerically available",
+    "Nontrivial common-date perturbation changes estimate and calendar covariance while static balanced origin-CR1 covariance is invariant",
+    "Origin-year additions preserve equally weighted average slope and shared controls while changing individual profiles",
+    "Rebuilt selected arithmetic and actual-calendar covariance match saved results"
+  ],
+  "qualified_or_not_established": [
+    "Universal failure threshold q\u22488",
+    "Every nominal p-value invalid under every possible data law",
+    "Empirical-null calibration from the benchmark DGPs",
+    "All-null or no-effect conclusion from dependent rejection shares",
+    "Causal identification or stationarity clearance",
+    "AI review of subsequent report/driver/privacy source or future ROOT generation"
+  ],
+  "snapshot_coverage_limit": "85 deliberately omitted optional preflight/older report-proof pins; actual estimation sample equivalence checked",
+  "future_generation_gate": {
+    "path": "outputs/visitor_rigour/review_equivalence.json",
+    "required_status": "passed",
+    "baseline_path": "replication/extensions/review_evidence/arrivals_review_baseline.json",
+    "baseline_sha256": "2086d5fd7b73c19c4e8d308da01bb2613f4b24341a20b22aa40c561fcba210e1",
+    "command": "uv run --locked python scripts/verify_arrivals_review_equivalence.py",
+    "meaning": "Separate fresh proof of exact semantic numeric identity and approved guard-only source equivalence; not a later AI review"
+  },
+  "adjudication_sha256": "bd6a3e16f242599efc86a0127c34fd19981d8f37337209803e38efa3c1949a1f",
+  "source_equivalence_verifier_sha256": "9b06e2ac762cc27daa3e45958386fc49be130021c53ea51fc5c79f9239849b90",
+  "equivalence_fixtures_sha256": "191a00168e0713bc6bcf632d0f80f9236f5bed55af76dc2beb1d26bd484258a9"
+}

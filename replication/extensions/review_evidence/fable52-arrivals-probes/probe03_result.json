@@ -1,0 +1,368 @@
+{
+ "probe": "03 LNY calendar / Jan-2008 retention / raw metadata",
+ "tables_parsed": 20,
+ "anchor_2007": "2007-02-18",
+ "anchors_all_in_jan21_feb20": true,
+ "hashes": {
+  "supplement_sha256": "2eeec2ef316267d92c2ec93e44d2ccb3a889e02c408aecdcc696a2c350416673",
+  "supplement_matches_sources_json": true,
+  "supplement_matches_production_constant": true,
+  "supplement_declared_anchor_matches": true,
+  "old_tables_matching_calendar_manifest": 19,
+  "old_anchor_json_matches_independent_extraction": 19,
+  "old_anchor_json_rows": 19,
+  "raw_arrival_manifest_files_matching": {
+   "nsa_metadata.json": true,
+   "nsa.csv": true,
+   "nsa_singstat_metadata.json": true,
+   "sa_metadata.json": true,
+   "sa.csv": true,
+   "sa_singstat_metadata.json": true
+  },
+  "monthly_manifest_raw_inputs_match": {
+   "data/raw/visitor_arrivals/nsa.csv": true,
+   "data/raw/visitor_arrivals/nsa_singstat_metadata.json": true,
+   "data/processed/visitor_arrivals/all_source_counts.csv": true,
+   "data/raw/temperature_monthly.csv": true,
+   "data/raw/humidity_monthly.csv": true,
+   "data/raw/rainfall_monthly.csv": true,
+   "data/processed/visitor_arrivals/lunar_new_year.csv": true,
+   "data/processed/extended_controls/monthly_controls.csv": true,
+   "replication/extensions/supplementary_inputs/calendar/T2007e.txt": true,
+   "replication/extensions/supplementary_inputs/calendar/sources.json": true
+  }
+ },
+ "calendar": {
+  "cached_months": 228,
+  "cached_first": "2008-01",
+  "cached_last": "2026-12",
+  "cached_months_equal_independent": 228,
+  "cached_anchor_column_equals_independent": true,
+  "december_2007_window_days": 0,
+  "all_2007_months": {
+   "2007-02": 15
+  },
+  "yearly_sums_all_15": true,
+  "january_2008_window_days": 1,
+  "january_2008_lag1": 0,
+  "any_december_ever_nonzero": false,
+  "window_definition": "anchor-7 .. anchor+7 inclusive = 15 days",
+  "ppml_extended_calendar_rows": 229,
+  "ppml_extended_calendar_equals_independent": true
+ },
+ "january_2008_ppml_retention": {
+  "aggregate": {
+   "n_periods": 225,
+   "first_month": "2008-01",
+   "january_2008_rows": 1,
+   "units": 1,
+   "january_2008_lny_lag1_values": [
+    0.0
+   ],
+   "january_2008_lny_window_values": [
+    1
+   ],
+   "design_january_rows": 1,
+   "design_january_lny_lag1": [
+    0.0
+   ],
+   "lny_lag1_equals_independent_all_rows": true,
+   "lny_window_equals_independent_all_rows": true
+  },
+  "region": {
+   "n_periods": 225,
+   "first_month": "2008-01",
+   "january_2008_rows": 9,
+   "units": 9,
+   "january_2008_lny_lag1_values": [
+    0.0
+   ],
+   "january_2008_lny_window_values": [
+    1
+   ],
+   "design_january_rows": 9,
+   "design_january_lny_lag1": [
+    0.0
+   ],
+   "lny_lag1_equals_independent_all_rows": true,
+   "lny_window_equals_independent_all_rows": true
+  },
+  "country": {
+   "n_periods": 225,
+   "first_month": "2008-01",
+   "january_2008_rows": 42,
+   "units": 42,
+   "january_2008_lny_lag1_values": [
+    0.0
+   ],
+   "january_2008_lny_window_values": [
+    1
+   ],
+   "design_january_rows": 42,
+   "design_january_lny_lag1": [
+    0.0
+   ],
+   "lny_lag1_equals_independent_all_rows": true,
+   "lny_window_equals_independent_all_rows": true
+  },
+  "complete10": {
+   "n_periods": 225,
+   "first_month": "2008-01",
+   "january_2008_rows": 10,
+   "units": 10,
+   "january_2008_lny_lag1_values": [
+    0.0
+   ],
+   "january_2008_lny_window_values": [
+    1
+   ],
+   "design_january_rows": 10,
+   "design_january_lny_lag1": [
+    0.0
+   ],
+   "lny_lag1_equals_independent_all_rows": true,
+   "lny_window_equals_independent_all_rows": true
+  },
+  "complete52": {
+   "n_periods": 225,
+   "first_month": "2008-01",
+   "january_2008_rows": 52,
+   "units": 52,
+   "january_2008_lny_lag1_values": [
+    0.0
+   ],
+   "january_2008_lny_window_values": [
+    1
+   ],
+   "design_january_rows": 52,
+   "design_january_lny_lag1": [
+    0.0
+   ],
+   "lny_lag1_equals_independent_all_rows": true,
+   "lny_window_equals_independent_all_rows": true
+  }
+ },
+ "legacy_cached_weather_january_2008_lny_lag1": null,
+ "m550001_adjustment_label": {
+  "M550001_metadata_adjustmentType": "Seasonally Adjusted",
+  "M550001_title": "International Visitor Arrivals By Place Of Residence, Monthly",
+  "M550001_dataSource": "SINGAPORE TOURISM BOARD",
+  "M550002_metadata_adjustmentType": "Seasonally Adjusted",
+  "M550002_title": "International Visitor Arrivals By Place Of Residence, Monthly, Seasonally Adjusted",
+  "nsa_rows": 62,
+  "sa_rows": 22,
+  "common_total_months": 225,
+  "total_series_identical_months": 0,
+  "max_relative_gap_total_nsa_vs_sa": 0.17739715042319837,
+  "all_M550001_cells_integer": true,
+  "calendar_month_R2_of_MoM_log_growth_2008_2019": {
+   "M550001": 0.846652565955867,
+   "M550002": 0.03945531936294622
+  },
+  "disclosed_at": "notes/visitor_arrivals_methods.md:21",
+  "reading": "metadata field contradicts the NSA label, but the M550001 values differ from the explicit SA table and carry strong calendar-month seasonality that M550002 lacks"
+ },
+ "verdict": "calendar, hashes and January-2008 retention reproduce",
+ "tables": {
+  "2007": {
+   "sha256": "2eeec2ef316267d92c2ec93e44d2ccb3a889e02c408aecdcc696a2c350416673",
+   "bytes": 26121,
+   "gregorian_rows": 365,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "30",
+   "anchor": "2007-02-18"
+  },
+  "2008": {
+   "sha256": "dd3c08f02280b3781a46f00e68632399ac0220e1793e936c8503702e4cda19de",
+   "bytes": 26191,
+   "gregorian_rows": 366,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "30",
+   "anchor": "2008-02-07"
+  },
+  "2009": {
+   "sha256": "5f2bc5e823a6f34a5274a45133d40d8b28f4b2cffecba0ffb2e1a9a56723ded1",
+   "bytes": 26119,
+   "gregorian_rows": 365,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "30",
+   "anchor": "2009-01-26"
+  },
+  "2010": {
+   "sha256": "c507beb3cd5a279ea666b8fe0a4f501c645316373a4b646d746c31c1594b421e",
+   "bytes": 26123,
+   "gregorian_rows": 365,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "30",
+   "anchor": "2010-02-14"
+  },
+  "2011": {
+   "sha256": "190a245434f85d15a81c7f4c35644a4b97aca62b35dbc153f8d0f93b0b3a3ec9",
+   "bytes": 28989,
+   "gregorian_rows": 365,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "30",
+   "anchor": "2011-02-03"
+  },
+  "2012": {
+   "sha256": "3baa28e28aae7e963a93e932b586bd131a163af9bc7f4f6c26cc97a663e3984d",
+   "bytes": 28701,
+   "gregorian_rows": 366,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "29",
+   "anchor": "2012-01-23"
+  },
+  "2013": {
+   "sha256": "5547e3ac578c35a7fee7124a0a828b332e952af2f98508a261445c40935d2ef0",
+   "bytes": 28620,
+   "gregorian_rows": 365,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "29",
+   "anchor": "2013-02-10"
+  },
+  "2014": {
+   "sha256": "d951404fd19b2e19580f41ca2c2cc854e20a27d2c680d5c50abd5b55df62371f",
+   "bytes": 28620,
+   "gregorian_rows": 365,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "30",
+   "anchor": "2014-01-31"
+  },
+  "2015": {
+   "sha256": "3a00ed814d839900f491b8f93d172b3376de7b2718534efabe90c16beb784974",
+   "bytes": 28986,
+   "gregorian_rows": 365,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "30",
+   "anchor": "2015-02-19"
+  },
+  "2016": {
+   "sha256": "54fd6b05b9ef67f0d4cb415e2cf9fd7144576fa9bc8bd56b31a6fcdbf2883926",
+   "bytes": 29070,
+   "gregorian_rows": 366,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "29",
+   "anchor": "2016-02-08"
+  },
+  "2017": {
+   "sha256": "61289cd623a29273ebac0bfef9d47c25d5c925ff7ad7eee4bb5b1c69d9fdfa83",
+   "bytes": 28624,
+   "gregorian_rows": 365,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "30",
+   "anchor": "2017-01-28"
+  },
+  "2018": {
+   "sha256": "aa927769705f2d92e1db2614e89a2079418ea13f9d1f12a4a10f48b7143692e8",
+   "bytes": 28617,
+   "gregorian_rows": 365,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "30",
+   "anchor": "2018-02-16"
+  },
+  "2019": {
+   "sha256": "678c150eb855b0c381de6afddf85c33b13cc473c6c2145309c8021dce9cd7d46",
+   "bytes": 28618,
+   "gregorian_rows": 365,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "30",
+   "anchor": "2019-02-05"
+  },
+  "2020": {
+   "sha256": "0dde5ed6d41935f8f420643287fc0250588102b154d8243e0f2762bb0c473bd2",
+   "bytes": 28699,
+   "gregorian_rows": 366,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "30",
+   "anchor": "2020-01-25"
+  },
+  "2021": {
+   "sha256": "d3432f28db9a868aa407720a39224d7858395389ddc818d92c3a3fa43d58360a",
+   "bytes": 28619,
+   "gregorian_rows": 365,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "30",
+   "anchor": "2021-02-12"
+  },
+  "2022": {
+   "sha256": "34c1edcf7ce3b20e3963f38379cfd77cce8bcf4dbede9bb9b18412e375bc555f",
+   "bytes": 28621,
+   "gregorian_rows": 365,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "29",
+   "anchor": "2022-02-01"
+  },
+  "2023": {
+   "sha256": "f3bbdef5c9b0c0158ca8328004e347da714494572effc23fea97af48052402e5",
+   "bytes": 28989,
+   "gregorian_rows": 365,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "30",
+   "anchor": "2023-01-22"
+  },
+  "2024": {
+   "sha256": "81f8fba2c809d5dcea5c63699e843b82e29318553cb5de7bbf053aa66d068fdc",
+   "bytes": 28701,
+   "gregorian_rows": 366,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "30",
+   "anchor": "2024-02-10"
+  },
+  "2025": {
+   "sha256": "e11ba9a4d1fcde4d09570871149d3eea329d3a92a1b79be814d3f7313ae3fa50",
+   "bytes": 28619,
+   "gregorian_rows": 365,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "29",
+   "anchor": "2025-01-29"
+  },
+  "2026": {
+   "sha256": "29ef9c43977a69681ef770d0c264e4226692f21f3febc3d16a4ee5c8aa06c60c",
+   "bytes": 28621,
+   "gregorian_rows": 365,
+   "all_days_present_in_order": true,
+   "printed_weekdays_match_gregorian": true,
+   "first_lunar_month_rows": 1,
+   "lunar_day_before_anchor": "29",
+   "anchor": "2026-02-17"
+  }
+ }
+}

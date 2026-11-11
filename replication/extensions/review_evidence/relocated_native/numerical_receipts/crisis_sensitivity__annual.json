@@ -1,0 +1,245 @@
+{
+  "status": "passed",
+  "contexts": 14,
+  "samples": 42,
+  "independent_designs": 414,
+  "native_fits": 1656,
+  "joint_tests": 216,
+  "unavailable_joint_tests": 54,
+  "source_audit": {
+    "source_tables": {
+      "va_SA": {
+        "table_id": "M015662",
+        "source_cells": 4534,
+        "source_hashes_checked": 2
+      },
+      "va_NSA": {
+        "table_id": "M015661",
+        "source_cells": 4534,
+        "source_hashes_checked": 2
+      },
+      "iip_SA": {
+        "table_id": "M355382",
+        "source_cells": 11334,
+        "source_hashes_checked": 5
+      },
+      "iip_NSA": {
+        "table_id": "M355381",
+        "source_cells": 11334,
+        "source_hashes_checked": 5
+      }
+    },
+    "raw_complete_annual_cells": 4088,
+    "complete_weather_years": 44,
+    "contexts": [
+      {
+        "context": "aggregate_va",
+        "n_sectors": 1,
+        "n_periods": 44,
+        "start": 1982,
+        "end": 2025,
+        "includes_dwellings": true
+      },
+      {
+        "context": "va11",
+        "n_sectors": 11,
+        "n_periods": 44,
+        "start": 1982,
+        "end": 2025,
+        "includes_dwellings": false
+      },
+      {
+        "context": "va19",
+        "n_sectors": 19,
+        "n_periods": 20,
+        "start": 2006,
+        "end": 2025,
+        "includes_dwellings": false
+      },
+      {
+        "context": "iip_total",
+        "n_sectors": 1,
+        "n_periods": 42,
+        "start": 1984,
+        "end": 2025,
+        "includes_dwellings": false
+      },
+      {
+        "context": "iip6",
+        "n_sectors": 6,
+        "n_periods": 33,
+        "start": 1993,
+        "end": 2025,
+        "includes_dwellings": false
+      },
+      {
+        "context": "iip18",
+        "n_sectors": 18,
+        "n_periods": 29,
+        "start": 1997,
+        "end": 2025,
+        "includes_dwellings": false
+      },
+      {
+        "context": "va12",
+        "n_sectors": 12,
+        "n_periods": 44,
+        "start": 1982,
+        "end": 2025,
+        "includes_dwellings": true
+      },
+      {
+        "context": "va20",
+        "n_sectors": 20,
+        "n_periods": 20,
+        "start": 2006,
+        "end": 2025,
+        "includes_dwellings": true
+      },
+      {
+        "context": "aggregate_va_matched_va20",
+        "n_sectors": 1,
+        "n_periods": 20,
+        "start": 2006,
+        "end": 2025,
+        "includes_dwellings": true
+      },
+      {
+        "context": "va11_matched_va19",
+        "n_sectors": 11,
+        "n_periods": 20,
+        "start": 2006,
+        "end": 2025,
+        "includes_dwellings": false
+      },
+      {
+        "context": "va12_matched_va20",
+        "n_sectors": 12,
+        "n_periods": 20,
+        "start": 2006,
+        "end": 2025,
+        "includes_dwellings": true
+      },
+      {
+        "context": "iip_total_matched_iip6",
+        "n_sectors": 1,
+        "n_periods": 33,
+        "start": 1993,
+        "end": 2025,
+        "includes_dwellings": false
+      },
+      {
+        "context": "iip_total_matched_iip18",
+        "n_sectors": 1,
+        "n_periods": 29,
+        "start": 1997,
+        "end": 2025,
+        "includes_dwellings": false
+      },
+      {
+        "context": "iip6_matched_iip18",
+        "n_sectors": 6,
+        "n_periods": 29,
+        "start": 1997,
+        "end": 2025,
+        "includes_dwellings": false
+      }
+    ]
+  },
+  "policy_sha256": "f0ab8230980c843aace7888228a24cfca17336659b1489a953ef25f2d4ed3301",
+  "native_fit_log_sha256": "eee0b3b0479ecdefaa912e4e36c2d49c97e96ee3451d4ad4883b00113412a7a4",
+  "protected_sources_and_receipts_unchanged": true,
+  "numerical_checks": {
+    "Annual raw complete-calendar level": {
+      "values": 3340,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Annual raw prior-calendar growth": {
+      "values": 3340,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Annual raw day-weighted / summed weather": {
+      "values": 5010,
+      "maximum_absolute_error": 3.552713678800501e-15,
+      "maximum_scaled_error": 2.0313989815315346e-16,
+      "maximum_fraction_of_tolerance": 4.1807452267651635e-05
+    },
+    "Annual crisis exact raw-derived sample": {
+      "values": 267684,
+      "maximum_absolute_error": 5.820766091346741e-11,
+      "maximum_scaled_error": 2.5831540339406543e-16,
+      "maximum_fraction_of_tolerance": 0.00010652861633070703
+    },
+    "Annual crisis exact mean and SD": {
+      "values": 3312,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Annual specification centered R squared": {
+      "values": 1656,
+      "maximum_absolute_error": 7.105427357601002e-15,
+      "maximum_scaled_error": 7.105427357601002e-15,
+      "maximum_fraction_of_tolerance": 1.1282351141100759e-07
+    },
+    "Annual method-specific finite correction": {
+      "values": 5964,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Annual centered R squared": {
+      "values": 5964,
+      "maximum_absolute_error": 7.105427357601002e-15,
+      "maximum_scaled_error": 7.105427357601002e-15,
+      "maximum_fraction_of_tolerance": 1.1282351141100759e-07
+    },
+    "Annual crisis point / SE / CI / p": {
+      "values": 43620,
+      "maximum_absolute_error": 4.940375220030546e-09,
+      "maximum_scaled_error": 2.2817915642922734e-10,
+      "maximum_fraction_of_tolerance": 0.0009839419969225078
+    },
+    "Annual H1 full joint covariance": {
+      "values": 40488,
+      "maximum_absolute_error": 2.3096799850463867e-05,
+      "maximum_scaled_error": 8.238743021138362e-11,
+      "maximum_fraction_of_tolerance": 0.00026008687219236567
+    },
+    "Annual sector exact mean/SD": {
+      "values": 5520,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Annual baseline plus increment components": {
+      "values": 13800,
+      "maximum_absolute_error": 2.3305416107177734e-05,
+      "maximum_scaled_error": 3.019806626980426e-11,
+      "maximum_fraction_of_tolerance": 5.824182112591835e-06
+    },
+    "Annual joint F statistic": {
+      "values": 162,
+      "maximum_absolute_error": 0.10168924881145358,
+      "maximum_scaled_error": 2.0889539414899417e-07,
+      "maximum_fraction_of_tolerance": 0.06963161934539652
+    },
+    "Annual joint F p": {
+      "values": 162,
+      "maximum_absolute_error": 7.93809462606987e-15,
+      "maximum_scaled_error": 7.93809462606987e-15,
+      "maximum_fraction_of_tolerance": 1.7740942015108986e-07
+    },
+    "Annual within-table Holm zero-effect tests": {
+      "values": 5520,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    }
+  },
+  "scope": "Independent full raw-calendar annual VA sums / IIP means and pre-mask SA/NSA growth; raw annual weather; complete dwellings component; declared calendar matching; current/prior-year exclusions; full QR; unit CR1 / actual-year Bartlett1/2; H1 total baseline-plus-increment covariance and direct full-rank joint tests; within-table Holm; native logical-input receipts. Annual sector intercepts plus common trend, no year FE. Not stationarity/causal certification or a Fable execution claim."
+}

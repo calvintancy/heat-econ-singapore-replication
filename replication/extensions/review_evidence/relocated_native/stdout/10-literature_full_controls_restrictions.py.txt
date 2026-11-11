@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<string>", line 16, in <module>
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/literature_full_controls_restrictions.py", line 93, in <module>
+    if __name__=="__main__":run_literature_full_controls_restrictions()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/datadrive/heat_econ/dist/aea_audit_20261111/relocated_native/20261111T153310/no-git-project/scripts/literature_full_controls_restrictions.py", line 32, in run_literature_full_controls_restrictions
+    assert all(producer.shared.sha(ROOT/path) == value for path, value in protected.items())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

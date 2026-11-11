@@ -1,0 +1,5 @@
+covariance,hac_lags,test,restrictions,draws,available,rejections,rejection_rate
+Driscoll-Kraay,4,All sector temperature-lag responses jointly zero,60,2000,2000,2000,1.0
+Driscoll-Kraay,4,All sector cumulative direct temperature responses equal,11,2000,2000,712,0.356
+Driscoll-Kraay,8,All sector temperature-lag responses jointly zero,60,2000,2000,2000,1.0
+Driscoll-Kraay,8,All sector cumulative direct temperature responses equal,11,2000,2000,1091,0.5455

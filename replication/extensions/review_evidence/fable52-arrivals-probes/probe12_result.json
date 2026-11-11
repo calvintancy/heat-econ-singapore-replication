@@ -1,0 +1,461 @@
+{
+ "probe": 12,
+ "title": "Origin-cluster CR1 covariance is exactly blind to common date shocks in balanced static common models",
+ "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python audit_probes/probe12_origin_cluster_common_shock_blindness.py",
+ "identity": "score_i = sum_t a_t e_it = sum_t a_t (e_it - ebar_t); slope error = sum_t a_t sum_i u_it. Exact for balanced panels with destination-level regressors, origin x season (or origin) intercepts and common time effects; not exact when lagged outcomes enter (dynamic).",
+ "A_summary": {
+  "static_balanced_designs": {
+   "designs": 88,
+   "by_family": {
+    "monthly": 82,
+    "annual": 6
+   },
+   "all_balanced": true,
+   "max_date_weight_spread_across_origins_rel": 1.329375401572923e-13,
+   "max_cluster_covariance_rebuilt_rel_diff_vs_archive": 2.0054316778107402e-15,
+   "max_scores_full_vs_within_date_deviation_rel_diff": 3.720970869330101e-14,
+   "median_scores_full_vs_within_date_deviation_rel_diff": 3.0374373192339825e-15,
+   "date_mean_residual_variance_over_independence_value_min_median_max": [
+    0.33782740057080085,
+    2.942072944860155,
+    39.09984284584183
+   ],
+   "mean_pairwise_residual_correlation_min_median_max": [
+    -0.03733008435840321,
+    0.12101431429799904,
+    0.9448281092700395
+   ],
+   "cluster_over_calendar_se_median_min_median_max": [
+    0.028303882634625948,
+    0.4829692571711205,
+    2.1357647361858185
+   ]
+  },
+  "dynamic_designs_with_lagged_outcome": {
+   "designs": 22,
+   "by_family": {
+    "monthly": 22
+   },
+   "all_balanced": true,
+   "max_date_weight_spread_across_origins_rel": 0.8813237276939541,
+   "max_cluster_covariance_rebuilt_rel_diff_vs_archive": 7.20654051591103e-16,
+   "max_scores_full_vs_within_date_deviation_rel_diff": 0.3029336907743913,
+   "median_scores_full_vs_within_date_deviation_rel_diff": 0.0630164475944935,
+   "date_mean_residual_variance_over_independence_value_min_median_max": [
+    0.6929659127335537,
+    2.912418090732642,
+    11.786876407458731
+   ],
+   "mean_pairwise_residual_correlation_min_median_max": [
+    0.006898326692151951,
+    0.11023917775856487,
+    0.4151252110231273
+   ],
+   "cluster_over_calendar_se_median_min_median_max": [
+    0.12917441288616094,
+    0.43266626891339494,
+    0.8635184788519914
+   ]
+  }
+ },
+ "A_by_panel": [
+  {
+   "family": "annual",
+   "origins": 9,
+   "designs": 3,
+   "variance_ratio_median": 6.367348276035368,
+   "mean_pairwise_correlation_median": 0.8297215964533957,
+   "cluster_over_calendar_se_median": 0.09770989156347167
+  },
+  {
+   "family": "annual",
+   "origins": 42,
+   "designs": 3,
+   "variance_ratio_median": 23.370137551085847,
+   "mean_pairwise_correlation_median": 0.6917789870642173,
+   "cluster_over_calendar_se_median": 0.07319354117807375
+  },
+  {
+   "family": "monthly",
+   "origins": 9,
+   "designs": 52,
+   "variance_ratio_median": 1.6610867279810217,
+   "mean_pairwise_correlation_median": 0.1257254104750714,
+   "cluster_over_calendar_se_median": 0.6382780058591617
+  },
+  {
+   "family": "monthly",
+   "origins": 42,
+   "designs": 52,
+   "variance_ratio_median": 4.338466012436245,
+   "mean_pairwise_correlation_median": 0.11430610488853893,
+   "cluster_over_calendar_se_median": 0.44330385781958415
+  }
+ ],
+ "A_table_csv": "audit_probes/probe12_cluster_identity_table.csv",
+ "B_injected_common_shock_refits": [
+  {
+   "spec_id": "country__y_yoy_nsa__long__event_dates_excluded__common__own_current",
+   "n": 6930,
+   "k": 522,
+   "g": 42,
+   "t": 165,
+   "terms": [
+    "temp_l0"
+   ],
+   "saved_estimate": [
+    -14.704994686078958
+   ],
+   "saved_origin_cluster_se": [
+    1.2177946106799908
+   ],
+   "saved_calendar_hac_se": [
+    14.396968670895781
+   ],
+   "calendar_bandwidth": 12,
+   "saved_date_mean_residual_sd": 25.87178155412729,
+   "perturbations": [
+    {
+     "injected_common_date_shock_sd": 25.87178155412729,
+     "multiple_of_saved_date_mean_residual_sd": 1.0,
+     "draws": 200,
+     "estimate_shift_matches_exposure_formula_max_abs": 2.9665159217984183e-13,
+     "sd_of_estimate_across_draws": [
+      6.241617339622216
+     ],
+     "analytic_sd_of_estimate": [
+      6.873410487586485
+     ],
+     "cluster_se_max_rel_change_vs_saved": 1.6653345369377348e-15,
+     "calendar_se_over_saved_min_median_max": [
+      0.854357350301729,
+      1.0827745747598059,
+      1.4073377103179
+     ],
+     "share_of_draws_cluster_t_abs_gt_2": 0.97
+    },
+    {
+     "injected_common_date_shock_sd": 258.7178155412729,
+     "multiple_of_saved_date_mean_residual_sd": 10.0,
+     "draws": 200,
+     "estimate_shift_matches_exposure_formula_max_abs": 5.826450433232822e-13,
+     "sd_of_estimate_across_draws": [
+      61.987385258422734
+     ],
+     "analytic_sd_of_estimate": [
+      68.73410487586484
+     ],
+     "cluster_se_max_rel_change_vs_saved": 1.687538997430238e-14,
+     "calendar_se_over_saved_min_median_max": [
+      2.576231783205002,
+      4.417917112197111,
+      7.019135195518054
+     ],
+     "share_of_draws_cluster_t_abs_gt_2": 0.965
+    }
+   ]
+  },
+  {
+   "spec_id": "region__y_mom_nsa__long__all_eligible__common__own_current",
+   "n": 1863,
+   "k": 131,
+   "g": 9,
+   "t": 207,
+   "terms": [
+    "temp_l0"
+   ],
+   "saved_estimate": [
+    1.8244563364687603
+   ],
+   "saved_origin_cluster_se": [
+    1.146124818515927
+   ],
+   "saved_calendar_hac_se": [
+    1.6236461300972598
+   ],
+   "calendar_bandwidth": 12,
+   "saved_date_mean_residual_sd": 10.475333313978421,
+   "perturbations": [
+    {
+     "injected_common_date_shock_sd": 10.475333313978421,
+     "multiple_of_saved_date_mean_residual_sd": 1.0,
+     "draws": 200,
+     "estimate_shift_matches_exposure_formula_max_abs": 3.8191672047105385e-14,
+     "sd_of_estimate_across_draws": [
+      2.689295676415499
+     ],
+     "analytic_sd_of_estimate": [
+      2.601317158671035
+     ],
+     "cluster_se_max_rel_change_vs_saved": 1.9984014443252818e-15,
+     "calendar_se_over_saved_min_median_max": [
+      1.1339527891212777,
+      1.7594586677321116,
+      2.5312797807982923
+     ],
+     "share_of_draws_cluster_t_abs_gt_2": 0.455
+    },
+    {
+     "injected_common_date_shock_sd": 104.75333313978422,
+     "multiple_of_saved_date_mean_residual_sd": 10.0,
+     "draws": 200,
+     "estimate_shift_matches_exposure_formula_max_abs": 8.526512829121202e-14,
+     "sd_of_estimate_across_draws": [
+      26.32953270153794
+     ],
+     "analytic_sd_of_estimate": [
+      26.013171586710353
+     ],
+     "cluster_se_max_rel_change_vs_saved": 1.5654144647214707e-14,
+     "calendar_se_over_saved_min_median_max": [
+      9.56330112577496,
+      14.99400564859734,
+      24.256656756815442
+     ],
+     "share_of_draws_cluster_t_abs_gt_2": 0.945
+    }
+   ]
+  },
+  {
+   "spec_id": "country__y_yoy_nsa__full__all_eligible__common__distributed",
+   "n": 2688,
+   "k": 541,
+   "g": 42,
+   "t": 64,
+   "terms": [
+    "temp_l0",
+    "temp_l1",
+    "temp_l2",
+    "temp_l3",
+    "temp_l4",
+    "temp_l5",
+    "temp_l6",
+    "temp_l7",
+    "temp_l8",
+    "temp_l9",
+    "temp_l10",
+    "temp_l11",
+    "temp_l12"
+   ],
+   "saved_estimate": [
+    13.465538169718695,
+    -26.268586238761685,
+    21.918969951354796,
+    -4.519678861871494,
+    -17.748401911796392,
+    17.87886753745657,
+    -15.990452377514732,
+    1.6087751663996492,
+    -12.697861015833166,
+    16.60965595792476,
+    -13.66502618081955,
+    17.516211098297326,
+    2.7466137209639836
+   ],
+   "saved_origin_cluster_se": [
+    3.544004937520141,
+    3.1320015038486813,
+    4.341734972500222,
+    4.021906343147559,
+    2.6139099460344624,
+    3.766493842612463,
+    2.442539571461266,
+    2.991519262112346,
+    2.807376420551703,
+    3.17783260149871,
+    2.4418593038536045,
+    2.437198829266721,
+    4.625380175220555
+   ],
+   "saved_calendar_hac_se": [
+    18.17033357456519,
+    14.977108854599617,
+    13.2960351203701,
+    11.712463093208578,
+    12.16947875509434,
+    10.416092916099837,
+    10.248449627634624,
+    10.754046653095333,
+    6.783800382557271,
+    12.523319536685904,
+    11.139918989216639,
+    14.03762507995489,
+    16.58174020942739
+   ],
+   "calendar_bandwidth": 12,
+   "saved_date_mean_residual_sd": 6.990293038491508,
+   "perturbations": [
+    {
+     "injected_common_date_shock_sd": 6.990293038491508,
+     "multiple_of_saved_date_mean_residual_sd": 1.0,
+     "draws": 200,
+     "estimate_shift_matches_exposure_formula_max_abs": 5.027089855502709e-13,
+     "sd_of_estimate_across_draws": [
+      7.960007329186057,
+      5.9777984988890385,
+      7.02050581203177,
+      6.028002364953046,
+      5.840124375402201,
+      5.610438496475068,
+      6.379119250622157,
+      6.630983430779246,
+      6.408167488850467,
+      6.236201124560444,
+      6.593033054777771,
+      5.943021740747253,
+      8.128676743822425
+     ],
+     "analytic_sd_of_estimate": [
+      7.957273607698375,
+      6.158102544267819,
+      7.370885117866733,
+      6.334533420000069,
+      5.556982456138574,
+      5.395680797477592,
+      6.341459099363958,
+      6.960975086658715,
+      6.457416058041989,
+      6.262559546694569,
+      6.279041525098468,
+      5.694162868514285,
+      7.96051679047791
+     ],
+     "cluster_se_max_rel_change_vs_saved": 1.5543122344752192e-15,
+     "calendar_se_over_saved_min_median_max": [
+      0.5123477454846851,
+      1.089024995001168,
+      2.492243770225939
+     ],
+     "share_of_draws_cluster_t_abs_gt_2": 0.7938461538461539
+    },
+    {
+     "injected_common_date_shock_sd": 69.90293038491508,
+     "multiple_of_saved_date_mean_residual_sd": 10.0,
+     "draws": 200,
+     "estimate_shift_matches_exposure_formula_max_abs": 9.663381206337363e-13,
+     "sd_of_estimate_across_draws": [
+      75.83210400699939,
+      60.23118660060226,
+      77.2620665740103,
+      63.252369152732506,
+      53.781755127830515,
+      52.844618637147256,
+      60.043747680306446,
+      67.76949263045633,
+      62.66554486946241,
+      65.89866133780181,
+      62.72540474097635,
+      51.630718249477546,
+      77.34958838636362
+     ],
+     "analytic_sd_of_estimate": [
+      79.57273607698376,
+      61.58102544267819,
+      73.70885117866733,
+      63.345334200000686,
+      55.56982456138573,
+      53.95680797477592,
+      63.414590993639585,
+      69.60975086658715,
+      64.57416058041989,
+      62.62559546694569,
+      62.79041525098468,
+      56.94162868514285,
+      79.6051679047791
+     ],
+     "cluster_se_max_rel_change_vs_saved": 1.0769163338864018e-14,
+     "calendar_se_over_saved_min_median_max": [
+      1.2437900593000748,
+      4.628366116421807,
+      18.500605318585023
+     ],
+     "share_of_draws_cluster_t_abs_gt_2": 0.9226923076923077
+    }
+   ]
+  },
+  {
+   "spec_id": "annual__region__long__all_eligible__common",
+   "n": 153,
+   "k": 13,
+   "g": 9,
+   "t": 17,
+   "terms": [
+    "temp_c"
+   ],
+   "saved_estimate": [
+    -16.018935428709963
+   ],
+   "saved_origin_cluster_se": [
+    12.10170371242617
+   ],
+   "saved_calendar_hac_se": [
+    161.8730676573787
+   ],
+   "calendar_bandwidth": 1,
+   "saved_date_mean_residual_sd": 107.19448670711166,
+   "perturbations": [
+    {
+     "injected_common_date_shock_sd": 107.19448670711166,
+     "multiple_of_saved_date_mean_residual_sd": 1.0,
+     "draws": 200,
+     "estimate_shift_matches_exposure_formula_max_abs": 1.1368683772161603e-13,
+     "sd_of_estimate_across_draws": [
+      146.34474073199797
+     ],
+     "analytic_sd_of_estimate": [
+      148.90461997171232
+     ],
+     "cluster_se_max_rel_change_vs_saved": 9.992007221626409e-16,
+     "calendar_se_over_saved_min_median_max": [
+      0.4883046710059745,
+      1.2484687544384512,
+      2.146280402685183
+     ],
+     "share_of_draws_cluster_t_abs_gt_2": 0.85
+    },
+    {
+     "injected_common_date_shock_sd": 1071.9448670711167,
+     "multiple_of_saved_date_mean_residual_sd": 10.0,
+     "draws": 200,
+     "estimate_shift_matches_exposure_formula_max_abs": 1.8189894035458565e-12,
+     "sd_of_estimate_across_draws": [
+      1566.2627524476602
+     ],
+     "analytic_sd_of_estimate": [
+      1489.0461997171235
+     ],
+     "cluster_se_max_rel_change_vs_saved": 1.1102230246251565e-14,
+     "calendar_se_over_saved_min_median_max": [
+      3.255589747355904,
+      7.918511243539216,
+      16.49784598620469
+     ],
+     "share_of_draws_cluster_t_abs_gt_2": 0.99
+    }
+   ]
+  }
+ ],
+ "C_ledger_rows": [
+  {
+   "family": "monthly",
+   "origin_cluster_rows_with_p": 664,
+   "p_lt_05": 226,
+   "p_lt_001": 82,
+   "main_inference_true": 0,
+   "calibration_status_values": {
+    "Nominal working convention; no exact or demonstrated general small-sample calibration": 664
+   },
+   "rows_in_dynamic_specs": 200
+  },
+  {
+   "family": "annual",
+   "origin_cluster_rows_with_p": 6,
+   "p_lt_05": 3,
+   "p_lt_001": 2,
+   "main_inference_true": 0,
+   "calibration_status_values": {},
+   "rows_in_dynamic_specs": 0
+  }
+ ],
+ "seconds": 5.8
+}

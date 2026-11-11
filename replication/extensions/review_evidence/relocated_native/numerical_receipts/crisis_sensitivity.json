@@ -1,0 +1,741 @@
+{
+  "status": "passed",
+  "scope": "Independent cached-raw SA/NSA calendar growth and NEA weather; explicit inclusive event windows; named-design reconstruction plus raw Patsy FE span; full QR; unit CR1 and actual-calendar Bartlett covariance; baseline-plus-increment total effects; joint separate-series covariance; direct full-rank Wald and all-pairs Holm; native receipts and protected hashes. Not a Fable execution claim, causal claim, or stationarity certificate.",
+  "contexts": 20,
+  "samples": 60,
+  "requested_specs": 2655,
+  "independent_designs": 531,
+  "exported_coefficients_checked": 105150,
+  "selected_covariance_cells_checked": 127500,
+  "joint_profile_tests": 720,
+  "unavailable_joint_tests": 0,
+  "raw_source_audit": {
+    "va": {
+      "table_id": "M015662",
+      "source_cells": 4534,
+      "source_hashes_checked": 2
+    },
+    "iip": {
+      "table_id": "M355382",
+      "source_cells": 11334,
+      "source_hashes_checked": 5
+    },
+    "contexts": [
+      {
+        "context": "aggregate_va",
+        "parent_source": "outputs/aggregate_va/weather/samples/G1.csv",
+        "parent_sha256": "b9ceef68cf2bb49c2e971420e77f954074a6fc0008c867823797aaba740a0246",
+        "parent_rows": 178,
+        "complete_rows": 178,
+        "complete_periods": 178,
+        "match_template": "",
+        "includes_dwellings": true,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "1982Q1",
+        "end": "2026Q2"
+      },
+      {
+        "context": "va",
+        "parent_source": "outputs/outcomes/va/weather/common_sample.csv",
+        "parent_sha256": "fe13d1c44cc9be0abc620f48bc31626277e6e2f1d9acded4b9281ba14f08b621",
+        "parent_rows": 1958,
+        "complete_rows": 1958,
+        "complete_periods": 178,
+        "match_template": "",
+        "includes_dwellings": false,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "1982Q1",
+        "end": "2026Q2"
+      },
+      {
+        "context": "va-broad-matched",
+        "parent_source": "outputs/granular/va-broad-matched/long/samples/G1.csv",
+        "parent_sha256": "bf2f43d73bf1069029d3d8b77cfe8fc1b33171248e9b981c0275d33c93d3f52b",
+        "parent_rows": 902,
+        "complete_rows": 902,
+        "complete_periods": 82,
+        "match_template": "",
+        "includes_dwellings": false,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "2006Q1",
+        "end": "2026Q2"
+      },
+      {
+        "context": "va-detailed",
+        "parent_source": "outputs/granular/va-detailed/long/samples/G1.csv",
+        "parent_sha256": "0a460df1a195123f7caafa457a3ec71858135acd5f6d162587576ae690d54b39",
+        "parent_rows": 1558,
+        "complete_rows": 1558,
+        "complete_periods": 82,
+        "match_template": "",
+        "includes_dwellings": false,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "2006Q1",
+        "end": "2026Q2"
+      },
+      {
+        "context": "iip-monthly-total",
+        "parent_source": "outputs/granular/iip-monthly-total/long/samples/G1.csv",
+        "parent_sha256": "845ef932104c66f73a176bf7699ef2460204450e6be25fbd41a3bea4c8dcb2aa",
+        "parent_rows": 513,
+        "complete_rows": 513,
+        "complete_periods": 513,
+        "match_template": "",
+        "includes_dwellings": false,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "1984-01",
+        "end": "2026-09"
+      },
+      {
+        "context": "iip-monthly",
+        "parent_source": "outputs/outcomes/iip-monthly/weather/common_sample.csv",
+        "parent_sha256": "d7dbe426c532345389f083721b5507dea9324b49b3d6c56d6b39d47a132d46e4",
+        "parent_rows": 2430,
+        "complete_rows": 2430,
+        "complete_periods": 405,
+        "match_template": "",
+        "includes_dwellings": false,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "1993-01",
+        "end": "2026-09"
+      },
+      {
+        "context": "iip-monthly-broad-matched",
+        "parent_source": "outputs/granular/iip-monthly-broad-matched/long/samples/G1.csv",
+        "parent_sha256": "e2fa96c89112953f4a602dd3c7f1c9534456065fa8790568b3c543fdd12b4be4",
+        "parent_rows": 2142,
+        "complete_rows": 2142,
+        "complete_periods": 357,
+        "match_template": "",
+        "includes_dwellings": false,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "1997-01",
+        "end": "2026-09"
+      },
+      {
+        "context": "iip-monthly-detailed",
+        "parent_source": "outputs/granular/iip-monthly-detailed/long/samples/G1.csv",
+        "parent_sha256": "8e9ce21b4ba1740ebfab0e284ae790e2ef2da2bcd505f78ff735e5129da83971",
+        "parent_rows": 6426,
+        "complete_rows": 6426,
+        "complete_periods": 357,
+        "match_template": "",
+        "includes_dwellings": false,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "1997-01",
+        "end": "2026-09"
+      },
+      {
+        "context": "iip-quarterly-total",
+        "parent_source": "outputs/granular/iip-quarterly-total/long/samples/G1.csv",
+        "parent_sha256": "933dbe460753776f7d97827075e6bfbd20566cf0a21e7798a16662f3862948b8",
+        "parent_rows": 171,
+        "complete_rows": 171,
+        "complete_periods": 171,
+        "match_template": "",
+        "includes_dwellings": false,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "1984Q1",
+        "end": "2026Q3"
+      },
+      {
+        "context": "iip-quarterly",
+        "parent_source": "outputs/outcomes/iip-quarterly/weather/common_sample.csv",
+        "parent_sha256": "f0454a855d23757ab3bd2e147ecf099ab0085762175693acbd72016ab02a2207",
+        "parent_rows": 810,
+        "complete_rows": 810,
+        "complete_periods": 135,
+        "match_template": "",
+        "includes_dwellings": false,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "1993Q1",
+        "end": "2026Q3"
+      },
+      {
+        "context": "iip-quarterly-broad-matched",
+        "parent_source": "outputs/granular/iip-quarterly-broad-matched/long/samples/G1.csv",
+        "parent_sha256": "94172a24707ccc90b2887c07539c9b6b2442169e90a8f113bb49ffc2e49f4890",
+        "parent_rows": 714,
+        "complete_rows": 714,
+        "complete_periods": 119,
+        "match_template": "",
+        "includes_dwellings": false,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "1997Q1",
+        "end": "2026Q3"
+      },
+      {
+        "context": "iip-quarterly-detailed",
+        "parent_source": "outputs/granular/iip-quarterly-detailed/long/samples/G1.csv",
+        "parent_sha256": "f4c72de36883e32d44fdf21ea5ef6107bcdef3965749369892b2fb07b7d00941",
+        "parent_rows": 2142,
+        "complete_rows": 2142,
+        "complete_periods": 119,
+        "match_template": "",
+        "includes_dwellings": false,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "1997Q1",
+        "end": "2026Q3"
+      },
+      {
+        "context": "aggregate_va-matched-va19",
+        "parent_source": "outputs/aggregate_va/weather/samples/G1.csv",
+        "parent_sha256": "b9ceef68cf2bb49c2e971420e77f954074a6fc0008c867823797aaba740a0246",
+        "parent_rows": 178,
+        "complete_rows": 82,
+        "complete_periods": 82,
+        "match_template": "outputs/granular/va-detailed/long/samples/G1.csv",
+        "includes_dwellings": true,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "2006Q1",
+        "end": "2026Q2"
+      },
+      {
+        "context": "iip-monthly-total-matched-broad",
+        "parent_source": "outputs/granular/iip-monthly-total/long/samples/G1.csv",
+        "parent_sha256": "845ef932104c66f73a176bf7699ef2460204450e6be25fbd41a3bea4c8dcb2aa",
+        "parent_rows": 513,
+        "complete_rows": 405,
+        "complete_periods": 405,
+        "match_template": "outputs/outcomes/iip-monthly/weather/common_sample.csv",
+        "includes_dwellings": false,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "1993-01",
+        "end": "2026-09"
+      },
+      {
+        "context": "iip-monthly-total-matched-detailed",
+        "parent_source": "outputs/granular/iip-monthly-total/long/samples/G1.csv",
+        "parent_sha256": "845ef932104c66f73a176bf7699ef2460204450e6be25fbd41a3bea4c8dcb2aa",
+        "parent_rows": 513,
+        "complete_rows": 357,
+        "complete_periods": 357,
+        "match_template": "outputs/granular/iip-monthly-detailed/long/samples/G1.csv",
+        "includes_dwellings": false,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "1997-01",
+        "end": "2026-09"
+      },
+      {
+        "context": "iip-quarterly-total-matched-broad",
+        "parent_source": "outputs/granular/iip-quarterly-total/long/samples/G1.csv",
+        "parent_sha256": "933dbe460753776f7d97827075e6bfbd20566cf0a21e7798a16662f3862948b8",
+        "parent_rows": 171,
+        "complete_rows": 135,
+        "complete_periods": 135,
+        "match_template": "outputs/outcomes/iip-quarterly/weather/common_sample.csv",
+        "includes_dwellings": false,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "1993Q1",
+        "end": "2026Q3"
+      },
+      {
+        "context": "iip-quarterly-total-matched-detailed",
+        "parent_source": "outputs/granular/iip-quarterly-total/long/samples/G1.csv",
+        "parent_sha256": "933dbe460753776f7d97827075e6bfbd20566cf0a21e7798a16662f3862948b8",
+        "parent_rows": 171,
+        "complete_rows": 119,
+        "complete_periods": 119,
+        "match_template": "outputs/granular/iip-quarterly-detailed/long/samples/G1.csv",
+        "includes_dwellings": false,
+        "dwellings_independently_derived_from_raw": false,
+        "start": "1997Q1",
+        "end": "2026Q3"
+      },
+      {
+        "context": "va12",
+        "parent_source": "outputs/outcomes/va/weather/common_sample.csv",
+        "parent_sha256": "fe13d1c44cc9be0abc620f48bc31626277e6e2f1d9acded4b9281ba14f08b621",
+        "parent_rows": 2136,
+        "complete_rows": 2136,
+        "complete_periods": 178,
+        "match_template": "",
+        "includes_dwellings": true,
+        "dwellings_independently_derived_from_raw": true,
+        "start": "1982Q1",
+        "end": "2026Q2"
+      },
+      {
+        "context": "va12-matched",
+        "parent_source": "outputs/granular/va-broad-matched/long/samples/G1.csv",
+        "parent_sha256": "bf2f43d73bf1069029d3d8b77cfe8fc1b33171248e9b981c0275d33c93d3f52b",
+        "parent_rows": 984,
+        "complete_rows": 984,
+        "complete_periods": 82,
+        "match_template": "",
+        "includes_dwellings": true,
+        "dwellings_independently_derived_from_raw": true,
+        "start": "2006Q1",
+        "end": "2026Q2"
+      },
+      {
+        "context": "va20",
+        "parent_source": "outputs/granular/va-detailed/long/samples/G1.csv",
+        "parent_sha256": "0a460df1a195123f7caafa457a3ec71858135acd5f6d162587576ae690d54b39",
+        "parent_rows": 1640,
+        "complete_rows": 1640,
+        "complete_periods": 82,
+        "match_template": "",
+        "includes_dwellings": true,
+        "dwellings_independently_derived_from_raw": true,
+        "start": "2006Q1",
+        "end": "2026Q2"
+      }
+    ]
+  },
+  "native_receipt": {
+    "native_fits": 2655,
+    "native_api_calls": 531,
+    "native_fit_log_sha256": "99b79485f5c2f097badcc5296d388a4c273c3cf09a8dd478fc29599f9ff1f5b3",
+    "no_native_row_or_coefficient_drops": true
+  },
+  "protected_hashes": {
+    "reference_sha256": "554a6aef0336fd7e6077a1b3b7d155640515f075e83a074d8a70334f9a9f153f",
+    "protected_files_unchanged": 20
+  },
+  "source_and_matching_metadata": [
+    {
+      "context": "aggregate_va",
+      "source_rows": 178,
+      "source_periods": 178,
+      "eligible_rows": 178,
+      "eligible_periods": 178,
+      "additional_calendar_match": false,
+      "matched_to": null
+    },
+    {
+      "context": "va",
+      "source_rows": 1958,
+      "source_periods": 178,
+      "eligible_rows": 1958,
+      "eligible_periods": 178,
+      "additional_calendar_match": false,
+      "matched_to": null
+    },
+    {
+      "context": "va-broad-matched",
+      "source_rows": 902,
+      "source_periods": 82,
+      "eligible_rows": 902,
+      "eligible_periods": 82,
+      "additional_calendar_match": false,
+      "matched_to": "va-detailed"
+    },
+    {
+      "context": "va-detailed",
+      "source_rows": 1558,
+      "source_periods": 82,
+      "eligible_rows": 1558,
+      "eligible_periods": 82,
+      "additional_calendar_match": false,
+      "matched_to": null
+    },
+    {
+      "context": "iip-monthly-total",
+      "source_rows": 513,
+      "source_periods": 513,
+      "eligible_rows": 513,
+      "eligible_periods": 513,
+      "additional_calendar_match": false,
+      "matched_to": null
+    },
+    {
+      "context": "iip-monthly",
+      "source_rows": 2430,
+      "source_periods": 405,
+      "eligible_rows": 2430,
+      "eligible_periods": 405,
+      "additional_calendar_match": false,
+      "matched_to": null
+    },
+    {
+      "context": "iip-monthly-broad-matched",
+      "source_rows": 2142,
+      "source_periods": 357,
+      "eligible_rows": 2142,
+      "eligible_periods": 357,
+      "additional_calendar_match": false,
+      "matched_to": "iip-monthly-detailed"
+    },
+    {
+      "context": "iip-monthly-detailed",
+      "source_rows": 6426,
+      "source_periods": 357,
+      "eligible_rows": 6426,
+      "eligible_periods": 357,
+      "additional_calendar_match": false,
+      "matched_to": null
+    },
+    {
+      "context": "iip-quarterly-total",
+      "source_rows": 171,
+      "source_periods": 171,
+      "eligible_rows": 171,
+      "eligible_periods": 171,
+      "additional_calendar_match": false,
+      "matched_to": null
+    },
+    {
+      "context": "iip-quarterly",
+      "source_rows": 810,
+      "source_periods": 135,
+      "eligible_rows": 810,
+      "eligible_periods": 135,
+      "additional_calendar_match": false,
+      "matched_to": null
+    },
+    {
+      "context": "iip-quarterly-broad-matched",
+      "source_rows": 714,
+      "source_periods": 119,
+      "eligible_rows": 714,
+      "eligible_periods": 119,
+      "additional_calendar_match": false,
+      "matched_to": "iip-quarterly-detailed"
+    },
+    {
+      "context": "iip-quarterly-detailed",
+      "source_rows": 2142,
+      "source_periods": 119,
+      "eligible_rows": 2142,
+      "eligible_periods": 119,
+      "additional_calendar_match": false,
+      "matched_to": null
+    },
+    {
+      "context": "aggregate_va-matched-va19",
+      "source_rows": 178,
+      "source_periods": 178,
+      "eligible_rows": 82,
+      "eligible_periods": 82,
+      "additional_calendar_match": true,
+      "matched_to": "va-detailed"
+    },
+    {
+      "context": "iip-monthly-total-matched-broad",
+      "source_rows": 513,
+      "source_periods": 513,
+      "eligible_rows": 405,
+      "eligible_periods": 405,
+      "additional_calendar_match": true,
+      "matched_to": "iip-monthly"
+    },
+    {
+      "context": "iip-monthly-total-matched-detailed",
+      "source_rows": 513,
+      "source_periods": 513,
+      "eligible_rows": 357,
+      "eligible_periods": 357,
+      "additional_calendar_match": true,
+      "matched_to": "iip-monthly-detailed"
+    },
+    {
+      "context": "iip-quarterly-total-matched-broad",
+      "source_rows": 171,
+      "source_periods": 171,
+      "eligible_rows": 135,
+      "eligible_periods": 135,
+      "additional_calendar_match": true,
+      "matched_to": "iip-quarterly"
+    },
+    {
+      "context": "iip-quarterly-total-matched-detailed",
+      "source_rows": 171,
+      "source_periods": 171,
+      "eligible_rows": 119,
+      "eligible_periods": 119,
+      "additional_calendar_match": true,
+      "matched_to": "iip-quarterly-detailed"
+    },
+    {
+      "context": "va12",
+      "source_rows": 1958,
+      "source_periods": 178,
+      "eligible_rows": 2136,
+      "eligible_periods": 178,
+      "additional_calendar_match": false,
+      "matched_to": null
+    },
+    {
+      "context": "va12-matched",
+      "source_rows": 902,
+      "source_periods": 82,
+      "eligible_rows": 984,
+      "eligible_periods": 82,
+      "additional_calendar_match": false,
+      "matched_to": "va20"
+    },
+    {
+      "context": "va20",
+      "source_rows": 1558,
+      "source_periods": 82,
+      "eligible_rows": 1640,
+      "eligible_periods": 82,
+      "additional_calendar_match": false,
+      "matched_to": null
+    }
+  ],
+  "numerical_checks": {
+    "Raw calendar-lookup outcome: y_short": {
+      "values": 26250,
+      "maximum_absolute_error": 1.794120407794253e-13,
+      "maximum_scaled_error": 1.7108536809473662e-13,
+      "maximum_fraction_of_tolerance": 0.0005755132527189417
+    },
+    "Raw calendar-lookup outcome: y_yoy_nsa": {
+      "values": 26250,
+      "maximum_absolute_error": 1.7741363933510002e-13,
+      "maximum_scaled_error": 1.7613688285678109e-13,
+      "maximum_fraction_of_tolerance": 0.0005858313408209993
+    },
+    "Raw calendar-lookup outcome: y_yoy": {
+      "values": 26250,
+      "maximum_absolute_error": 1.7497114868092467e-13,
+      "maximum_scaled_error": 1.695310558602614e-13,
+      "maximum_fraction_of_tolerance": 0.0005631605071539789
+    },
+    "Raw calendar-lookup outcome: y_log_level": {
+      "values": 26250,
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "maximum_scaled_error": 2.3447342524555324e-16,
+      "maximum_fraction_of_tolerance": 8.735443512961901e-05
+    },
+    "Raw calendar-lookup outcome: y_raw_level": {
+      "values": 26250,
+      "maximum_absolute_error": 2.842170943040401e-14,
+      "maximum_scaled_error": 2.64146372438272e-16,
+      "maximum_fraction_of_tolerance": 5.5166718399583345e-05
+    },
+    "Raw NEA weather: temp_c": {
+      "values": 26250,
+      "maximum_absolute_error": 7.105427357601002e-15,
+      "maximum_scaled_error": 2.6848173028556435e-16,
+      "maximum_fraction_of_tolerance": 0.00022581847343488052
+    },
+    "Raw NEA weather: rain_100mm": {
+      "values": 26250,
+      "maximum_absolute_error": 1.7763568394002505e-15,
+      "maximum_scaled_error": 4.877421305327431e-16,
+      "maximum_fraction_of_tolerance": 0.00020554927556124168
+    },
+    "Raw NEA weather: rh_pct": {
+      "values": 26250,
+      "maximum_absolute_error": 1.4210854715202004e-14,
+      "maximum_scaled_error": 1.7035175756688658e-16,
+      "maximum_fraction_of_tolerance": 0.00016071872764804904
+    },
+    "Exact parent/sample numeric values": {
+      "values": 1944968,
+      "maximum_absolute_error": 2.2737367544323206e-13,
+      "maximum_scaled_error": 1.7574830479816228e-13,
+      "maximum_fraction_of_tolerance": 0.0034628380088304153
+    },
+    "Mask original calendar time": {
+      "values": 4136,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Raw-formula Patsy FE / centered complete-cell span": {
+      "values": 16607722,
+      "maximum_absolute_error": 2.2950530365051236e-12,
+      "maximum_scaled_error": 1.765254609153999e-13,
+      "maximum_fraction_of_tolerance": 0.0004874475972203698
+    },
+    "Every saved logical design cell": {
+      "values": 16607722,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Every saved response cell": {
+      "values": 837850,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "All native / nuisance coefficients": {
+      "values": 105150,
+      "maximum_absolute_error": 5.820766091346741e-10,
+      "maximum_scaled_error": 2.2565708344562937e-11,
+      "maximum_fraction_of_tolerance": 6.431983428392274e-05
+    },
+    "Every native residual": {
+      "values": 837850,
+      "maximum_absolute_error": 4.802132025361061e-10,
+      "maximum_scaled_error": 6.548361852765083e-11,
+      "maximum_fraction_of_tolerance": 0.00054707843063685
+    },
+    "Exact model outcome mean": {
+      "values": 22395,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Exact model outcome SD": {
+      "values": 22395,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Every exported coefficient": {
+      "values": 105150,
+      "maximum_absolute_error": 5.820766091346741e-10,
+      "maximum_scaled_error": 2.2565708344562937e-11,
+      "maximum_fraction_of_tolerance": 6.431983428392274e-05
+    },
+    "Singleton correction identity": {
+      "values": 4590,
+      "maximum_absolute_error": 2.220446049250313e-16,
+      "maximum_scaled_error": 1.924386576016938e-16,
+      "maximum_fraction_of_tolerance": 0.0001030921380009074
+    },
+    "Every selected coefficient covariance": {
+      "values": 127500,
+      "maximum_absolute_error": 6.05359673500061e-08,
+      "maximum_scaled_error": 6.847652778664527e-11,
+      "maximum_fraction_of_tolerance": 5.887465472660805e-05
+    },
+    "Every HC0 numerical-scale cell": {
+      "values": 127500,
+      "maximum_absolute_error": 1.862645149230957e-08,
+      "maximum_scaled_error": 3.3649555529556974e-12,
+      "maximum_fraction_of_tolerance": 4.797783060034139e-06
+    },
+    "Method-specific finite correction": {
+      "values": 127500,
+      "maximum_absolute_error": 0.0,
+      "maximum_scaled_error": 0.0,
+      "maximum_fraction_of_tolerance": 0.0
+    },
+    "Coefficient / SE / t p / CI": {
+      "values": 120450,
+      "maximum_absolute_error": 2.2100721253082156e-10,
+      "maximum_scaled_error": 2.2565708344562937e-11,
+      "maximum_fraction_of_tolerance": 4.846269780019835e-05
+    },
+    "HC0 numerical scale reference": {
+      "values": 24090,
+      "maximum_absolute_error": 1.862645149230957e-08,
+      "maximum_scaled_error": 6.968869925572108e-13,
+      "maximum_fraction_of_tolerance": 2.5714049961977335e-06
+    },
+    "Numerical zero-variance threshold": {
+      "values": 24090,
+      "maximum_absolute_error": 1.8634724839594607e-20,
+      "maximum_scaled_error": 1.8634724839594607e-20,
+      "maximum_fraction_of_tolerance": 7.003260977273039e-06
+    },
+    "Full centered R squared": {
+      "values": 19740,
+      "maximum_absolute_error": 4.551914400963142e-15,
+      "maximum_scaled_error": 4.551914400963142e-15,
+      "maximum_fraction_of_tolerance": 8.695275259534503e-06
+    },
+    "H1 temperature baseline": {
+      "values": 4350,
+      "maximum_absolute_error": 1.064108801074326e-10,
+      "maximum_scaled_error": 9.17981423212336e-12,
+      "maximum_fraction_of_tolerance": 2.360206622438865e-05
+    },
+    "H1 increment": {
+      "values": 4350,
+      "maximum_absolute_error": 1.418811734765768e-10,
+      "maximum_scaled_error": 9.158173708944371e-12,
+      "maximum_fraction_of_tolerance": 2.497553044419005e-05
+    },
+    "H1 total-effect variance components": {
+      "values": 13050,
+      "maximum_absolute_error": 6.05359673500061e-08,
+      "maximum_scaled_error": 3.2830405061190504e-12,
+      "maximum_fraction_of_tolerance": 1.175818539077262e-06
+    },
+    "Baseline plus increment total variance": {
+      "values": 4350,
+      "maximum_absolute_error": 9.313225746154785e-10,
+      "maximum_scaled_error": 6.834220180574569e-14,
+      "maximum_fraction_of_tolerance": 3.4108527206251436e-07
+    },
+    "H1 joint total-slope covariance": {
+      "values": 62490,
+      "maximum_absolute_error": 3.3527612686157227e-08,
+      "maximum_scaled_error": 2.752056348426829e-10,
+      "maximum_fraction_of_tolerance": 0.00046214227895573755
+    },
+    "Native baseline / increment full covariance": {
+      "values": 62490,
+      "maximum_absolute_error": 6.05359673500061e-08,
+      "maximum_scaled_error": 8.724354572109405e-12,
+      "maximum_fraction_of_tolerance": 2.051183680856275e-06
+    },
+    "Omnibus Wald statistic": {
+      "values": 720,
+      "maximum_absolute_error": 2.8577022021636367e-05,
+      "maximum_scaled_error": 8.955568912472796e-09,
+      "maximum_fraction_of_tolerance": 0.002978965911196562
+    },
+    "Omnibus F statistic": {
+      "values": 720,
+      "maximum_absolute_error": 1.5040537846289226e-06,
+      "maximum_scaled_error": 8.955568876845209e-09,
+      "maximum_fraction_of_tolerance": 0.0029733866925044077
+    },
+    "Omnibus F p": {
+      "values": 720,
+      "maximum_absolute_error": 5.820559962829708e-13,
+      "maximum_scaled_error": 5.820559962829708e-13,
+      "maximum_fraction_of_tolerance": 2.90243445181782e-05
+    },
+    "Omnibus numerical rank scale": {
+      "values": 2160,
+      "maximum_absolute_error": 2.1606683731079102e-07,
+      "maximum_scaled_error": 2.373274203395531e-13,
+      "maximum_fraction_of_tolerance": 1.1866370981589526e-07
+    },
+    "Pairwise slope difference": {
+      "values": 58140,
+      "maximum_absolute_error": 2.0554580260068178e-10,
+      "maximum_scaled_error": 5.911715561524034e-11,
+      "maximum_fraction_of_tolerance": 0.00016524923047161037
+    },
+    "Pairwise difference SE": {
+      "values": 58140,
+      "maximum_absolute_error": 1.0586376220089733e-10,
+      "maximum_scaled_error": 2.758960619861895e-12,
+      "maximum_fraction_of_tolerance": 1.3429337269123624e-05
+    },
+    "Pairwise t p": {
+      "values": 58140,
+      "maximum_absolute_error": 2.1589396936860794e-12,
+      "maximum_scaled_error": 2.1589396936860794e-12,
+      "maximum_fraction_of_tolerance": 1.609096523588389e-05
+    },
+    "Pairwise confidence intervals": {
+      "values": 116280,
+      "maximum_absolute_error": 2.212630079156952e-10,
+      "maximum_scaled_error": 5.967432055224406e-11,
+      "maximum_fraction_of_tolerance": 0.00017125902742235995
+    },
+    "All-pairs within-family Holm": {
+      "values": 58140,
+      "maximum_absolute_error": 7.444600491623987e-12,
+      "maximum_scaled_error": 7.444600491623987e-12,
+      "maximum_fraction_of_tolerance": 8.979609800923585e-05
+    },
+    "Joint separate-series temperature covariance": {
+      "values": 62490,
+      "maximum_absolute_error": 6.9267116487026215e-09,
+      "maximum_scaled_error": 1.727804566087343e-10,
+      "maximum_fraction_of_tolerance": 6.176315566009256e-05
+    },
+    "Balanced H1 mean equals common-slope identity": {
+      "values": 180,
+      "maximum_absolute_error": 9.730882766234572e-12,
+      "maximum_scaled_error": 1.6904255772942633e-12,
+      "maximum_fraction_of_tolerance": 4.296330801401208e-06
+    }
+  },
+  "policy_sha256": "f0ab8230980c843aace7888228a24cfca17336659b1489a953ef25f2d4ed3301",
+  "policy_interpretation": "These intentionally broad event/rebound blocks are an analysis choice, not an official recession-dating series, an exhaustive list of every sectoral shock, or a claim all unusual growth has been removed. The resulting non-crisis estimates are sensitivity analyses, not causal certification.",
+  "stationarity": "Gapped exclusion windows remain explicitly unresolved; no observations selected by outcome, residual, significance or stationarity pretests."
+}

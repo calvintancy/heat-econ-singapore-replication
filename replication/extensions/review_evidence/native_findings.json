@@ -1,0 +1,98 @@
+[
+  {
+    "id": "F1",
+    "severity": "high",
+    "classification": "design/inference",
+    "title": "Common national exposure does not justify independent sectors or national causal identification",
+    "source_location": "scripts/estimate.py:19,42-50",
+    "evidence": "common_weather_design.csv",
+    "computational_error_demonstrated": false,
+    "existing_disclosure": "Substantially disclosed; scientific limitation remains",
+    "replay": ".venv/bin/python dist/aea_audit_20261111/native_claims/probe_claims.py && .venv/bin/python dist/aea_audit_20261111/native_claims/show_findings.py",
+    "minimal_response": "See report.md finding F1"
+  },
+  {
+    "id": "F2",
+    "severity": "high",
+    "classification": "sample/specification sensitivity",
+    "title": "Large short VA estimate is calendar/crisis-sensitive, not revealed by adding PM2.5",
+    "source_location": "notes/baseline_specification.md:3-11",
+    "evidence": "same_sample_control_comparisons.csv",
+    "computational_error_demonstrated": false,
+    "existing_disclosure": "Substantially disclosed; scientific limitation remains",
+    "replay": ".venv/bin/python dist/aea_audit_20261111/native_claims/probe_claims.py && .venv/bin/python dist/aea_audit_20261111/native_claims/show_findings.py",
+    "minimal_response": "See report.md finding F2"
+  },
+  {
+    "id": "F3",
+    "severity": "high for mechanism claims",
+    "classification": "dynamic interpretation",
+    "title": "Existing quarterly YoY benchmarks do not estimate unrestricted current-plus-four-temperature-lag response",
+    "source_location": "scripts/outcome_analysis.py:163-176",
+    "evidence": "existing_YoY_temperature_horizons.csv",
+    "computational_error_demonstrated": false,
+    "existing_disclosure": "Substantially disclosed; scientific limitation remains",
+    "replay": ".venv/bin/python dist/aea_audit_20261111/native_claims/probe_claims.py && .venv/bin/python dist/aea_audit_20261111/native_claims/show_findings.py",
+    "minimal_response": "See report.md finding F3"
+  },
+  {
+    "id": "F4",
+    "severity": "high for confirmatory claims",
+    "classification": "finite-sample inference",
+    "title": "Nine-year full annual and high-dimensional profile inference remain fragile",
+    "source_location": "scripts/annual_analysis.py:339-365; scripts/visitor_analysis.py:353-381",
+    "evidence": "annual_request_summary.csv;visitor_joint_tests.csv",
+    "computational_error_demonstrated": false,
+    "existing_disclosure": "Substantially disclosed; scientific limitation remains",
+    "replay": ".venv/bin/python dist/aea_audit_20261111/native_claims/probe_claims.py && .venv/bin/python dist/aea_audit_20261111/native_claims/show_findings.py",
+    "minimal_response": "See report.md finding F4"
+  },
+  {
+    "id": "F5",
+    "severity": "medium",
+    "classification": "sample definition",
+    "title": "Economic endpoint exclusions retain growth intervals based in excluded years",
+    "source_location": "scripts/outcome_analysis.py:150-153",
+    "evidence": "common_weather_design.csv",
+    "computational_error_demonstrated": false,
+    "existing_disclosure": "Substantially disclosed; scientific limitation remains",
+    "replay": ".venv/bin/python dist/aea_audit_20261111/native_claims/probe_claims.py && .venv/bin/python dist/aea_audit_20261111/native_claims/show_findings.py",
+    "minimal_response": "See report.md finding F5"
+  },
+  {
+    "id": "F6",
+    "severity": "medium",
+    "classification": "multiplicity interpretation",
+    "title": "Within-table Holm does not adjust all inspected outcome/specification choices",
+    "source_location": "scripts/granular_interactions.py:74-81",
+    "evidence": "multiplicity_examples.csv",
+    "computational_error_demonstrated": false,
+    "existing_disclosure": "Substantially disclosed; scientific limitation remains",
+    "replay": ".venv/bin/python dist/aea_audit_20261111/native_claims/probe_claims.py && .venv/bin/python dist/aea_audit_20261111/native_claims/show_findings.py",
+    "minimal_response": "See report.md finding F6"
+  },
+  {
+    "id": "F7",
+    "severity": "medium",
+    "classification": "sample/estimand",
+    "title": "Shared visitor log mask conditions national support on all named markets being positive",
+    "source_location": "scripts/visitor_analysis.py:216-223",
+    "evidence": "visitor_positive_support_selection.json",
+    "computational_error_demonstrated": false,
+    "existing_disclosure": "Substantially disclosed; scientific limitation remains",
+    "replay": ".venv/bin/python dist/aea_audit_20261111/native_claims/probe_claims.py && .venv/bin/python dist/aea_audit_20261111/native_claims/show_findings.py",
+    "minimal_response": "See report.md finding F7"
+  },
+  {
+    "id": "F8",
+    "severity": "medium",
+    "classification": "comparability/weighting",
+    "title": "Cross-cut comparisons can change calendar and weighting as well as sector classification",
+    "source_location": "README.md:30; notes/iip_reconciliation_methods.md:3,9,71",
+    "evidence": "common_weather_design.csv",
+    "computational_error_demonstrated": false,
+    "existing_disclosure": "Substantially disclosed; scientific limitation remains",
+    "replay": ".venv/bin/python dist/aea_audit_20261111/native_claims/probe_claims.py && .venv/bin/python dist/aea_audit_20261111/native_claims/show_findings.py",
+    "minimal_response": "See report.md finding F8"
+  }
+]

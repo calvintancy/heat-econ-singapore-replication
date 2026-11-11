@@ -1,0 +1,861 @@
+{
+ "probe": "06 actual-calendar Bartlett HAC with gaps; scaling conventions",
+ "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python audit_probes/probe06_calendar_hac_gaps.py",
+ "production_reference": "scripts/literature_sensitivity.py:197-208 calendar_covariance; scripts/visitor_rigour_monthly.py:358-369",
+ "summary": {
+  "beta_max_abs_diff_vs_native": 2.3092638912203256e-13,
+  "residual_max_abs_diff_vs_native": 2.8421709430404007e-13,
+  "raw_hac_full_matrix_max_rel_diff": 4.2222778976389054e-15,
+  "corrected_hac_full_matrix_max_rel_diff": 4.210635587259386e-15,
+  "compressed_gap_version_min_rel_diff_vs_saved": 0.021087880126292837,
+  "all_time_axes_month_ordinal": true,
+  "all_gap_counts_match_ledger": true,
+  "all_k_time_match": true
+ },
+ "designs": [
+  {
+   "spec_id": "aggregate__y_mom_nsa__long__event_dates_excluded__common__own_current",
+   "why": "explicitly gapped single series (event dates removed)",
+   "n": 165,
+   "k": 30,
+   "t": 165,
+   "g": 1,
+   "start": "2010-01",
+   "end": "2026-09",
+   "time_axis_is_month_ordinal": true,
+   "calendar_span_months": 201,
+   "calendar_gaps_mine": 36,
+   "calendar_gaps_ledger": 36,
+   "gap_runs": [
+    {
+     "last_observed_before": "2019-12",
+     "first_observed_after": "2023-01",
+     "missing_months": 36
+    }
+   ],
+   "balanced_dates": true,
+   "beta_max_abs_diff_vs_native": 2.3092638912203256e-14,
+   "residual_max_abs_diff_vs_native": 4.04121180963557e-14,
+   "scaled_condition_number": 10.528963546595525,
+   "normal_equation_max_abs": 7.176481631177012e-13,
+   "hc0_max_rel_diff": 1.9724082800646242e-15,
+   "k_time_mine": 30,
+   "k_time_ledger": 30,
+   "full_span_rank_mine": 30,
+   "full_span_rank_ledger": 30,
+   "factor_mine": 1.2222222222222223,
+   "factor_saved": [
+    1.2222222222222223,
+    1.2222222222222223
+   ],
+   "inference_df_saved": [
+    164,
+    164
+   ],
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "bandwidths": {
+    "12": {
+     "raw_full_matrix_max_rel_diff_autocovariance_sum": 2.071449291390972e-15,
+     "raw_full_matrix_max_rel_diff_dense_quadratic_form": 1.4621994998053918e-15,
+     "corrected_full_matrix_max_rel_diff": 1.993908408825534e-15,
+     "corrected_equals_raw_times_saved_factor_max_abs": 0.0,
+     "compressed_full_matrix_max_rel_diff_vs_saved": 0.021087880126292837,
+     "min_eigenvalue_over_max_raw": 2.2092548474826142e-05,
+     "pair_weights": {
+      "observed_date_pairs_with_positive_calendar_weight": 1824,
+      "observed_date_pairs_with_positive_compressed_weight": 1902,
+      "pairs_where_weights_differ": 78,
+      "pairs_given_weight_only_by_compressed": 78,
+      "sum_abs_weight_difference": 28.0
+     },
+     "contrasts": [
+      {
+       "contrast": "cumulative direct, single/pooled slope",
+       "estimate": -0.8683424447830523,
+       "raw_variance_mine": 0.8869405610663915,
+       "corrected_variance_saved": 1.0840384635255829,
+       "corrected_variance_rel_diff": 6.349758780965548e-15,
+       "se_ratio_compressed_over_calendar": 0.9974468191916908,
+       "se_ratio_hc0_over_calendar_raw": 1.4586225038487568,
+       "se_ratio_date_cluster_only_over_calendar_raw": 1.458622503848757,
+       "conventions": {
+        "production: raw x T/(T-K_time), t(T-1)": {
+         "std_error": 1.041171678219106,
+         "t": -0.8340050569453895,
+         "p": 0.40549124792044366
+        },
+        "no correction, t(T-1)": {
+         "std_error": 0.9417752179083879,
+         "t": -0.9220272823822819,
+         "p": 0.357868765106061
+        },
+        "raw x N/(N-K), t(T-1)": {
+         "std_error": 1.041171678219106,
+         "t": -0.8340050569453895,
+         "p": 0.40549124792044366
+        },
+        "raw x T/(T-K_time), t(T-K_time)": {
+         "std_error": 1.041171678219106,
+         "t": -0.8340050569453895,
+         "p": 0.40575142021831945
+        },
+        "raw x T/(T-K_time), normal": {
+         "std_error": 1.041171678219106,
+         "t": -0.8340050569453895,
+         "p": 0.40427813421134307
+        }
+       }
+      },
+      {
+       "contrast": "temp_l0 main",
+       "estimate": -0.8683424447830523,
+       "raw_variance_mine": 0.8869405610663915,
+       "corrected_variance_saved": 1.0840384635255829,
+       "corrected_variance_rel_diff": 6.349758780965548e-15,
+       "se_ratio_compressed_over_calendar": 0.9974468191916908,
+       "se_ratio_hc0_over_calendar_raw": 1.4586225038487568,
+       "se_ratio_date_cluster_only_over_calendar_raw": 1.458622503848757,
+       "conventions": {
+        "production: raw x T/(T-K_time), t(T-1)": {
+         "std_error": 1.041171678219106,
+         "t": -0.8340050569453895,
+         "p": 0.40549124792044366
+        },
+        "no correction, t(T-1)": {
+         "std_error": 0.9417752179083879,
+         "t": -0.9220272823822819,
+         "p": 0.357868765106061
+        },
+        "raw x N/(N-K), t(T-1)": {
+         "std_error": 1.041171678219106,
+         "t": -0.8340050569453895,
+         "p": 0.40549124792044366
+        },
+        "raw x T/(T-K_time), t(T-K_time)": {
+         "std_error": 1.041171678219106,
+         "t": -0.8340050569453895,
+         "p": 0.40575142021831945
+        },
+        "raw x T/(T-K_time), normal": {
+         "std_error": 1.041171678219106,
+         "t": -0.8340050569453895,
+         "p": 0.40427813421134307
+        }
+       }
+      }
+     ]
+    },
+    "24": {
+     "raw_full_matrix_max_rel_diff_autocovariance_sum": 2.988914940085896e-15,
+     "raw_full_matrix_max_rel_diff_dense_quadratic_form": 2.988914940085896e-15,
+     "corrected_full_matrix_max_rel_diff": 3.0976027560890197e-15,
+     "corrected_equals_raw_times_saved_factor_max_abs": 0.0,
+     "compressed_full_matrix_max_rel_diff_vs_saved": 0.06693742265665678,
+     "min_eigenvalue_over_max_raw": 1.279984860602443e-05,
+     "pair_weights": {
+      "observed_date_pairs_with_positive_calendar_weight": 3360,
+      "observed_date_pairs_with_positive_compressed_weight": 3660,
+      "pairs_where_weights_differ": 300,
+      "pairs_given_weight_only_by_compressed": 300,
+      "sum_abs_weight_difference": 104.00000000000001
+     },
+     "contrasts": [
+      {
+       "contrast": "cumulative direct, single/pooled slope",
+       "estimate": -0.8683424447830523,
+       "raw_variance_mine": 1.0507867517526335,
+       "corrected_variance_saved": 1.2842949188087651,
+       "corrected_variance_rel_diff": 7.261473412587691e-15,
+       "se_ratio_compressed_over_calendar": 1.0013589158364078,
+       "se_ratio_hc0_over_calendar_raw": 1.340086627540076,
+       "se_ratio_date_cluster_only_over_calendar_raw": 1.3400866275400762,
+       "conventions": {
+        "production: raw x T/(T-K_time), t(T-1)": {
+         "std_error": 1.1332673642211597,
+         "t": -0.7662291107975411,
+         "p": 0.4446414594520192
+        },
+        "no correction, t(T-1)": {
+         "std_error": 1.02507890025726,
+         "t": -0.8470981546543664,
+         "p": 0.3981748853852413
+        },
+        "raw x N/(N-K), t(T-1)": {
+         "std_error": 1.1332673642211595,
+         "t": -0.7662291107975412,
+         "p": 0.4446414594520191
+        },
+        "raw x T/(T-K_time), t(T-K_time)": {
+         "std_error": 1.1332673642211597,
+         "t": -0.7662291107975411,
+         "p": 0.44487771275772775
+        },
+        "raw x T/(T-K_time), normal": {
+         "std_error": 1.1332673642211597,
+         "t": -0.7662291107975411,
+         "p": 0.4435399898806318
+        }
+       }
+      },
+      {
+       "contrast": "temp_l0 main",
+       "estimate": -0.8683424447830523,
+       "raw_variance_mine": 1.0507867517526335,
+       "corrected_variance_saved": 1.2842949188087651,
+       "corrected_variance_rel_diff": 7.261473412587691e-15,
+       "se_ratio_compressed_over_calendar": 1.0013589158364078,
+       "se_ratio_hc0_over_calendar_raw": 1.340086627540076,
+       "se_ratio_date_cluster_only_over_calendar_raw": 1.3400866275400762,
+       "conventions": {
+        "production: raw x T/(T-K_time), t(T-1)": {
+         "std_error": 1.1332673642211597,
+         "t": -0.7662291107975411,
+         "p": 0.4446414594520192
+        },
+        "no correction, t(T-1)": {
+         "std_error": 1.02507890025726,
+         "t": -0.8470981546543664,
+         "p": 0.3981748853852413
+        },
+        "raw x N/(N-K), t(T-1)": {
+         "std_error": 1.1332673642211595,
+         "t": -0.7662291107975412,
+         "p": 0.4446414594520191
+        },
+        "raw x T/(T-K_time), t(T-K_time)": {
+         "std_error": 1.1332673642211597,
+         "t": -0.7662291107975411,
+         "p": 0.44487771275772775
+        },
+        "raw x T/(T-K_time), normal": {
+         "std_error": 1.1332673642211597,
+         "t": -0.7662291107975411,
+         "p": 0.4435399898806318
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "spec_id": "region__y_mom_nsa__full__strict_growth_window_clean__H1__dynamic",
+   "why": "short dynamic H1 panel with many gaps",
+   "n": 576,
+   "k": 161,
+   "t": 64,
+   "g": 9,
+   "start": "2017-01",
+   "end": "2025-12",
+   "time_axis_is_month_ordinal": true,
+   "calendar_span_months": 108,
+   "calendar_gaps_mine": 44,
+   "calendar_gaps_ledger": 44,
+   "gap_runs": [
+    {
+     "last_observed_before": "2017-12",
+     "first_observed_after": "2018-03",
+     "missing_months": 2
+    },
+    {
+     "last_observed_before": "2019-02",
+     "first_observed_after": "2019-04",
+     "missing_months": 1
+    },
+    {
+     "last_observed_before": "2019-06",
+     "first_observed_after": "2019-08",
+     "missing_months": 1
+    },
+    {
+     "last_observed_before": "2019-12",
+     "first_observed_after": "2023-05",
+     "missing_months": 40
+    }
+   ],
+   "balanced_dates": true,
+   "beta_max_abs_diff_vs_native": 2.3092638912203256e-13,
+   "residual_max_abs_diff_vs_native": 2.8421709430404007e-13,
+   "scaled_condition_number": 36.86695724092846,
+   "normal_equation_max_abs": 7.503331289626658e-11,
+   "hc0_max_rel_diff": 3.2266938438466527e-15,
+   "k_time_mine": 33,
+   "k_time_ledger": 33,
+   "full_span_rank_mine": 57,
+   "full_span_rank_ledger": 57,
+   "factor_mine": 2.064516129032258,
+   "factor_saved": [
+    2.064516129032258,
+    2.064516129032258
+   ],
+   "inference_df_saved": [
+    63,
+    63
+   ],
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC"
+   ],
+   "bandwidths": {
+    "12": {
+     "raw_full_matrix_max_rel_diff_autocovariance_sum": 4.2222778976389054e-15,
+     "raw_full_matrix_max_rel_diff_dense_quadratic_form": 4.191231736626854e-15,
+     "corrected_full_matrix_max_rel_diff": 4.210635587259386e-15,
+     "corrected_equals_raw_times_saved_factor_max_abs": 0.0,
+     "compressed_full_matrix_max_rel_diff_vs_saved": 0.11416643013746496,
+     "min_eigenvalue_over_max_raw": -1.4945914117820244e-16,
+     "pair_weights": {
+      "observed_date_pairs_with_positive_calendar_weight": 576,
+      "observed_date_pairs_with_positive_compressed_weight": 690,
+      "pairs_where_weights_differ": 239,
+      "pairs_given_weight_only_by_compressed": 114,
+      "sum_abs_weight_difference": 47.76923076923077
+     },
+     "contrasts": [
+      {
+       "contrast": "cumulative direct, reference origin 1.1",
+       "estimate": -8.95119981781528,
+       "raw_variance_mine": 23.810542646705326,
+       "corrected_variance_saved": 49.157249335133564,
+       "corrected_variance_rel_diff": 1.4454485256404749e-16,
+       "se_ratio_compressed_over_calendar": 1.0480146579960132,
+       "se_ratio_hc0_over_calendar_raw": 0.8137401455682137,
+       "se_ratio_date_cluster_only_over_calendar_raw": 0.8875379711610237,
+       "conventions": {
+        "production: raw x T/(T-K_time), t(T-1)": {
+         "std_error": 7.01122309837118,
+         "t": -1.276695904869264,
+         "p": 0.20639557370649877
+        },
+        "no correction, t(T-1)": {
+         "std_error": 4.879604763370218,
+         "t": -1.8344108287231269,
+         "p": 0.07131595977906889
+        },
+        "raw x N/(N-K), t(T-1)": {
+         "std_error": 5.748729050633351,
+         "t": -1.5570745705660114,
+         "p": 0.12446248468990047
+        },
+        "raw x T/(T-K_time), t(T-K_time)": {
+         "std_error": 7.01122309837118,
+         "t": -1.276695904869264,
+         "p": 0.21119080783356156
+        },
+        "raw x T/(T-K_time), normal": {
+         "std_error": 7.01122309837118,
+         "t": -1.276695904869264,
+         "p": 0.2017096277918543
+        },
+        "raw x T/(T-full span rank), t(T-1)": {
+         "std_error": 14.754537943044317,
+         "t": -0.6066743568906618,
+         "p": 0.5462471543306712
+        }
+       }
+      },
+      {
+       "contrast": "temp_l0 main",
+       "estimate": -2.292342912765619,
+       "raw_variance_mine": 8.376337315045927,
+       "corrected_variance_saved": 17.29308348912696,
+       "corrected_variance_rel_diff": 6.574121832760289e-15,
+       "se_ratio_compressed_over_calendar": 1.0729663683432034,
+       "se_ratio_hc0_over_calendar_raw": 0.8982777148568636,
+       "se_ratio_date_cluster_only_over_calendar_raw": 1.035067852467085,
+       "conventions": {
+        "production: raw x T/(T-K_time), t(T-1)": {
+         "std_error": 4.1584953395581765,
+         "t": -0.5512433526038703,
+         "p": 0.5834167032306962
+        },
+        "no correction, t(T-1)": {
+         "std_error": 2.8941902693233432,
+         "t": -0.7920498306773608,
+         "p": 0.43130394028397645
+        },
+        "raw x N/(N-K), t(T-1)": {
+         "std_error": 3.4096851048706824,
+         "t": -0.6723034069894146,
+         "p": 0.5038488821927452
+        },
+        "raw x T/(T-K_time), t(T-K_time)": {
+         "std_error": 4.1584953395581765,
+         "t": -0.5512433526038703,
+         "p": 0.5854184969491268
+        },
+        "raw x T/(T-K_time), normal": {
+         "std_error": 4.1584953395581765,
+         "t": -0.5512433526038703,
+         "p": 0.5814668650507572
+        },
+        "raw x T/(T-full span rank), t(T-1)": {
+         "std_error": 8.751208799465847,
+         "t": -0.2619458597428893,
+         "p": 0.7942177546011149
+        }
+       }
+      },
+      {
+       "contrast": "cumulative direct total, origin 1.9",
+       "estimate": -5.81117099432012,
+       "raw_variance_mine": 36.16793042149516,
+       "corrected_variance_saved": 74.66927570889345,
+       "corrected_variance_rel_diff": 3.045076750572402e-15,
+       "se_ratio_compressed_over_calendar": 1.0682631518733536,
+       "se_ratio_hc0_over_calendar_raw": 1.2071300827440339,
+       "se_ratio_date_cluster_only_over_calendar_raw": 1.214118105605965,
+       "conventions": {
+        "production: raw x T/(T-K_time), t(T-1)": {
+         "std_error": 8.641138565541766,
+         "t": -0.6725006143858523,
+         "p": 0.503724212707486
+        },
+        "no correction, t(T-1)": {
+         "std_error": 6.013977919937449,
+         "t": -0.9662774076797014,
+         "p": 0.33760016905035445
+        },
+        "raw x N/(N-K), t(T-1)": {
+         "std_error": 7.085149567386978,
+         "t": -0.8201903063654442,
+         "p": 0.41520010878834274
+        },
+        "raw x T/(T-K_time), t(T-K_time)": {
+         "std_error": 8.641138565541766,
+         "t": -0.6725006143858523,
+         "p": 0.5062471880886474
+        },
+        "raw x T/(T-K_time), normal": {
+         "std_error": 8.641138565541766,
+         "t": -0.6725006143858523,
+         "p": 0.501265049124711
+        },
+        "raw x T/(T-full span rank), t(T-1)": {
+         "std_error": 18.184559961586288,
+         "t": -0.319566214777583,
+         "p": 0.7503545050611335
+        }
+       }
+      }
+     ]
+    },
+    "24": {
+     "raw_full_matrix_max_rel_diff_autocovariance_sum": 4.083674238889e-15,
+     "raw_full_matrix_max_rel_diff_dense_quadratic_form": 4.052737312836811e-15,
+     "corrected_full_matrix_max_rel_diff": 4.0759400073759525e-15,
+     "corrected_equals_raw_times_saved_factor_max_abs": 0.0,
+     "compressed_full_matrix_max_rel_diff_vs_saved": 0.1163962390621723,
+     "min_eigenvalue_over_max_raw": -1.38994117204026e-16,
+     "pair_weights": {
+      "observed_date_pairs_with_positive_calendar_weight": 906,
+      "observed_date_pairs_with_positive_compressed_weight": 1236,
+      "pairs_where_weights_differ": 623,
+      "pairs_given_weight_only_by_compressed": 330,
+      "sum_abs_weight_difference": 130.36
+     },
+     "contrasts": [
+      {
+       "contrast": "cumulative direct, reference origin 1.1",
+       "estimate": -8.95119981781528,
+       "raw_variance_mine": 16.3571898919125,
+       "corrected_variance_saved": 33.76968235749687,
+       "corrected_variance_rel_diff": 2.7353101717377204e-15,
+       "se_ratio_compressed_over_calendar": 0.8149981123981876,
+       "se_ratio_hc0_over_calendar_raw": 0.9817842056018197,
+       "se_ratio_date_cluster_only_over_calendar_raw": 1.0708218916117513,
+       "conventions": {
+        "production: raw x T/(T-K_time), t(T-1)": {
+         "std_error": 5.811168760025541,
+         "t": -1.5403441523484405,
+         "p": 0.1284846398846109
+        },
+        "no correction, t(T-1)": {
+         "std_error": 4.044402291057667,
+         "t": -2.213231813661746,
+         "p": 0.03051152566403622
+        },
+        "raw x N/(N-K), t(T-1)": {
+         "std_error": 4.764765605112859,
+         "t": -1.878623327915678,
+         "p": 0.06492447332202989
+        },
+        "raw x T/(T-K_time), t(T-K_time)": {
+         "std_error": 5.811168760025541,
+         "t": -1.5403441523484405,
+         "p": 0.13362325595096627
+        },
+        "raw x T/(T-K_time), normal": {
+         "std_error": 5.811168760025541,
+         "t": -1.5403441523484405,
+         "p": 0.12347648677049636
+        },
+        "raw x T/(T-full span rank), t(T-1)": {
+         "std_error": 12.229123044615378,
+         "t": -0.7319576215856782,
+         "p": 0.4669086625248974
+        }
+       }
+      },
+      {
+       "contrast": "temp_l0 main",
+       "estimate": -2.292342912765619,
+       "raw_variance_mine": 3.8750259053184135,
+       "corrected_variance_saved": 8.000053481947555,
+       "corrected_variance_rel_diff": 1.7097320279479097e-14,
+       "se_ratio_compressed_over_calendar": 0.9678935407335428,
+       "se_ratio_hc0_over_calendar_raw": 1.3206885098551318,
+       "se_ratio_date_cluster_only_over_calendar_raw": 1.521803554807693,
+       "conventions": {
+        "production: raw x T/(T-K_time), t(T-1)": {
+         "std_error": 2.82843657909236,
+         "t": -0.8104629001443716,
+         "p": 0.4207252069176088
+        },
+        "no correction, t(T-1)": {
+         "std_error": 1.9685085484494127,
+         "t": -1.164507471695406,
+         "p": 0.2486092464521458
+        },
+        "raw x N/(N-K), t(T-1)": {
+         "std_error": 2.319126820237642,
+         "t": -0.988450865542024,
+         "p": 0.3267130938012827
+        },
+        "raw x T/(T-K_time), t(T-K_time)": {
+         "std_error": 2.82843657909236,
+         "t": -0.8104629001443716,
+         "p": 0.4238526064528819
+        },
+        "raw x T/(T-K_time), normal": {
+         "std_error": 2.82843657909236,
+         "t": -0.8104629001443716,
+         "p": 0.41767417941555085
+        },
+        "raw x T/(T-full span rank), t(T-1)": {
+         "std_error": 5.952210369030729,
+         "t": -0.385124646247829,
+         "p": 0.7014422732275082
+        }
+       }
+      },
+      {
+       "contrast": "cumulative direct total, origin 1.9",
+       "estimate": -5.81117099432012,
+       "raw_variance_mine": 19.96513064609197,
+       "corrected_variance_saved": 41.218334237093345,
+       "corrected_variance_rel_diff": 5.861093967767054e-15,
+       "se_ratio_compressed_over_calendar": 0.9405406628414924,
+       "se_ratio_hc0_over_calendar_raw": 1.6247248541242818,
+       "se_ratio_date_cluster_only_over_calendar_raw": 1.6341303147181883,
+       "conventions": {
+        "production: raw x T/(T-K_time), t(T-1)": {
+         "std_error": 6.4201506397508386,
+         "t": -0.9051455830864504,
+         "p": 0.3688368605683939
+        },
+        "no correction, t(T-1)": {
+         "std_error": 4.468235742000636,
+         "t": -1.3005515666275456,
+         "p": 0.19814940883863405
+        },
+        "raw x N/(N-K), t(T-1)": {
+         "std_error": 5.264089585275384,
+         "t": -1.1039270704235395,
+         "p": 0.2738234766751897
+        },
+        "raw x T/(T-K_time), t(T-K_time)": {
+         "std_error": 6.4201506397508386,
+         "t": -0.9051455830864504,
+         "p": 0.37236959596280167
+        },
+        "raw x T/(T-K_time), normal": {
+         "std_error": 6.4201506397508386,
+         "t": -0.9051455830864504,
+         "p": 0.36538826606725927
+        },
+        "raw x T/(T-full span rank), t(T-1)": {
+         "std_error": 13.510674940050109,
+         "t": -0.430117001563992,
+         "p": 0.6685782818106359
+        }
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "spec_id": "region__y_yoy_nsa__full__event_dates_excluded__common__two_channel",
+   "why": "short pooled two-channel panel; also origin-cluster CR1",
+   "n": 549,
+   "k": 133,
+   "t": 61,
+   "g": 9,
+   "start": "2017-01",
+   "end": "2025-12",
+   "time_axis_is_month_ordinal": true,
+   "calendar_span_months": 108,
+   "calendar_gaps_mine": 47,
+   "calendar_gaps_ledger": 47,
+   "gap_runs": [
+    {
+     "last_observed_before": "2017-12",
+     "first_observed_after": "2018-03",
+     "missing_months": 2
+    },
+    {
+     "last_observed_before": "2019-02",
+     "first_observed_after": "2019-04",
+     "missing_months": 1
+    },
+    {
+     "last_observed_before": "2019-06",
+     "first_observed_after": "2019-08",
+     "missing_months": 1
+    },
+    {
+     "last_observed_before": "2019-12",
+     "first_observed_after": "2023-08",
+     "missing_months": 43
+    }
+   ],
+   "balanced_dates": true,
+   "beta_max_abs_diff_vs_native": 1.616484723854228e-13,
+   "residual_max_abs_diff_vs_native": 1.7053025658242404e-13,
+   "scaled_condition_number": 22.416742963874317,
+   "normal_equation_max_abs": 1.1141310096718371e-11,
+   "hc0_max_rel_diff": 8.018856504629562e-16,
+   "k_time_mine": 37,
+   "k_time_ledger": 37,
+   "full_span_rank_mine": 37,
+   "full_span_rank_ledger": 37,
+   "factor_mine": 2.5416666666666665,
+   "factor_saved": [
+    2.5416666666666665,
+    2.5416666666666665,
+    1.4819711538461537
+   ],
+   "inference_df_saved": [
+    60,
+    60,
+    8
+   ],
+   "labels": [
+    "Calendar HAC",
+    "Calendar HAC",
+    "Origin cluster"
+   ],
+   "bandwidths": {
+    "12": {
+     "raw_full_matrix_max_rel_diff_autocovariance_sum": 1.9934588195507438e-15,
+     "raw_full_matrix_max_rel_diff_dense_quadratic_form": 1.9934588195507438e-15,
+     "corrected_full_matrix_max_rel_diff": 1.999994750106648e-15,
+     "corrected_equals_raw_times_saved_factor_max_abs": 0.0,
+     "compressed_full_matrix_max_rel_diff_vs_saved": 0.22549639335634408,
+     "min_eigenvalue_over_max_raw": -2.380949303476145e-16,
+     "pair_weights": {
+      "observed_date_pairs_with_positive_calendar_weight": 540,
+      "observed_date_pairs_with_positive_compressed_weight": 654,
+      "pairs_where_weights_differ": 239,
+      "pairs_given_weight_only_by_compressed": 114,
+      "sum_abs_weight_difference": 47.76923076923076
+     },
+     "contrasts": [
+      {
+       "contrast": "temp_endpoint_difference",
+       "estimate": 7.5802569317495285,
+       "raw_variance_mine": 5.942925512923131,
+       "corrected_variance_saved": 15.104935678679588,
+       "corrected_variance_rel_diff": 2.35202171950663e-15,
+       "se_ratio_compressed_over_calendar": 1.0069589713692901,
+       "se_ratio_hc0_over_calendar_raw": 1.2483323129750392,
+       "se_ratio_date_cluster_only_over_calendar_raw": 0.838336487494571,
+       "conventions": {
+        "production: raw x T/(T-K_time), t(T-1)": {
+         "std_error": 3.886506873617957,
+         "t": 1.9504035830233981,
+         "p": 0.05580394940322209
+        },
+        "no correction, t(T-1)": {
+         "std_error": 2.43781162375667,
+         "t": 3.1094514678161826,
+         "p": 0.0028659141635617893
+        },
+        "raw x N/(N-K), t(T-1)": {
+         "std_error": 2.8005262669045106,
+         "t": 2.706725882677819,
+         "p": 0.008836228462400042
+        },
+        "raw x T/(T-K_time), t(T-K_time)": {
+         "std_error": 3.886506873617957,
+         "t": 1.9504035830233981,
+         "p": 0.06290044636671134
+        },
+        "raw x T/(T-K_time), normal": {
+         "std_error": 3.886506873617957,
+         "t": 1.9504035830233981,
+         "p": 0.0511280351444561
+        }
+       }
+      },
+      {
+       "contrast": "temp_growth_sum",
+       "estimate": 0.046517774075663654,
+       "raw_variance_mine": 0.23332517698709146,
+       "corrected_variance_saved": 0.5930348248421888,
+       "corrected_variance_rel_diff": 3.1825772497677726e-15,
+       "se_ratio_compressed_over_calendar": 0.7288062189010556,
+       "se_ratio_hc0_over_calendar_raw": 1.4861949704897033,
+       "se_ratio_date_cluster_only_over_calendar_raw": 1.4854770566833948,
+       "conventions": {
+        "production: raw x T/(T-K_time), t(T-1)": {
+         "std_error": 0.7700875436222759,
+         "t": 0.0604058258842327,
+         "p": 0.9520331756144166
+        },
+        "no correction, t(T-1)": {
+         "std_error": 0.4830374488454197,
+         "t": 0.09630262454153972,
+         "p": 0.9236011728132848
+        },
+        "raw x N/(N-K), t(T-1)": {
+         "std_error": 0.5549071348283829,
+         "t": 0.08382983594191898,
+         "p": 0.9334707964058768
+        },
+        "raw x T/(T-K_time), t(T-K_time)": {
+         "std_error": 0.7700875436222759,
+         "t": 0.0604058258842327,
+         "p": 0.9523326226975787
+        },
+        "raw x T/(T-K_time), normal": {
+         "std_error": 0.7700875436222759,
+         "t": 0.0604058258842327,
+         "p": 0.9518324187480811
+        }
+       }
+      }
+     ]
+    },
+    "24": {
+     "raw_full_matrix_max_rel_diff_autocovariance_sum": 2.4896694319686385e-15,
+     "raw_full_matrix_max_rel_diff_dense_quadratic_form": 2.5551870485993922e-15,
+     "corrected_full_matrix_max_rel_diff": 2.5261874477956164e-15,
+     "corrected_equals_raw_times_saved_factor_max_abs": 0.0,
+     "compressed_full_matrix_max_rel_diff_vs_saved": 0.4561528318657359,
+     "min_eigenvalue_over_max_raw": -8.564661262257213e-17,
+     "pair_weights": {
+      "observed_date_pairs_with_positive_calendar_weight": 834,
+      "observed_date_pairs_with_positive_compressed_weight": 1164,
+      "pairs_where_weights_differ": 623,
+      "pairs_given_weight_only_by_compressed": 330,
+      "sum_abs_weight_difference": 130.36
+     },
+     "contrasts": [
+      {
+       "contrast": "temp_endpoint_difference",
+       "estimate": 7.5802569317495285,
+       "raw_variance_mine": 6.13656544386443,
+       "corrected_variance_saved": 15.597103836488797,
+       "corrected_variance_rel_diff": 2.505583785072955e-15,
+       "se_ratio_compressed_over_calendar": 0.9640753463518538,
+       "se_ratio_hc0_over_calendar_raw": 1.2284788128125281,
+       "se_ratio_date_cluster_only_over_calendar_raw": 0.8250035685132089,
+       "conventions": {
+        "production: raw x T/(T-K_time), t(T-1)": {
+         "std_error": 3.9493168822580897,
+         "t": 1.9193843284146361,
+         "p": 0.0596949344246462
+        },
+        "no correction, t(T-1)": {
+         "std_error": 2.4772092047028305,
+         "t": 3.059998694239822,
+         "p": 0.003307214761611544
+        },
+        "raw x N/(N-K), t(T-1)": {
+         "std_error": 2.8457856951626272,
+         "t": 2.663678064245924,
+         "p": 0.009910404027537994
+        },
+        "raw x T/(T-K_time), t(T-K_time)": {
+         "std_error": 3.9493168822580897,
+         "t": 1.9193843284146361,
+         "p": 0.06690130902836253
+        },
+        "raw x T/(T-K_time), normal": {
+         "std_error": 3.9493168822580897,
+         "t": 1.9193843284146361,
+         "p": 0.05493571278549437
+        }
+       }
+      },
+      {
+       "contrast": "temp_growth_sum",
+       "estimate": 0.046517774075663654,
+       "raw_variance_mine": 0.18233520600656009,
+       "corrected_variance_saved": 0.46343531526667064,
+       "corrected_variance_rel_diff": 6.228657525515523e-15,
+       "se_ratio_compressed_over_calendar": 0.7143182665274939,
+       "se_ratio_hc0_over_calendar_raw": 1.6812075171515073,
+       "se_ratio_date_cluster_only_over_calendar_raw": 1.6803954015732698,
+       "conventions": {
+        "production: raw x T/(T-K_time), t(T-1)": {
+         "std_error": 0.6807608355852102,
+         "t": 0.06833203622190612,
+         "p": 0.9457485364944113
+        },
+        "no correction, t(T-1)": {
+         "std_error": 0.42700726692476804,
+         "t": 0.10893906890783513,
+         "p": 0.913614337806749
+        },
+        "raw x N/(N-K), t(T-1)": {
+         "std_error": 0.4905403910328068,
+         "t": 0.09482965098495344,
+         "p": 0.9247661285246686
+        },
+        "raw x T/(T-K_time), t(T-K_time)": {
+         "std_error": 0.6807608355852102,
+         "t": 0.06833203622190612,
+         "p": 0.9460874456487982
+        },
+        "raw x T/(T-K_time), normal": {
+         "std_error": 0.6807608355852102,
+         "t": 0.06833203622190612,
+         "p": 0.9455213225023382
+        }
+       }
+      }
+     ]
+    }
+   },
+   "origin_cluster": {
+    "full_matrix_max_rel_diff": 6.433527757553879e-15,
+    "factor_mine": 1.4819711538461537,
+    "factor_saved": 1.4819711538461537,
+    "inference_df_saved": 8,
+    "matrix_rank_mine": 8,
+    "rank_bound_g_minus_1": 8,
+    "sum_of_origin_scores_max_abs": 1.2301271112846734e-13,
+    "contrasts": [
+     {
+      "contrast": "temp_endpoint_difference",
+      "se_origin_cluster": 2.315665356213317,
+      "se_calendar_hac12": 3.886506873617952,
+      "se_ratio_cluster_over_calendar_hac12": 0.5958217575613504
+     },
+     {
+      "contrast": "temp_growth_sum",
+      "se_origin_cluster": 0.8250578107840076,
+      "se_calendar_hac12": 0.7700875436222747,
+      "se_ratio_cluster_over_calendar_hac12": 1.0713818417360295
+     }
+    ]
+   }
+  }
+ ]
+}

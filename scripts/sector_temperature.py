@@ -1,7 +1,7 @@
 """Reference-coded temperature interactions and reported absolute sector effects."""
 import numpy as np
 from scipy.stats import t
-from statsmodels.stats.sandwich_covariance import cov_nw_groupsum
+from calendar_hac import cov_nw_groupsum
 from pyfixest_backend import fit,ESTIMATOR_VERSION
 
 
