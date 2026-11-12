@@ -1,0 +1,138 @@
+"""Bounded PyFixest Wald API audit; frozen production sources/results unchanged.
+
+Public-method parity substitutes the saved project covariance after the real
+PyFixest refit and a full coefficient-basis transformation. This isolates Wald
+arithmetic; it does NOT assert native estimation of that calendar covariance.
+"""
+from pathlib import Path
+import os
+for key in ('OPENBLAS_NUM_THREADS','VECLIB_MAXIMUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS'):
+    os.environ[key]='1'
+import dataclasses,hashlib,inspect,json,sys,warnings
+import numpy as np
+import pandas as pd
+import pyfixest as pf
+from scipy.stats import chi2,f
+from threadpoolctl import threadpool_limits
+
+ROOT=Path(__file__).resolve().parents[2]; OUT=Path(__file__).resolve().parent
+sys.path.insert(0,str(ROOT/'scripts'))
+import pyfixest_backend as estimator
+from pyfixest.estimation.models.feols_ import Feols
+from pyfixest.estimation.post_estimation.wald import wald_test as kernel
+
+def sha(path):
+    h=hashlib.sha256()
+    with path.open('rb') as handle:
+        for block in iter(lambda:handle.read(1024*1024),b''):h.update(block)
+    return h.hexdigest()
+
+source_manifest=ROOT/'replication/extensions/source_manifest.json'
+sources=json.loads(source_manifest.read_text())['sources_sha256']
+for name,digest in sources.items():assert sha(ROOT/name)==digest,name
+
+specs=[('heat','outputs/literature_sensitivity/designs/va12__y_yoy_nsa__all_eligible__H1__distributed.npz','outputs/literature_sensitivity/tests.csv'),
+       ('region','outputs/visitor_rigour/monthly/designs/region__y_mom_nsa__long__all_eligible__H1__own_current.npz','outputs/visitor_rigour/monthly/tests.csv'),
+       ('country','outputs/visitor_rigour/monthly/designs/country__y_mom_nsa__long__all_eligible__H1__own_current.npz','outputs/visitor_rigour/monthly/tests.csv')]
+protected={name:sha(ROOT/name) for _,design,csv in specs for name in [design,csv]}
+protected.update({name:sha(ROOT/name) for name in ['outputs/pyfixest/fit_log.csv','outputs/pyfixest/estimator_manifest.json','outputs/collection/final_audit_closure_verification.json','outputs/heat_economy.html']})
+(OUT/'summary.json').write_text('{"status":"running"}\n')
+(OUT/'installed_public_method.py.txt').write_text(inspect.getsource(Feols.wald_test))
+(OUT/'installed_wald_kernel.py.txt').write_text(inspect.getsource(kernel))
+(OUT/'installed_quadratic_form.py.txt').write_text(inspect.getsource(kernel.__globals__['_wald_statistic']))
+rows=[];refits=[]
+with threadpool_limits(limits=1):
+    for label,design,csv in specs:
+        with np.load(ROOT/design,allow_pickle=False) as z:arrays={name:z[name] for name in z.files}
+        x,y=arrays['X'],arrays['Y']; n,k=x.shape
+        beta=arrays['coefficients' if label=='heat' else 'beta']
+        names=arrays['coef_names' if label=='heat' else 'names'].tolist()
+        fitted=estimator.fit_many_matrix(y,x,names,'Wald API diagnostic '+label)[0]
+        assert np.allclose(fitted.params.to_numpy(),beta,atol=1e-8,rtol=1e-9)
+        model=fitted.native_model; transform=fitted.coefficient_transform
+        inverse=np.linalg.solve(transform,np.eye(k))
+        initial_vcov=model.variance_covariance
+        refits.append({'label':label,'n':n,'k':k,'max_beta_difference':float(np.max(np.abs(fitted.params.to_numpy()-beta))),'native_class':type(model).__module__+'.'+type(model).__name__})
+        comp=arrays['component_positions']; features,g=comp.shape
+        # Differences in total slopes cancel the common temperature coefficient.
+        equality=np.zeros((g-1,k))
+        for unit in range(1,g):equality[unit-1,comp[:,unit]]=1.
+        all_zero=np.eye(k)[comp.ravel()]
+        total=np.zeros((1,k));total[0,comp[:,0]]=1.;total[0,comp[:,1]]=1.
+        tests=[('equality',equality,'All sector cumulative direct temperature responses equal' if label=='heat' else 'All origin cumulative direct effects equal','all'),
+               ('all_temperature_zero',all_zero,'All sector temperature-lag responses jointly zero' if label=='heat' else 'All origin temperature response coefficients jointly zero','all'),
+               ('one_unit_total',total,'Cumulative direct temperature response zero',None)]
+        columns=pd.read_csv(ROOT/csv,nrows=0).columns.tolist()
+        use=[name for name in ['spec_id','sector_id','unit_id','test','hac_lags','wald_chi2','f_statistic','p_value','restrictions','denominator_df'] if name in columns]
+        table=pd.read_csv(ROOT/csv,usecols=use,dtype={'sector_id':str,'unit_id':str},float_precision='round_trip')
+        table=table[table.spec_id.eq(Path(design).stem)]
+        for index,band in enumerate(arrays['bandwidths'][:2]):
+            v=arrays[f'covariance_{index}']; df2=int(arrays['inference_df'][index])
+            # beta_original = transform @ beta_native; identical covariance law.
+            native_cov=inverse@v@inverse.T; native_cov=(native_cov+native_cov.T)/2
+            model.variance_covariance=dataclasses.replace(initial_vcov,vcov=native_cov)
+            for test_name,R,production_name,unit_id in tests:
+                r=len(R);delta=R@beta;middle=R@v@R.T
+                W=float(delta@np.linalg.solve(middle,delta))
+                project_p=float(f.sf(W/r,r,df2))
+                same_F=kernel(beta_hat=beta,vcov=v,R=R,q=None,df2=df2,distribution='F',vcov_type='Saved project covariance; parity audit')
+                same_chi=kernel(beta_hat=beta,vcov=v,R=R,q=None,df2=df2,distribution='chi2',vcov_type='Saved project covariance; parity audit')
+                native_R=R@transform
+                with warnings.catch_warnings(record=True) as recorded:
+                    warnings.simplefilter('always')
+                    public=model.wald_test(R=native_R,q=np.zeros(r),distribution='F')
+                assert public.distribution=='chi2'
+                assert any('changed to chi2' in str(w.message) for w in recorded)
+                assert np.isclose(same_F.wald_statistic,W,atol=1e-7,rtol=1e-8)
+                assert np.isclose(public.wald_statistic,W,atol=1e-6,rtol=1e-7)
+                assert np.isclose(public.pvalue,chi2.sf(W,r),atol=1e-10,rtol=1e-5)
+                assert abs(same_F.pvalue-project_p)<1e-12
+                saved=table[table.hac_lags.eq(int(band)) & table.test.eq(production_name)]
+                if unit_id is not None:
+                    saved=saved[saved.sector_id.eq(unit_id)]
+                    assert len(saved)==1,(label,test_name,len(saved))
+                    record=saved.iloc[0]
+                    assert np.isclose(record.wald_chi2,W,atol=1e-6,rtol=1e-7)
+                    assert np.isclose(record.f_statistic,W/r,atol=1e-7,rtol=1e-7)
+                    assert np.isclose(record.p_value,project_p,atol=1e-12,rtol=1e-6)
+                rows.append({'design':label,'bandwidth':int(band),'test':test_name,'restrictions':r,'project_df2':df2,
+                    'project_W':W,'project_F':W/r,'project_F_p':project_p,
+                    'native_kernel_W':same_F.wald_statistic,'native_kernel_same_F_p':same_F.pvalue,
+                    'native_public_W':public.wald_statistic,'native_public_distribution':public.distribution,'native_public_p':public.pvalue,
+                    'native_public_df2_metadata':public.df2,'production_row_matched':unit_id is not None,
+                    'native_public_warning':' | '.join(str(w.message) for w in recorded)})
+        model.variance_covariance=initial_vcov
+    # Genuine public-method CRV1 model: verify default identity F versus subset chi2.
+    rng=np.random.default_rng(20261112);groups=np.repeat(np.arange(12),40)
+    frame=pd.DataFrame({'unit':groups,'x':rng.normal(size=len(groups)),'z':rng.normal(size=len(groups))})
+    frame['y']=.1*frame.x-.2*frame.z+rng.normal(size=len(groups))+np.repeat(rng.normal(size=12),40)
+    public_model=pf.feols('y~x+z|unit',frame,vcov={'CRV1':'unit'},fixef_rm='none')
+    identity=public_model.wald_test()
+    assert identity.distribution=='F' and identity.df2==11
+    native_cluster={'identity_F':dataclasses.asdict(identity)}
+    with warnings.catch_warnings(record=True) as recorded:
+        warnings.simplefilter('always');subset=public_model.wald_test(R=np.array([[1.,0.]]),distribution='F')
+    assert subset.distribution=='chi2' and subset.df2==11
+    native_cluster['subset_chi2']=dataclasses.asdict(subset)
+    native_cluster['subset_warning']=[str(w.message) for w in recorded]
+    # Singular contrast covariance: native pseudoinverse is not a validity gate.
+    singular=kernel(beta_hat=np.array([1.,1.]),vcov=np.array([[1.,1.],[1.,1.]]),R=np.eye(2),q=None,df2=20,distribution='F',vcov_type='Singular audit fixture')
+
+frame=pd.DataFrame(rows);frame.to_csv(OUT/'comparisons.csv',index=False)
+for name,digest in protected.items():assert sha(ROOT/name)==digest,name
+for name,digest in sources.items():assert sha(ROOT/name)==digest,name
+summary={'status':'passed_bounded_wald_api_audit','pyfixest_version':pf.__version__,
+         'real_saved_design_refits':refits,'comparison_rows':len(rows),'saved_joint_rows_matched':int(frame.production_row_matched.sum()),
+         'maximum_public_W_absolute_difference':float((frame.native_public_W-frame.project_W).abs().max()),
+         'maximum_kernel_W_absolute_difference':float((frame.native_kernel_W-frame.project_W).abs().max()),
+         'native_CRV1_public_method_fixture':native_cluster,
+         'singular_covariance_fixture':{'rank':1,'restrictions':2,'native_result':dataclasses.asdict(singular),'meaning':'Native pseudoinverse returns a number despite singular RVR; production guard suppresses these cases.'},
+         'public_method_scope':'Actual Feols.wald_test on three genuine feols refits, after explicitly substituting saved calendar covariance transformed into native orthonormal coefficient basis. This isolates Wald arithmetic, not provenance of native HAC estimation.',
+         'kernel_scope':'Actual PyFixest post-estimation kernel on identical saved beta,V,R and project df2, plus chi2 comparison. Lower-level internal API; not a production .wald_test callsite.',
+         'finding':'Quadratic form agrees on selected full-rank cases. Native public method switches custom restrictions to chi2; production uses its declared approximate F(q,T-1). Default public all-coefficient test is a different null and default iid covariance in this explicit full-LSDV adapter.',
+         'protected_outputs_sha256':protected,'sealed_source_files_unchanged':len(sources),'source_manifest_sha256':sha(source_manifest),
+         'no_production_source_or_result_changes':True,
+         'limits':'Bounded three-design arithmetic/API audit, not a full-grid native migration, empirical calibration repair, causal or stationarity certification. No published release or old reference changed.'}
+(OUT/'summary.json').write_text(json.dumps(summary,indent=2,allow_nan=False)+'\n')
+print(frame[['design','bandwidth','test','restrictions','project_F_p','native_public_p']].to_string(index=False))
+print(json.dumps({k:v for k,v in summary.items() if k in ['status','comparison_rows','saved_joint_rows_matched','maximum_public_W_absolute_difference','maximum_kernel_W_absolute_difference','sealed_source_files_unchanged','no_production_source_or_result_changes']},indent=2))

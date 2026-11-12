@@ -1,0 +1,1 @@
+Crisis presentation passed: 897 native tables, 20319 coefficient cells, 2691 readouts

@@ -1,0 +1,68 @@
+Crisis sensitivity aggregate_va/all_eligible: 1 units × 178 periods
+Crisis sensitivity aggregate_va/event_dates_excluded: 1 units × 130 periods
+Crisis sensitivity aggregate_va/strict_growth_window_clean: 1 units × 110 periods
+Crisis sensitivity va/all_eligible: 11 units × 178 periods
+Crisis sensitivity va/event_dates_excluded: 11 units × 130 periods
+Crisis sensitivity va/strict_growth_window_clean: 11 units × 110 periods
+Crisis sensitivity va-broad-matched/all_eligible: 11 units × 82 periods
+Crisis sensitivity va-broad-matched/event_dates_excluded: 11 units × 62 periods
+Crisis sensitivity va-broad-matched/strict_growth_window_clean: 11 units × 54 periods
+Crisis sensitivity va-detailed/all_eligible: 19 units × 82 periods
+Crisis sensitivity va-detailed/event_dates_excluded: 19 units × 62 periods
+Crisis sensitivity va-detailed/strict_growth_window_clean: 19 units × 54 periods
+Crisis sensitivity aggregate_va-matched-va19/all_eligible: 1 units × 82 periods
+Crisis sensitivity aggregate_va-matched-va19/event_dates_excluded: 1 units × 62 periods
+Crisis sensitivity aggregate_va-matched-va19/strict_growth_window_clean: 1 units × 54 periods
+Crisis sensitivity va12/all_eligible: 12 units × 178 periods
+Crisis sensitivity va12/event_dates_excluded: 12 units × 130 periods
+Crisis sensitivity va12/strict_growth_window_clean: 12 units × 110 periods
+Crisis sensitivity va12-matched/all_eligible: 12 units × 82 periods
+Crisis sensitivity va12-matched/event_dates_excluded: 12 units × 62 periods
+Crisis sensitivity va12-matched/strict_growth_window_clean: 12 units × 54 periods
+Crisis sensitivity va20/all_eligible: 20 units × 82 periods
+Crisis sensitivity va20/event_dates_excluded: 20 units × 62 periods
+Crisis sensitivity va20/strict_growth_window_clean: 20 units × 54 periods
+Crisis sensitivity iip-monthly-total/all_eligible: 1 units × 513 periods
+Crisis sensitivity iip-monthly-total/event_dates_excluded: 1 units × 369 periods
+Crisis sensitivity iip-monthly-total/strict_growth_window_clean: 1 units × 309 periods
+Crisis sensitivity iip-monthly/all_eligible: 6 units × 405 periods
+Crisis sensitivity iip-monthly/event_dates_excluded: 6 units × 285 periods
+Crisis sensitivity iip-monthly/strict_growth_window_clean: 6 units × 237 periods
+Crisis sensitivity iip-monthly-broad-matched/all_eligible: 6 units × 357 periods
+Crisis sensitivity iip-monthly-broad-matched/event_dates_excluded: 6 units × 237 periods
+Crisis sensitivity iip-monthly-broad-matched/strict_growth_window_clean: 6 units × 189 periods
+Crisis sensitivity iip-monthly-detailed/all_eligible: 18 units × 357 periods
+Crisis sensitivity iip-monthly-detailed/event_dates_excluded: 18 units × 237 periods
+Crisis sensitivity iip-monthly-detailed/strict_growth_window_clean: 18 units × 189 periods
+Crisis sensitivity iip-monthly-total-matched-broad/all_eligible: 1 units × 405 periods
+Crisis sensitivity iip-monthly-total-matched-broad/event_dates_excluded: 1 units × 285 periods
+Crisis sensitivity iip-monthly-total-matched-broad/strict_growth_window_clean: 1 units × 237 periods
+Crisis sensitivity iip-monthly-total-matched-detailed/all_eligible: 1 units × 357 periods
+Crisis sensitivity iip-monthly-total-matched-detailed/event_dates_excluded: 1 units × 237 periods
+Crisis sensitivity iip-monthly-total-matched-detailed/strict_growth_window_clean: 1 units × 189 periods
+Crisis sensitivity iip-quarterly-total/all_eligible: 1 units × 171 periods
+Crisis sensitivity iip-quarterly-total/event_dates_excluded: 1 units × 123 periods
+Crisis sensitivity iip-quarterly-total/strict_growth_window_clean: 1 units × 103 periods
+Crisis sensitivity iip-quarterly/all_eligible: 6 units × 135 periods
+Crisis sensitivity iip-quarterly/event_dates_excluded: 6 units × 95 periods
+Crisis sensitivity iip-quarterly/strict_growth_window_clean: 6 units × 79 periods
+Crisis sensitivity iip-quarterly-broad-matched/all_eligible: 6 units × 119 periods
+Crisis sensitivity iip-quarterly-broad-matched/event_dates_excluded: 6 units × 79 periods
+Crisis sensitivity iip-quarterly-broad-matched/strict_growth_window_clean: 6 units × 63 periods
+Crisis sensitivity iip-quarterly-detailed/all_eligible: 18 units × 119 periods
+Crisis sensitivity iip-quarterly-detailed/event_dates_excluded: 18 units × 79 periods
+Crisis sensitivity iip-quarterly-detailed/strict_growth_window_clean: 18 units × 63 periods
+Crisis sensitivity iip-quarterly-total-matched-broad/all_eligible: 1 units × 135 periods
+Crisis sensitivity iip-quarterly-total-matched-broad/event_dates_excluded: 1 units × 95 periods
+Crisis sensitivity iip-quarterly-total-matched-broad/strict_growth_window_clean: 1 units × 79 periods
+Crisis sensitivity iip-quarterly-total-matched-detailed/all_eligible: 1 units × 119 periods
+Crisis sensitivity iip-quarterly-total-matched-detailed/event_dates_excluded: 1 units × 79 periods
+Crisis sensitivity iip-quarterly-total-matched-detailed/strict_growth_window_clean: 1 units × 63 periods
+{
+  "status": "estimated_not_yet_independently_verified",
+  "contexts": 20,
+  "samples": 60,
+  "requested_specs": 2655,
+  "native_fits": 2655,
+  "unavailable_specs": 0
+}

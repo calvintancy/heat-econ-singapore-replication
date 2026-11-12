@@ -1,17 +1,62 @@
-# Heat, production and arrivals: audit extension
+# Heat, production and arrivals: current native-Wald revision
 
-This is a separately versioned local extension of the published v1.0.0 replication
-package. The original release tag, asset hashes, input/result references and
-benchmark tolerances are unchanged. No updated GitHub release is implied.
+The current revision is **v1.1.0-audit.2**. The original v1.0.0 and audit.1
+release assets, source seals, fitted coefficients, covariance matrices, samples
+and numerical references remain preserved. Download every v2 replication ZIP
+part to restore the current inputs/results; the smaller report ZIP is for viewing.
 
-From the project root, with the frozen inputs and original outputs restored:
+The current Wald layer calls the actual PyFixest 0.70.0 native post-estimation
+kernel using saved beta/V and explicit restrictions. Its primary p-value uses
+chi-square. Covariance remains the originally declared CR1/calendar-HAC/DK or
+Stata/Mata matrix; using the native test kernel does not make that VCE a native
+PyFixest covariance estimate. Historical F comparisons are labelled separately.
+Coefficient t-tests and confidence intervals remain separately reported.
+
+From the restored v2 project root:
 
 ```sh
 uv sync --locked --python 3.11
-uv run --locked python scripts/replicate_extensions.py inventory
-uv run --locked python scripts/replicate_extensions.py verify
-uv run --locked python scripts/replicate_extensions.py reproduce
+uv run --locked python scripts/replicate_native_wald.py inventory
+uv run --locked --with playwright==1.65.0 python scripts/replicate_native_wald.py verify --with-browser
+uv run --locked --with playwright==1.65.0 python scripts/replicate_native_wald.py reproduce --install-master --with-browser
 ```
+
+`reproduce` rebuilds the **Wald/reference and presentation layer**, not the
+original economic regressions. It retains every unavailable request and validates
+source-row coverage, native computation, independent contrast arithmetic, current
+reports and the unchanged audit.1 model/input bytes. A separately created
+`source_manifest_wald_v2.json` seals this revision. The old `source_manifest.json`
+is a historical audit.1 seal and is never overwritten. The native layer has a
+separate running/passed/failed execution receipt, source guards and completion
+record under `outputs/native_wald/`.
+
+The new native-Wald tab and chapter panels use their own explicit selections.
+They do not silently match historical coefficient-table selectors. Original
+report content and F tests remain labelled historical comparisons. Exact
+calibration evidence distinguishes heat reference-only rebasing from the arrivals
+replay's actual native-kernel calls. The chi-square switch does **not** resolve
+selected severe Gaussian-null miscalibration or establish causal identification.
+See [the revision protocol](../../notes/native_wald_revision.md).
+
+For standard-library transport checks/extraction:
+
+```sh
+python3 scripts/package_native_wald.py verify --root .
+python3 scripts/package_native_wald.py extract --manifest ASSETS/heat-econ-native-wald-v2-manifest.json --archive-dir ASSETS --root NEW_FOLDER
+```
+
+The existing locked environment was used for the recorded execution. A clean
+archive extraction/hash check is distinct from a fresh environment installation
+or a new model refit. Licensed Stata evidence remains the original 137 actual
+MCP/reghdfe runs; applying native PyFixest Wald tests to those stored coefficients
+and covariance does not claim new Stata execution.
+
+## Historical audit.1 analysis and original model reproduction
+
+The following describes the preceding model-generation pipeline. Use its immutable
+audit.1 bundle/source seal, or run it in a separate prepared v2 workspace through
+`replicate_native_wald.py legacy-reproduce --workspace /SEPARATE/ROOT`. It is not
+the current native-Wald inference/presentation command.
 
 `verify` independently checks all extension calculations and rebuilds/checks the
 HTML, without refitting economic models. It refreshes heat and arrivals diagnostics after
@@ -124,7 +169,7 @@ presentation evidence, not numerical or scientific-validity certificates.
 
 ## Portable extension package
 
-The extension uses several independent ZIP parts with nonoverlapping files, each
+The historical audit.1 extension uses several independent ZIP parts with nonoverlapping files, each
 below 1.8 billion bytes. Download all parts plus `heat-econ-extension-manifest.json`
 and `heat-econ-extension-SHA256SUMS`. Extract every part into the same empty folder;
 then run the standard-library integrity check before executing analysis:

@@ -1,0 +1,28 @@
+ design  bandwidth                 test  restrictions  project_F_p  native_public_p
+   heat          4             equality            11 3.080111e-12     1.044446e-15
+   heat          4 all_temperature_zero            60 1.358299e-23     8.678992e-54
+   heat          4       one_unit_total             1 7.559150e-01     7.555401e-01
+   heat          8             equality            11 8.567425e-19     6.352393e-27
+   heat          8 all_temperature_zero            60 3.715788e-46    3.850094e-162
+   heat          8       one_unit_total             1 7.934914e-01     7.931795e-01
+ region         12             equality             8 1.928403e-01     1.853065e-01
+ region         12 all_temperature_zero             9 2.414723e-01     2.337034e-01
+ region         12       one_unit_total             1 3.509196e-01     3.498250e-01
+ region         24             equality             8 5.824125e-02     5.216354e-02
+ region         24 all_temperature_zero             9 8.806912e-02     8.039865e-02
+ region         24       one_unit_total             1 3.318096e-01     3.306687e-01
+country         12             equality            41 3.269123e-05     1.392706e-06
+country         12 all_temperature_zero            42 2.703911e-05     9.921668e-07
+country         12       one_unit_total             1 2.784313e-01     2.771613e-01
+country         24             equality            41 2.695507e-15     4.903391e-24
+country         24 all_temperature_zero            42 4.323344e-16     8.679122e-26
+country         24       one_unit_total             1 2.658163e-01     2.645164e-01
+{
+  "status": "passed_bounded_wald_api_audit",
+  "comparison_rows": 18,
+  "saved_joint_rows_matched": 12,
+  "maximum_public_W_absolute_difference": 1.4267698134062812e-11,
+  "maximum_kernel_W_absolute_difference": 3.61524143954739e-11,
+  "sealed_source_files_unchanged": 349,
+  "no_production_source_or_result_changes": true
+}

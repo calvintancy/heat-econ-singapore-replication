@@ -1,0 +1,14 @@
+Visitor independent full QR/covariance audit: 20/270 requests
+Visitor independent full QR/covariance audit: 40/270 requests
+Visitor independent full QR/covariance audit: 60/270 requests
+Visitor independent full QR/covariance audit: 80/270 requests
+Visitor independent full QR/covariance audit: 100/270 requests
+Visitor independent full QR/covariance audit: 120/270 requests
+Visitor independent full QR/covariance audit: 140/270 requests
+Visitor independent full QR/covariance audit: 160/270 requests
+Visitor independent full QR/covariance audit: 180/270 requests
+Visitor independent full QR/covariance audit: 200/270 requests
+Visitor independent full QR/covariance audit: 220/270 requests
+Visitor independent full QR/covariance audit: 240/270 requests
+Visitor independent full QR/covariance audit: 260/270 requests
+Visitor monthly independent verification passed:270 requests,260 native fits,72 samples.

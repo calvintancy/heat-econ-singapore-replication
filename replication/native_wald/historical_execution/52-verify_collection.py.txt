@@ -1,0 +1,1 @@
+Verified single-file collection: 21 embedded analyses, 23 tabs and all 81 exact-sample mean/coefficient comparisons.

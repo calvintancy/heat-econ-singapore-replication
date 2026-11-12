@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "scope": "354 final arrival-rigour requests; model arrays, actual samples, semantic exports/statuses and all319 native ledger rows",
+  "comparison_policy": "Exact dtype/shape/array bytes; exact canonical CSV cells except separately-bound provenance hash fields. No numeric tolerance, baseline refresh, model refit or source reseal.",
+  "baseline_sha256": "2086d5fd7b73c19c4e8d308da01bb2613f4b24341a20b22aa40c561fcba210e1",
+  "verifier_source_sha256": "9b06e2ac762cc27daa3e45958386fc49be130021c53ea51fc5c79f9239849b90",
+  "verified_at_utc": "2026-11-11T17:20:00.187586+00:00",
+  "current_native_fit_logs_sha256": {
+    "outputs/visitor_rigour/monthly/pyfixest/fit_log.csv": "716e7a7d2381ca7a50f054c553bb4147d13956334d0e8270509b86bbbc403fb9",
+    "outputs/visitor_rigour/annual/pyfixest/fit_log.csv": "2e261a8ebdeeccae678b0275147ffdbc9f6eed8fd22ac20bf998b3a4ed30cbf7",
+    "outputs/visitor_rigour/ppml/pyfixest/fit_log.csv": "7078991a1be189d693a421d6cdbdc82b1a5f7e4ec2fb053fd4985cd37f8fb0d7",
+    "outputs/visitor_rigour/origin_year/pyfixest/fit_log.csv": "ec54be1fcc1947469de9b5b1a4122d39c743c126022f64716dcf8927f194b988"
+  },
+  "current_native_estimator_manifests_sha256": {
+    "outputs/visitor_rigour/monthly/pyfixest/estimator_manifest.json": "68f51ab77d5fbcaf65741b4c439f86eab8fc367392e7f6a8474e00e17f4664b3",
+    "outputs/visitor_rigour/annual/pyfixest/estimator_manifest.json": "7c9e0b7dfb580897de6933c71bd9b23f6e6bb2cd5e85981c8731ff452d946819",
+    "outputs/visitor_rigour/ppml/pyfixest/estimator_manifest.json": "d1081a402eb7ac82d24cb093e1950115c4bda3084557381b91c46b0653fa595e",
+    "outputs/visitor_rigour/origin_year/pyfixest/estimator_manifest.json": "6a4f789d65a04dd554476447ff7baec712a64fe48403b67fff136b9faae5f6a1"
+  },
+  "semantic_files_checked": 534,
+  "npz_arrays_checked": 8338,
+  "counts": {
+    "monthly": {
+      "requests": 270,
+      "native_fits": 260,
+      "statuses": {
+        "estimated": 260,
+        "unavailable: underidentified or rank-deficient design": 10
+      }
+    },
+    "annual": {
+      "requests": 30,
+      "native_fits": 15,
+      "statuses": {
+        "estimated": 15,
+        "unavailable: underidentified or rank-deficient design": 15
+      }
+    },
+    "ppml": {
+      "requests": 30,
+      "native_fits": 20,
+      "statuses": {
+        "estimated": 30
+      }
+    },
+    "origin_year": {
+      "requests": 24,
+      "native_fits": 24,
+      "statuses": {
+        "estimated": 24
+      }
+    }
+  },
+  "source_bindings_checked": 18,
+  "guard_revision_sha256": "ffd65f514a0e67cd993c6247058bf32381357bdd6c4777b6fbea33f77369691a",
+  "guard_verifier_sha256": "24edd443f387611494d73d13a4f9528380ca6af68a9a4e13e1e238a34e4c18c4",
+  "numeric_or_status_differences": [],
+  "native_fits_executed_by_this_verifier": 0,
+  "claim": "Current arrival model/sample/array/export/native-ledger semantics exactly match the immutable reviewed generation. Explicit guard-only source revisions preserve every other AST node.",
+  "limits": "A later pass establishes semantic identity with the reviewed generation, not that the AI reviewed later report/driver/privacy code or that inference/causality is validated."
+}

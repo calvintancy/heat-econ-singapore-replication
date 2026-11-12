@@ -1,0 +1,5 @@
+Arrival Stata/Python parity: 8/38
+Arrival Stata/Python parity: 16/38
+Arrival Stata/Python parity: 24/38
+Arrival Stata/Python parity: 32/38
+Arrival native Stata / independent Python parity passed:38targets,36 fixed-sample source bridges and2 actual-date-FE point checks.

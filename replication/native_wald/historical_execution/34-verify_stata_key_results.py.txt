@@ -1,0 +1,7 @@
+Stata/Python independent parity: 15/99 target analyses
+Stata/Python independent parity: 30/99 target analyses
+Stata/Python independent parity: 45/99 target analyses
+Stata/Python independent parity: 60/99 target analyses
+Stata/Python independent parity: 75/99 target analyses
+Stata/Python independent parity: 90/99 target analyses
+Stata/Python parity passed:99 targets,99 native runs and 27,337 covariance cells

@@ -1,0 +1,35 @@
+Annual seasonal fit aggregate_va/model_own_history
+Annual seasonal fit aggregate_va/matched_max_AR1_history
+Annual seasonal fit va11/model_own_history
+Annual seasonal fit va11/matched_max_AR1_history
+Annual seasonal fit va19/model_own_history
+Annual seasonal fit va19/matched_max_AR1_history
+Annual seasonal fit iip_total/model_own_history
+Annual seasonal fit iip_total/matched_max_AR1_history
+Annual seasonal fit iip6/model_own_history
+Annual seasonal fit iip6/matched_max_AR1_history
+Annual seasonal fit iip18/model_own_history
+Annual seasonal fit iip18/matched_max_AR1_history
+Annual seasonal fit va12/model_own_history
+Annual seasonal fit va12/matched_max_AR1_history
+Annual seasonal fit va20/model_own_history
+Annual seasonal fit va20/matched_max_AR1_history
+Annual seasonal fit aggregate_va_matched_va20/model_own_history
+Annual seasonal fit aggregate_va_matched_va20/matched_max_AR1_history
+Annual seasonal fit va11_matched_va19/model_own_history
+Annual seasonal fit va11_matched_va19/matched_max_AR1_history
+Annual seasonal fit va12_matched_va20/model_own_history
+Annual seasonal fit va12_matched_va20/matched_max_AR1_history
+Annual seasonal fit iip_total_matched_iip6/model_own_history
+Annual seasonal fit iip_total_matched_iip6/matched_max_AR1_history
+Annual seasonal fit iip_total_matched_iip18/model_own_history
+Annual seasonal fit iip_total_matched_iip18/matched_max_AR1_history
+Annual seasonal fit iip6_matched_iip18/model_own_history
+Annual seasonal fit iip6_matched_iip18/matched_max_AR1_history
+{
+  "status": "estimated_not_yet_independently_verified",
+  "requested_specs": 1104,
+  "identified_specs": 684,
+  "unavailable_specs": 420,
+  "native_fits": 684
+}

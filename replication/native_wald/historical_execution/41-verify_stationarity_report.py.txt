@@ -1,0 +1,3 @@
+/Volumes/datadrive/heat_econ/scripts/verify_extension_collection.py:155: DtypeWarning: Columns (14,15,17,20,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  source = pd.read_csv(folder / "diagnostics.csv").fillna("")
+Stationarity appendix presentation passed: 22306 diagnostics, four exact downloads

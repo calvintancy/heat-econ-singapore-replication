@@ -1,0 +1,5 @@
+Literature report: subannual prepared
+Literature report: full_controls prepared
+Literature report: annual prepared
+Literature report: annual_seasonal prepared
+Wrote /Volumes/datadrive/heat_econ/outputs/literature_sensitivity.html: 3964 views

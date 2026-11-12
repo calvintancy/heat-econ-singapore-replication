@@ -1,0 +1,83 @@
+{
+  "status": "passed_infrastructure_checks",
+  "scope": "Full audit.1 baseline byte/source guard plus synthetic lifecycle/readiness/transport fixtures; no economic models/native Wald kernels/calibration or release pipeline executed by these checks",
+  "source_sha256": {
+    "scripts/native_wald_release.py": "38f83ef3c9cf8c8b681177a9d1bcb06e6a1fb5592aee152bc1b260df09e34ef7",
+    "scripts/replicate_native_wald.py": "2bfabe362e38f95ef34bee4b79b29a956d96c9ea69acba35e6dbc07b76fabb88",
+    "scripts/package_native_wald.py": "455d3a88d912ef847720321527b3f469dbd021311642c5f7baf207f47146d088",
+    "replication/native_wald/recipe.json": "f7d18c41a1382f2a88509eb67c1bb77d6f7b4ba7889df19819ffb4fa26d6d0b7"
+  },
+  "baseline_integrity": {
+    "status": "passed_snapshot_guards",
+    "release": "v1.1.0-audit.2",
+    "predecessor_release": "v1.1.0-audit.1",
+    "baseline_manifest_sha256": "94ea935682dceceb6c8640700100b83cc2d2871c94d5e92449d9ff00a5e6f11b",
+    "predecessor_source_manifest_sha256": "169b0cbaddeef40ee8d009317f7d570caa6b0554c3985609b13f15cdd1ca6338",
+    "old_members_checked": 16579,
+    "old_sources_checked": 349,
+    "explicit_changed_documentation_sources": [
+      "README.md",
+      "replication/extensions/README.md"
+    ],
+    "historical_path_bindings": {
+      "outputs/extension_package/files_manifest.json": {
+        "path": "replication/native_wald/audit1_embedded_inventory.json",
+        "sha256": "7ee9eb1412e7482cfe924c43d1fe74ea94725f3450ddc5959f563440b15d1e8f"
+      },
+      "outputs/heat_economy.html": {
+        "path": "outputs/native_wald/predecessor_master.html",
+        "sha256": "3b5219ec68a6d7194a63bcc85003af94926aa8c4282078a4642a506c0267cdb8"
+      }
+    },
+    "historical_55_receipt_sha256": "3c022aa6e86cf1ab3c217e6cf5cf45806a3fa71e84414d00221766a5625d38b6",
+    "frozen_original_inputs": 526,
+    "hashes_computed": true,
+    "scope": "Audit.1 source preimages and saved output bytes; pinned historical 55-step pass, not a new 55-step run or native-Wald validation."
+  },
+  "readiness_fixture": {
+    "prototype_UI_rejected_before_integration": true,
+    "status": "passed",
+    "scope": "Synthetic receipt/source/artifact boundary only; zero native model/kernel/calibration calls",
+    "stale_bindings_rejected": [
+      "outputs/native_wald/declared-calibration-input.csv",
+      "scripts/verify_native_wald_analysis.py",
+      "scripts/native_wald.py",
+      "scripts/native_wald_legacy.py",
+      "scripts/native_wald_extensions.py",
+      "scripts/native_wald_report.py",
+      "templates/native_wald.html",
+      "scripts/verify_native_wald_report.py",
+      "scripts/verify_native_wald_report.mjs",
+      "scripts/verify_native_wald_browser.py",
+      "outputs/heat_economy.html"
+    ],
+    "staged_only_browser_rejected_despite_identical_HTML": true
+  },
+  "package_fixture": {
+    "status": "passed",
+    "scope": "Disposable native-Wald v2 transport/profile fixture; native/baseline data gates stubbed only here, real no-Git source/hash/archive checks exercised; zero model/kernel calls",
+    "sources_sha256": {
+      "package_native_wald.py": "455d3a88d912ef847720321527b3f469dbd021311642c5f7baf207f47146d088",
+      "native_wald_release.py": "38f83ef3c9cf8c8b681177a9d1bcb06e6a1fb5592aee152bc1b260df09e34ef7",
+      "replicate_native_wald.py": "2bfabe362e38f95ef34bee4b79b29a956d96c9ea69acba35e6dbc07b76fabb88"
+    },
+    "checks": [
+      "native profile build/extract",
+      "no-Git inside parent repo",
+      "unsealed-source detection",
+      "bounded independent parts",
+      "filename collision refused",
+      "unsafe destination refused",
+      "duplicate member refused",
+      "symlink ZIP member refused"
+    ],
+    "parts": 2
+  },
+  "completion_lifecycle": {
+    "prior_pass_archived_before_recipe_and_source_guards": true,
+    "missing_source_leaves_failed": true,
+    "KeyboardInterrupt_and_SIGTERM_leave_interrupted": true,
+    "staged_not_current_never_passes": true
+  },
+  "old_release_source_manifest_sha256": "169b0cbaddeef40ee8d009317f7d570caa6b0554c3985609b13f15cdd1ca6338"
+}

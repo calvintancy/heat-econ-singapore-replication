@@ -1,0 +1,2 @@
+Visitor annual independent verification passed.
+Visitor ppml independent verification passed.

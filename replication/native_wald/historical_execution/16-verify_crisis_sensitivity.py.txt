@@ -1,0 +1,18 @@
+Crisis independent QR / covariance audit: 30/531 designs
+Crisis independent QR / covariance audit: 60/531 designs
+Crisis independent QR / covariance audit: 90/531 designs
+Crisis independent QR / covariance audit: 120/531 designs
+Crisis independent QR / covariance audit: 150/531 designs
+Crisis independent QR / covariance audit: 180/531 designs
+Crisis independent QR / covariance audit: 210/531 designs
+Crisis independent QR / covariance audit: 240/531 designs
+Crisis independent QR / covariance audit: 270/531 designs
+Crisis independent QR / covariance audit: 300/531 designs
+Crisis independent QR / covariance audit: 330/531 designs
+Crisis independent QR / covariance audit: 360/531 designs
+Crisis independent QR / covariance audit: 390/531 designs
+Crisis independent QR / covariance audit: 420/531 designs
+Crisis independent QR / covariance audit: 450/531 designs
+Crisis independent QR / covariance audit: 480/531 designs
+Crisis independent QR / covariance audit: 510/531 designs
+Crisis independent verification passed: 20 contexts, 60 samples, 2655 native fits and every exported slope/covariance.

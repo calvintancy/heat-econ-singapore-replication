@@ -1,0 +1,20 @@
+Stationarity inventory core: 2655 saved rows, 1680 distinct arrays so far
+Stationarity inventory full: 750 saved rows, 2075 distinct arrays so far
+Stationarity inventory annual: 1656 saved rows, 2939 distinct arrays so far
+Stationarity inventory literature: 2361 saved rows, 12856 distinct arrays so far
+Stationarity inventory annual_literature: 2732 saved rows, 13456 distinct arrays so far
+Stationarity inventory seasonal: 1104 saved rows, 15502 distinct arrays so far
+Stationarity inventory full_controls: 1056 saved rows, 22306 distinct arrays so far
+/Volumes/datadrive/heat_econ/scripts/extension_stationarity.py:177: DtypeWarning: Columns (14,15,17,20,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  summary=json.loads((OUT/'summary.json').read_text());rows=pd.read_csv(OUT/'diagnostics.csv').fillna('')
+{
+  "source_spec_rows": 12314,
+  "logical_model_outcomes": 12618,
+  "model_variable_links": 202212,
+  "distinct_diagnostics": 22306,
+  "completed_diagnostics": 4883,
+  "unavailable_diagnostics": 17423,
+  "error_diagnostics": 0,
+  "test_rows": 19532,
+  "series_rows": 2283918
+}

@@ -1,0 +1,15 @@
+Visitor diagnostics monthly: 270 model requests, 6088 unique arrays so far
+Visitor diagnostics annual: 30 model requests, 6367 unique arrays so far
+Visitor diagnostics ppml: 30 model requests, 6623 unique arrays so far
+Visitor diagnostics origin_year: 24 model requests, 6623 unique arrays so far
+{
+  "source_spec_rows": 354,
+  "logical_model_outcomes": 354,
+  "model_variable_links": 20352,
+  "distinct_diagnostics": 6623,
+  "completed_diagnostics": 65,
+  "unavailable_diagnostics": 6558,
+  "error_diagnostics": 0,
+  "test_rows": 260,
+  "series_rows": 689414
+}

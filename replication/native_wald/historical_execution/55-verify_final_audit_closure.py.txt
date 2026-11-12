@@ -1,0 +1,1 @@
+Final audit closure passed: three chapters, 354 arrival requests, 2539 whole artifact bindings

@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "designs": [
+    {
+      "spec_id": "region__y_mom_nsa__long__all_eligible__H1__own_current",
+      "results": [
+        {
+          "hac_lags": 12,
+          "available": 4000,
+          "unavailable": 0,
+          "reject_at_nominal_5pct": 1045,
+          "F_ge_observed": 1880,
+          "maximum_condition": 114.56683351529728,
+          "minimum_uncapped_rank": 8,
+          "rejection_fraction_of_requested": 0.26125,
+          "rejection_fraction_of_available": 0.26125
+        },
+        {
+          "hac_lags": 24,
+          "available": 4000,
+          "unavailable": 0,
+          "reject_at_nominal_5pct": 1948,
+          "F_ge_observed": 2018,
+          "maximum_condition": 260.7617549530321,
+          "minimum_uncapped_rank": 8,
+          "rejection_fraction_of_requested": 0.487,
+          "rejection_fraction_of_available": 0.487
+        }
+      ]
+    },
+    {
+      "spec_id": "country__y_mom_nsa__long__all_eligible__H1__own_current",
+      "results": [
+        {
+          "hac_lags": 12,
+          "available": 4000,
+          "unavailable": 0,
+          "reject_at_nominal_5pct": 4000,
+          "F_ge_observed": 3998,
+          "maximum_condition": 5407.271319035151,
+          "minimum_uncapped_rank": 41,
+          "rejection_fraction_of_requested": 1.0,
+          "rejection_fraction_of_available": 1.0
+        },
+        {
+          "hac_lags": 24,
+          "available": 4000,
+          "unavailable": 0,
+          "reject_at_nominal_5pct": 4000,
+          "F_ge_observed": 3992,
+          "maximum_condition": 12988.329109286617,
+          "minimum_uncapped_rank": 41,
+          "rejection_fraction_of_requested": 1.0,
+          "rejection_fraction_of_available": 1.0
+        }
+      ]
+    }
+  ]
+}

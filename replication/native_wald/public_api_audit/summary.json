@@ -1,0 +1,89 @@
+{
+  "status": "passed_bounded_wald_api_audit",
+  "pyfixest_version": "0.70.0",
+  "real_saved_design_refits": [
+    {
+      "label": "heat",
+      "n": 2088,
+      "k": 157,
+      "max_beta_difference": 0.0,
+      "native_class": "pyfixest.estimation.models.feols_.Feols"
+    },
+    {
+      "label": "region",
+      "n": 1863,
+      "k": 139,
+      "max_beta_difference": 0.0,
+      "native_class": "pyfixest.estimation.models.feols_.Feols"
+    },
+    {
+      "label": "country",
+      "n": 8694,
+      "k": 568,
+      "max_beta_difference": 0.0,
+      "native_class": "pyfixest.estimation.models.feols_.Feols"
+    }
+  ],
+  "comparison_rows": 18,
+  "saved_joint_rows_matched": 12,
+  "maximum_public_W_absolute_difference": 1.4267698134062812e-11,
+  "maximum_kernel_W_absolute_difference": 3.61524143954739e-11,
+  "native_CRV1_public_method_fixture": {
+    "identity_F": {
+      "stat": 48.00785999686887,
+      "pvalue": 3.6787314978692365e-06,
+      "df1": 2,
+      "df2": 11,
+      "distribution": "F",
+      "vcov_type": "CRV1",
+      "wald_statistic": 96.01571999373775,
+      "f_statistic": 48.00785999686887
+    },
+    "subset_chi2": {
+      "stat": 36.56676414423569,
+      "pvalue": 1.4752573723841788e-09,
+      "df1": 1,
+      "df2": 11,
+      "distribution": "chi2",
+      "vcov_type": "CRV1",
+      "wald_statistic": 36.56676414423569,
+      "f_statistic": 36.56676414423569
+    },
+    "subset_warning": [
+      "Distribution changed to chi2, as R is not an identity matrix and q is not a zero vector."
+    ]
+  },
+  "singular_covariance_fixture": {
+    "rank": 1,
+    "restrictions": 2,
+    "native_result": {
+      "stat": 0.4999999999999998,
+      "pvalue": 0.6139132535407594,
+      "df1": 2,
+      "df2": 20,
+      "distribution": "F",
+      "vcov_type": "Singular audit fixture",
+      "wald_statistic": 0.9999999999999996,
+      "f_statistic": 0.4999999999999998
+    },
+    "meaning": "Native pseudoinverse returns a number despite singular RVR; production guard suppresses these cases."
+  },
+  "public_method_scope": "Actual Feols.wald_test on three genuine feols refits, after explicitly substituting saved calendar covariance transformed into native orthonormal coefficient basis. This isolates Wald arithmetic, not provenance of native HAC estimation.",
+  "kernel_scope": "Actual PyFixest post-estimation kernel on identical saved beta,V,R and project df2, plus chi2 comparison. Lower-level internal API; not a production .wald_test callsite.",
+  "finding": "Quadratic form agrees on selected full-rank cases. Native public method switches custom restrictions to chi2; production uses its declared approximate F(q,T-1). Default public all-coefficient test is a different null and default iid covariance in this explicit full-LSDV adapter.",
+  "protected_outputs_sha256": {
+    "outputs/literature_sensitivity/designs/va12__y_yoy_nsa__all_eligible__H1__distributed.npz": "0719e38ba359d8738032420ca2a752c65a3e6d288e033e5d283521596269acae",
+    "outputs/literature_sensitivity/tests.csv": "dc7767bc5f2ba38936629f66fa96e83f4e9e8b5eb01dc6593dfd7bd45c0a5d35",
+    "outputs/visitor_rigour/monthly/designs/region__y_mom_nsa__long__all_eligible__H1__own_current.npz": "9d2ee5911dd0581bb198307195a790f99e5f7f37f4e40769edd0d61964628544",
+    "outputs/visitor_rigour/monthly/tests.csv": "79315c96d17b4c998f2acaaf4fffd92690a7acc02900987887dfcad28d1e5e83",
+    "outputs/visitor_rigour/monthly/designs/country__y_mom_nsa__long__all_eligible__H1__own_current.npz": "edd497f44770b1afd2ca0f8e5b68669ec4f4a8439c4c4013291f1f859e1d4361",
+    "outputs/pyfixest/fit_log.csv": "7db9cefabeea2f0a69a47ac4ca1f672e8bfab7ef07f82ec53148becf638943b8",
+    "outputs/pyfixest/estimator_manifest.json": "5ae9011560afe76df55554946fcb538342366311be6d4858af0591ee816b5cac",
+    "outputs/collection/final_audit_closure_verification.json": "6639694e351272bda142f83fabc5a47dddc4c4e6ceba24fa7bf935b7607cb7f3",
+    "outputs/heat_economy.html": "3b5219ec68a6d7194a63bcc85003af94926aa8c4282078a4642a506c0267cdb8"
+  },
+  "sealed_source_files_unchanged": 349,
+  "source_manifest_sha256": "169b0cbaddeef40ee8d009317f7d570caa6b0554c3985609b13f15cdd1ca6338",
+  "no_production_source_or_result_changes": true,
+  "limits": "Bounded three-design arithmetic/API audit, not a full-grid native migration, empirical calibration repair, causal or stationarity certification. No published release or old reference changed."
+}

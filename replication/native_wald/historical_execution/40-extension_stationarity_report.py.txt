@@ -1,0 +1,2 @@
+/Volumes/datadrive/heat_econ/scripts/extension_stationarity.py:177: DtypeWarning: Columns (14,15,17,20,25) have mixed types. Specify dtype option on import or set low_memory=False.
+  summary=json.loads((OUT/'summary.json').read_text());rows=pd.read_csv(OUT/'diagnostics.csv').fillna('')

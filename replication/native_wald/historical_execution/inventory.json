@@ -1,0 +1,345 @@
+{
+  "status": "passed_completed_root_execution_archive",
+  "source_manifest_sha256": "169b0cbaddeef40ee8d009317f7d570caa6b0554c3985609b13f15cdd1ca6338",
+  "run_receipt_sha256": "3c022aa6e86cf1ab3c217e6cf5cf45806a3fa71e84414d00221766a5625d38b6",
+  "steps": 55,
+  "files": [
+    {
+      "path": "01-verify_verification_boundaries.py.txt",
+      "original_name": "01-verify_verification_boundaries.py.log",
+      "sha256": "84db5368ad5f6275c3d45e671a5c31077956be5d077075bf13a0afd7d6209341",
+      "bytes": 144
+    },
+    {
+      "path": "02-verify_derived_proof_guards.py.txt",
+      "original_name": "02-verify_derived_proof_guards.py.log",
+      "sha256": "048fce349d8efb8cd18bde6d545773cc7061cacf408ebdcd7e446543e9f06241",
+      "bytes": 111
+    },
+    {
+      "path": "03-crisis_sensitivity.py.txt",
+      "original_name": "03-crisis_sensitivity.py.log",
+      "sha256": "d4a3d2e64ffaad9eabc91034fc98c724fd5610e63146b487370ab463b7ca0c07",
+      "bytes": 5151
+    },
+    {
+      "path": "04-annual_crisis_sensitivity.py.txt",
+      "original_name": "04-annual_crisis_sensitivity.py.log",
+      "sha256": "ac0ef7ceef3da07628e189e04037e6435ac53b47eb0ba226a8db2b1e6f85d735",
+      "bytes": 7837
+    },
+    {
+      "path": "05-complete_va_controls.py.txt",
+      "original_name": "05-complete_va_controls.py.log",
+      "sha256": "8015862761eae9afb97500be2fb605da36bcc1c0c5d6aeeb106867ed43049078",
+      "bytes": 805
+    },
+    {
+      "path": "06-annual_literature_sensitivity.py.txt",
+      "original_name": "06-annual_literature_sensitivity.py.log",
+      "sha256": "7021aaa85d59966cfbf94f0df526329134491c7b791a13105674ad28f7700eef",
+      "bytes": 52574
+    },
+    {
+      "path": "07-literature_sensitivity.py.txt",
+      "original_name": "07-literature_sensitivity.py.log",
+      "sha256": "b4bf3cbace1be1097734f26029d1a5e0e98ebb34293c4948884c2c824338c06f",
+      "bytes": 15457
+    },
+    {
+      "path": "08-annual_seasonal_literature.py.txt",
+      "original_name": "08-annual_seasonal_literature.py.log",
+      "sha256": "0bbbd2027d6dbb284dd9675d5379a3276d334e978e82da7eb12fe32ad20f7e62",
+      "bytes": 1675
+    },
+    {
+      "path": "09-literature_rank_correction.py.txt",
+      "original_name": "09-literature_rank_correction.py.log",
+      "sha256": "2b31669260c2694b7559b17b6f338b5c93848d3c61fe161f7e618c95b239325b",
+      "bytes": 185
+    },
+    {
+      "path": "10-literature_restrictions.py.txt",
+      "original_name": "10-literature_restrictions.py.log",
+      "sha256": "ffdfdf3e86bdd76f5415e5805dfd3b38b23190fb2c4526f1d524fe850286a9e2",
+      "bytes": 85
+    },
+    {
+      "path": "11-literature_full_controls.py.txt",
+      "original_name": "11-literature_full_controls.py.log",
+      "sha256": "fd9e7c80f88193845ff2e2b1c1f95a6ad488756a3fd5f6f6799410e14bd0f6c6",
+      "bytes": 41119
+    },
+    {
+      "path": "12-literature_full_controls_restrictions.py.txt",
+      "original_name": "12-literature_full_controls_restrictions.py.log",
+      "sha256": "d8f9fd006fa2918971c7271f6d92165742bc8d4a25538fc82e26a6766b07a0f0",
+      "bytes": 85
+    },
+    {
+      "path": "13-visitor_rigour_monthly.py.txt",
+      "original_name": "13-visitor_rigour_monthly.py.log",
+      "sha256": "cec01a317f46c7af88a8ccd1ddfaa3aa97f69bd5d37906ddaba86914a6cfe0df",
+      "bytes": 38386
+    },
+    {
+      "path": "14-visitor_rigour_companions.py.txt",
+      "original_name": "14-visitor_rigour_companions.py.log",
+      "sha256": "5f08add319407943c602a4bddc4d27e4ee89aeefb9a390da9423237d61bef66a",
+      "bytes": 1465
+    },
+    {
+      "path": "15-visitor_origin_year.py.txt",
+      "original_name": "15-visitor_origin_year.py.log",
+      "sha256": "e7031aeff2a4a6eb61ba9e3dc8cd5715963e6fdabbd5c9dcb6a5937c5d4d97d3",
+      "bytes": 3308
+    },
+    {
+      "path": "16-verify_crisis_sensitivity.py.txt",
+      "original_name": "16-verify_crisis_sensitivity.py.log",
+      "sha256": "ef9ebaef86d88f0d71464cbcf1f6078ab7424c4063b710f13c9c62514eb2262c",
+      "bytes": 1102
+    },
+    {
+      "path": "17-verify_annual_crisis_sensitivity.py.txt",
+      "original_name": "17-verify_annual_crisis_sensitivity.py.log",
+      "sha256": "cf87fa25714735b690020c9db5f7e30565b98c25b54f9f6478105444a2e75fb0",
+      "bytes": 479
+    },
+    {
+      "path": "18-verify_complete_va_controls.py.txt",
+      "original_name": "18-verify_complete_va_controls.py.log",
+      "sha256": "1a003e930c3373111d4266c11be582f5817d82f68f6094bba14f43716f4af436",
+      "bytes": 101
+    },
+    {
+      "path": "19-verify_annual_literature_sensitivity.py.txt",
+      "original_name": "19-verify_annual_literature_sensitivity.py.log",
+      "sha256": "56c70e8096a3035c1ada3470568165a9318db451e82fd475206d28d8da54aabd",
+      "bytes": 121
+    },
+    {
+      "path": "20-verify_literature_sensitivity.py.txt",
+      "original_name": "20-verify_literature_sensitivity.py.log",
+      "sha256": "424fd25bec9f7b30b7df9ed54fe274b6856540588c45af2da0cdb36169f24af4",
+      "bytes": 2159
+    },
+    {
+      "path": "21-verify_annual_seasonal_literature.py.txt",
+      "original_name": "21-verify_annual_seasonal_literature.py.log",
+      "sha256": "e3b2f938f73e5fa69a249266f173cbcce9d004601e11c429d314ef7a28b0b61c",
+      "bytes": 113
+    },
+    {
+      "path": "22-verify_literature_full_controls.py.txt",
+      "original_name": "22-verify_literature_full_controls.py.log",
+      "sha256": "65bbea224006945b77e4eba86bdfc79ad81a13f90a1a3e9cc9680542240217e5",
+      "bytes": 96503
+    },
+    {
+      "path": "23-extension_stationarity.py.txt",
+      "original_name": "23-extension_stationarity.py.log",
+      "sha256": "1c4ed0b901a3a17b3a32259d1cb6ae717be7d70bf0c61c4d99e5648394bce58c",
+      "bytes": 1119
+    },
+    {
+      "path": "24-verify_extension_stationarity.py.txt",
+      "original_name": "24-verify_extension_stationarity.py.log",
+      "sha256": "f95ff5ecf77653df17e0a2fef3e79aa4938a1af2000f808d38e4a93f50408dd6",
+      "bytes": 783
+    },
+    {
+      "path": "25-selected_null_calibration.py.txt",
+      "original_name": "25-selected_null_calibration.py.log",
+      "sha256": "16cb49175410af10f357ae6ba8f359639645ee9dce57b3c3d2295c9dcfe2a999",
+      "bytes": 710
+    },
+    {
+      "path": "26-verify_calendar_hac.py.txt",
+      "original_name": "26-verify_calendar_hac.py.log",
+      "sha256": "f580005bdad33e485692c0197668155ca36a788f6c959dbc3877cde740c2d474",
+      "bytes": 88
+    },
+    {
+      "path": "27-verify_visitor_rigour.py.txt",
+      "original_name": "27-verify_visitor_rigour.py.log",
+      "sha256": "140e2aca7a4e9421d67752f5e65288c37df1557cdcd341b789dbf0063f172e6c",
+      "bytes": 904
+    },
+    {
+      "path": "28-verify_visitor_rigour_companions.py.txt",
+      "original_name": "28-verify_visitor_rigour_companions.py.log",
+      "sha256": "cef0e6c92cb896cc88d5d908ed528009e0be592822d5dc3b00ff2d72191502da",
+      "bytes": 94
+    },
+    {
+      "path": "29-verify_visitor_origin_year.py.txt",
+      "original_name": "29-verify_visitor_origin_year.py.log",
+      "sha256": "d4e8dadd3b6b48840ed6aa42101e184a66df0b7927edb80b126d9d2a5a498658",
+      "bytes": 1037
+    },
+    {
+      "path": "30-verify_arrivals_review_equivalence.py.txt",
+      "original_name": "30-verify_arrivals_review_equivalence.py.log",
+      "sha256": "4c353e0cbff04eb4ee4699a8668c624099a67d764b84bf2fb9ef58602f4147a9",
+      "bytes": 3169
+    },
+    {
+      "path": "31-selected_arrivals_null_calibration.py.txt",
+      "original_name": "31-selected_arrivals_null_calibration.py.log",
+      "sha256": "3c67282d074dfb5d3fea7be7b3d40deb047f19ac2f7dce3d4bb7808b3fb26101",
+      "bytes": 1753
+    },
+    {
+      "path": "32-visitor_rigour_stationarity.py.txt",
+      "original_name": "32-visitor_rigour_stationarity.py.log",
+      "sha256": "92f6a474eb72f8e912c46de0b8fe5a1787cdb709b43e5beb48cfb06b72ac821e",
+      "bytes": 562
+    },
+    {
+      "path": "33-verify_visitor_rigour_stationarity.py.txt",
+      "original_name": "33-verify_visitor_rigour_stationarity.py.log",
+      "sha256": "828c6f8ddf61f2617de7eecf5d02f50e30785734b3110356c0d35bab4da4197f",
+      "bytes": 359
+    },
+    {
+      "path": "34-verify_stata_key_results.py.txt",
+      "original_name": "34-verify_stata_key_results.py.log",
+      "sha256": "469b8ec91f46a16ed6d4f054426f627b31eb5455b3762bc95d7fe88f499bd393",
+      "bytes": 411
+    },
+    {
+      "path": "35-verify_stata_visitor_rigour.py.txt",
+      "original_name": "35-verify_stata_visitor_rigour.py.log",
+      "sha256": "4634f20cd57f67a08a644cdc4b94be9bfda0960cd8c5b205e873dcaf56592236",
+      "bytes": 270
+    },
+    {
+      "path": "36-crisis_report.py.txt",
+      "original_name": "36-crisis_report.py.log",
+      "sha256": "5676d64fee1f09ec13909d8190c77eab13acadcdeca7aa557afe1993cd623951",
+      "bytes": 99
+    },
+    {
+      "path": "37-verify_crisis_report.py.txt",
+      "original_name": "37-verify_crisis_report.py.log",
+      "sha256": "33ce01beed846942464a4911f661a8078cfa9563b377d64e5ade2c7259644e96",
+      "bytes": 86
+    },
+    {
+      "path": "38-literature_report.py.txt",
+      "original_name": "38-literature_report.py.log",
+      "sha256": "f08dcf60d8d5760287c5e8e270d17edf3ee414d866591ebff49602411dd96d02",
+      "bytes": 242
+    },
+    {
+      "path": "39-verify_literature_report.py.txt",
+      "original_name": "39-verify_literature_report.py.log",
+      "sha256": "db0503b0535c1d0c3576c1e75a5e6be3668980526646d984ddba493324ae223e",
+      "bytes": 88
+    },
+    {
+      "path": "40-extension_stationarity_report.py.txt",
+      "original_name": "40-extension_stationarity_report.py.log",
+      "sha256": "4dd75612a5db40d56dd28f36f00bca5b820af2d8bda18f3a3fa74fc0969d5384",
+      "bytes": 287
+    },
+    {
+      "path": "41-verify_stationarity_report.py.txt",
+      "original_name": "41-verify_stationarity_report.py.log",
+      "sha256": "532b6122f89c58394224c97543dd54c27b74d3e61820c78b202cb6a10e31abbd",
+      "bytes": 331
+    },
+    {
+      "path": "42-verify_visitor_rigour_stationarity_report.py.txt",
+      "original_name": "42-verify_visitor_rigour_stationarity_report.py.log",
+      "sha256": "3d55220f1c22045bf8ccac8e532bc96fde030cef690a9df64ed2c58e8be6cf79",
+      "bytes": 84
+    },
+    {
+      "path": "43-stata_key_report.py.txt",
+      "original_name": "43-stata_key_report.py.log",
+      "sha256": "4d0daeb605f860503e816293b8f49851e0c0eae1d7a6fc2ee6b9a59112b23337",
+      "bytes": 96
+    },
+    {
+      "path": "44-verify_stata_key_report.py.txt",
+      "original_name": "44-verify_stata_key_report.py.log",
+      "sha256": "81bef6443ec0562d36f7c6c7537f23fed9baf46bbc1b37bfd1087d0f3d3bd0d0",
+      "bytes": 79
+    },
+    {
+      "path": "45-corrected_legacy_notes.py.txt",
+      "original_name": "45-corrected_legacy_notes.py.log",
+      "sha256": "7e20485ce777a521fd2443b6af843addfe27a4707b0ef36e31dbad5062708855",
+      "bytes": 224
+    },
+    {
+      "path": "46-qualified_clustered_sector_sensitivity.py.txt",
+      "original_name": "46-qualified_clustered_sector_sensitivity.py.log",
+      "sha256": "a1b35414c11defec8f69a0b285224dc1b8acd7b4d763c0a510747f7003dee7aa",
+      "bytes": 69
+    },
+    {
+      "path": "47-verify_qualified_clustered_sector_sensitivity.py.txt",
+      "original_name": "47-verify_qualified_clustered_sector_sensitivity.py.log",
+      "sha256": "c495780f70e279c6e099d673756ec7a8c9d5f1b5444a5d3274bb6562f6a065c8",
+      "bytes": 97
+    },
+    {
+      "path": "48-visitor_rigour_report.py.txt",
+      "original_name": "48-visitor_rigour_report.py.log",
+      "sha256": "60a49afdc20ca7da4ae6047b527793163b9186735d9a91d113a8dec3ee7b3385",
+      "bytes": 83
+    },
+    {
+      "path": "49-verify_visitor_rigour_report.py.txt",
+      "original_name": "49-verify_visitor_rigour_report.py.log",
+      "sha256": "8f688e78b891db6d821add0bea3a466a542e355a77584502b603ba87be9c2661",
+      "bytes": 85
+    },
+    {
+      "path": "50-aea_audit_report.py.txt",
+      "original_name": "50-aea_audit_report.py.log",
+      "sha256": "75d3048d5e4a51933769d1899546fced419ec05b62b3270339db6e8b1e69fc20",
+      "bytes": 114
+    },
+    {
+      "path": "51-combined_report.py.txt",
+      "original_name": "51-combined_report.py.log",
+      "sha256": "e338c301c2095eea64fe1f6e47e4a85742d8548df397f199bb36ec1d4eb76fa4",
+      "bytes": 85
+    },
+    {
+      "path": "52-verify_collection.py.txt",
+      "original_name": "52-verify_collection.py.log",
+      "sha256": "452b59e529169c92a5040b8956ee5ee222ddbc4c6ae0379edbc64f3345e933c7",
+      "bytes": 117
+    },
+    {
+      "path": "53-verify_baseline.py.txt",
+      "original_name": "53-verify_baseline.py.log",
+      "sha256": "61dd851485035eb53e0f9a2feb2eb38f489f5a9325e4ffde1cfc01bd37a7be80",
+      "bytes": 84
+    },
+    {
+      "path": "54-verify_extension_collection.py.txt",
+      "original_name": "54-verify_extension_collection.py.log",
+      "sha256": "14a5d554b10bd4966cd062ffebd8635e012ec15bc6c37ee26d07a6cf8f2b3a1e",
+      "bytes": 113
+    },
+    {
+      "path": "55-verify_final_audit_closure.py.txt",
+      "original_name": "55-verify_final_audit_closure.py.log",
+      "sha256": "33566205422a8da7a79be574bfcdbc0f2ca6ec08d78b47423993fd9f34fea4f7",
+      "bytes": 95
+    },
+    {
+      "path": "run.json",
+      "original_name": "run.json",
+      "sha256": "3c022aa6e86cf1ab3c217e6cf5cf45806a3fa71e84414d00221766a5625d38b6",
+      "bytes": 10375
+    }
+  ],
+  "scope": "Completed final ROOT 55-step native reproduction and independent verification, using the existing locked local environment. This is not a fresh installation or a causal/stationarity/finite-sample calibration certificate. Original log bytes are preserved with .txt names. The source manifest and unchanged frozen inputs were checked again at archival."
+}

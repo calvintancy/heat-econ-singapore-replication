@@ -1,0 +1,85 @@
+{
+  "release": "v1.1.0-audit.2",
+  "source_manifest": "replication/extensions/source_manifest_wald_v2.json",
+  "adapter_steps": [
+    [
+      "scripts/verify_native_wald.py",
+      "--output-dir",
+      "outputs/native_wald/adapter"
+    ]
+  ],
+  "producer_steps": [
+    [
+      "scripts/native_wald_analysis.py"
+    ]
+  ],
+  "verification_steps": [
+    [
+      "scripts/verify_native_wald_analysis.py"
+    ]
+  ],
+  "calibration_steps": [
+    [
+      "scripts/native_wald_calibration.py",
+      "--check-lifecycle"
+    ],
+    [
+      "scripts/native_wald_calibration.py"
+    ]
+  ],
+  "report_steps": [
+    [
+      "scripts/native_wald_report.py"
+    ],
+    [
+      "scripts/verify_native_wald_report.py"
+    ]
+  ],
+  "report_verification_steps": [
+    [
+      "scripts/verify_native_wald_report.py"
+    ]
+  ],
+  "browser_steps": [
+    [
+      "scripts/verify_native_wald_browser.py"
+    ]
+  ],
+  "receipts": {
+    "adapter": {
+      "path": "outputs/native_wald/adapter/verification.json",
+      "statuses": [
+        "passed"
+      ]
+    },
+    "native": {
+      "path": "outputs/native_wald/verification.json",
+      "statuses": [
+        "passed"
+      ]
+    },
+    "calibration": {
+      "path": "outputs/native_wald/calibration.json",
+      "statuses": [
+        "passed"
+      ]
+    },
+    "report": {
+      "path": "outputs/native_wald/report_verification.json",
+      "statuses": [
+        "passed"
+      ]
+    },
+    "browser": {
+      "path": "outputs/native_wald/browser/verification.json",
+      "statuses": [
+        "passed"
+      ]
+    }
+  },
+  "current_master": "outputs/heat_economy.html",
+  "staged_master": "outputs/native_wald/current_master.html",
+  "stdout_json_outputs": {
+    "scripts/native_wald_calibration.py --check-lifecycle": "outputs/native_wald/calibration_boundary_verification.json"
+  }
+}

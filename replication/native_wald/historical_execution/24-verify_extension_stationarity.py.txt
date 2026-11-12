@@ -1,0 +1,8 @@
+Extension stationarity independent inventory/test audit: core; 1,680 exact arrays checked
+Extension stationarity independent inventory/test audit: full; 2,075 exact arrays checked
+Extension stationarity independent inventory/test audit: annual; 2,939 exact arrays checked
+Extension stationarity independent inventory/test audit: literature; 12,856 exact arrays checked
+Extension stationarity independent inventory/test audit: annual_literature; 13,456 exact arrays checked
+Extension stationarity independent inventory/test audit: seasonal; 15,502 exact arrays checked
+Extension stationarity independent inventory/test audit: full_controls; 22,306 exact arrays checked
+Extension stationarity independent verification passed: 12,618 model requests, 22,306 arrays and 19,532 test rows.

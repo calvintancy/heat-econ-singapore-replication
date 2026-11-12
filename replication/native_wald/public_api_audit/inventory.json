@@ -1,0 +1,35 @@
+{
+  "scope": "Historical bounded public-method/kernel audit preceding the native-Wald revision: three genuine saved-design refits,18 comparisons, controlled covariance/basis transformation. This is not new v2 model refitting or a current all-grid public-method claim. Raw evidence and actual executed checker source preserved.",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "a317d4a8f220ce6db2e990ff00cab7ad3a7be3d67b7f920f7050adcaa6820cf3",
+      "bytes": 5006
+    },
+    {
+      "path": "summary.json",
+      "sha256": "202690c7a0fef0e3b20f6577e01b4c71c3e18672dd57d810ab0dee1bbda586b3",
+      "bytes": 4389
+    },
+    {
+      "path": "comparisons.csv",
+      "sha256": "1568dfd0165147bd151d058275f9da44e70f83ad107f5b462e8aaad51a8f7919",
+      "bytes": 5128
+    },
+    {
+      "path": "execution.txt",
+      "sha256": "8193e583c1643ad4f51d68f6d4f7845302bfa45df5112d3c4ffc845d5968f768",
+      "bytes": 1923
+    },
+    {
+      "path": "reference_comparison.json",
+      "sha256": "3889f3debcb402a2df6360aef86c818c5c29df7e0d72a439dcb882576e4a296b",
+      "bytes": 2266
+    },
+    {
+      "path": "check.py.txt",
+      "sha256": "7ba46eb752065b4127237e66dd4b15d3ce93ef2a1194d8b36df9ffb2f9edef92",
+      "bytes": 11166
+    }
+  ]
+}

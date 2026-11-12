@@ -1,0 +1,5 @@
+Visitor diagnostic independent coverage/test audit: monthly, 6088 arrays
+Visitor diagnostic independent coverage/test audit: annual, 6367 arrays
+Visitor diagnostic independent coverage/test audit: ppml, 6623 arrays
+Visitor diagnostic independent coverage/test audit: origin_year, 6623 arrays
+Visitor exact-window stationarity independent verification passed.

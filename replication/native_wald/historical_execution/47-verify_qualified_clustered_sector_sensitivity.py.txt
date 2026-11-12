@@ -1,0 +1,1 @@
+Qualified sector-cluster display passed: 180 native DK views, 2340 cells; raw evidence unchanged

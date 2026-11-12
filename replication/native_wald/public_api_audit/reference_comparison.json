@@ -1,0 +1,59 @@
+{
+  "status": "passed_documented_reference_comparison",
+  "heat_stored_draws_sha256": "3fde33f6116d482f1013eecc5ef5c5c70aec9ad5c1a129dee413a4c14a45b4a7",
+  "heat": [
+    {
+      "hac_lags": 4,
+      "test": "All sector temperature-lag responses jointly zero",
+      "restrictions": 60,
+      "draws": 2000,
+      "project_F_rejections": 2000,
+      "native_chi2_reference_rejections": 2000
+    },
+    {
+      "hac_lags": 4,
+      "test": "All sector cumulative direct temperature responses equal",
+      "restrictions": 11,
+      "draws": 2000,
+      "project_F_rejections": 712,
+      "native_chi2_reference_rejections": 753
+    },
+    {
+      "hac_lags": 8,
+      "test": "All sector temperature-lag responses jointly zero",
+      "restrictions": 60,
+      "draws": 2000,
+      "project_F_rejections": 2000,
+      "native_chi2_reference_rejections": 2000
+    },
+    {
+      "hac_lags": 8,
+      "test": "All sector cumulative direct temperature responses equal",
+      "restrictions": 11,
+      "draws": 2000,
+      "project_F_rejections": 1091,
+      "native_chi2_reference_rejections": 1134
+    }
+  ],
+  "arrivals_logical_implications": [
+    {
+      "design": "country__y_mom_nsa__long__all_eligible__H1__own_current",
+      "bandwidth": 12,
+      "draws": 4000,
+      "chi2_5pct_critical_W": 56.94238714682409,
+      "F_5pct_critical_W": 59.39073636338911,
+      "implied_chi2_rejections": 4000,
+      "logic": "Every archived draw exceeds the larger F-scaled critical value, so each also exceeds the smaller chi2 critical value. No new simulations or empirical-null claim."
+    },
+    {
+      "design": "country__y_mom_nsa__long__all_eligible__H1__own_current",
+      "bandwidth": 24,
+      "draws": 4000,
+      "chi2_5pct_critical_W": 56.94238714682409,
+      "F_5pct_critical_W": 59.39073636338911,
+      "implied_chi2_rejections": 4000,
+      "logic": "Every archived draw exceeds the larger F-scaled critical value, so each also exceeds the smaller chi2 critical value. No new simulations or empirical-null claim."
+    }
+  ],
+  "scope": "Reuses archived fixed-X Gaussian-null draws/counts with unchanged W. Applies documented chi2 reference confirmed by actual native API parity; not a new covariance estimate or calibration of actual economic errors."
+}

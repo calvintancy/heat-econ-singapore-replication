@@ -1,0 +1,1 @@
+Complete full-control VA independent audit passed: 750 native fits, 150 full designs, all 9 samples.

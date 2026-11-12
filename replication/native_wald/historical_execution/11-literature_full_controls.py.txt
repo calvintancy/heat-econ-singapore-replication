@@ -1,0 +1,307 @@
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit aggregate_va/y_short/all_eligible: 1 units × 29 dates
+Full-control literature fit aggregate_va/y_short/event_dates_excluded: 1 units × 19 dates
+Full-control literature fit aggregate_va/y_short/strict_growth_window_clean: 1 units × 16 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit aggregate_va/y_yoy_nsa/all_eligible: 1 units × 29 dates
+Full-control literature fit aggregate_va/y_yoy_nsa/event_dates_excluded: 1 units × 19 dates
+Full-control literature fit aggregate_va/y_yoy_nsa/strict_growth_window_clean: 1 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit aggregate_va/y_yoy/all_eligible: 1 units × 29 dates
+Full-control literature fit aggregate_va/y_yoy/event_dates_excluded: 1 units × 19 dates
+Full-control literature fit aggregate_va/y_yoy/strict_growth_window_clean: 1 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit va/y_short/all_eligible: 11 units × 29 dates
+Full-control literature fit va/y_short/event_dates_excluded: 11 units × 19 dates
+Full-control literature fit va/y_short/strict_growth_window_clean: 11 units × 16 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit va/y_yoy_nsa/all_eligible: 11 units × 29 dates
+Full-control literature fit va/y_yoy_nsa/event_dates_excluded: 11 units × 19 dates
+Full-control literature fit va/y_yoy_nsa/strict_growth_window_clean: 11 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit va/y_yoy/all_eligible: 11 units × 29 dates
+Full-control literature fit va/y_yoy/event_dates_excluded: 11 units × 19 dates
+Full-control literature fit va/y_yoy/strict_growth_window_clean: 11 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit va-broad-matched/y_short/all_eligible: 11 units × 29 dates
+Full-control literature fit va-broad-matched/y_short/event_dates_excluded: 11 units × 19 dates
+Full-control literature fit va-broad-matched/y_short/strict_growth_window_clean: 11 units × 16 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit va-broad-matched/y_yoy_nsa/all_eligible: 11 units × 29 dates
+Full-control literature fit va-broad-matched/y_yoy_nsa/event_dates_excluded: 11 units × 19 dates
+Full-control literature fit va-broad-matched/y_yoy_nsa/strict_growth_window_clean: 11 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit va-broad-matched/y_yoy/all_eligible: 11 units × 29 dates
+Full-control literature fit va-broad-matched/y_yoy/event_dates_excluded: 11 units × 19 dates
+Full-control literature fit va-broad-matched/y_yoy/strict_growth_window_clean: 11 units × 13 dates
+Full-control literature fit va-detailed/y_short/all_eligible: 19 units × 29 dates
+Full-control literature fit va-detailed/y_short/event_dates_excluded: 19 units × 19 dates
+Full-control literature fit va-detailed/y_short/strict_growth_window_clean: 19 units × 16 dates
+Full-control literature fit va-detailed/y_yoy_nsa/all_eligible: 19 units × 29 dates
+Full-control literature fit va-detailed/y_yoy_nsa/event_dates_excluded: 19 units × 19 dates
+Full-control literature fit va-detailed/y_yoy_nsa/strict_growth_window_clean: 19 units × 13 dates
+Full-control literature fit va-detailed/y_yoy/all_eligible: 19 units × 29 dates
+Full-control literature fit va-detailed/y_yoy/event_dates_excluded: 19 units × 19 dates
+Full-control literature fit va-detailed/y_yoy/strict_growth_window_clean: 19 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit aggregate_va-matched-va19/y_short/all_eligible: 1 units × 29 dates
+Full-control literature fit aggregate_va-matched-va19/y_short/event_dates_excluded: 1 units × 19 dates
+Full-control literature fit aggregate_va-matched-va19/y_short/strict_growth_window_clean: 1 units × 16 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit aggregate_va-matched-va19/y_yoy_nsa/all_eligible: 1 units × 29 dates
+Full-control literature fit aggregate_va-matched-va19/y_yoy_nsa/event_dates_excluded: 1 units × 19 dates
+Full-control literature fit aggregate_va-matched-va19/y_yoy_nsa/strict_growth_window_clean: 1 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit aggregate_va-matched-va19/y_yoy/all_eligible: 1 units × 29 dates
+Full-control literature fit aggregate_va-matched-va19/y_yoy/event_dates_excluded: 1 units × 19 dates
+Full-control literature fit aggregate_va-matched-va19/y_yoy/strict_growth_window_clean: 1 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit va12/y_short/all_eligible: 12 units × 29 dates
+Full-control literature fit va12/y_short/event_dates_excluded: 12 units × 19 dates
+Full-control literature fit va12/y_short/strict_growth_window_clean: 12 units × 16 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit va12/y_yoy_nsa/all_eligible: 12 units × 29 dates
+Full-control literature fit va12/y_yoy_nsa/event_dates_excluded: 12 units × 19 dates
+Full-control literature fit va12/y_yoy_nsa/strict_growth_window_clean: 12 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit va12/y_yoy/all_eligible: 12 units × 29 dates
+Full-control literature fit va12/y_yoy/event_dates_excluded: 12 units × 19 dates
+Full-control literature fit va12/y_yoy/strict_growth_window_clean: 12 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit va12-matched/y_short/all_eligible: 12 units × 29 dates
+Full-control literature fit va12-matched/y_short/event_dates_excluded: 12 units × 19 dates
+Full-control literature fit va12-matched/y_short/strict_growth_window_clean: 12 units × 16 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit va12-matched/y_yoy_nsa/all_eligible: 12 units × 29 dates
+Full-control literature fit va12-matched/y_yoy_nsa/event_dates_excluded: 12 units × 19 dates
+Full-control literature fit va12-matched/y_yoy_nsa/strict_growth_window_clean: 12 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit va12-matched/y_yoy/all_eligible: 12 units × 29 dates
+Full-control literature fit va12-matched/y_yoy/event_dates_excluded: 12 units × 19 dates
+Full-control literature fit va12-matched/y_yoy/strict_growth_window_clean: 12 units × 13 dates
+Full-control literature fit va20/y_short/all_eligible: 20 units × 29 dates
+Full-control literature fit va20/y_short/event_dates_excluded: 20 units × 19 dates
+Full-control literature fit va20/y_short/strict_growth_window_clean: 20 units × 16 dates
+Full-control literature fit va20/y_yoy_nsa/all_eligible: 20 units × 29 dates
+Full-control literature fit va20/y_yoy_nsa/event_dates_excluded: 20 units × 19 dates
+Full-control literature fit va20/y_yoy_nsa/strict_growth_window_clean: 20 units × 13 dates
+Full-control literature fit va20/y_yoy/all_eligible: 20 units × 29 dates
+Full-control literature fit va20/y_yoy/event_dates_excluded: 20 units × 19 dates
+Full-control literature fit va20/y_yoy/strict_growth_window_clean: 20 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-monthly-total/y_short/all_eligible: 1 units × 100 dates
+Full-control literature fit iip-monthly-total/y_short/event_dates_excluded: 1 units × 66 dates
+Full-control literature fit iip-monthly-total/y_short/strict_growth_window_clean: 1 units × 55 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-monthly-total/y_yoy_nsa/all_eligible: 1 units × 100 dates
+Full-control literature fit iip-monthly-total/y_yoy_nsa/event_dates_excluded: 1 units × 66 dates
+Full-control literature fit iip-monthly-total/y_yoy_nsa/strict_growth_window_clean: 1 units × 44 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-monthly-total/y_yoy/all_eligible: 1 units × 100 dates
+Full-control literature fit iip-monthly-total/y_yoy/event_dates_excluded: 1 units × 66 dates
+Full-control literature fit iip-monthly-total/y_yoy/strict_growth_window_clean: 1 units × 44 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-monthly/y_short/all_eligible: 6 units × 100 dates
+Full-control literature fit iip-monthly/y_short/event_dates_excluded: 6 units × 66 dates
+Full-control literature fit iip-monthly/y_short/strict_growth_window_clean: 6 units × 55 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-monthly/y_yoy_nsa/all_eligible: 6 units × 100 dates
+Full-control literature fit iip-monthly/y_yoy_nsa/event_dates_excluded: 6 units × 66 dates
+Full-control literature fit iip-monthly/y_yoy_nsa/strict_growth_window_clean: 6 units × 44 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-monthly/y_yoy/all_eligible: 6 units × 100 dates
+Full-control literature fit iip-monthly/y_yoy/event_dates_excluded: 6 units × 66 dates
+Full-control literature fit iip-monthly/y_yoy/strict_growth_window_clean: 6 units × 44 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-monthly-broad-matched/y_short/all_eligible: 6 units × 100 dates
+Full-control literature fit iip-monthly-broad-matched/y_short/event_dates_excluded: 6 units × 66 dates
+Full-control literature fit iip-monthly-broad-matched/y_short/strict_growth_window_clean: 6 units × 55 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-monthly-broad-matched/y_yoy_nsa/all_eligible: 6 units × 100 dates
+Full-control literature fit iip-monthly-broad-matched/y_yoy_nsa/event_dates_excluded: 6 units × 66 dates
+Full-control literature fit iip-monthly-broad-matched/y_yoy_nsa/strict_growth_window_clean: 6 units × 44 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-monthly-broad-matched/y_yoy/all_eligible: 6 units × 100 dates
+Full-control literature fit iip-monthly-broad-matched/y_yoy/event_dates_excluded: 6 units × 66 dates
+Full-control literature fit iip-monthly-broad-matched/y_yoy/strict_growth_window_clean: 6 units × 44 dates
+Full-control literature fit iip-monthly-detailed/y_short/all_eligible: 18 units × 100 dates
+Full-control literature fit iip-monthly-detailed/y_short/event_dates_excluded: 18 units × 66 dates
+Full-control literature fit iip-monthly-detailed/y_short/strict_growth_window_clean: 18 units × 55 dates
+Full-control literature fit iip-monthly-detailed/y_yoy_nsa/all_eligible: 18 units × 100 dates
+Full-control literature fit iip-monthly-detailed/y_yoy_nsa/event_dates_excluded: 18 units × 66 dates
+Full-control literature fit iip-monthly-detailed/y_yoy_nsa/strict_growth_window_clean: 18 units × 44 dates
+Full-control literature fit iip-monthly-detailed/y_yoy/all_eligible: 18 units × 100 dates
+Full-control literature fit iip-monthly-detailed/y_yoy/event_dates_excluded: 18 units × 66 dates
+Full-control literature fit iip-monthly-detailed/y_yoy/strict_growth_window_clean: 18 units × 44 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-monthly-total-matched-broad/y_short/all_eligible: 1 units × 100 dates
+Full-control literature fit iip-monthly-total-matched-broad/y_short/event_dates_excluded: 1 units × 66 dates
+Full-control literature fit iip-monthly-total-matched-broad/y_short/strict_growth_window_clean: 1 units × 55 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-monthly-total-matched-broad/y_yoy_nsa/all_eligible: 1 units × 100 dates
+Full-control literature fit iip-monthly-total-matched-broad/y_yoy_nsa/event_dates_excluded: 1 units × 66 dates
+Full-control literature fit iip-monthly-total-matched-broad/y_yoy_nsa/strict_growth_window_clean: 1 units × 44 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-monthly-total-matched-broad/y_yoy/all_eligible: 1 units × 100 dates
+Full-control literature fit iip-monthly-total-matched-broad/y_yoy/event_dates_excluded: 1 units × 66 dates
+Full-control literature fit iip-monthly-total-matched-broad/y_yoy/strict_growth_window_clean: 1 units × 44 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-monthly-total-matched-detailed/y_short/all_eligible: 1 units × 100 dates
+Full-control literature fit iip-monthly-total-matched-detailed/y_short/event_dates_excluded: 1 units × 66 dates
+Full-control literature fit iip-monthly-total-matched-detailed/y_short/strict_growth_window_clean: 1 units × 55 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-monthly-total-matched-detailed/y_yoy_nsa/all_eligible: 1 units × 100 dates
+Full-control literature fit iip-monthly-total-matched-detailed/y_yoy_nsa/event_dates_excluded: 1 units × 66 dates
+Full-control literature fit iip-monthly-total-matched-detailed/y_yoy_nsa/strict_growth_window_clean: 1 units × 44 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-monthly-total-matched-detailed/y_yoy/all_eligible: 1 units × 100 dates
+Full-control literature fit iip-monthly-total-matched-detailed/y_yoy/event_dates_excluded: 1 units × 66 dates
+Full-control literature fit iip-monthly-total-matched-detailed/y_yoy/strict_growth_window_clean: 1 units × 44 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-quarterly-total/y_short/all_eligible: 1 units × 29 dates
+Full-control literature fit iip-quarterly-total/y_short/event_dates_excluded: 1 units × 19 dates
+Full-control literature fit iip-quarterly-total/y_short/strict_growth_window_clean: 1 units × 16 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-quarterly-total/y_yoy_nsa/all_eligible: 1 units × 29 dates
+Full-control literature fit iip-quarterly-total/y_yoy_nsa/event_dates_excluded: 1 units × 19 dates
+Full-control literature fit iip-quarterly-total/y_yoy_nsa/strict_growth_window_clean: 1 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-quarterly-total/y_yoy/all_eligible: 1 units × 29 dates
+Full-control literature fit iip-quarterly-total/y_yoy/event_dates_excluded: 1 units × 19 dates
+Full-control literature fit iip-quarterly-total/y_yoy/strict_growth_window_clean: 1 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-quarterly/y_short/all_eligible: 6 units × 29 dates
+Full-control literature fit iip-quarterly/y_short/event_dates_excluded: 6 units × 19 dates
+Full-control literature fit iip-quarterly/y_short/strict_growth_window_clean: 6 units × 16 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-quarterly/y_yoy_nsa/all_eligible: 6 units × 29 dates
+Full-control literature fit iip-quarterly/y_yoy_nsa/event_dates_excluded: 6 units × 19 dates
+Full-control literature fit iip-quarterly/y_yoy_nsa/strict_growth_window_clean: 6 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-quarterly/y_yoy/all_eligible: 6 units × 29 dates
+Full-control literature fit iip-quarterly/y_yoy/event_dates_excluded: 6 units × 19 dates
+Full-control literature fit iip-quarterly/y_yoy/strict_growth_window_clean: 6 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-quarterly-broad-matched/y_short/all_eligible: 6 units × 29 dates
+Full-control literature fit iip-quarterly-broad-matched/y_short/event_dates_excluded: 6 units × 19 dates
+Full-control literature fit iip-quarterly-broad-matched/y_short/strict_growth_window_clean: 6 units × 16 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-quarterly-broad-matched/y_yoy_nsa/all_eligible: 6 units × 29 dates
+Full-control literature fit iip-quarterly-broad-matched/y_yoy_nsa/event_dates_excluded: 6 units × 19 dates
+Full-control literature fit iip-quarterly-broad-matched/y_yoy_nsa/strict_growth_window_clean: 6 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-quarterly-broad-matched/y_yoy/all_eligible: 6 units × 29 dates
+Full-control literature fit iip-quarterly-broad-matched/y_yoy/event_dates_excluded: 6 units × 19 dates
+Full-control literature fit iip-quarterly-broad-matched/y_yoy/strict_growth_window_clean: 6 units × 13 dates
+Full-control literature fit iip-quarterly-detailed/y_short/all_eligible: 18 units × 29 dates
+Full-control literature fit iip-quarterly-detailed/y_short/event_dates_excluded: 18 units × 19 dates
+Full-control literature fit iip-quarterly-detailed/y_short/strict_growth_window_clean: 18 units × 16 dates
+Full-control literature fit iip-quarterly-detailed/y_yoy_nsa/all_eligible: 18 units × 29 dates
+Full-control literature fit iip-quarterly-detailed/y_yoy_nsa/event_dates_excluded: 18 units × 19 dates
+Full-control literature fit iip-quarterly-detailed/y_yoy_nsa/strict_growth_window_clean: 18 units × 13 dates
+Full-control literature fit iip-quarterly-detailed/y_yoy/all_eligible: 18 units × 29 dates
+Full-control literature fit iip-quarterly-detailed/y_yoy/event_dates_excluded: 18 units × 19 dates
+Full-control literature fit iip-quarterly-detailed/y_yoy/strict_growth_window_clean: 18 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-quarterly-total-matched-broad/y_short/all_eligible: 1 units × 29 dates
+Full-control literature fit iip-quarterly-total-matched-broad/y_short/event_dates_excluded: 1 units × 19 dates
+Full-control literature fit iip-quarterly-total-matched-broad/y_short/strict_growth_window_clean: 1 units × 16 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-quarterly-total-matched-broad/y_yoy_nsa/all_eligible: 1 units × 29 dates
+Full-control literature fit iip-quarterly-total-matched-broad/y_yoy_nsa/event_dates_excluded: 1 units × 19 dates
+Full-control literature fit iip-quarterly-total-matched-broad/y_yoy_nsa/strict_growth_window_clean: 1 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-quarterly-total-matched-broad/y_yoy/all_eligible: 1 units × 29 dates
+Full-control literature fit iip-quarterly-total-matched-broad/y_yoy/event_dates_excluded: 1 units × 19 dates
+Full-control literature fit iip-quarterly-total-matched-broad/y_yoy/strict_growth_window_clean: 1 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-quarterly-total-matched-detailed/y_short/all_eligible: 1 units × 29 dates
+Full-control literature fit iip-quarterly-total-matched-detailed/y_short/event_dates_excluded: 1 units × 19 dates
+Full-control literature fit iip-quarterly-total-matched-detailed/y_short/strict_growth_window_clean: 1 units × 16 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-quarterly-total-matched-detailed/y_yoy_nsa/all_eligible: 1 units × 29 dates
+Full-control literature fit iip-quarterly-total-matched-detailed/y_yoy_nsa/event_dates_excluded: 1 units × 19 dates
+Full-control literature fit iip-quarterly-total-matched-detailed/y_yoy_nsa/strict_growth_window_clean: 1 units × 13 dates
+/Volumes/datadrive/heat_econ/scripts/literature_full_controls.py:74: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  covered = frame.eligible_90.fillna(False).astype(bool)
+Full-control literature fit iip-quarterly-total-matched-detailed/y_yoy/all_eligible: 1 units × 29 dates
+Full-control literature fit iip-quarterly-total-matched-detailed/y_yoy/event_dates_excluded: 1 units × 19 dates
+Full-control literature fit iip-quarterly-total-matched-detailed/y_yoy/strict_growth_window_clean: 1 units × 13 dates
+{
+  "status": "estimated_not_yet_independently_verified",
+  "requested_specs": 1056,
+  "identified_specs": 574,
+  "unavailable_specs": 482,
+  "native_fits": 574
+}

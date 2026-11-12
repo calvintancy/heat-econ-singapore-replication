@@ -1,0 +1,1 @@
+Derived-proof guard revision passed: three source ASTs and strict analytical tamper fixtures; zero native fits

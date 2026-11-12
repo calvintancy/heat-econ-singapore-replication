@@ -1,0 +1,1 @@
+Completed final ROOT 55-step native reproduction and independent verification, using the existing locked local environment. This is not a fresh installation or a causal/stationarity/finite-sample calibration certificate. Original log bytes are preserved with .txt names. The source manifest and unchanged frozen inputs were checked again at archival.

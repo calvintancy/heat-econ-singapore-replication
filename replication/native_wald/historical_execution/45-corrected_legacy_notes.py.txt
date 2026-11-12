@@ -1,0 +1,3 @@
+Wrote /Volumes/datadrive/heat_econ/outputs/aea_audit/first_results_corrected.md
+Wrote outputs/aea_audit/iip_results_corrected.md
+Covariance-labelled narrative corrections passed; original notes and native ledgers unchanged.
